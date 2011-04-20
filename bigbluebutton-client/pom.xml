@@ -77,6 +77,21 @@
       <type>swc</type>
       <scope>test</scope>
     </dependency>
+    
+    <dependency> 
+      <groupId>flexlib</groupId> 
+      <artifactId>flexlib-bbb</artifactId> 
+      <version>1.0</version> 
+      <type>swc</type> 
+	</dependency> 
+	
+	<dependency> 
+      <groupId>mate</groupId> 
+      <artifactId>mate</artifactId> 
+      <version>0.881</version> 
+      <type>swc</type> 
+	</dependency> 
+    
   </dependencies>
 
   <profiles>
