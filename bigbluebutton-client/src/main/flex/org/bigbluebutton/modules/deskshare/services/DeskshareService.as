@@ -24,12 +24,14 @@ package org.bigbluebutton.modules.deskshare.services
 	import flash.net.Responder;
 	import flash.net.SharedObject;
 	
+	import modules.DeskShareModule;
+	
 	import org.bigbluebutton.common.LogUtil;
-	import org.bigbluebutton.modules.deskshare.services.red5.Connection;
-	import org.bigbluebutton.modules.deskshare.services.red5.ConnectionEvent;
 	import org.bigbluebutton.modules.deskshare.events.AppletStartedEvent;
 	import org.bigbluebutton.modules.deskshare.events.CursorEvent;
 	import org.bigbluebutton.modules.deskshare.events.ViewStreamEvent;
+	import org.bigbluebutton.modules.deskshare.services.red5.Connection;
+	import org.bigbluebutton.modules.deskshare.services.red5.ConnectionEvent;
 	
 	/**
 	 * The DeskShareProxy communicates with the Red5 deskShare server application 

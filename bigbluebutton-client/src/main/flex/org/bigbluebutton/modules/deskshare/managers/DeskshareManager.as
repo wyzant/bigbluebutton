@@ -21,6 +21,8 @@ package org.bigbluebutton.modules.deskshare.managers
 {
 	import com.asfusion.mate.events.Dispatcher;
 	
+	import modules.DeskShareModule;
+	
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.main.events.MadePresenterEvent;
 	import org.bigbluebutton.modules.deskshare.services.DeskshareService;

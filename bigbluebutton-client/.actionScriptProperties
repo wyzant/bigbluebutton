@@ -4,6 +4,7 @@
     <compilerSourcePath>
       <compilerSourcePathEntry kind="1" linkType="1" path="src/main/resources"/>
       <compilerSourcePathEntry kind="1" linkType="1" path="src/test/flex"/>
+      <compilerSourcePathEntry kind="1" linkType="1" path="src/main/flex"/>
     </compilerSourcePath>
     <libraryPath defaultLinkType="1">
       <libraryPathEntry kind="4" path="">
@@ -30,8 +31,7 @@
     <application path="src/main.mxml"/>
     <application path="MessagingUnitTests.mxml"/>
     <application path="BigBlueButton.mxml"/>
-    <application path="BigBlueButtonUnitTests.mxml"/>
-    <application path="DeskshareStandalone.mxml"/>
+    <application path="modules/DeskshareStandalone.mxml"/>
     <application path="src/TestRunners.mxml"/>
   </applications>
   <modules/>
