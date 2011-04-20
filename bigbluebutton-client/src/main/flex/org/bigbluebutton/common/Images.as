@@ -28,7 +28,7 @@ package org.bigbluebutton.common
         [Embed(source="../../../../resources/assets/images/user_green.png")]
         public var user_green:Class;
 		
-		[Embed(source="../../../../resources/assets/images/Cursor.png")]
+		[Embed(source="../../../../resources/assets/images/cursor4.png")]
 		public var cursorIcon:Class;
 		
 		[Embed(source="../../../../resources/assets/images/magnifier_reset.png")]
@@ -141,5 +141,17 @@ package org.bigbluebutton.common
 		
 		[Embed(source="../../../../resources/assets/images/presenter.png")]
 		public var presenter:Class;
+		
+		[Embed(source="../../../../resources/assets/images/sharednotes/play-icon.png")]
+		public var playIcon:Class;
+		
+		[Embed(source="../../../../resources/assets/images/sharednotes/tick.png")]
+		public var syncedIcon:Class;
+		
+		[Embed(source="../../../../resources/assets/images/sharednotes/action_refresh.gif")]
+		public var syncingIcon:Class;
+		
+		[Embed(source="../../../../resources/assets/images/sharednotes/note_edit.png")]
+		public var sharednotes:Class;
 	}
 }

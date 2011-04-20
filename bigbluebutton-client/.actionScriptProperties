@@ -34,7 +34,21 @@
     <application path="modules/DeskshareStandalone.mxml"/>
     <application path="src/TestRunners.mxml"/>
   </applications>
-  <modules/>
+  <modules>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/BreakoutModule.swf" optimize="true" sourcePath="src/main/flex/modules/BreakoutModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ChatModule.swf" optimize="true" sourcePath="src/main/flex/modules/ChatModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ClassroomAudioModule.swf" optimize="true" sourcePath="src/main/flex/modules/ClassroomAudioModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/DeskShareModule.swf" optimize="true" sourcePath="src/main/flex/modules/DeskShareModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/DynamicInfoModule.swf" optimize="true" sourcePath="src/main/flex/modules/DynamicInfoModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ExampleChatModule.swf" optimize="true" sourcePath="src/main/flex/modules/ExampleChatModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ListenersModule.swf" optimize="true" sourcePath="src/main/flex/modules/ListenersModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/PhoneModule.swf" optimize="true" sourcePath="src/main/flex/modules/PhoneModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/PresentModule.swf" optimize="true" sourcePath="src/main/flex/modules/PresentModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/SharedNotesModule.swf" optimize="true" sourcePath="src/main/flex/modules/SharedNotesModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/VideoconfModule.swf" optimize="true" sourcePath="src/main/flex/modules/VideoconfModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ViewersModule.swf" optimize="true" sourcePath="src/main/flex/modules/ViewersModule.mxml"/>
+    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/WhiteboardModule.swf" optimize="true" sourcePath="src/main/flex/modules/WhiteboardModule.mxml"/>
+  </modules>
   <buildCSSFiles>
     <buildCSSFileEntry destPath="bin" sourcePath="src/branding/css/logo_basic.css"/>
     <buildCSSFileEntry destPath="bin" sourcePath="src/branding/css/theme.css"/>

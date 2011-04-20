@@ -36,9 +36,8 @@
 			import org.bigbluebutton.main.views.MainToolbar;
 			import org.bigbluebutton.util.i18n.ResourceUtil;
 			
-			[Embed(source="images/note_edit.png")]
-			public var notes:Class;
-			
+			private var images:Images = new Images()
+			private var notes:Class = images.sharednotes;
 			
 			[Bindable] public var notesIcon:Class = notes;
 			

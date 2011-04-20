@@ -44,9 +44,9 @@
 			import mx.controls.Alert;
 			import mx.core.UIComponent;
 			
+			import org.bigbluebutton.common.IUserListener;
 			import org.bigbluebutton.common.Images;
 			import org.bigbluebutton.common.LogUtil;
-			import org.bigbluebutton.common.IUserListener;
 			import org.bigbluebutton.common.UserManager;
 			import org.bigbluebutton.main.model.User;
 			import org.bigbluebutton.main.views.MainCanvas;
@@ -62,6 +62,7 @@
 			private var images:Images = new Images();
 			[Bindable] public var fitToWidthIcon:Class = images.magnifier;
 			[Bindable] public var fitToActualSizeIcon:Class = images.mag_reset;
+			[Bindable] public var cursorIcon:Class = images.cursorIcon;
 			
 			private var cursor:Shape;
 			
@@ -308,7 +309,7 @@
 		]]>
 	</mx:Script>
 	<mx:Move id="cursorMove" target="{cursorImg}"/>
-	<mx:Image id="cursorImg" visible="false" source="@Embed('assets/images/cursor4.png')"/>
+	<mx:Image id="cursorImg" visible="false" source="{cursorIcon}"/>
 		
 	<mx:ControlBar id="bottomBar" height="35" horizontalAlign="center">
 		<mx:Button id="btnActualSize" toggle="true" click="determineHowToDisplayVideo()" selected="false"

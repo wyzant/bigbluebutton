@@ -20,6 +20,8 @@ package org.bigbluebutton.modules.viewers.managers
 {
 	import com.asfusion.mate.events.Dispatcher;
 	
+	import modules.ViewersModule;
+	
 	import mx.controls.Alert;
 	
 	import org.bigbluebutton.common.events.CloseWindowEvent;

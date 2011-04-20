@@ -42,6 +42,25 @@
             <type>pom</type>
           </dependency>
         </dependencies>
+        <configuration>
+          <targetPlayer>10.0.0</targetPlayer>
+          <moduleFiles>
+  			<module>modules/BreakoutModule.mxml</module>
+  			<module>modules/ChatModule.mxml</module>
+  			<module>modules/ClassroomAudioModule.mxml</module>
+  			<module>modules/DeskShareModule.mxml</module>
+  			<module>modules/DynamicInfoModule.mxml</module>
+  			<module>modules/ExampleChatModule.mxml</module>
+  			<module>modules/ListenersModule.mxml</module>
+  			<module>modules/PhoneModule.mxml</module>
+  			<module>modules/PresentModule.mxml</module>
+  			<module>modules/SharedNotesModule.mxml</module>
+  			<module>modules/VideoconfModule.mxml</module>
+  			<module>modules/ViewersModule.mxml</module>
+  			<module>modules/ViewersModule.mxml</module>
+  			<module>modules/WhiteboardModule.mxml</module>
+		  </moduleFiles>
+        </configuration>
       </plugin>
       
       <plugin>
@@ -68,7 +87,21 @@
       <artifactId>flex-framework</artifactId>
       <version>3.5.0.12683</version>
       <type>pom</type>
+      <exclusions> 
+    	<exclusion> 
+      	  <groupId>com.adobe.flex.framework</groupId>
+      	  <artifactId>playerglobal</artifactId>
+    	</exclusion> 
+  	  </exclusions>
     </dependency>
+    
+    <dependency> 
+  	  <groupId>com.adobe.flex.framework</groupId>
+  	  <artifactId>playerglobal</artifactId>
+  	  <version>3.5.0.12683</version>
+  	  <classifier>10</classifier>
+  	  <type>swc</type> 
+	</dependency>
 
     <dependency>
       <groupId>com.adobe.flexunit</groupId>
@@ -91,6 +124,20 @@
       <version>0.881</version> 
       <type>swc</type> 
 	</dependency> 
+	
+	<dependency> 
+      <groupId>as3corelib</groupId> 
+      <artifactId>as3corelib</artifactId> 
+      <version>1.0</version> 
+      <type>swc</type> 
+	</dependency> 
+	
+	<dependency> 
+      <groupId>google</groupId> 
+      <artifactId>googleas3api</artifactId> 
+      <version>1.0</version> 
+      <type>swc</type> 
+	</dependency>
     
   </dependencies>
 

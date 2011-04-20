@@ -20,6 +20,8 @@ package org.bigbluebutton.modules.listeners.business
 {
 	import com.asfusion.mate.events.Dispatcher;
 	
+	import modules.ListenersModule;
+	
 	import mx.collections.ArrayCollection;
 	import mx.controls.Alert;
 	

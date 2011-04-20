@@ -305,7 +305,7 @@
         </mx:State>	
 	</dspub:states>
 				
-	<mx:Image id="cursorImg" visible="false" source="@Embed('assets/images/cursor4.png')"/>
+	<mx:Image id="cursorImg" visible="false" source="{cursorIcon}"/>
 	
 
 </dspub:MDIWindow>
