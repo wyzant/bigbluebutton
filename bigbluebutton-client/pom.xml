@@ -119,9 +119,9 @@
 	</dependency> 
 	
 	<dependency> 
-      <groupId>mate</groupId> 
-      <artifactId>mate</artifactId> 
-      <version>0.881</version> 
+      <groupId>com.asfusion.mate</groupId> 
+      <artifactId>mate-framework</artifactId> 
+      <version>0.8.9</version> 
       <type>swc</type> 
 	</dependency> 
 	
@@ -140,43 +140,52 @@
 	</dependency>
     
   </dependencies>
+  
+  <repositories>
+    <repository>
+      <id>flexmojos</id>
+      <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+      <releases> <enabled>true</enabled> </releases>
+      <snapshots> <enabled>false</enabled> </snapshots>
+    </repository>
+    
+    <repository>
+    	<id>mate-framework</id>
+    	<url>http://mate-framework.googlecode.com/svn/trunk/maven</url>
+    	<releases> <enabled>true</enabled> </releases>
+      	<snapshots> <enabled>false</enabled> </snapshots>
+    </repository>
+  </repositories>
+  
+  <pluginRepositories>
+  	<pluginRepository>
+      <id>local</id>
+      <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+      <releases> <enabled>true</enabled> </releases>
+      <snapshots> <enabled>false</enabled> </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
 
-  <profiles>
-    <profile><!--https://docs.sonatype.org/pages/viewpage.action?pageId=2949459-->
-      <id>m2e</id>
-      <activation>
-        <property>
-          <name>m2e.version</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.maven.ide.eclipse</groupId>
-            <artifactId>lifecycle-mapping</artifactId>
-            <version>0.9.9-SNAPSHOT</version>
-            <configuration>
-              <mappingId>customizable</mappingId>
-              <configurators>
-                <configurator id='org.maven.ide.eclipse.configuration.flex.configurator' />
-              </configurators>
-              <mojoExecutions>
-                <mojoExecution>org.apache.maven.plugins:maven-resources-plugin::</mojoExecution>
-              </mojoExecutions>
-            </configuration>
-          </plugin>
-        </plugins>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-resources-plugin</artifactId>
-              <version>2.4</version>
-            </plugin>
-          </plugins>
-        </pluginManagement>
-      </build>
-    </profile>
-  </profiles>
+  <!--<profiles>
+    <profile>
+        <id>flex-mojos</id>
+            <repositories>
+                <repository>
+                    <id>flex-mojos-repository</id>
+                    <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+                    <releases> <enabled>true</enabled> </releases>
+                    <snapshots> <enabled>false</enabled> </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>local</id>
+                    <url>http://repository.sonatype.org/content/groups/flexgroup/</url>
+                    <releases> <enabled>true</enabled> </releases>
+                    <snapshots> <enabled>false</enabled> </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+  </profiles>-->
 
 </project>

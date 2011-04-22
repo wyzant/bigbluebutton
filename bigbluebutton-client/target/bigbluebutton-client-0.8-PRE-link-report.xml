@@ -38,7 +38,7 @@
       <dep id="mx.core:Container" />
       <dep id="mx.containers:BoxDirection" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/AddUIComponentToMainCanvas.as" mod="1302628811000" size="377" optimizedsize="369">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/AddUIComponentToMainCanvas.as" mod="1303498677000" size="377" optimizedsize="369">
       <def id="org.bigbluebutton.common.events:AddUIComponentToMainCanvas" />
       <pre id="flash.events:Event" />
       <dep id="mx.core:UIComponent" />
@@ -84,7 +84,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModulesProxy.as" mod="1302628811000" size="1166" optimizedsize="1132">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModulesProxy.as" mod="1303498677000" size="1166" optimizedsize="1132">
       <def id="org.bigbluebutton.main.model.modules:ModulesProxy" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.common:LogUtil" />
@@ -93,11 +93,6 @@
       <dep id="org.bigbluebutton.main.model.modules:ModulesDispatcher" />
       <dep id="org.bigbluebutton.main.model.modules:ModuleManager" />
       <dep id="org.bigbluebutton.main.model:ConferenceParameters" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/InjectorSettingsEvent)" mod="1220322113000" size="771" optimizedsize="344">
-      <def id="com.asfusion.mate.events:InjectorSettingsEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/styles/CSSStyleDeclaration)" mod="1259075980582" size="4839" optimizedsize="2834">
       <def id="mx.styles:CSSStyleDeclaration" />
@@ -254,7 +249,7 @@
       <dep id="flash.utils:flash_proxy" />
       <dep id="en_US$rpc_properties" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModuleDescriptor.as" mod="1302628811000" size="2982" optimizedsize="2885">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModuleDescriptor.as" mod="1303498677000" size="2982" optimizedsize="2885">
       <def id="org.bigbluebutton.main.model.modules:ModuleDescriptor" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.common:LogUtil" />
@@ -274,11 +269,6 @@
       <dep id="org.bigbluebutton.main.model:ConferenceParameters" />
       <dep id="org.bigbluebutton.main.model.modules:BigBlueButtonModuleLoader" />
       <dep id="mx.modules:ModuleLoader" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/EventProperties)" mod="1209424867000" size="527" optimizedsize="198">
-      <def id="com.asfusion.mate.events:EventProperties" />
-      <pre id="Object" />
-      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/skins/halo/HaloColors)" mod="1259075985661" size="1470" optimizedsize="887">
       <def id="mx.skins.halo:HaloColors" />
@@ -345,6 +335,11 @@
       <dep id="RegExp" />
       <dep id="mx.resources:ResourceManager" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actionLists/ScopeProperties)" mod="1252541172000" size="988" optimizedsize="490">
+      <def id="com.asfusion.mate.actionLists:ScopeProperties" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/messaging/events/MessageEvent)" mod="1259075949221" size="1274" optimizedsize="629">
       <def id="mx.messaging.events:MessageEvent" />
       <pre id="flash.events:Event" />
@@ -352,7 +347,24 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.messaging.messages:IMessage" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/ConferenceCreatedEvent.as" mod="1302628811000" size="424" optimizedsize="416">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/Cache)" mod="1252541170000" size="4593" optimizedsize="2655">
+      <def id="com.asfusion.mate.core:Cache" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="com.asfusion.mate.core:ISmartObject" />
+      <pre id="flash.utils:Proxy" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="flash.events:Event" />
+      <dep id="ReferenceError" />
+      <dep id="flash.events:EventDispatcher" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
+      <dep id="QName" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.core:Creator" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
+    </script>
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/ConferenceCreatedEvent.as" mod="1303498677000" size="424" optimizedsize="416">
       <def id="org.bigbluebutton.main.model.users.events:ConferenceCreatedEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -390,7 +402,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/OldLocaleWarnWindow.mxml" mod="1302628811000" size="5118" optimizedsize="4908">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/OldLocaleWarnWindow.mxml" mod="1303498677000" size="5118" optimizedsize="4908">
       <def id="org.bigbluebutton.main.views:OldLocaleWarnWindow" />
       <pre id="mx.containers:TitleWindow" />
       <pre id="flash.events:IEventDispatcher" />
@@ -416,12 +428,12 @@
       <dep id="mx.events:FlexEvent" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/RaiseHandEvent.as" mod="1302628811000" size="349" optimizedsize="341">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/RaiseHandEvent.as" mod="1303498677000" size="349" optimizedsize="341">
       <def id="org.bigbluebutton.main.model.users.events:RaiseHandEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_cancel_user.as" mod="1302628811000" size="764" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_cancel_user.as" mod="1303498677000" size="764" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_cancel_user" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -435,7 +447,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.core:IUIComponent" />
     </script>
-    <script name="org/bigbluebutton/common/Images_unlocked.as" mod="1302628811000" size="755" optimizedsize="334">
+    <script name="org/bigbluebutton/common/Images_unlocked.as" mod="1303498677000" size="755" optimizedsize="334">
       <def id="org.bigbluebutton.common:Images_unlocked" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -478,12 +490,6 @@
       <dep id="flash.display:DisplayObject" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/DispatcherEvent)" mod="1220303439000" size="925" optimizedsize="423">
-      <def id="com.asfusion.mate.events:DispatcherEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="AS3" />
-    </script>
     <script name="_ListBaseStyle.as" mod="9223372036854775807" size="767" optimizedsize="717">
       <def id="_ListBaseStyle" />
       <pre id="Object" />
@@ -493,12 +499,7 @@
       <dep id="AS3" />
       <dep id="mx.skins.halo:ListDropIndicator" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/utils/debug/LogTypes)" mod="1209424867000" size="1957" optimizedsize="1259">
-      <def id="com.asfusion.mate.utils.debug:LogTypes" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/maps/ApplicationEventMap.mxml" mod="1302628811000" size="15119" optimizedsize="14518">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/maps/ApplicationEventMap.mxml" mod="1303498677000" size="15119" optimizedsize="14518">
       <def id="org.bigbluebutton.main.maps:ApplicationEventMap" />
       <pre id="com.asfusion.mate.core:EventMap" />
       <pre id="flash.events:IEventDispatcher" />
@@ -539,25 +540,6 @@
       <dep id="Class" />
       <dep id="mx.events:CloseEvent" />
       <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/Creator)" mod="1243620762000" size="3242" optimizedsize="2483">
-      <def id="com.asfusion.mate.core:Creator" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <dep id="com.asfusion.mate.core:IMateManager" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="ArgumentError" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.core:Cache" />
-      <dep id="com.asfusion.mate.core:MateManager" />
-      <dep id="com.asfusion.mate.events:InjectorEvent" />
-      <dep id="com.asfusion.mate.core:SmartArguments" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="TypeError" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.utils.debug:ILoggerProvider" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/messaging/AbstractProducer)" mod="1259075951252" size="6919" optimizedsize="3728">
       <def id="mx.messaging:AbstractProducer" />
@@ -672,7 +654,7 @@
       <dep id="mx.events:ScrollEvent" />
       <dep id="uint" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LogWindow.mxml" mod="1302628811000" size="3173" optimizedsize="3039">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LogWindow.mxml" mod="1303498677000" size="3173" optimizedsize="3039">
       <def id="org.bigbluebutton.main.views:LogWindow" />
       <pre id="flexlib.mdi.containers:MDIWindow" />
       <pre id="flash.events:IEventDispatcher" />
@@ -695,12 +677,12 @@
       <dep id="mx.controls:TextArea" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/BroadcastStartedEvent.as" mod="1302628811000" size="376" optimizedsize="368">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/BroadcastStartedEvent.as" mod="1303498677000" size="376" optimizedsize="368">
       <def id="org.bigbluebutton.main.model.users.events:BroadcastStartedEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/PresenterStatusEvent.as" mod="1302628811000" size="475" optimizedsize="467">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/PresenterStatusEvent.as" mod="1303498677000" size="475" optimizedsize="467">
       <def id="org.bigbluebutton.main.events:PresenterStatusEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -710,7 +692,7 @@
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/PortTestEvent.as" mod="1302628811000" size="539" optimizedsize="531">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/PortTestEvent.as" mod="1303498677000" size="539" optimizedsize="531">
       <def id="org.bigbluebutton.main.events:PortTestEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -731,7 +713,7 @@
       <dep id="flash.text:TextLineMetrics" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/Status.as" mod="1302628811000" size="253" optimizedsize="247">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/Status.as" mod="1303498677000" size="253" optimizedsize="247">
       <def id="org.bigbluebutton.main.model.users:Status" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -760,19 +742,6 @@
       <dep id="AS3" />
       <dep id="flash.utils:Timer" />
       <dep id="flash.events:TimerEvent" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/utils/debug/LogInfo)" mod="1210727631000" size="1032" optimizedsize="539">
-      <def id="com.asfusion.mate.utils.debug:LogInfo" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.utils.debug:ILoggerProvider" />
-      <dep id="Error" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/IScopeReceiver)" mod="1209424867000" size="745" optimizedsize="236">
-      <def id="com.asfusion.mate.core:IScopeReceiver" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/controls/ComboBox)" mod="1259076007427" size="21983" optimizedsize="11562">
       <def id="mx.controls:ComboBox" />
@@ -830,12 +799,6 @@
       <dep id="uint" />
       <dep id="mx.controls.listClasses:ListBase" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/utils/debug/IMateLogger)" mod="1209424867000" size="902" optimizedsize="261">
-      <def id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <pre id="mx.logging:ILogger" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/messaging/channels/NetConnectionChannel)" mod="1259075948408" size="9391" optimizedsize="5572">
       <def id="mx.messaging.channels:NetConnectionChannel" />
       <pre id="mx.messaging:MessageResponder" />
@@ -869,6 +832,13 @@
       <dep id="mx.messaging.messages:MessagePerformanceUtils" />
       <dep id="mx.messaging.messages:ErrorMessage" />
       <dep id="mx.messaging.messages:AsyncMessage" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actions/BaseAction)" mod="1252541166000" size="1256" optimizedsize="578">
+      <def id="com.asfusion.mate.actions:BaseAction" />
+      <pre id="com.asfusion.mate.actions:AbstractAction" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="com.asfusion.mate.core:IProperty" />
+      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/events/ChildExistenceChangedEvent)" mod="1259076013740" size="1099" optimizedsize="587">
       <def id="mx.events:ChildExistenceChangedEvent" />
@@ -940,7 +910,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="flash.filters:DropShadowFilter" />
     </script>
-    <script name="org/bigbluebutton/common/Images_user_orange.as" mod="1302628811000" size="774" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_user_orange.as" mod="1303498677000" size="774" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_user_orange" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -965,7 +935,7 @@
       <dep id="AS3" />
       <dep id="flash.utils:IDataOutput" />
     </script>
-    <script name="_org_bigbluebutton_main_views_MainApplicationShellWatcherSetupUtil.as" mod="1303335793538" size="2272" optimizedsize="2135">
+    <script name="_org_bigbluebutton_main_views_MainApplicationShellWatcherSetupUtil.as" mod="1303504484622" size="2272" optimizedsize="2135">
       <def id="_org_bigbluebutton_main_views_MainApplicationShellWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -976,7 +946,7 @@
       <dep id="AS3" />
       <dep id="org.bigbluebutton.util.i18n:ResourceUtil" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/BigBlueButton.mxml" mod="1303254487000" size="1914" optimizedsize="1691">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/BigBlueButton.mxml" mod="1303498677000" size="1914" optimizedsize="1691">
       <def id="BigBlueButton" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="mx.core:Application" />
@@ -1055,14 +1025,6 @@
       <dep id="mx.core:Container" />
       <dep id="mx.resources:ResourceManager" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/Listener)" mod="1220502016000" size="3322" optimizedsize="1471">
-      <def id="com.asfusion.mate.events:Listener" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="Object" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.core:MateManager" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/rpc/events/AbstractEvent)" mod="1259075945455" size="1085" optimizedsize="526">
       <def id="mx.rpc.events:AbstractEvent" />
       <pre id="mx.messaging.events:MessageEvent" />
@@ -1114,6 +1076,19 @@
       <dep id="flash.geom:Point" />
       <dep id="flexlib.mdi.managers:MDIManager" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/MethodCaller)" mod="1252541170000" size="2244" optimizedsize="1622">
+      <def id="com.asfusion.mate.core:MethodCaller" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <dep id="TypeError" />
+      <dep id="ArgumentError" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
+      <dep id="com.asfusion.mate.core:SmartArguments" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/controls/LinkButton)" mod="1259076007240" size="2916" optimizedsize="1587">
       <def id="mx.controls:LinkButton" />
       <pre id="mx.controls:Button" />
@@ -1126,7 +1101,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="uint" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/CloseWindowEvent.as" mod="1302628811000" size="373" optimizedsize="365">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/CloseWindowEvent.as" mod="1303498677000" size="373" optimizedsize="365">
       <def id="org.bigbluebutton.common.events:CloseWindowEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -1147,7 +1122,7 @@
       <dep id="mx.resources:ResourceManager" />
       <dep id="Error" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/MainApplicationShell.mxml" mod="1302990906000" size="13872" optimizedsize="13350">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/MainApplicationShell.mxml" mod="1303498677000" size="13872" optimizedsize="13350">
       <def id="org.bigbluebutton.main.views:MainApplicationShell" />
       <pre id="mx.containers:VBox" />
       <pre id="flash.events:IEventDispatcher" />
@@ -1213,17 +1188,6 @@
       <dep id="mx.messaging.messages:IMessage" />
       <dep id="mx.utils:RPCUIDUtil" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actions/builders/ObjectBuilder)" mod="1235093612000" size="2697" optimizedsize="1135">
-      <def id="com.asfusion.mate.actions.builders:ObjectBuilder" />
-      <pre id="com.asfusion.mate.actions:IAction" />
-      <pre id="com.asfusion.mate.actions:BaseAction" />
-      <pre id="com.asfusion.mate.actions.builders:IBuilder" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.core:Cache" />
-      <dep id="com.asfusion.mate.core:Creator" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/collections/errors/SortError)" mod="1259076019225" size="605" optimizedsize="285">
       <def id="mx.collections.errors:SortError" />
       <pre id="Error" />
@@ -1254,6 +1218,12 @@
       <dep id="flash.display:Graphics" />
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/utils/debug/IMateLogger)" mod="1252541167000" size="896" optimizedsize="261">
+      <def id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <pre id="mx.logging:ILogger" />
+      <pre id="Object" />
+      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/core/UIComponentCachePolicy)" mod="1259075989442" size="703" optimizedsize="337">
       <def id="mx.core:UIComponentCachePolicy" />
@@ -1289,7 +1259,7 @@
       <dep id="mx.skins.halo:HaloFocusRect" />
       <dep id="mx.skins.halo:HaloBorder" />
     </script>
-    <script name="org/bigbluebutton/common/Images_participant_mute.as" mod="1302628811000" size="799" optimizedsize="350">
+    <script name="org/bigbluebutton/common/Images_participant_mute.as" mod="1303498677000" size="799" optimizedsize="350">
       <def id="org.bigbluebutton.common:Images_participant_mute" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -1313,7 +1283,7 @@
       <dep id="mx.core:ISWFBridgeProvider" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/vo/ConfigBuilder.as" mod="1302628811000" size="893" optimizedsize="887">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/vo/ConfigBuilder.as" mod="1303498677000" size="893" optimizedsize="887">
       <def id="org.bigbluebutton.core.vo:ConfigBuilder" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -1368,20 +1338,9 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/events/CloseAllWindowsEvent.as" mod="1302628811000" size="330" optimizedsize="322">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/events/CloseAllWindowsEvent.as" mod="1303498677000" size="330" optimizedsize="322">
       <def id="org.bigbluebutton.modules.videoconf.events:CloseAllWindowsEvent" />
       <pre id="flash.events:Event" />
-      <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actionLists/IScope)" mod="1222148357000" size="2621" optimizedsize="622">
-      <def id="com.asfusion.mate.actionLists:IScope" />
-      <pre id="com.asfusion.mate.utils.debug:ILoggerProvider" />
-      <pre id="Object" />
-      <dep id="flash.events:Event" />
-      <dep id="com.asfusion.mate.core:IMateManager" />
-      <dep id="com.asfusion.mate.core:IEventMap" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="com.asfusion.mate.actionLists:IActionList" />
       <dep id="AS3" />
     </script>
     <script name="_CursorManagerStyle.as" mod="9223372036854775807" size="1139" optimizedsize="734">
@@ -1404,7 +1363,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.utils:GraphicsUtil" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/PortTest.as" mod="1302628811000" size="2296" optimizedsize="2196">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/PortTest.as" mod="1303498677000" size="2296" optimizedsize="2196">
       <def id="org.bigbluebutton.main.model:PortTest" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="Object" />
@@ -1436,11 +1395,6 @@
       <dep id="mx.core:ContainerCreationPolicy" />
       <dep id="mx.core:IDeferredInstance" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/ActionListEvent)" mod="1209532754000" size="776" optimizedsize="358">
-      <def id="com.asfusion.mate.events:ActionListEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/core/IContainer)" mod="1259075989551" size="5902" optimizedsize="1476">
       <def id="mx.core:IContainer" />
       <pre id="mx.core:IUIComponent" />
@@ -1457,7 +1411,7 @@
       <dep id="flash.display:Sprite" />
       <dep id="mx.core:IFlexDisplayObject" />
     </script>
-    <script name="_org_bigbluebutton_main_views_LoggedOutWindowWatcherSetupUtil.as" mod="1303335793317" size="974" optimizedsize="863">
+    <script name="_org_bigbluebutton_main_views_LoggedOutWindowWatcherSetupUtil.as" mod="1303504484416" size="974" optimizedsize="863">
       <def id="_org_bigbluebutton_main_views_LoggedOutWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -1466,17 +1420,17 @@
       <dep id="AS3" />
       <dep id="org.bigbluebutton.main.views:LoggedOutWindow" />
     </script>
-    <script name="org/bigbluebutton/common/Images_playIcon.as" mod="1302628811000" size="785" optimizedsize="334">
+    <script name="org/bigbluebutton/common/Images_playIcon.as" mod="1303498677000" size="785" optimizedsize="334">
       <def id="org.bigbluebutton.common:Images_playIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IBbbToolbarComponent.as" mod="1302628811000" size="210" optimizedsize="210">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IBbbToolbarComponent.as" mod="1303498677000" size="210" optimizedsize="210">
       <def id="org.bigbluebutton.common:IBbbToolbarComponent" />
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="_BigBlueButton_FlexInit-generated.as" mod="1303335793733" size="3643" optimizedsize="3436">
+    <script name="_BigBlueButton_FlexInit-generated.as" mod="1303504484801" size="3643" optimizedsize="3436">
       <def id="_BigBlueButton_FlexInit" />
       <pre id="Object" />
       <dep id="mx.styles:StyleManager" />
@@ -1550,7 +1504,7 @@
       <dep id="AS3" />
       <dep id="mx.messaging:Channel" />
     </script>
-    <script name="org/bigbluebutton/common/Images_syncingIcon.as" mod="1302628811000" size="804" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_syncingIcon.as" mod="1303498677000" size="804" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_syncingIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -1571,14 +1525,7 @@
       <dep id="mx.containers.utilityClasses:ConstraintRow" />
       <dep id="mx.containers.utilityClasses:CanvasLayout" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/IEventMap)" mod="1222148357000" size="979" optimizedsize="318">
-      <def id="com.asfusion.mate.core:IEventMap" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="Object" />
-      <dep id="AS3" />
-      <dep id="flash.utils:Dictionary" />
-    </script>
-    <script name="org/bigbluebutton/common/Images_forward.as" mod="1302628811000" size="763" optimizedsize="332">
+    <script name="org/bigbluebutton/common/Images_forward.as" mod="1303498677000" size="763" optimizedsize="332">
       <def id="org.bigbluebutton.common:Images_forward" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -1590,18 +1537,6 @@
       <dep id="mx.styles:StyleManager" />
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/GlobalDispatcher)" mod="1243822529000" size="2449" optimizedsize="1229">
-      <def id="com.asfusion.mate.core:GlobalDispatcher" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.utils:SystemManagerFinder" />
-      <dep id="flash.events:Event" />
-      <dep id="mx.core:Application" />
-      <dep id="AS3" />
-      <dep id="flash.events:EventPhase" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="flash.display:Sprite" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/controls/listClasses/ListRowInfo)" mod="1259076006677" size="820" optimizedsize="392">
       <def id="mx.controls.listClasses:ListRowInfo" />
@@ -1634,7 +1569,7 @@
       <dep id="mx.utils:ColorUtil" />
       <dep id="mx.skins.halo:HaloColors" />
     </script>
-    <script name="_org_bigbluebutton_common_APIEventMapWatcherSetupUtil.as" mod="1303335793258" size="958" optimizedsize="855">
+    <script name="_org_bigbluebutton_common_APIEventMapWatcherSetupUtil.as" mod="1303504484342" size="958" optimizedsize="855">
       <def id="_org_bigbluebutton_common_APIEventMapWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -1706,9 +1641,9 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/MateLogEvent)" mod="1209424867000" size="680" optimizedsize="311">
-      <def id="com.asfusion.mate.events:MateLogEvent" />
-      <pre id="mx.logging:LogEvent" />
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/utils/debug/LogTypes)" mod="1252541167000" size="1951" optimizedsize="1259">
+      <def id="com.asfusion.mate.utils.debug:LogTypes" />
+      <pre id="Object" />
       <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/effects/Tween)" mod="1259075971457" size="5560" optimizedsize="2933">
@@ -1775,7 +1710,7 @@
       <dep id="mx.managers:IHistoryManagerClient" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_sound.as" mod="1302628811000" size="744" optimizedsize="328">
+    <script name="org/bigbluebutton/common/Images_sound.as" mod="1303498677000" size="744" optimizedsize="328">
       <def id="org.bigbluebutton.common:Images_sound" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -1816,6 +1751,11 @@
       <dep id="mx.resources:ResourceManager" />
       <dep id="Error" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/EventProperties)" mod="1252541169000" size="521" optimizedsize="198">
+      <def id="com.asfusion.mate.events:EventProperties" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/collections/ArrayList)" mod="1259076019616" size="6860" optimizedsize="3496">
       <def id="mx.collections:ArrayList" />
       <pre id="mx.core:IPropertyChangeNotifier" />
@@ -1855,6 +1795,12 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/IScopeReceiver)" mod="1252541170000" size="739" optimizedsize="236">
+      <def id="com.asfusion.mate.core:IScopeReceiver" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/effects/Resize)" mod="1259075972128" size="1598" optimizedsize="909">
       <def id="mx.effects:Resize" />
       <pre id="mx.effects:TweenEffect" />
@@ -1879,6 +1825,19 @@
       <dep id="mx.containers.utilityClasses:ConstraintRow" />
       <dep id="mx.containers:BoxDirection" />
       <dep id="mx.containers.utilityClasses:CanvasLayout" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/EventMap)" mod="1252541170000" size="3283" optimizedsize="1501">
+      <def id="com.asfusion.mate.core:EventMap" />
+      <pre id="com.asfusion.mate.core:IEventMap" />
+      <pre id="flash.events:EventDispatcher" />
+      <pre id="mx.core:IMXMLObject" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.actionLists:ScopeProperties" />
+      <dep id="com.asfusion.mate.core:Cache" />
+      <dep id="com.asfusion.mate.core:MateManager" />
+      <dep id="com.asfusion.mate.core:SmartObject" />
+      <dep id="flash.utils:Dictionary" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/collections/IViewCursor)" mod="1259076019569" size="1890" optimizedsize="517">
       <def id="mx.collections:IViewCursor" />
@@ -1919,6 +1878,13 @@
       <dep id="mx.events:EffectEvent" />
       <dep id="mx.core:mx_internal" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/SmartArguments)" mod="1252541170000" size="1082" optimizedsize="580">
+      <def id="com.asfusion.mate.core:SmartArguments" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="com.asfusion.mate.core:ISmartObject" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/flexlib/flexlib-bbb/1.0/flexlib-bbb-1.0.swc(flexlib/mdi/events/MDIManagerEvent)" mod="1273436065376" size="1945" optimizedsize="1180">
       <def id="flexlib.mdi.events:MDIManagerEvent" />
       <pre id="flash.events:Event" />
@@ -1935,7 +1901,7 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/BigBlueButtonPreloader.as" mod="1302628811000" size="770" optimizedsize="751">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/BigBlueButtonPreloader.as" mod="1303498677000" size="770" optimizedsize="751">
       <def id="org.bigbluebutton.main.model:BigBlueButtonPreloader" />
       <pre id="mx.preloaders:DownloadProgressBar" />
       <dep id="AS3" />
@@ -1993,27 +1959,6 @@
       <dep id="mx.core:mx_internal" />
       <dep id="flash.utils:Dictionary" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/MateManager)" mod="1242275778000" size="4893" optimizedsize="2434">
-      <def id="com.asfusion.mate.core:MateManager" />
-      <pre id="com.asfusion.mate.core:IMateManager" />
-      <pre id="flash.events:EventDispatcher" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <dep id="flash.events:Event" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="com.asfusion.mate.events:InjectorSettingsEvent" />
-      <dep id="com.asfusion.mate.core:GlobalDispatcher" />
-      <dep id="com.asfusion.mate.core:ListenerProxy" />
-      <dep id="com.asfusion.mate.utils:SystemManagerFinder" />
-      <dep id="mx.core:Application" />
-      <dep id="mx.managers:ISystemManager" />
-      <dep id="mx.logging:ILoggingTarget" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.utils.debug:Logger" />
-      <dep id="com.asfusion.mate.events:DispatcherEvent" />
-      <dep id="mx.events:FlexEvent" />
-      <dep id="flash.utils:Dictionary" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/binding/EvalBindingResponder)" mod="1259076017569" size="945" optimizedsize="435">
       <def id="mx.binding:EvalBindingResponder" />
       <pre id="mx.rpc:IResponder" />
@@ -2029,26 +1974,6 @@
       <dep id="mx.styles:StyleManager" />
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/InjectorEvent)" mod="1235093612000" size="981" optimizedsize="533">
-      <def id="com.asfusion.mate.events:InjectorEvent" />
-      <pre id="flash.events:Event" />
-      <dep id="flash.utils:getQualifiedClassName" />
-      <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actionLists/Scope)" mod="1222148357000" size="3678" optimizedsize="1593">
-      <def id="com.asfusion.mate.actionLists:Scope" />
-      <pre id="com.asfusion.mate.actionLists:IScope" />
-      <pre id="Object" />
-      <dep id="flash.events:Event" />
-      <dep id="com.asfusion.mate.core:IMateManager" />
-      <dep id="com.asfusion.mate.core:IEventMap" />
-      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="com.asfusion.mate.actionLists:IActionList" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.core:MateManager" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/core/EmbeddedFont)" mod="1259075989645" size="885" optimizedsize="424">
       <def id="mx.core:EmbeddedFont" />
@@ -2066,7 +1991,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="org/bigbluebutton/common/Images_circle_icon.as" mod="1302628811000" size="764" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_circle_icon.as" mod="1303498677000" size="764" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_circle_icon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2087,7 +2012,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="flash.geom:Point" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/BBBEvent.as" mod="1302628811000" size="905" optimizedsize="897">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/BBBEvent.as" mod="1303498677000" size="905" optimizedsize="897">
       <def id="org.bigbluebutton.main.events:BBBEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -2160,7 +2085,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="org/bigbluebutton/common/Images_bbb_logo.as" mod="1302628811000" size="757" optimizedsize="334">
+    <script name="org/bigbluebutton/common/Images_bbb_logo.as" mod="1303498677000" size="757" optimizedsize="334">
       <def id="org.bigbluebutton.common:Images_bbb_logo" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2191,33 +2116,6 @@
       <dep id="Error" />
       <dep id="mx.core:ApplicationGlobals" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/events/Dispatcher)" mod="1235093612000" size="5433" optimizedsize="2534">
-      <def id="com.asfusion.mate.events:Dispatcher" />
-      <pre id="com.asfusion.mate.utils.debug:ILoggerProvider" />
-      <pre id="mx.core:IMXMLObject" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <dep id="flash.events:Event" />
-      <dep id="com.asfusion.mate.core:IMateManager" />
-      <dep id="mx.events:DynamicEvent" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="com.asfusion.mate.utils.debug:DebuggerUtil" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.core:Creator" />
-      <dep id="com.asfusion.mate.core:MateManager" />
-      <dep id="com.asfusion.mate.events:EventProperties" />
-      <dep id="mx.utils:UIDUtil" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.responses:IResponseHandler" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/ISmartObject)" mod="1209424867000" size="652" optimizedsize="244">
-      <def id="com.asfusion.mate.core:ISmartObject" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/utils/XMLNotifier)" mod="1259075999583" size="2126" optimizedsize="1148">
       <def id="mx.utils:XMLNotifier" />
       <pre id="Object" />
@@ -2236,7 +2134,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.core:UIComponentGlobals" />
     </script>
-    <script name="org/bigbluebutton/common/Images_mag_reset.as" mod="1302628811000" size="775" optimizedsize="336">
+    <script name="org/bigbluebutton/common/Images_mag_reset.as" mod="1303498677000" size="775" optimizedsize="336">
       <def id="org.bigbluebutton.common:Images_mag_reset" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2270,17 +2168,21 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actions/InlineInvoker)" mod="1213297824000" size="1972" optimizedsize="1186">
-      <def id="com.asfusion.mate.actions:InlineInvoker" />
-      <pre id="com.asfusion.mate.actions:AbstractAction" />
-      <pre id="com.asfusion.mate.actions:IAction" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="TypeError" />
-      <dep id="ArgumentError" />
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/MateManager)" mod="1252541170000" size="3703" optimizedsize="1833">
+      <def id="com.asfusion.mate.core:MateManager" />
+      <pre id="com.asfusion.mate.core:IMateManager" />
+      <pre id="flash.events:EventDispatcher" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="mx.logging:ILoggingTarget" />
       <dep id="AS3" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
-      <dep id="com.asfusion.mate.core:SmartArguments" />
+      <dep id="com.asfusion.mate.events:InjectorSettingsEvent" />
+      <dep id="com.asfusion.mate.core:GlobalDispatcher" />
+      <dep id="com.asfusion.mate.utils.debug:Logger" />
+      <dep id="com.asfusion.mate.events:DispatcherEvent" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="com.asfusion.mate.core:ListenerProxy" />
     </script>
     <script name="/home/firstuser/.m2/repository/flexlib/flexlib-bbb/1.0/flexlib-bbb-1.0.swc(flexlib/mdi/containers/MDIWindow_DEFAULT_RESIZE_CURSOR_HORIZONTAL)" mod="1273436065367" size="1029" optimizedsize="384">
       <def id="flexlib.mdi.containers:MDIWindow_DEFAULT_RESIZE_CURSOR_HORIZONTAL" />
@@ -2314,7 +2216,7 @@
       <dep id="flexlib.mdi.containers:MDIWindow" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/BBBUser.as" mod="1302628811000" size="2836" optimizedsize="2732">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/BBBUser.as" mod="1303498677000" size="2836" optimizedsize="2732">
       <def id="org.bigbluebutton.main.model.users:BBBUser" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="Object" />
@@ -2343,14 +2245,6 @@
       <dep id="mx.rpc:AsyncToken" />
       <dep id="mx.messaging.messages:IMessage" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actionLists/IActionList)" mod="1220303439000" size="2492" optimizedsize="606">
-      <def id="com.asfusion.mate.actionLists:IActionList" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="mx.core:IMXMLObject" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/binding/IBindingClient)" mod="1259076017537" size="378" optimizedsize="105">
       <def id="mx.binding:IBindingClient" />
       <pre id="Object" />
@@ -2376,24 +2270,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/Cache)" mod="1235093612000" size="4599" optimizedsize="2655">
-      <def id="com.asfusion.mate.core:Cache" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="com.asfusion.mate.core:ISmartObject" />
-      <pre id="flash.utils:Proxy" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="flash.events:Event" />
-      <dep id="ReferenceError" />
-      <dep id="flash.events:EventDispatcher" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-      <dep id="QName" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.core:Creator" />
-      <dep id="flash.utils:Dictionary" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
-    </script>
-    <script name="org/bigbluebutton/common/Images_webcam.as" mod="1302628811000" size="749" optimizedsize="330">
+    <script name="org/bigbluebutton/common/Images_webcam.as" mod="1303498677000" size="749" optimizedsize="330">
       <def id="org.bigbluebutton.common:Images_webcam" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2474,7 +2351,7 @@
       <dep id="mx.messaging.messages:ErrorMessage" />
       <dep id="mx.messaging.channels:PollingChannel" />
     </script>
-    <script name="_org_bigbluebutton_main_views_LanguageSelectorWatcherSetupUtil.as" mod="1303335793219" size="979" optimizedsize="867">
+    <script name="_org_bigbluebutton_main_views_LanguageSelectorWatcherSetupUtil.as" mod="1303504484305" size="979" optimizedsize="867">
       <def id="_org_bigbluebutton_main_views_LanguageSelectorWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -2496,6 +2373,12 @@
       <dep id="mx.core:mx_internal" />
       <dep id="Error" />
       <dep id="mx.utils:NameUtil" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/InjectorEvent)" mod="1252541169000" size="975" optimizedsize="533">
+      <def id="com.asfusion.mate.events:InjectorEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="flash.utils:getQualifiedClassName" />
+      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/preloaders/Preloader)" mod="1259076000521" size="5997" optimizedsize="3588">
       <def id="mx.preloaders:Preloader" />
@@ -2575,12 +2458,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actionLists/ScopeProperties)" mod="1209424867000" size="994" optimizedsize="490">
-      <def id="com.asfusion.mate.actionLists:ScopeProperties" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="org/bigbluebutton/common/Images_user_gray.as" mod="1302628811000" size="764" optimizedsize="336">
+    <script name="org/bigbluebutton/common/Images_user_gray.as" mod="1303498677000" size="764" optimizedsize="336">
       <def id="org.bigbluebutton.common:Images_user_gray" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2607,7 +2485,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.containers:BoxDirection" />
     </script>
-    <script name="org/bigbluebutton/common/Images_presenter.as" mod="1302628811000" size="764" optimizedsize="336">
+    <script name="org/bigbluebutton/common/Images_presenter.as" mod="1303498677000" size="764" optimizedsize="336">
       <def id="org.bigbluebutton.common:Images_presenter" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2620,7 +2498,7 @@
       <dep id="flash.geom:Rectangle" />
       <dep id="Math" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/OpenWindowEvent.as" mod="1302628811000" size="370" optimizedsize="362">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/OpenWindowEvent.as" mod="1303498677000" size="370" optimizedsize="362">
       <def id="org.bigbluebutton.common.events:OpenWindowEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -2705,7 +2583,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.events:ScrollEvent" />
     </script>
-    <script name="org/bigbluebutton/common/Images_control_play.as" mod="1302628811000" size="789" optimizedsize="342">
+    <script name="org/bigbluebutton/common/Images_control_play.as" mod="1303498677000" size="789" optimizedsize="342">
       <def id="org.bigbluebutton.common:Images_control_play" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2726,7 +2604,7 @@
       <dep id="flash.xml:XMLNode" />
       <dep id="flash.xml:XMLDocument" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/MainToolbar.mxml" mod="1302628811000" size="7340" optimizedsize="7062">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/MainToolbar.mxml" mod="1303498677000" size="7340" optimizedsize="7062">
       <def id="org.bigbluebutton.main.views:MainToolbar" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="mx.binding:IBindingClient" />
@@ -2761,18 +2639,6 @@
       <dep id="flash.events:MouseEvent" />
       <dep id="_org_bigbluebutton_main_views_MainToolbarWatcherSetupUtil" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/utils/debug/Logger)" mod="1209424867000" size="3209" optimizedsize="1543">
-      <def id="com.asfusion.mate.utils.debug:Logger" />
-      <pre id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <pre id="flash.events:EventDispatcher" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="mx.logging:LogEvent" />
-      <dep id="AS3" />
-      <dep id="trace" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="mx.logging:LogEventLevel" />
-      <dep id="com.asfusion.mate.events:MateLogEvent" />
-    </script>
     <script name="_LinkButtonStyle.as" mod="9223372036854775807" size="790" optimizedsize="738">
       <def id="_LinkButtonStyle" />
       <pre id="Object" />
@@ -2790,6 +2656,13 @@
       <dep id="mx.core:UIComponentDescriptor" />
       <dep id="mx.core:IFlexDisplayObject" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/IEventMap)" mod="1252541170000" size="973" optimizedsize="318">
+      <def id="com.asfusion.mate.core:IEventMap" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="flash.utils:Dictionary" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/messaging/Producer)" mod="1259075951190" size="1924" optimizedsize="1184">
       <def id="mx.messaging:Producer" />
       <pre id="mx.messaging:AbstractProducer" />
@@ -2800,13 +2673,6 @@
       <dep id="mx.events:PropertyChangeEvent" />
       <dep id="mx.messaging.messages:AsyncMessage" />
       <dep id="mx.messaging.messages:IMessage" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/responses/IResponseHandler)" mod="1209424867000" size="943" optimizedsize="339">
-      <def id="com.asfusion.mate.responses:IResponseHandler" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.events:Dispatcher" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/managers/DragManager)" mod="1259075999302" size="2373" optimizedsize="1112">
       <def id="mx.managers:DragManager" />
@@ -2847,7 +2713,7 @@
       <dep id="mx.events:PropertyChangeEvent" />
       <dep id="mx.messaging.channels:PollingChannel" />
     </script>
-    <script name="org/bigbluebutton/common/Images_eject_user.as" mod="1302628811000" size="763" optimizedsize="338">
+    <script name="org/bigbluebutton/common/Images_eject_user.as" mod="1303498677000" size="763" optimizedsize="338">
       <def id="org.bigbluebutton.common:Images_eject_user" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -2872,6 +2738,22 @@
       <dep id="mx.core:mx_internal" />
       <dep id="flash.system:ApplicationDomain" />
       <dep id="Error" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/SmartObject)" mod="1252541170000" size="3603" optimizedsize="2001">
+      <def id="com.asfusion.mate.core:SmartObject" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="com.asfusion.mate.core:ISmartObject" />
+      <pre id="flash.utils:Proxy" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="flash.events:Event" />
+      <dep id="ReferenceError" />
+      <dep id="flash.events:EventDispatcher" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
+      <dep id="QName" />
+      <dep id="com.asfusion.mate.actionLists:ScopeProperties" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/utils/RPCObjectUtil)" mod="1259075940689" size="7130" optimizedsize="5264">
       <def id="mx.utils:RPCObjectUtil" />
@@ -2926,13 +2808,6 @@
       <dep id="mx.events:CollectionEvent" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/SmartArguments)" mod="1235177742000" size="1088" optimizedsize="580">
-      <def id="com.asfusion.mate.core:SmartArguments" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="com.asfusion.mate.core:ISmartObject" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/effects/IEffect)" mod="1259075972144" size="3780" optimizedsize="1013">
       <def id="mx.effects:IEffect" />
       <pre id="mx.effects:IAbstractEffect" />
@@ -2959,7 +2834,7 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/MainCanvas.mxml" mod="1303237881000" size="4134" optimizedsize="3968">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/MainCanvas.mxml" mod="1303498677000" size="4134" optimizedsize="3968">
       <def id="org.bigbluebutton.main.views:MainCanvas" />
       <pre id="flexlib.mdi.containers:MDICanvas" />
       <dep id="flexlib.mdi.containers:MDIWindow" />
@@ -2971,7 +2846,7 @@
       <dep id="org.bigbluebutton.common:IBbbModuleWindow" />
       <dep id="org.bigbluebutton.modules.videoconf.views:PublishWindow" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/SuccessfulLoginEvent.as" mod="1302628811000" size="403" optimizedsize="395">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/SuccessfulLoginEvent.as" mod="1303498677000" size="403" optimizedsize="395">
       <def id="org.bigbluebutton.main.events:SuccessfulLoginEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -3013,10 +2888,35 @@
       <dep id="en_US$rpc_properties" />
       <dep id="Error" />
     </script>
-    <script name="org/bigbluebutton/common/Images_sharednotes.as" mod="1302628811000" size="794" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_sharednotes.as" mod="1303498677000" size="794" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_sharednotes" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actions/builders/ObjectBuilder)" mod="1252541165000" size="2691" optimizedsize="1135">
+      <def id="com.asfusion.mate.actions.builders:ObjectBuilder" />
+      <pre id="com.asfusion.mate.actions:IAction" />
+      <pre id="com.asfusion.mate.actions:BaseAction" />
+      <pre id="com.asfusion.mate.actions.builders:IBuilder" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.core:Cache" />
+      <dep id="com.asfusion.mate.core:Creator" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/ListenerProxy)" mod="1252541170000" size="2685" optimizedsize="1443">
+      <def id="com.asfusion.mate.core:ListenerProxy" />
+      <pre id="Object" />
+      <dep id="flash.events:Event" />
+      <dep id="flash.utils:getQualifiedClassName" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.events:InjectorSettingsEvent" />
+      <dep id="com.asfusion.mate.core:GlobalDispatcher" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="com.asfusion.mate.events:InjectorEvent" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="flash.display:Sprite" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/effects/Fade)" mod="1259075971628" size="1208" optimizedsize="648">
       <def id="mx.effects:Fade" />
@@ -3026,7 +2926,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/vo/Config.as" mod="1302628811000" size="963" optimizedsize="959">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/vo/Config.as" mod="1303498677000" size="963" optimizedsize="959">
       <def id="org.bigbluebutton.core.vo:Config" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.core.vo:ConfigBuilder" />
@@ -3060,6 +2960,12 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
       <dep id="mx.utils:ColorUtil" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/utils/debug/ILoggerProvider)" mod="1252541167000" size="1100" optimizedsize="306">
+      <def id="com.asfusion.mate.utils.debug:ILoggerProvider" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/controls/ProgressBar)" mod="1259076007365" size="17481" optimizedsize="8816">
       <def id="mx.controls:ProgressBar" />
@@ -3102,12 +3008,6 @@
       <dep id="flash.text:TextField" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/utils/debug/ILoggerProvider)" mod="1209424867000" size="1106" optimizedsize="306">
-      <def id="com.asfusion.mate.utils.debug:ILoggerProvider" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/messaging/config/ConfigMap)" mod="1259075949283" size="2285" optimizedsize="1019">
       <def id="mx.messaging.config:ConfigMap" />
       <pre id="flash.utils:Proxy" />
@@ -3115,14 +3015,7 @@
       <dep id="flash.utils:flash_proxy" />
       <dep id="mx.utils:object_proxy" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actions/BaseAction)" mod="1234925915000" size="1262" optimizedsize="578">
-      <def id="com.asfusion.mate.actions:BaseAction" />
-      <pre id="com.asfusion.mate.actions:AbstractAction" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="com.asfusion.mate.core:IProperty" />
-      <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IUserListener.as" mod="1302628811000" size="282" optimizedsize="282">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IUserListener.as" mod="1303498677000" size="282" optimizedsize="282">
       <def id="org.bigbluebutton.common:IUserListener" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.main.model:User" />
@@ -3178,7 +3071,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="Error" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/JoinService.as" mod="1302628811000" size="1275" optimizedsize="1236">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/JoinService.as" mod="1303498677000" size="1275" optimizedsize="1236">
       <def id="org.bigbluebutton.main.model.users:JoinService" />
       <pre id="Object" />
       <dep id="flash.net:URLRequestMethod" />
@@ -3200,7 +3093,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.events:ScrollEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/User.as" mod="1302628811000" size="322" optimizedsize="316">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/User.as" mod="1303498677000" size="322" optimizedsize="316">
       <def id="org.bigbluebutton.main.model:User" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -3211,7 +3104,7 @@
       <dep id="AS3" />
       <dep id="mx.messaging.messages:ErrorMessage" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/ConnectionLostWindow.mxml" mod="1302628811000" size="3594" optimizedsize="3475">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/ConnectionLostWindow.mxml" mod="1303498677000" size="3594" optimizedsize="3475">
       <def id="org.bigbluebutton.main.views:ConnectionLostWindow" />
       <pre id="mx.containers:TitleWindow" />
       <pre id="mx.binding:IBindingClient" />
@@ -3232,6 +3125,12 @@
       <dep id="mx.binding:Binding" />
       <dep id="flash.utils:getDefinitionByName" />
       <dep id="_org_bigbluebutton_main_views_ConnectionLostWindowWatcherSetupUtil" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actions/IAction)" mod="1252541165000" size="598" optimizedsize="222">
+      <def id="com.asfusion.mate.actions:IAction" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/containers/ApplicationControlBar)" mod="1259076015756" size="2504" optimizedsize="1082">
       <def id="mx.containers:ApplicationControlBar" />
@@ -3332,7 +3231,7 @@
       <dep id="mx.managers:PopUpManagerChildList" />
       <dep id="mx.core:ApplicationGlobals" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/BigBlueButtonModuleLoader.as" mod="1302628811000" size="550" optimizedsize="522">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/BigBlueButtonModuleLoader.as" mod="1303498677000" size="550" optimizedsize="522">
       <def id="org.bigbluebutton.main.model.modules:BigBlueButtonModuleLoader" />
       <pre id="mx.modules:ModuleLoader" />
       <dep id="AS3" />
@@ -3354,12 +3253,12 @@
       <dep id="mx.core:IContainer" />
       <dep id="XML" />
     </script>
-    <script name="org/bigbluebutton/common/Images_bulletGo.as" mod="1302628811000" size="762" optimizedsize="334">
+    <script name="org/bigbluebutton/common/Images_bulletGo.as" mod="1303498677000" size="762" optimizedsize="334">
       <def id="org.bigbluebutton.common:Images_bulletGo" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/StreamStartedEvent.as" mod="1302628811000" size="388" optimizedsize="378">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/StreamStartedEvent.as" mod="1303498677000" size="388" optimizedsize="378">
       <def id="org.bigbluebutton.main.model.users.events:StreamStartedEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -3372,7 +3271,7 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/ParticipantJoinEvent.as" mod="1303140995000" size="399" optimizedsize="391">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/ParticipantJoinEvent.as" mod="1303498677000" size="399" optimizedsize="391">
       <def id="org.bigbluebutton.main.events:ParticipantJoinEvent" />
       <pre id="flash.events:Event" />
       <dep id="org.bigbluebutton.main.model:User" />
@@ -3382,6 +3281,18 @@
       <def id="mx.core:IIMESupport" />
       <pre id="Object" />
       <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/utils/debug/Logger)" mod="1252541167000" size="3203" optimizedsize="1543">
+      <def id="com.asfusion.mate.utils.debug:Logger" />
+      <pre id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <pre id="flash.events:EventDispatcher" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="mx.logging:LogEvent" />
+      <dep id="AS3" />
+      <dep id="trace" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="mx.logging:LogEventLevel" />
+      <dep id="com.asfusion.mate.events:MateLogEvent" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/managers/ILayoutManagerClient)" mod="1259075998943" size="1848" optimizedsize="452">
       <def id="mx.managers:ILayoutManagerClient" />
@@ -3485,7 +3396,15 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_sound_none.as" mod="1302628811000" size="769" optimizedsize="338">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/Listener)" mod="1252541169000" size="3316" optimizedsize="1471">
+      <def id="com.asfusion.mate.events:Listener" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="Object" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.core:MateManager" />
+    </script>
+    <script name="org/bigbluebutton/common/Images_sound_none.as" mod="1303498677000" size="769" optimizedsize="338">
       <def id="org.bigbluebutton.common:Images_sound_none" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -3544,7 +3463,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LoadingBar.mxml" mod="1302628811000" size="4491" optimizedsize="4348">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LoadingBar.mxml" mod="1303498677000" size="4491" optimizedsize="4348">
       <def id="org.bigbluebutton.main.views:LoadingBar" />
       <pre id="mx.binding:IBindingClient" />
       <pre id="mx.controls:ProgressBar" />
@@ -3563,7 +3482,14 @@
       <dep id="org.bigbluebutton.main.events:ModuleLoadEvent" />
       <dep id="flash.utils:Dictionary" />
     </script>
-    <script name="org/bigbluebutton/common/Images_full_screen.as" mod="1302628811000" size="770" optimizedsize="340">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/utils/debug/LogInfo)" mod="1252541167000" size="1026" optimizedsize="539">
+      <def id="com.asfusion.mate.utils.debug:LogInfo" />
+      <pre id="Object" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.utils.debug:ILoggerProvider" />
+      <dep id="Error" />
+    </script>
+    <script name="org/bigbluebutton/common/Images_full_screen.as" mod="1303498677000" size="770" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_full_screen" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -3574,6 +3500,13 @@
       <pre id="Object" />
       <dep id="AS3" />
       <dep id="flash.geom:Rectangle" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/responses/IResponseHandler)" mod="1252541168000" size="937" optimizedsize="339">
+      <def id="com.asfusion.mate.responses:IResponseHandler" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.events:Dispatcher" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/events/DropdownEvent)" mod="1259076013818" size="879" optimizedsize="459">
       <def id="mx.events:DropdownEvent" />
@@ -3629,7 +3562,18 @@
       <dep id="mx.managers:CursorManager" />
       <dep id="mx.core:ApplicationGlobals" />
     </script>
-    <script name="org/bigbluebutton/common/Images_square_icon.as" mod="1302628811000" size="776" optimizedsize="340">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/InjectorSettingsEvent)" mod="1252541169000" size="765" optimizedsize="344">
+      <def id="com.asfusion.mate.events:InjectorSettingsEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/DispatcherEvent)" mod="1252541169000" size="919" optimizedsize="423">
+      <def id="com.asfusion.mate.events:DispatcherEvent" />
+      <pre id="flash.events:Event" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="AS3" />
+    </script>
+    <script name="org/bigbluebutton/common/Images_square_icon.as" mod="1303498677000" size="776" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_square_icon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -3828,18 +3772,18 @@
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_user.as" mod="1302628811000" size="739" optimizedsize="326">
+    <script name="org/bigbluebutton/common/Images_user.as" mod="1303498677000" size="739" optimizedsize="326">
       <def id="org.bigbluebutton.common:Images_user" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/managers/ConfigManager.as" mod="1302628811000" size="315" optimizedsize="309">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/managers/ConfigManager.as" mod="1303498677000" size="315" optimizedsize="309">
       <def id="org.bigbluebutton.core.managers:ConfigManager" />
       <pre id="Object" />
       <dep id="AS3" />
       <dep id="org.bigbluebutton.core.vo:Config" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/DependancyResolver.as" mod="1302628811000" size="1262" optimizedsize="1196">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/DependancyResolver.as" mod="1303498677000" size="1262" optimizedsize="1196">
       <def id="org.bigbluebutton.main.model.modules:DependancyResolver" />
       <pre id="Object" />
       <dep id="mx.collections:ArrayCollection" />
@@ -3935,14 +3879,28 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.core:IUIComponent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/BrandingLogo.mxml" mod="1302628811000" size="764" optimizedsize="731">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/BrandingLogo.mxml" mod="1303498677000" size="764" optimizedsize="731">
       <def id="org.bigbluebutton.main.views:BrandingLogo" />
       <pre id="mx.containers:Canvas" />
       <dep id="AS3" />
       <dep id="mx.core:UIComponentDescriptor" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="org/bigbluebutton/common/Images_admin.as" mod="1302628811000" size="760" optimizedsize="328">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/GlobalDispatcher)" mod="1252541170000" size="2910" optimizedsize="1602">
+      <def id="com.asfusion.mate.core:GlobalDispatcher" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.utils:SystemManagerFinder" />
+      <dep id="flash.events:Event" />
+      <dep id="mx.core:UIComponent" />
+      <dep id="AS3" />
+      <dep id="flash.events:EventPhase" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="flash.utils:getDefinitionByName" />
+      <dep id="Error" />
+      <dep id="flash.display:Sprite" />
+    </script>
+    <script name="org/bigbluebutton/common/Images_admin.as" mod="1303498677000" size="760" optimizedsize="328">
       <def id="org.bigbluebutton.common:Images_admin" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4000,7 +3958,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LoggedOutWindow.mxml" mod="1302644027000" size="4900" optimizedsize="4696">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LoggedOutWindow.mxml" mod="1303498677000" size="4900" optimizedsize="4696">
       <def id="org.bigbluebutton.main.views:LoggedOutWindow" />
       <pre id="mx.containers:TitleWindow" />
       <pre id="flash.events:IEventDispatcher" />
@@ -4033,7 +3991,7 @@
       <dep id="mx.core:UIComponent" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/NetConnectionDelegate.as" mod="1302628811000" size="4661" optimizedsize="4468">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/NetConnectionDelegate.as" mod="1303498677000" size="4661" optimizedsize="4468">
       <def id="org.bigbluebutton.main.model.users:NetConnectionDelegate" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.common:LogUtil" />
@@ -4084,7 +4042,7 @@
       <dep id="mx.messaging.messages:MessagePerformanceUtils" />
       <dep id="mx.messaging.messages:ErrorMessage" />
     </script>
-    <script name="org/bigbluebutton/common/Images_cursorIcon.as" mod="1302628811000" size="762" optimizedsize="338">
+    <script name="org/bigbluebutton/common/Images_cursorIcon.as" mod="1303498677000" size="762" optimizedsize="338">
       <def id="org.bigbluebutton.common:Images_cursorIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4093,34 +4051,6 @@
       <def id="flexlib.mdi.containers:MDIResizeHandle" />
       <pre id="Object" />
       <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actions/AbstractAction)" mod="1234927196000" size="1790" optimizedsize="884">
-      <def id="com.asfusion.mate.actions:AbstractAction" />
-      <pre id="mx.core:IMXMLObject" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="com.asfusion.mate.core:IScopeReceiver" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.core:IEventReceiver" />
-      <dep id="com.asfusion.mate.core:IDataReceiver" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actionLists/AbstractHandlers)" mod="1222148357000" size="6120" optimizedsize="2826">
-      <def id="com.asfusion.mate.actionLists:AbstractHandlers" />
-      <pre id="flash.events:EventDispatcher" />
-      <pre id="com.asfusion.mate.actionLists:IActionList" />
-      <pre id="mx.core:IMXMLObject" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="com.asfusion.mate.core:IMateManager" />
-      <dep id="com.asfusion.mate.events:ActionListEvent" />
-      <dep id="com.asfusion.mate.core:IEventMap" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="com.asfusion.mate.actions:IAction" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.core:MateManager" />
-      <dep id="com.asfusion.mate.events:DispatcherEvent" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/effects/EffectInstance)" mod="1259075972082" size="7865" optimizedsize="3604">
       <def id="mx.effects:EffectInstance" />
@@ -4271,12 +4201,12 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="org/bigbluebutton/common/Images_whiteboard_thin.as" mod="1302628811000" size="794" optimizedsize="348">
+    <script name="org/bigbluebutton/common/Images_whiteboard_thin.as" mod="1303498677000" size="794" optimizedsize="348">
       <def id="org.bigbluebutton.common:Images_whiteboard_thin" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_layout.as" mod="1302628811000" size="770" optimizedsize="330">
+    <script name="org/bigbluebutton/common/Images_layout.as" mod="1303498677000" size="770" optimizedsize="330">
       <def id="org.bigbluebutton.common:Images_layout" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4292,7 +4222,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IBbbModuleWindow.as" mod="1302628811000" size="210" optimizedsize="210">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IBbbModuleWindow.as" mod="1303498677000" size="210" optimizedsize="210">
       <def id="org.bigbluebutton.common:IBbbModuleWindow" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -4369,7 +4299,7 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/services/SkinningService.as" mod="1302628811000" size="338" optimizedsize="329">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/core/services/SkinningService.as" mod="1303498677000" size="338" optimizedsize="329">
       <def id="org.bigbluebutton.core.services:SkinningService" />
       <pre id="Object" />
       <dep id="mx.styles:StyleManager" />
@@ -4413,7 +4343,7 @@
       <dep id="flexlib.controls.textClasses:StringBoundaries" />
       <dep id="flash.display:Bitmap" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/Role.as" mod="1302628811000" size="1279" optimizedsize="1195">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/Role.as" mod="1303498677000" size="1279" optimizedsize="1195">
       <def id="org.bigbluebutton.common:Role" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="Object" />
@@ -4423,7 +4353,7 @@
       <dep id="AS3" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="_org_bigbluebutton_main_views_ConnectionLostWindowWatcherSetupUtil.as" mod="1303335793193" size="604" optimizedsize="560">
+    <script name="_org_bigbluebutton_main_views_ConnectionLostWindowWatcherSetupUtil.as" mod="1303504484281" size="604" optimizedsize="560">
       <def id="_org_bigbluebutton_main_views_ConnectionLostWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -4438,6 +4368,11 @@
       <dep id="AS3" />
       <dep id="mx.messaging:Channel" />
       <dep id="mx.messaging.messages:ErrorMessage" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/MateLogEvent)" mod="1252541169000" size="674" optimizedsize="311">
+      <def id="com.asfusion.mate.events:MateLogEvent" />
+      <pre id="mx.logging:LogEvent" />
+      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/utils/RPCUIDUtil)" mod="1259075940689" size="2858" optimizedsize="1848">
       <def id="mx.utils:RPCUIDUtil" />
@@ -4485,7 +4420,7 @@
       <dep id="mx.managers:SystemManager" />
       <dep id="mx.events:DragEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/views/PublishWindow.mxml" mod="1303135513000" size="10466" optimizedsize="10074">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/views/PublishWindow.mxml" mod="1303498677000" size="10466" optimizedsize="10074">
       <def id="org.bigbluebutton.modules.videoconf.views:PublishWindow" />
       <pre id="flexlib.mdi.containers:MDIWindow" />
       <pre id="flash.events:IEventDispatcher" />
@@ -4549,7 +4484,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.messaging.messages:IMessage" />
     </script>
-    <script name="org/bigbluebutton/common/Images_table.as" mod="1302628811000" size="744" optimizedsize="328">
+    <script name="org/bigbluebutton/common/Images_table.as" mod="1303498677000" size="744" optimizedsize="328">
       <def id="org.bigbluebutton.common:Images_table" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4559,7 +4494,12 @@
       <pre id="mx.resources:ResourceBundle" />
       <dep id="AS3" />
     </script>
-    <script name="_org_bigbluebutton_main_views_MainToolbarWatcherSetupUtil.as" mod="1303335793189" size="1663" optimizedsize="1545">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actions/builders/IBuilder)" mod="1252541165000" size="765" optimizedsize="219">
+      <def id="com.asfusion.mate.actions.builders:IBuilder" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
+    <script name="_org_bigbluebutton_main_views_MainToolbarWatcherSetupUtil.as" mod="1303504484278" size="1663" optimizedsize="1545">
       <def id="_org_bigbluebutton_main_views_MainToolbarWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -4569,7 +4509,7 @@
       <dep id="AS3" />
       <dep id="org.bigbluebutton.util.i18n:ResourceUtil" />
     </script>
-    <script name="org/bigbluebutton/common/Images_add.as" mod="1302628811000" size="735" optimizedsize="324">
+    <script name="org/bigbluebutton/common/Images_add.as" mod="1303498677000" size="735" optimizedsize="324">
       <def id="org.bigbluebutton.common:Images_add" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4593,7 +4533,7 @@
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_whiteboard.as" mod="1302628811000" size="779" optimizedsize="338">
+    <script name="org/bigbluebutton/common/Images_whiteboard.as" mod="1303498677000" size="779" optimizedsize="338">
       <def id="org.bigbluebutton.common:Images_whiteboard" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4659,7 +4599,7 @@
       <dep id="mx.utils:RPCStringUtil" />
       <dep id="mx.utils:RPCUIDUtil" />
     </script>
-    <script name="org/bigbluebutton/common/Images_deskShareIcon.as" mod="1302628811000" size="786" optimizedsize="344">
+    <script name="org/bigbluebutton/common/Images_deskShareIcon.as" mod="1303498677000" size="786" optimizedsize="344">
       <def id="org.bigbluebutton.common:Images_deskShareIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4671,12 +4611,12 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/LogoutEvent.as" mod="1302628811000" size="359" optimizedsize="351">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/LogoutEvent.as" mod="1303498677000" size="359" optimizedsize="351">
       <def id="org.bigbluebutton.main.events:LogoutEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_upload.as" mod="1302628811000" size="766" optimizedsize="330">
+    <script name="org/bigbluebutton/common/Images_upload.as" mod="1303498677000" size="766" optimizedsize="330">
       <def id="org.bigbluebutton.common:Images_upload" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4701,12 +4641,7 @@
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actions/builders/IBuilder)" mod="1209424867000" size="771" optimizedsize="219">
-      <def id="com.asfusion.mate.actions.builders:IBuilder" />
-      <pre id="Object" />
-      <dep id="AS3" />
-    </script>
-    <script name="org/bigbluebutton/common/Images_user_red.as" mod="1302628811000" size="759" optimizedsize="334">
+    <script name="org/bigbluebutton/common/Images_user_red.as" mod="1303498677000" size="759" optimizedsize="334">
       <def id="org.bigbluebutton.common:Images_user_red" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -4746,14 +4681,14 @@
       <dep id="flash.display:DisplayObject" />
       <dep id="flexlib.mdi.events:MDIWindowEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/LogUtil.as" mod="1302628811000" size="546" optimizedsize="523">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/LogUtil.as" mod="1303498677000" size="546" optimizedsize="523">
       <def id="org.bigbluebutton.common:LogUtil" />
       <pre id="Object" />
       <dep id="mx.logging:ILogger" />
       <dep id="AS3" />
       <dep id="mx.logging:Log" />
     </script>
-    <script name="_org_bigbluebutton_modules_videoconf_views_PublishWindowWatcherSetupUtil.as" mod="1303335793251" size="1977" optimizedsize="1840">
+    <script name="_org_bigbluebutton_modules_videoconf_views_PublishWindowWatcherSetupUtil.as" mod="1303504484328" size="1977" optimizedsize="1840">
       <def id="_org_bigbluebutton_modules_videoconf_views_PublishWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -4765,6 +4700,16 @@
       <dep id="AS3" />
       <dep id="org.bigbluebutton.util.i18n:ResourceUtil" />
       <dep id="org.bigbluebutton.modules.videoconf.views:PublishWindow" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actions/AbstractAction)" mod="1252541165000" size="1784" optimizedsize="884">
+      <def id="com.asfusion.mate.actions:AbstractAction" />
+      <pre id="mx.core:IMXMLObject" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="com.asfusion.mate.core:IScopeReceiver" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.core:IEventReceiver" />
+      <dep id="com.asfusion.mate.core:IDataReceiver" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/skins/ProgrammaticSkin)" mod="1259075985879" size="6658" optimizedsize="3081">
       <def id="mx.skins:ProgrammaticSkin" />
@@ -4783,6 +4728,12 @@
       <dep id="mx.core:UIComponentGlobals" />
       <dep id="mx.utils:GraphicsUtil" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/IEventReceiver)" mod="1252541170000" size="720" optimizedsize="218">
+      <def id="com.asfusion.mate.core:IEventReceiver" />
+      <pre id="Object" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+    </script>
     <script name="_ApplicationStyle.as" mod="9223372036854775807" size="812" optimizedsize="758">
       <def id="_ApplicationStyle" />
       <pre id="Object" />
@@ -4797,7 +4748,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="_BigBlueButton_mx_managers_SystemManager.as" mod="1303335793734" size="3562" optimizedsize="3452">
+    <script name="_BigBlueButton_mx_managers_SystemManager.as" mod="1303504484803" size="3562" optimizedsize="3452">
       <def id="_BigBlueButton_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -4895,30 +4846,7 @@
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/EventMap)" mod="1226301190000" size="3289" optimizedsize="1501">
-      <def id="com.asfusion.mate.core:EventMap" />
-      <pre id="com.asfusion.mate.core:IEventMap" />
-      <pre id="flash.events:EventDispatcher" />
-      <pre id="mx.core:IMXMLObject" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.actionLists:ScopeProperties" />
-      <dep id="com.asfusion.mate.core:Cache" />
-      <dep id="com.asfusion.mate.core:MateManager" />
-      <dep id="com.asfusion.mate.core:SmartObject" />
-      <dep id="flash.utils:Dictionary" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actionLists/EventHandlers)" mod="1222148357000" size="3562" optimizedsize="1643">
-      <def id="com.asfusion.mate.actionLists:EventHandlers" />
-      <pre id="com.asfusion.mate.actionLists:AbstractHandlers" />
-      <dep id="flash.events:Event" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="com.asfusion.mate.utils.debug:DebuggerUtil" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.actionLists:Scope" />
-    </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/ModuleLoadEvent.as" mod="1302628811000" size="493" optimizedsize="485">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/ModuleLoadEvent.as" mod="1303498677000" size="493" optimizedsize="485">
       <def id="org.bigbluebutton.main.events:ModuleLoadEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -4998,7 +4926,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="_org_bigbluebutton_main_maps_ApplicationEventMapWatcherSetupUtil.as" mod="1303335793433" size="1257" optimizedsize="1139">
+    <script name="_org_bigbluebutton_main_maps_ApplicationEventMapWatcherSetupUtil.as" mod="1303504484522" size="1257" optimizedsize="1139">
       <def id="_org_bigbluebutton_main_maps_ApplicationEventMapWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -5067,6 +4995,17 @@
       <dep id="flash.text:TextLineMetrics" />
       <dep id="uint" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actionLists/IScope)" mod="1252541172000" size="2615" optimizedsize="622">
+      <def id="com.asfusion.mate.actionLists:IScope" />
+      <pre id="com.asfusion.mate.utils.debug:ILoggerProvider" />
+      <pre id="Object" />
+      <dep id="flash.events:Event" />
+      <dep id="com.asfusion.mate.core:IMateManager" />
+      <dep id="com.asfusion.mate.core:IEventMap" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="com.asfusion.mate.actionLists:IActionList" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/collections/IList)" mod="1259076019600" size="1447" optimizedsize="433">
       <def id="mx.collections:IList" />
       <pre id="flash.events:IEventDispatcher" />
@@ -5096,7 +5035,7 @@
       <pre id="mx.core:SpriteAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/ConferenceParameters.as" mod="1302628811000" size="445" optimizedsize="439">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/ConferenceParameters.as" mod="1303498677000" size="445" optimizedsize="439">
       <def id="org.bigbluebutton.main.model:ConferenceParameters" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -5152,7 +5091,7 @@
       <dep id="mx.managers:SystemManager" />
       <dep id="uint" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/Conference.as" mod="1303140995000" size="2192" optimizedsize="2082">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/Conference.as" mod="1303498677000" size="2192" optimizedsize="2082">
       <def id="org.bigbluebutton.main.model.users:Conference" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="Object" />
@@ -5166,7 +5105,7 @@
       <dep id="org.bigbluebutton.main.model.users:BBBUser" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="org/bigbluebutton/common/Images_undo_icon.as" mod="1302628811000" size="766" optimizedsize="336">
+    <script name="org/bigbluebutton/common/Images_undo_icon.as" mod="1303498677000" size="766" optimizedsize="336">
       <def id="org.bigbluebutton.common:Images_undo_icon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -5184,13 +5123,13 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/events/StartBroadcastEvent.as" mod="1302628811000" size="400" optimizedsize="392">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/events/StartBroadcastEvent.as" mod="1303498677000" size="400" optimizedsize="392">
       <def id="org.bigbluebutton.modules.videoconf.events:StartBroadcastEvent" />
       <pre id="flash.events:Event" />
       <dep id="flash.media:Camera" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LanguageSelector.mxml" mod="1303136960000" size="3521" optimizedsize="3389">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/views/LanguageSelector.mxml" mod="1303498677000" size="3521" optimizedsize="3389">
       <def id="org.bigbluebutton.main.views:LanguageSelector" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="mx.binding:IBindingClient" />
@@ -5483,7 +5422,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/UserService.as" mod="1303140995000" size="2317" optimizedsize="2276">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/UserService.as" mod="1303498677000" size="2317" optimizedsize="2276">
       <def id="org.bigbluebutton.main.model.users:UserService" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.main.model.users:JoinService" />
@@ -5544,24 +5483,28 @@
       <dep id="mx.styles:StyleProxy" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/IProperty)" mod="1234163517000" size="622" optimizedsize="229">
-      <def id="com.asfusion.mate.core:IProperty" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/events/DynamicEvent)" mod="1259076013662" size="897" optimizedsize="498">
       <def id="mx.events:DynamicEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="org/bigbluebutton/common/Images_participant.as" mod="1302628811000" size="774" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_participant.as" mod="1303498677000" size="774" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_participant" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/util/i18n/ResourceUtil.as" mod="1302628811000" size="2406" optimizedsize="2292">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/IMateManager)" mod="1252541170000" size="1911" optimizedsize="562">
+      <def id="com.asfusion.mate.core:IMateManager" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <dep id="mx.logging:ILoggingTarget" />
+      <dep id="AS3" />
+      <dep id="flash.utils:Dictionary" />
+      <dep id="com.asfusion.mate.core:ListenerProxy" />
+    </script>
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/util/i18n/ResourceUtil.as" mod="1303498677000" size="2406" optimizedsize="2292">
       <def id="org.bigbluebutton.util.i18n:ResourceUtil" />
       <pre id="flash.events:EventDispatcher" />
       <pre id="Object" />
@@ -5605,17 +5548,23 @@
       <dep id="mx.core:EdgeMetrics" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/AppVersionEvent.as" mod="1302628811000" size="387" optimizedsize="377">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/AppVersionEvent.as" mod="1303498677000" size="387" optimizedsize="377">
       <def id="org.bigbluebutton.main.events:AppVersionEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_sound_mute.as" mod="1302628811000" size="769" optimizedsize="338">
+    <script name="org/bigbluebutton/common/Images_sound_mute.as" mod="1303498677000" size="769" optimizedsize="338">
       <def id="org.bigbluebutton.common:Images_sound_mute" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/BroadcastStoppedEvent.as" mod="1302628811000" size="370" optimizedsize="362">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/utils/debug/DebuggerUtil)" mod="1252541167000" size="822" optimizedsize="381">
+      <def id="com.asfusion.mate.utils.debug:DebuggerUtil" />
+      <pre id="Object" />
+      <dep id="flash.utils:getQualifiedClassName" />
+      <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/BroadcastStoppedEvent.as" mod="1303498677000" size="370" optimizedsize="362">
       <def id="org.bigbluebutton.main.model.users.events:BroadcastStoppedEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -5637,24 +5586,10 @@
       <def id="mx.core:mx_internal" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_raisehand.as" mod="1302628811000" size="764" optimizedsize="336">
+    <script name="org/bigbluebutton/common/Images_raisehand.as" mod="1303498677000" size="764" optimizedsize="336">
       <def id="org.bigbluebutton.common:Images_raisehand" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/ListenerProxy)" mod="1242277516000" size="2691" optimizedsize="1443">
-      <def id="com.asfusion.mate.core:ListenerProxy" />
-      <pre id="Object" />
-      <dep id="flash.events:Event" />
-      <dep id="flash.utils:getQualifiedClassName" />
-      <dep id="flash.events:IEventDispatcher" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.events:InjectorSettingsEvent" />
-      <dep id="com.asfusion.mate.core:GlobalDispatcher" />
-      <dep id="flash.display:DisplayObject" />
-      <dep id="com.asfusion.mate.events:InjectorEvent" />
-      <dep id="flash.utils:Dictionary" />
-      <dep id="flash.display:Sprite" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/core/UIComponentGlobals)" mod="1259075989364" size="1386" optimizedsize="686">
       <def id="mx.core:UIComponentGlobals" />
@@ -5694,7 +5629,7 @@
       <dep id="mx.core:Container" />
       <dep id="mx.core:IFlexDisplayObject" />
     </script>
-    <script name="org/bigbluebutton/common/Images_user_green.as" mod="1302628811000" size="769" optimizedsize="338">
+    <script name="org/bigbluebutton/common/Images_user_green.as" mod="1303498677000" size="769" optimizedsize="338">
       <def id="org.bigbluebutton.common:Images_user_green" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -5713,7 +5648,7 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IBigBlueButtonModule.as" mod="1302628811000" size="260" optimizedsize="260">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/IBigBlueButtonModule.as" mod="1303498677000" size="260" optimizedsize="260">
       <def id="org.bigbluebutton.common:IBigBlueButtonModule" />
       <pre id="Object" />
       <dep id="AS3" />
@@ -5742,7 +5677,7 @@
       <dep id="mx.events:FlexEvent" />
       <dep id="flash.display:Sprite" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/views/VideoWindow.mxml" mod="1302990906000" size="6564" optimizedsize="6365">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/views/VideoWindow.mxml" mod="1303498677000" size="6564" optimizedsize="6365">
       <def id="org.bigbluebutton.modules.videoconf.views:VideoWindow" />
       <pre id="flexlib.mdi.containers:MDIWindow" />
       <pre id="mx.binding:IBindingClient" />
@@ -5772,7 +5707,7 @@
       <dep id="_org_bigbluebutton_modules_videoconf_views_VideoWindowWatcherSetupUtil" />
       <dep id="flash.events:NetStatusEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/Images.as" mod="1303335506000" size="9886" optimizedsize="6835">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/Images.as" mod="1303498677000" size="9886" optimizedsize="6835">
       <def id="org.bigbluebutton.common:Images" />
       <pre id="flash.events:IEventDispatcher" />
       <pre id="Object" />
@@ -5861,7 +5796,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.messaging.messages:IMessage" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModuleManager.as" mod="1302628811000" size="3320" optimizedsize="3206">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModuleManager.as" mod="1303498677000" size="3320" optimizedsize="3206">
       <def id="org.bigbluebutton.main.model.modules:ModuleManager" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.common:LogUtil" />
@@ -5888,7 +5823,7 @@
       <dep id="mx.collections:IViewCursor" />
       <dep id="mx.events:CollectionEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/UserServicesEvent.as" mod="1302628811000" size="386" optimizedsize="378">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/UserServicesEvent.as" mod="1303498677000" size="386" optimizedsize="378">
       <def id="org.bigbluebutton.main.events:UserServicesEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -5939,7 +5874,7 @@
       <dep id="flash.events:FocusEvent" />
       <dep id="uint" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/util/logging/Logger.as" mod="1302628811000" size="919" optimizedsize="885">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/util/logging/Logger.as" mod="1303498677000" size="919" optimizedsize="885">
       <def id="org.bigbluebutton.util.logging:Logger" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.common:LogUtil" />
@@ -5949,7 +5884,15 @@
       <dep id="mx.logging:Log" />
       <dep id="org.bigbluebutton.util.logging:ArrayCollectionLogTarget" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/UsersSOService.as" mod="1303140995000" size="4549" optimizedsize="4382">
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actionLists/IActionList)" mod="1252541172000" size="2486" optimizedsize="606">
+      <def id="com.asfusion.mate.actionLists:IActionList" />
+      <pre id="flash.events:IEventDispatcher" />
+      <pre id="mx.core:IMXMLObject" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/UsersSOService.as" mod="1303498677000" size="4549" optimizedsize="4382">
       <def id="org.bigbluebutton.main.model.users:UsersSOService" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.main.events:BBBEvent" />
@@ -5970,12 +5913,6 @@
       <dep id="org.bigbluebutton.main.model:ConferenceParameters" />
       <dep id="flash.net:NetConnection" />
       <dep id="flash.events:NetStatusEvent" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/utils/SystemManagerFinder)" mod="1209424867000" size="856" optimizedsize="331">
-      <def id="com.asfusion.mate.utils:SystemManagerFinder" />
-      <pre id="Object" />
-      <dep id="mx.managers:ISystemManager" />
-      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/skins/halo/ScrollThumbSkin)" mod="1259075985395" size="5299" optimizedsize="3680">
       <def id="mx.skins.halo:ScrollThumbSkin" />
@@ -5999,6 +5936,33 @@
       <dep id="mx.core:mx_internal" />
       <dep id="flash.utils:Dictionary" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/Dispatcher)" mod="1252541169000" size="5427" optimizedsize="2534">
+      <def id="com.asfusion.mate.events:Dispatcher" />
+      <pre id="com.asfusion.mate.utils.debug:ILoggerProvider" />
+      <pre id="mx.core:IMXMLObject" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <dep id="flash.events:Event" />
+      <dep id="com.asfusion.mate.core:IMateManager" />
+      <dep id="mx.events:DynamicEvent" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="com.asfusion.mate.utils.debug:DebuggerUtil" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.core:Creator" />
+      <dep id="com.asfusion.mate.core:MateManager" />
+      <dep id="com.asfusion.mate.events:EventProperties" />
+      <dep id="mx.utils:UIDUtil" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.responses:IResponseHandler" />
+      <dep id="flash.display:DisplayObject" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/utils/SystemManagerFinder)" mod="1252541168000" size="850" optimizedsize="331">
+      <def id="com.asfusion.mate.utils:SystemManagerFinder" />
+      <pre id="Object" />
+      <dep id="mx.managers:ISystemManager" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/flex/3.5.0.12683/flex-3.5.0.12683.swc(mx/core/IFlexModuleFactory)" mod="1259075988973" size="976" optimizedsize="297">
       <def id="mx.core:IFlexModuleFactory" />
       <pre id="Object" />
@@ -6015,13 +5979,7 @@
       <dep id="flash.display:DisplayObject" />
       <dep id="flash.display:Sprite" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/IEventReceiver)" mod="1209424867000" size="726" optimizedsize="218">
-      <def id="com.asfusion.mate.core:IEventReceiver" />
-      <pre id="Object" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-    </script>
-    <script name="org/bigbluebutton/common/Images_magnifier.as" mod="1302628811000" size="765" optimizedsize="336">
+    <script name="org/bigbluebutton/common/Images_magnifier.as" mod="1303498677000" size="765" optimizedsize="336">
       <def id="org.bigbluebutton.common:Images_magnifier" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -6154,17 +6112,12 @@
       <dep id="flash.events:IEventDispatcher" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/util/logging/ArrayCollectionLogTarget.as" mod="1302628811000" size="728" optimizedsize="711">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/util/logging/ArrayCollectionLogTarget.as" mod="1303498677000" size="728" optimizedsize="711">
       <def id="org.bigbluebutton.util.logging:ArrayCollectionLogTarget" />
       <pre id="mx.logging.targets:LineFormattedTarget" />
       <dep id="mx.collections:ArrayCollection" />
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/IDataReceiver)" mod="1209424867000" size="698" optimizedsize="201">
-      <def id="com.asfusion.mate.core:IDataReceiver" />
-      <pre id="Object" />
-      <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/containers/utilityClasses/ConstraintRow)" mod="1259076014756" size="3962" optimizedsize="1591">
       <def id="mx.containers.utilityClasses:ConstraintRow" />
@@ -6194,16 +6147,6 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actions/builders/MethodInvoker)" mod="1222148357000" size="1820" optimizedsize="944">
-      <def id="com.asfusion.mate.actions.builders:MethodInvoker" />
-      <pre id="com.asfusion.mate.actions.builders:ObjectBuilder" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="com.asfusion.mate.core:MethodCaller" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
-    </script>
     <script name="/home/firstuser/.m2/repository/as3corelib/as3corelib/1.0/as3corelib-1.0.swc$locale/en_US/messaging.properties" mod="1259075953502" size="5888" optimizedsize="5789">
       <def id="en_US$messaging_properties" />
       <pre id="mx.resources:ResourceBundle" />
@@ -6217,7 +6160,7 @@
       <dep id="mx.styles:CSSStyleDeclaration" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/ToolbarButtonEvent.as" mod="1302628811000" size="446" optimizedsize="438">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/events/ToolbarButtonEvent.as" mod="1303498677000" size="446" optimizedsize="438">
       <def id="org.bigbluebutton.common.events:ToolbarButtonEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -6233,7 +6176,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="org/bigbluebutton/common/Images_syncedIcon.as" mod="1302628811000" size="781" optimizedsize="338">
+    <script name="org/bigbluebutton/common/Images_syncedIcon.as" mod="1303498677000" size="781" optimizedsize="338">
       <def id="org.bigbluebutton.common:Images_syncedIcon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -6251,6 +6194,11 @@
       <dep id="Math" />
       <dep id="mx.core:mx_internal" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/IDataReceiver)" mod="1252541170000" size="692" optimizedsize="201">
+      <def id="com.asfusion.mate.core:IDataReceiver" />
+      <pre id="Object" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/flexlib/flexlib-bbb/1.0/flexlib-bbb-1.0.swc(flexlib/mdi/effects/effectClasses/MDIGroupEffectItem)" mod="1273436065373" size="1508" optimizedsize="675">
       <def id="flexlib.mdi.effects.effectClasses:MDIGroupEffectItem" />
       <pre id="Object" />
@@ -6258,7 +6206,7 @@
       <dep id="AS3" />
       <dep id="flash.geom:Point" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModulesDispatcher.as" mod="1302628811000" size="2109" optimizedsize="2070">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/modules/ModulesDispatcher.as" mod="1303498677000" size="2109" optimizedsize="2070">
       <def id="org.bigbluebutton.main.model.modules:ModulesDispatcher" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.main.events:BBBEvent" />
@@ -6273,7 +6221,7 @@
       <dep id="org.bigbluebutton.main.events:ModuleLoadEvent" />
       <dep id="org.bigbluebutton.main.events:ConfigEvent" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/PortTestProxy.as" mod="1302628811000" size="1798" optimizedsize="1731">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/PortTestProxy.as" mod="1303498677000" size="1798" optimizedsize="1731">
       <def id="org.bigbluebutton.main.model:PortTestProxy" />
       <pre id="Object" />
       <dep id="org.bigbluebutton.main.model:PortTest" />
@@ -6341,18 +6289,6 @@
       <dep id="mx.core:UIComponentGlobals" />
       <dep id="mx.events:ScrollEvent" />
       <dep id="mx.collections:IList" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/IMateManager)" mod="1237782366000" size="2364" optimizedsize="701">
-      <def id="com.asfusion.mate.core:IMateManager" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <dep id="mx.core:Application" />
-      <dep id="mx.managers:ISystemManager" />
-      <dep id="mx.logging:ILoggingTarget" />
-      <dep id="AS3" />
-      <dep id="flash.utils:Dictionary" />
-      <dep id="com.asfusion.mate.core:ListenerProxy" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/flex/3.5.0.12683/flex-3.5.0.12683.swc(mx/core/RSLItem)" mod="1259075988879" size="2534" optimizedsize="1516">
       <def id="mx.core:RSLItem" />
@@ -6459,12 +6395,12 @@
       <dep id="mx.events:ScrollEvent" />
       <dep id="uint" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/LowerHandEvent.as" mod="1302628811000" size="343" optimizedsize="333">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/LowerHandEvent.as" mod="1303498677000" size="343" optimizedsize="333">
       <def id="org.bigbluebutton.main.model.users.events:LowerHandEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/UsersConnectionEvent.as" mod="1302628811000" size="422" optimizedsize="414">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/UsersConnectionEvent.as" mod="1303498677000" size="422" optimizedsize="414">
       <def id="org.bigbluebutton.main.model.users.events:UsersConnectionEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -6525,7 +6461,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="_org_bigbluebutton_main_views_OldLocaleWarnWindowWatcherSetupUtil.as" mod="1303335793211" size="1104" optimizedsize="987">
+    <script name="_org_bigbluebutton_main_views_OldLocaleWarnWindowWatcherSetupUtil.as" mod="1303504484299" size="1104" optimizedsize="987">
       <def id="_org_bigbluebutton_main_views_OldLocaleWarnWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -6534,7 +6470,7 @@
       <dep id="org.bigbluebutton.main.views:OldLocaleWarnWindow" />
       <dep id="AS3" />
     </script>
-    <script name="_org_bigbluebutton_main_views_LoadingBarWatcherSetupUtil.as" mod="1303335793215" size="584" optimizedsize="540">
+    <script name="_org_bigbluebutton_main_views_LoadingBarWatcherSetupUtil.as" mod="1303504484302" size="584" optimizedsize="540">
       <def id="_org_bigbluebutton_main_views_LoadingBarWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -6570,7 +6506,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.core:IChildList" />
     </script>
-    <script name="org/bigbluebutton/common/Images_delete_icon.as" mod="1302628811000" size="764" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_delete_icon.as" mod="1303498677000" size="764" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_delete_icon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -6584,13 +6520,7 @@
       <dep id="mx.core:IUIComponent" />
       <dep id="mx.core:IFlexDisplayObject" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/utils/debug/DebuggerUtil)" mod="1209424867000" size="828" optimizedsize="381">
-      <def id="com.asfusion.mate.utils.debug:DebuggerUtil" />
-      <pre id="Object" />
-      <dep id="flash.utils:getQualifiedClassName" />
-      <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/ConfigParameters.as" mod="1302628811000" size="1829" optimizedsize="1793">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/ConfigParameters.as" mod="1303498677000" size="1829" optimizedsize="1793">
       <def id="org.bigbluebutton.main.model:ConfigParameters" />
       <pre id="Object" />
       <dep id="flash.events:Event" />
@@ -6604,7 +6534,7 @@
       <dep id="flash.utils:Dictionary" />
       <dep id="org.bigbluebutton.main.model.modules:ModuleDescriptor" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/KickUserEvent.as" mod="1302628811000" size="335" optimizedsize="325">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/KickUserEvent.as" mod="1303498677000" size="335" optimizedsize="325">
       <def id="org.bigbluebutton.main.model.users.events:KickUserEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -6627,6 +6557,26 @@
       <dep id="flash.events:IEventDispatcher" />
       <dep id="AS3" />
       <dep id="flash.system:ApplicationDomain" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/ISmartObject)" mod="1252541170000" size="646" optimizedsize="244">
+      <def id="com.asfusion.mate.core:ISmartObject" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actionLists/Scope)" mod="1252541172000" size="3672" optimizedsize="1593">
+      <def id="com.asfusion.mate.actionLists:Scope" />
+      <pre id="com.asfusion.mate.actionLists:IScope" />
+      <pre id="Object" />
+      <dep id="flash.events:Event" />
+      <dep id="com.asfusion.mate.core:IMateManager" />
+      <dep id="com.asfusion.mate.core:IEventMap" />
+      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="com.asfusion.mate.actionLists:IActionList" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.core:MateManager" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/effects/EffectManager)" mod="1259075972113" size="9916" optimizedsize="5802">
       <def id="mx.effects:EffectManager" />
@@ -6659,7 +6609,7 @@
       <dep id="flash.events:FocusEvent" />
       <dep id="mx.core:ApplicationGlobals" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/UserManager.as" mod="1302628811000" size="1608" optimizedsize="1528">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/UserManager.as" mod="1303498677000" size="1608" optimizedsize="1528">
       <def id="org.bigbluebutton.common:UserManager" />
       <pre id="Object" />
       <dep id="mx.collections:ArrayCollection" />
@@ -6727,7 +6677,7 @@
       <dep id="mx.rpc:AsyncToken" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="_org_bigbluebutton_modules_videoconf_views_VideoWindowWatcherSetupUtil.as" mod="1303335793230" size="612" optimizedsize="568">
+    <script name="_org_bigbluebutton_modules_videoconf_views_VideoWindowWatcherSetupUtil.as" mod="1303504484336" size="612" optimizedsize="568">
       <def id="_org_bigbluebutton_modules_videoconf_views_VideoWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -6735,7 +6685,7 @@
       <dep id="AS3" />
       <dep id="org.bigbluebutton.modules.videoconf.views:VideoWindow" />
     </script>
-    <script name="org/bigbluebutton/common/Images_whiteboard_thick.as" mod="1302628811000" size="799" optimizedsize="350">
+    <script name="org/bigbluebutton/common/Images_whiteboard_thick.as" mod="1303498677000" size="799" optimizedsize="350">
       <def id="org.bigbluebutton.common:Images_whiteboard_thick" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -6747,6 +6697,24 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actionLists/AbstractHandlers)" mod="1252541172000" size="6230" optimizedsize="2895">
+      <def id="com.asfusion.mate.actionLists:AbstractHandlers" />
+      <pre id="flash.events:EventDispatcher" />
+      <pre id="com.asfusion.mate.actionLists:IActionList" />
+      <pre id="mx.core:IMXMLObject" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="com.asfusion.mate.core:IMateManager" />
+      <dep id="com.asfusion.mate.events:ActionListEvent" />
+      <dep id="com.asfusion.mate.core:IEventMap" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="com.asfusion.mate.actions:IAction" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.core:MateManager" />
+      <dep id="com.asfusion.mate.events:DispatcherEvent" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/skins/halo/ProgressTrackSkin)" mod="1259075985489" size="1567" optimizedsize="921">
       <def id="mx.skins.halo:ProgressTrackSkin" />
       <pre id="mx.skins:Border" />
@@ -6755,7 +6723,7 @@
       <dep id="mx.core:mx_internal" />
       <dep id="mx.utils:ColorUtil" />
     </script>
-    <script name="org/bigbluebutton/common/Images_backward.as" mod="1302628811000" size="764" optimizedsize="334">
+    <script name="org/bigbluebutton/common/Images_backward.as" mod="1303498677000" size="764" optimizedsize="334">
       <def id="org.bigbluebutton.common:Images_backward" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -6783,6 +6751,16 @@
       <dep id="mx.styles:IStyleManager2" />
       <dep id="flash.system:ApplicationDomain" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actionLists/EventHandlers)" mod="1252541172000" size="3556" optimizedsize="1643">
+      <def id="com.asfusion.mate.actionLists:EventHandlers" />
+      <pre id="com.asfusion.mate.actionLists:AbstractHandlers" />
+      <dep id="flash.events:Event" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="com.asfusion.mate.utils.debug:DebuggerUtil" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.actionLists:Scope" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/controls/Spacer)" mod="1259076007631" size="732" optimizedsize="430">
       <def id="mx.controls:Spacer" />
       <pre id="mx.core:UIComponent" />
@@ -6795,7 +6773,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="org/bigbluebutton/common/Images_pencil_icon.as" mod="1302628811000" size="764" optimizedsize="340">
+    <script name="org/bigbluebutton/common/Images_pencil_icon.as" mod="1303498677000" size="764" optimizedsize="340">
       <def id="org.bigbluebutton.common:Images_pencil_icon" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -6840,7 +6818,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/events/StopBroadcastEvent.as" mod="1302628811000" size="341" optimizedsize="333">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/modules/videoconf/events/StopBroadcastEvent.as" mod="1303498677000" size="341" optimizedsize="333">
       <def id="org.bigbluebutton.modules.videoconf.events:StopBroadcastEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -6968,7 +6946,7 @@
       <dep id="mx.core:IFlexModuleFactory" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/APIEventMap.mxml" mod="1302628811000" size="4053" optimizedsize="3918">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/common/APIEventMap.mxml" mod="1303498677000" size="4053" optimizedsize="3918">
       <def id="org.bigbluebutton.common:APIEventMap" />
       <pre id="com.asfusion.mate.core:EventMap" />
       <pre id="mx.binding:IBindingClient" />
@@ -6986,7 +6964,7 @@
       <dep id="flash.utils:getDefinitionByName" />
       <dep id="org.bigbluebutton.common:UserManager" />
     </script>
-    <script name="org/bigbluebutton/common/Images_locked.as" mod="1302628811000" size="745" optimizedsize="330">
+    <script name="org/bigbluebutton/common/Images_locked.as" mod="1303498677000" size="745" optimizedsize="330">
       <def id="org.bigbluebutton.common:Images_locked" />
       <pre id="mx.core:BitmapAsset" />
       <dep id="AS3" />
@@ -7069,10 +7047,6 @@
       <dep id="AS3" />
       <dep id="flash.display:Sprite" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/mate)" mod="1209424867000" size="195" optimizedsize="100">
-      <def id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/messaging/ConsumerMessageDispatcher)" mod="1259075951252" size="2819" optimizedsize="1637">
       <def id="mx.messaging:ConsumerMessageDispatcher" />
       <pre id="Object" />
@@ -7122,6 +7096,12 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/IProperty)" mod="1252541170000" size="616" optimizedsize="229">
+      <def id="com.asfusion.mate.core:IProperty" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="AS3" />
+    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/containers/utilityClasses/ConstraintColumn)" mod="1259076014740" size="4024" optimizedsize="1614">
       <def id="mx.containers.utilityClasses:ConstraintColumn" />
       <pre id="flash.events:EventDispatcher" />
@@ -7131,7 +7111,7 @@
       <dep id="mx.core:IInvalidating" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/ConfigEvent.as" mod="1302628811000" size="344" optimizedsize="336">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/events/ConfigEvent.as" mod="1303498677000" size="344" optimizedsize="336">
       <def id="org.bigbluebutton.main.events:ConfigEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -7140,12 +7120,6 @@
     <script name="_DragManagerStyle__embed_css_Assets_swf_mx_skins_cursor_DragReject_2113193813.as" mod="1259075966000" size="766" optimizedsize="383">
       <def id="_DragManagerStyle__embed_css_Assets_swf_mx_skins_cursor_DragReject_2113193813" />
       <pre id="mx.core:SpriteAsset" />
-      <dep id="AS3" />
-    </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/actions/IAction)" mod="1209424867000" size="604" optimizedsize="222">
-      <def id="com.asfusion.mate.actions:IAction" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
       <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/rpc/Fault)" mod="1259075947190" size="1103" optimizedsize="587">
@@ -7214,34 +7188,30 @@
       <dep id="AS3" />
       <dep id="flash.display:LoaderInfo" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/SmartObject)" mod="1222148357000" size="3609" optimizedsize="2001">
-      <def id="com.asfusion.mate.core:SmartObject" />
-      <pre id="flash.events:IEventDispatcher" />
-      <pre id="com.asfusion.mate.core:ISmartObject" />
-      <pre id="flash.utils:Proxy" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="flash.events:Event" />
-      <dep id="ReferenceError" />
-      <dep id="flash.events:EventDispatcher" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-      <dep id="QName" />
-      <dep id="com.asfusion.mate.actionLists:ScopeProperties" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/graphics/RoundedRectangle)" mod="1259075999989" size="734" optimizedsize="353">
       <def id="mx.graphics:RoundedRectangle" />
       <pre id="flash.geom:Rectangle" />
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/StatusCollection.as" mod="1302628811000" size="874" optimizedsize="859">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/StatusCollection.as" mod="1303498677000" size="874" optimizedsize="859">
       <def id="org.bigbluebutton.main.model.users:StatusCollection" />
       <pre id="Object" />
       <dep id="mx.collections:ArrayCollection" />
       <dep id="org.bigbluebutton.main.model.users:Status" />
       <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actions/InlineInvoker)" mod="1252541166000" size="1966" optimizedsize="1186">
+      <def id="com.asfusion.mate.actions:InlineInvoker" />
+      <pre id="com.asfusion.mate.actions:AbstractAction" />
+      <pre id="com.asfusion.mate.actions:IAction" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="TypeError" />
+      <dep id="ArgumentError" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
+      <dep id="com.asfusion.mate.core:SmartArguments" />
     </script>
     <script name="_windowStylesStyle.as" mod="9223372036854775807" size="567" optimizedsize="515">
       <def id="_windowStylesStyle" />
@@ -7375,7 +7345,7 @@
       <dep id="flash.display:LoaderInfo" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/ConnectionFailedEvent.as" mod="1302628811000" size="651" optimizedsize="643">
+    <script name="/home/firstuser/dev/source/bigbluebutton/bigbluebutton-client/src/main/flex/org/bigbluebutton/main/model/users/events/ConnectionFailedEvent.as" mod="1303498677000" size="651" optimizedsize="643">
       <def id="org.bigbluebutton.main.model.users.events:ConnectionFailedEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
@@ -7465,6 +7435,25 @@
       <dep id="mx.controls.listClasses:ListBase" />
       <dep id="uint" />
     </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/Creator)" mod="1252541170000" size="3236" optimizedsize="2483">
+      <def id="com.asfusion.mate.core:Creator" />
+      <pre id="Object" />
+      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
+      <dep id="com.asfusion.mate.core:IMateManager" />
+      <dep id="flash.events:IEventDispatcher" />
+      <dep id="ArgumentError" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.core:Cache" />
+      <dep id="com.asfusion.mate.core:MateManager" />
+      <dep id="com.asfusion.mate.events:InjectorEvent" />
+      <dep id="com.asfusion.mate.core:SmartArguments" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="TypeError" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.utils.debug:ILoggerProvider" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
+    </script>
     <script name="/home/firstuser/.m2/repository/flexlib/flexlib-bbb/1.0/flexlib-bbb-1.0.swc(flexlib/mdi/containers/MDIWindowControlsContainer)" mod="1273436065371" size="2398" optimizedsize="1533">
       <def id="flexlib.mdi.containers:MDIWindowControlsContainer" />
       <pre id="mx.core:LayoutContainer" />
@@ -7475,6 +7464,16 @@
       <dep id="Math" />
       <dep id="mx.core:UITextField" />
       <dep id="mx.controls:Button" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/actions/builders/MethodInvoker)" mod="1252541165000" size="1814" optimizedsize="944">
+      <def id="com.asfusion.mate.actions.builders:MethodInvoker" />
+      <pre id="com.asfusion.mate.actions.builders:ObjectBuilder" />
+      <dep id="com.asfusion.mate.actionLists:IScope" />
+      <dep id="com.asfusion.mate.core:mate" />
+      <dep id="com.asfusion.mate.core:MethodCaller" />
+      <dep id="AS3" />
+      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
+      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/rpc/3.5.0.12683/rpc-3.5.0.12683.swc(mx/rpc/xml/ComplexString)" mod="1259075942767" size="709" optimizedsize="302">
       <def id="mx.rpc.xml:ComplexString" />
@@ -7498,24 +7497,15 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="/home/firstuser/.m2/repository/mate/mate/0.881/mate-0.881.swc(com/asfusion/mate/core/MethodCaller)" mod="1209424867000" size="2250" optimizedsize="1622">
-      <def id="com.asfusion.mate.core:MethodCaller" />
-      <pre id="Object" />
-      <dep id="com.asfusion.mate.actionLists:IScope" />
-      <dep id="com.asfusion.mate.utils.debug:IMateLogger" />
-      <dep id="TypeError" />
-      <dep id="ArgumentError" />
-      <dep id="com.asfusion.mate.core:mate" />
-      <dep id="AS3" />
-      <dep id="com.asfusion.mate.utils.debug:LogInfo" />
-      <dep id="com.asfusion.mate.utils.debug:LogTypes" />
-      <dep id="com.asfusion.mate.core:SmartArguments" />
-    </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683.swc(mx/events/ResizeEvent)" mod="1259076013912" size="887" optimizedsize="474">
       <def id="mx.events:ResizeEvent" />
       <pre id="flash.events:Event" />
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/core/mate)" mod="1252541170000" size="192" optimizedsize="100">
+      <def id="com.asfusion.mate.core:mate" />
+      <dep id="AS3" />
     </script>
     <script name="_CursorManagerStyle__embed_css_Assets_swf_mx_skins_cursor_BusyCursor_933585697.as" mod="1259075966000" size="767" optimizedsize="384">
       <def id="_CursorManagerStyle__embed_css_Assets_swf_mx_skins_cursor_BusyCursor_933585697" />
@@ -7544,6 +7534,11 @@
     <script name="_TitleWindowStyle__embed_css_Assets_swf_CloseButtonUp_856451022.as" mod="1259075966000" size="740" optimizedsize="369">
       <def id="_TitleWindowStyle__embed_css_Assets_swf_CloseButtonUp_856451022" />
       <pre id="mx.core:SpriteAsset" />
+      <dep id="AS3" />
+    </script>
+    <script name="/home/firstuser/.m2/repository/com/asfusion/mate/mate-framework/0.8.9/mate-framework-0.8.9.swc(com/asfusion/mate/events/ActionListEvent)" mod="1252541169000" size="770" optimizedsize="358">
+      <def id="com.asfusion.mate.events:ActionListEvent" />
+      <pre id="flash.events:Event" />
       <dep id="AS3" />
     </script>
     <script name="/home/firstuser/.m2/repository/com/adobe/flex/framework/framework/3.5.0.12683/framework-3.5.0.12683-en_US.rb.swc$locale/en_US/skins.properties" mod="1259076028725" size="286" optimizedsize="260">
