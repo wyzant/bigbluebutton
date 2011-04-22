@@ -935,7 +935,7 @@
       <dep id="AS3" />
       <dep id="flash.utils:IDataOutput" />
     </script>
-    <script name="_org_bigbluebutton_main_views_MainApplicationShellWatcherSetupUtil.as" mod="1303504484622" size="2272" optimizedsize="2135">
+    <script name="_org_bigbluebutton_main_views_MainApplicationShellWatcherSetupUtil.as" mod="1303509386625" size="2272" optimizedsize="2135">
       <def id="_org_bigbluebutton_main_views_MainApplicationShellWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -1411,7 +1411,7 @@
       <dep id="flash.display:Sprite" />
       <dep id="mx.core:IFlexDisplayObject" />
     </script>
-    <script name="_org_bigbluebutton_main_views_LoggedOutWindowWatcherSetupUtil.as" mod="1303504484416" size="974" optimizedsize="863">
+    <script name="_org_bigbluebutton_main_views_LoggedOutWindowWatcherSetupUtil.as" mod="1303509386182" size="974" optimizedsize="863">
       <def id="_org_bigbluebutton_main_views_LoggedOutWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -1430,7 +1430,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="_BigBlueButton_FlexInit-generated.as" mod="1303504484801" size="3643" optimizedsize="3436">
+    <script name="_BigBlueButton_FlexInit-generated.as" mod="1303509386801" size="3643" optimizedsize="3436">
       <def id="_BigBlueButton_FlexInit" />
       <pre id="Object" />
       <dep id="mx.styles:StyleManager" />
@@ -1569,7 +1569,7 @@
       <dep id="mx.utils:ColorUtil" />
       <dep id="mx.skins.halo:HaloColors" />
     </script>
-    <script name="_org_bigbluebutton_common_APIEventMapWatcherSetupUtil.as" mod="1303504484342" size="958" optimizedsize="855">
+    <script name="_org_bigbluebutton_common_APIEventMapWatcherSetupUtil.as" mod="1303509386153" size="958" optimizedsize="855">
       <def id="_org_bigbluebutton_common_APIEventMapWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -2351,7 +2351,7 @@
       <dep id="mx.messaging.messages:ErrorMessage" />
       <dep id="mx.messaging.channels:PollingChannel" />
     </script>
-    <script name="_org_bigbluebutton_main_views_LanguageSelectorWatcherSetupUtil.as" mod="1303504484305" size="979" optimizedsize="867">
+    <script name="_org_bigbluebutton_main_views_LanguageSelectorWatcherSetupUtil.as" mod="1303509386118" size="979" optimizedsize="867">
       <def id="_org_bigbluebutton_main_views_LanguageSelectorWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -4353,7 +4353,7 @@
       <dep id="AS3" />
       <dep id="mx.events:PropertyChangeEvent" />
     </script>
-    <script name="_org_bigbluebutton_main_views_ConnectionLostWindowWatcherSetupUtil.as" mod="1303504484281" size="604" optimizedsize="560">
+    <script name="_org_bigbluebutton_main_views_ConnectionLostWindowWatcherSetupUtil.as" mod="1303509386095" size="604" optimizedsize="560">
       <def id="_org_bigbluebutton_main_views_ConnectionLostWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -4499,7 +4499,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="_org_bigbluebutton_main_views_MainToolbarWatcherSetupUtil.as" mod="1303504484278" size="1663" optimizedsize="1545">
+    <script name="_org_bigbluebutton_main_views_MainToolbarWatcherSetupUtil.as" mod="1303509386092" size="1663" optimizedsize="1545">
       <def id="_org_bigbluebutton_main_views_MainToolbarWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -4688,7 +4688,7 @@
       <dep id="AS3" />
       <dep id="mx.logging:Log" />
     </script>
-    <script name="_org_bigbluebutton_modules_videoconf_views_PublishWindowWatcherSetupUtil.as" mod="1303504484328" size="1977" optimizedsize="1840">
+    <script name="_org_bigbluebutton_modules_videoconf_views_PublishWindowWatcherSetupUtil.as" mod="1303509386141" size="1977" optimizedsize="1840">
       <def id="_org_bigbluebutton_modules_videoconf_views_PublishWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -4748,7 +4748,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="_BigBlueButton_mx_managers_SystemManager.as" mod="1303504484803" size="3562" optimizedsize="3452">
+    <script name="_BigBlueButton_mx_managers_SystemManager.as" mod="1303509386803" size="3562" optimizedsize="3452">
       <def id="_BigBlueButton_mx_managers_SystemManager" />
       <pre id="mx.core:IFlexModuleFactory" />
       <pre id="mx.managers:SystemManager" />
@@ -4926,7 +4926,7 @@
       <dep id="AS3" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="_org_bigbluebutton_main_maps_ApplicationEventMapWatcherSetupUtil.as" mod="1303504484522" size="1257" optimizedsize="1139">
+    <script name="_org_bigbluebutton_main_maps_ApplicationEventMapWatcherSetupUtil.as" mod="1303509386289" size="1257" optimizedsize="1139">
       <def id="_org_bigbluebutton_main_maps_ApplicationEventMapWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -6461,7 +6461,7 @@
       <pre id="Object" />
       <dep id="AS3" />
     </script>
-    <script name="_org_bigbluebutton_main_views_OldLocaleWarnWindowWatcherSetupUtil.as" mod="1303504484299" size="1104" optimizedsize="987">
+    <script name="_org_bigbluebutton_main_views_OldLocaleWarnWindowWatcherSetupUtil.as" mod="1303509386111" size="1104" optimizedsize="987">
       <def id="_org_bigbluebutton_main_views_OldLocaleWarnWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -6470,7 +6470,7 @@
       <dep id="org.bigbluebutton.main.views:OldLocaleWarnWindow" />
       <dep id="AS3" />
     </script>
-    <script name="_org_bigbluebutton_main_views_LoadingBarWatcherSetupUtil.as" mod="1303504484302" size="584" optimizedsize="540">
+    <script name="_org_bigbluebutton_main_views_LoadingBarWatcherSetupUtil.as" mod="1303509386115" size="584" optimizedsize="540">
       <def id="_org_bigbluebutton_main_views_LoadingBarWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
@@ -6677,7 +6677,7 @@
       <dep id="mx.rpc:AsyncToken" />
       <dep id="mx.core:mx_internal" />
     </script>
-    <script name="_org_bigbluebutton_modules_videoconf_views_VideoWindowWatcherSetupUtil.as" mod="1303504484336" size="612" optimizedsize="568">
+    <script name="_org_bigbluebutton_modules_videoconf_views_VideoWindowWatcherSetupUtil.as" mod="1303509386148" size="612" optimizedsize="568">
       <def id="_org_bigbluebutton_modules_videoconf_views_VideoWindowWatcherSetupUtil" />
       <pre id="mx.binding:IWatcherSetupUtil" />
       <pre id="flash.display:Sprite" />
