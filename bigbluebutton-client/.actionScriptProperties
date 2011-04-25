@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<actionScriptProperties mainApplicationPath="BigBlueButton.mxml" projectUUID="2f78753b-2e4c-41b4-8cf4-eddb768eb4b3" version="6">
-  <compiler additionalCompilerArguments="-locale=" autoRSLOrdering="false" copyDependentFiles="true" flexSDK="Flex 3.5" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin" sourceFolderPath="src/main/flex" strict="true" targetPlayerVersion="10.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
-    <compilerSourcePath>
-      <compilerSourcePathEntry kind="1" linkType="1" path="src/main/flex"/>
-      <compilerSourcePathEntry kind="1" linkType="1" path="src/main/resources"/>
-      <compilerSourcePathEntry kind="1" linkType="1" path="src/test/flex"/>
-    </compilerSourcePath>
+<actionScriptProperties analytics="false" mainApplicationPath="BigBlueButton.mxml" projectUUID="2f78753b-2e4c-41b4-8cf4-eddb768eb4b3" version="6">
+  <compiler additionalCompilerArguments="-locale=" autoRSLOrdering="false" copyDependentFiles="true" flexSDK="Flex 3.5" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin" sourceFolderPath="src" strict="true" targetPlayerVersion="10.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
+    <compilerSourcePath/>
     <libraryPath defaultLinkType="1">
       <libraryPathEntry kind="4" path="">
         <modifiedEntries>
@@ -38,22 +34,7 @@
     <application path="main/flex/modules/DeskshareStandalone.mxml"/>
     <application path="test/flex/BigBlueButtonUnitTests.mxml"/>
   </applications>
-  <modules>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/BreakoutModule.swf" optimize="true" sourcePath="src/main/flex/modules/BreakoutModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ChatModule.swf" optimize="true" sourcePath="src/main/flex/modules/ChatModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ClassroomAudioModule.swf" optimize="true" sourcePath="src/main/flex/modules/ClassroomAudioModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/SharedNotesModule.swf" optimize="true" sourcePath="src/main/flex/modules/SharedNotesModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/VideoconfModule.swf" optimize="true" sourcePath="src/main/flex/modules/VideoconfModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/PresentModule.swf" optimize="true" sourcePath="src/main/flex/modules/PresentModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/PhoneModule.swf" optimize="true" sourcePath="src/main/flex/modules/PhoneModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/DynamicInfoModule.swf" optimize="true" sourcePath="src/main/flex/modules/DynamicInfoModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ListenersModule.swf" optimize="true" sourcePath="src/main/flex/modules/ListenersModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ViewersModule.swf" optimize="true" sourcePath="src/main/flex/modules/ViewersModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/DeskshareStandalone.swf" optimize="true" sourcePath="src/main/flex/modules/DeskshareStandalone.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/DeskShareModule.swf" optimize="true" sourcePath="src/main/flex/modules/DeskShareModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/ExampleChatModule.swf" optimize="true" sourcePath="src/main/flex/modules/ExampleChatModule.mxml"/>
-    <module application="src/main/flex/BigBlueButton.mxml" destPath="modules/WhiteboardModule.swf" optimize="true" sourcePath="src/main/flex/modules/WhiteboardModule.mxml"/>
-  </modules>
+  <modules/>
   <buildCSSFiles>
     <buildCSSFileEntry destPath="bin" sourcePath="src/branding/css/logo_basic.css"/>
     <buildCSSFileEntry destPath="bin" sourcePath="src/branding/css/theme.css"/>
