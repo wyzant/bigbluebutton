@@ -38,49 +38,16 @@
     <testSourceDirectory>src/test/flex</testSourceDirectory>
     <plugins>
       <plugin>
-      	<artifactId>maven-antrun-plugin</artifactId>
-      	<executions>
-      	  <execution>
-      	  	<phase>clean</phase>
-      	  	<configuration>
-      	  	  <target>
-      	  	  	<taskdef resource="net/sf/antcontrib/antcontrib.properties" 
-                            classpathref="maven.compile.classpath"/>
-      	  	  	<property name="AVAILABLE_LOCALES" value="az_AZ,bg_BG,cs_CZ,da_DK,de_DE,el_GR,en_US,es_ES,es_LA,fa_IR,fr_FR,fr_CA,hu_HU,id_ID,it_IT,ja_JP,ko_KR,lv_LV,lt_LT,nb_NO,nl_NL,pl_PL,pt_BR,pt_PT,ro_RO,ru_RU,sv_SE,sr_SR,th_TH,tr_TR,vi_VN,uk_UA,zh_CN,zh_TW"/>
-      	  	  	
-      	  	  	<foreach list="${AVAILABLE_LOCALES}" target="copy-locale" param="supportedlocale" delimiter=","/>
-      	  	  	<target name="copy-locale">
-      	  	  		<echo message="Building ${supportedlocale}"/>
-					<available file="${flex.sdk}/${supportedlocale}" type="dir" property="locale.dir.present"/>
-					<if> 
-           				<equals arg1="${locale.dir.present}" arg2="true"/> 
-           			<then> 
-              			<echo message="No need to copy ${flex.sdk}/${supportedlocale}"/> 
-           			</then> 
-           			<else> 
-              			<echo message="Need to copy ${flex.sdk}/${supportedlocale}"/> 
-              			<exec dir="${flex.sdk}" vmlauncher="true" executable="copylocale">
-					<arg value="en_US"/>
-    					<arg value="${supportedlocale}"/>
-					</exec>
-           			</else> 
-        			</if>
-        		</target>
-      	  	  </tasks>
-      	  	</configuration>
-      	  	<goals>
-              <goal>run</goal>
-            </goals>
-      	  </execution>
-      	</executions>
-      </plugin>
-   		
-      <plugin>
         <groupId>org.sonatype.flexmojos</groupId>
         <artifactId>flexmojos-maven-plugin</artifactId>
-        <version>3.9</version>
+        <version>4.0-beta-3</version>
         <extensions>true</extensions>
         <dependencies>
+          <dependency>
+            <groupId>org.sonatype.flexmojos</groupId>
+            <artifactId>flexmojos-flex3-compatibility-layer</artifactId>
+            <version>4.0-beta-3</version>
+          </dependency>
           <dependency>
             <groupId>com.adobe.flex</groupId>
             <artifactId>compiler</artifactId>
@@ -90,6 +57,7 @@
         </dependencies>
         <configuration>
           <targetPlayer>10.0.0</targetPlayer>
+          <quick>true</quick>
           <moduleFiles>
   			<module>modules/BreakoutModule.mxml</module>
   			<module>modules/ChatModule.mxml</module>
@@ -106,50 +74,68 @@
   			<module>modules/ViewersModule.mxml</module>
   			<module>modules/WhiteboardModule.mxml</module>
 		  </moduleFiles>
+		  <includeResourceBundles>
+		  	<rb>resources</rb>
+  			<rb>SharedResources</rb>
+  			<rb>collections</rb>
+  			<rb>containers</rb>
+  			<rb>controls</rb>
+  			<rb>core</rb>
+  			<rb>effects</rb>
+  			<rb>formatters</rb>
+  			<rb>logging</rb>
+  			<rb>skins</rb>
+  			<rb>states</rb>
+  			<rb>styles</rb>
+  			<rb>utils</rb>
+  			<rb>validators</rb>
+  			<rb>rpc</rb>
+  			<rb>messaging</rb>
+		  </includeResourceBundles>
 		  <resourceBundlePath>${basedir}/locale/{locale}</resourceBundlePath>
-          <runtimeLocales>
+          <localesRuntime>
           	<locale>en_US</locale>
-          	<locale>az_AZ</locale>
-            <locale>bg_BG</locale>
-            <locale>cs_CZ</locale>
-            <locale>da_DK</locale>
-            <locale>de_DE</locale>
-            <locale>el_GR</locale>
-            <locale>es_ES</locale>
-            <locale>es_LA</locale>
-            <locale>fa_IR</locale>
-            <locale>fr_CA</locale>
-            <locale>fr_FR</locale>
-            <locale>hu_HU</locale>
-            <locale>id_ID</locale>
-            <locale>it_IT</locale>
-            <locale>ja_JP</locale>
-            <locale>ko_KR</locale>
-            <locale>lt_LT</locale>
-            <locale>lv_LV</locale>
-            <locale>nb_NO</locale>
-            <locale>nl_NL</locale>
-            <locale>pl_PL</locale>
-            <locale>pt_BR</locale>
-            <locale>pt_PT</locale>
-            <locale>ro_RO</locale>
-            <locale>ru_RU</locale>
-            <locale>sr_SR</locale>
-            <locale>sv_SE</locale>
-            <locale>th_TH</locale>
-            <locale>tr_TR</locale>
-            <locale>uk_UA</locale>
-            <locale>vi_VN</locale>
-            <locale>zh_CN</locale>
-            <locale>zh_TW</locale>
-          </runtimeLocales>
+          	<locale>az_AZ,en_US</locale>
+            <locale>bg_BG,en_US</locale>
+            <locale>cs_CZ,en_US</locale>
+            <locale>da_DK,en_US</locale>
+            <locale>de_DE,en_US</locale>
+            <locale>el_GR,en_US</locale>
+            <locale>es_ES,en_US</locale>
+            <locale>es_LA,en_US</locale>
+            <locale>fa_IR,en_US</locale>
+            <locale>fr_CA,en_US</locale>
+            <locale>fr_FR,en_US</locale>
+            <locale>hu_HU,en_US</locale>
+            <locale>id_ID,en_US</locale>
+            <locale>it_IT,en_US</locale>
+            <locale>ja_JP,en_US</locale>
+            <locale>ko_KR,en_US</locale>
+            <locale>lt_LT,en_US</locale>
+            <locale>lv_LV,en_US</locale>
+            <locale>nb_NO,en_US</locale>
+            <locale>nl_NL,en_US</locale>
+            <locale>pl_PL,en_US</locale>
+            <locale>pt_BR,en_US</locale>
+            <locale>pt_PT,en_US</locale>
+            <locale>ro_RO,en_US</locale>
+            <locale>ru_RU,en_US</locale>
+            <locale>sr_SR,en_US</locale>
+            <locale>sv_SE,en_US</locale>
+            <locale>th_TH,en_US</locale>
+            <locale>tr_TR,en_US</locale>
+            <locale>uk_UA,en_US</locale>
+            <locale>vi_VN,en_US</locale>
+            <locale>zh_CN,en_US</locale>
+            <locale>zh_TW,en_US</locale>
+          </localesRuntime>
         </configuration>
       </plugin>
       
       <plugin>
         <groupId>org.sonatype.flexmojos</groupId>
         <artifactId>flexmojos-maven-plugin</artifactId>
-        <version>3.9</version>
+        <version>4.0-beta-3</version>
         <executions>
           <execution>
             <goals>
@@ -232,6 +218,13 @@
       <groupId>google</groupId> 
       <artifactId>googleas3api</artifactId> 
       <version>1.0</version> 
+      <type>swc</type> 
+	</dependency>
+	
+	<dependency> 
+      <groupId>com.adobe.flex.framework</groupId> 
+      <artifactId>rpc_rb</artifactId> 
+      <version>3.5.0.12683</version> 
       <type>swc</type> 
 	</dependency>
 	
