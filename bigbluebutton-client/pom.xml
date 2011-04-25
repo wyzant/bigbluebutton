@@ -57,7 +57,7 @@
         </dependencies>
         <configuration>
           <targetPlayer>10.0.0</targetPlayer>
-          <quick>true</quick>
+          <quick>true</quick.
           <moduleFiles>
   			<module>modules/BreakoutModule.mxml</module>
   			<module>modules/ChatModule.mxml</module>
