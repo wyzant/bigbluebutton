@@ -233,12 +233,12 @@
       <type>swc</type> 
 	</dependency>
 	
-	<dependency> 
+	<!--<dependency> 
       <groupId>com.adobe.flex.framework</groupId> 
       <artifactId>rpc_rb</artifactId> 
       <version>3.5.0.12683</version> 
       <type>swc</type> 
-	</dependency>
+	</dependency>-->
 	
 	<dependency>
       <groupId>ant-contrib</groupId>
