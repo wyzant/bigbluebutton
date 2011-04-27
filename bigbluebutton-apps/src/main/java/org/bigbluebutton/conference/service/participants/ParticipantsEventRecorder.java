@@ -51,18 +51,15 @@ public class ParticipantsEventRecorder implements IEventRecorder, IRoomListener 
 		this.record = record;
 	}
 	
-	@Override
 	public void acceptRecorder(IRecorder recorder) {
 		log.debug("Accepting IRecorder");
 		this.recorder = recorder;
 	}
 
-	@Override
 	public String getName() {
 		return name;
 	}
 
-	@Override
 	public void recordEvent(String message) {
 		if (record) {
 			recorder.recordEvent(message);
@@ -70,14 +67,12 @@ public class ParticipantsEventRecorder implements IEventRecorder, IRoomListener 
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public void endAndKickAll() {
 		so.sendMessage("logout", new ArrayList());
 		recordEvent(parseParticipantsToJSON(new ArrayList(), this.RECORD_EVENT_LEAVE_ALL));
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public void participantJoined(Participant p) {
 		log.debug("A participant has joined {}.",p.getUserid());
 		ArrayList args = new ArrayList();
@@ -88,7 +83,6 @@ public class ParticipantsEventRecorder implements IEventRecorder, IRoomListener 
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public void participantLeft(Long userid) {
 		ArrayList args = new ArrayList();
 		args.add(userid);
@@ -97,7 +91,6 @@ public class ParticipantsEventRecorder implements IEventRecorder, IRoomListener 
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public void participantStatusChange(Long userid, String status, Object value) {
 		log.debug("A participant's status has changed "+userid+" "+status+" "+value);
 		ArrayList args = new ArrayList();

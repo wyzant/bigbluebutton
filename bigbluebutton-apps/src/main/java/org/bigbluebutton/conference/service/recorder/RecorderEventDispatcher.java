@@ -84,7 +84,6 @@ public class RecorderEventDispatcher implements IRecorder {
 	 * @param message this is a event-message sent by the BigBlueButton modules. 
 	 * @see IRecorder 
 	 */
-	@Override
 	public void recordEvent(String message) {
 		EventMessage event=new EventMessage();
 		event.setConferenceID(room);

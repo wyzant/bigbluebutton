@@ -52,7 +52,6 @@ public class ConversionUpdatesMessageListener implements MessageListener{
 		conversionUpdatesProcessor.start();
 	}
 
-	@Override
 	public void onMessage(Message jmsMessage){
 		if (jmsMessage instanceof MapMessage) {
         	MapMessage mapMessage = ((MapMessage) jmsMessage);

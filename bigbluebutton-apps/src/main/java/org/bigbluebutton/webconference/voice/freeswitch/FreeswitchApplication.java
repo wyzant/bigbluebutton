@@ -67,7 +67,6 @@ public class FreeswitchApplication extends Observable implements ConferenceServi
         return Collections.unmodifiableMap(result);
     }
     
-    @Override
     public void startup() {
 
         Client c = manager.getESLClient();
@@ -93,33 +92,28 @@ public class FreeswitchApplication extends Observable implements ConferenceServi
         }
     }
 
-    @Override
     public void shutdown() {
         heartbeatMonitor.stop();
     }
 
-    @Override
     public void populateRoom(String room) {
         PopulateRoomCommand prc = new PopulateRoomCommand(room, USER);
         EslMessage response = manager.getESLClient().sendSyncApiCommand(prc.getCommand(), prc.getCommandArgs());
         prc.handleResponse(response, conferenceEventListener);
     }
 
-    @Override
     public void mute(String room, Integer participant, Boolean mute) {
         MuteParticipantCommand mpc = new MuteParticipantCommand(room, participant, mute, USER);
         String jobId = manager.getESLClient().sendAsyncApiCommand( mpc.getCommand(), mpc.getCommandArgs());
         log.debug("mute called for room [{}] jobid [{}]", room, jobId);
     }
 
-    @Override
     public void eject(String room, Integer participant) {
         EjectParticipantCommand mpc = new EjectParticipantCommand(room, participant, USER);
         String jobId = manager.getESLClient().sendAsyncApiCommand( mpc.getCommand(), mpc.getCommandArgs());
         log.debug("eject/kick called for room [{}] jobid [{}]", room, jobId);
     }
 
-    @Override
     public void eventReceived(EslEvent event) {
         if(event.getEventName().equals(FreeswitchHeartbeatMonitor.EVENT_HEARTBEAT)) {
             setChanged();
@@ -131,7 +125,6 @@ public class FreeswitchApplication extends Observable implements ConferenceServi
 
     }
 
-    @Override
     public void conferenceEventJoin(String uniqueId, String confName, int confSize, EslEvent event) {
         Integer memberId = this.getMemeberIdFromEvent(event);
         Map<String, String> headers = event.getEventHeaders();
@@ -145,28 +138,24 @@ public class FreeswitchApplication extends Observable implements ConferenceServi
         conferenceEventListener.handleConferenceEvent(pj);
     }
 
-    @Override
     public void conferenceEventLeave(String uniqueId, String confName, int confSize, EslEvent event) {
         Integer memberId = this.getMemeberIdFromEvent(event);
         ParticipantLeftEvent pl = new ParticipantLeftEvent(memberId, confName);
         conferenceEventListener.handleConferenceEvent(pl);
     }
 
-    @Override
     public void conferenceEventMute(String uniqueId, String confName, int confSize, EslEvent event) {
         Integer memberId = this.getMemeberIdFromEvent(event);
         ParticipantMutedEvent pm = new ParticipantMutedEvent(memberId, confName, true);
         conferenceEventListener.handleConferenceEvent(pm);
     }
 
-    @Override
     public void conferenceEventUnMute(String uniqueId, String confName, int confSize, EslEvent event) {
         Integer memberId = this.getMemeberIdFromEvent(event);
         ParticipantMutedEvent pm = new ParticipantMutedEvent(memberId, confName, false);
         conferenceEventListener.handleConferenceEvent(pm);
     }
 
-    @Override
     public void conferenceEventAction(String uniqueId, String confName, int confSize, String action, EslEvent event) {
         Integer memberId = this.getMemeberIdFromEvent(event);
         ParticipantTalkingEvent pt;
@@ -205,27 +194,22 @@ public class FreeswitchApplication extends Observable implements ConferenceServi
         }
     }
 
-    @Override
     public void conferenceEventTransfer(String uniqueId, String confName, int confSize, EslEvent event) {
         //Ignored, Noop
     }
 
-    @Override
     public void conferenceEventThreadRun(String uniqueId, String confName, int confSize, EslEvent event) {
         //Ignored, Noop
     }
 
-    @Override
     public void conferenceEventPlayFile(String uniqueId, String confName, int confSize, EslEvent event) {
         //Ignored, Noop
     }
 
-    @Override
     public void backgroundJobResultReceived(EslEvent event) {
         log.debug( "Background job result received [{}]", event );
     }
 
-    @Override
     public void exceptionCaught(ExceptionEvent e) {
         setChanged();
         notifyObservers(e);

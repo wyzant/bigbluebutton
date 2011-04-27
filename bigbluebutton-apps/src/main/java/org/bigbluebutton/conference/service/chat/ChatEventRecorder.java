@@ -43,25 +43,21 @@ private static Logger log = Red5LoggerFactory.getLogger( ChatEventRecorder.class
 	}
 	
 	
-	@Override
 	public void acceptRecorder(IRecorder recorder) {
 		log.debug("Accepting IRecorder");
 		this.recorder = recorder;
 	}
 
-	@Override
 	public String getName() {
 		return name;
 	}
 
-	@Override
 	public void recordEvent(String message) {
 		if(record)
 			recorder.recordEvent(parseChatToJSON(message));
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	public void newChatMessage(String message) {
 		log.debug("New chat message...");
 		List list=new ArrayList();
