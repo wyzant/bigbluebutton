@@ -29,6 +29,7 @@
     <module>bigbluebutton-apps</module>
     <module>bbb-voice</module>
     <module>bbb-video</module>
+    <module>bbb-common-message</module>
   </modules>
 
 </project>
