@@ -27,6 +27,8 @@
   <modules>
     <module>bigbluebutton-client</module>
     <module>bigbluebutton-apps</module>
+    <module>bbb-voice</module>
+    <module>bbb-video</module>
   </modules>
 
 </project>
