@@ -27,6 +27,10 @@ package org.bigbluebutton.main.model
 	 */	
 	public class ConferenceParameters
 	{
+		public function ConferenceParameters(){
+			
+		}
+		
 		/**
 		 * The name of the conference
 		 */		

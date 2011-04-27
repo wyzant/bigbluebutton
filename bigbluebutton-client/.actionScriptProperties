@@ -43,6 +43,7 @@
     <application path="main/flex/BigBlueButton.mxml"/>
     <application path="main/flex/modules/DeskshareStandalone.mxml"/>
     <application path="test/flex/BigBlueButtonUnitTests.mxml"/>
+    <application path="modules/DeskshareStandalone.mxml"/>
   </applications>
   <modules>
     <module application="src/main/flex/BigBlueButton.mxml" destPath="main/flex/modules/BreakoutModule.swf" optimize="true" sourcePath="src/main/flex/modules/BreakoutModule.mxml"/>

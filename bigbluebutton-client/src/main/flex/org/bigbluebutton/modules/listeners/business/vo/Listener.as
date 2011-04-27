@@ -32,5 +32,9 @@ package org.bigbluebutton.modules.listeners.business.vo {
 		// This is not the role of the joining listener
 		// but of the participant running the client.
 		public var moderator:Boolean = false;	
+		
+		public function Listener(){
+			
+		}
 	}
 }

@@ -28,6 +28,10 @@ package org.bigbluebutton.common
 		
 		[Bindable] public static var isPresenter:Boolean;
 		
+		public function Role(){
+			
+		}
+		
 		/**
 		 * Set the role of the user, with the role being one of the constants defined in this class. 
 		 * @param role

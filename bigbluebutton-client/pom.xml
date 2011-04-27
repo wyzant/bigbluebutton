@@ -59,7 +59,7 @@
         <configuration>
           <targetPlayer>10.0.0</targetPlayer>
           <!--<quick>true</quick>-->
-          <!--<finalName>BigBlueButton</finalName>-->
+          <optimize>true</optimize>
           <modules>
   			<module>
   			  <sourceFile>modules/BreakoutModule.mxml</sourceFile>

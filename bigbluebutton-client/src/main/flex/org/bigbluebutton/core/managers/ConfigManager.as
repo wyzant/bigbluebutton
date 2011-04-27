@@ -22,6 +22,10 @@ package org.bigbluebutton.core.managers {
 	public class ConfigManager {
 		public var configs:Config;
 		
+		public function ConfigManager(){
+			
+		}
+		
 		public function setConfig(conf:Config):void {
 			this.configs = configs;
 		}
