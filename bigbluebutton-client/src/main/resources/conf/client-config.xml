@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <config>
-    <localeversion>0.71</localeversion>
+	<localeversion suppressWarning="false">0.71</localeversion>
     <version>3818-2011-01-18</version>
     <help url="http://192.168.0.215/help.html"/>
     <porttest host="192.168.0.215" application="video"/>    
@@ -11,35 +11,35 @@
     
 	<modules>
 
-		<module name="ChatModule" url="${project.artifactId}-${project.version}-ChatModule.swf" 
+		<module name="ChatModule" url="modules/ChatModule.swf" 
 			uri="rtmp://192.168.0.215/bigbluebutton" 
 			dependsOn="ViewersModule"	
 			translationOn="true"
 			translationEnabled="true"	 
 		/>
 		
-		<module name="ViewersModule" url="${project.artifactId}-${project.version}-ViewersModule.swf" 
+		<module name="ViewersModule" url="modules/ViewersModule.swf" 
 			uri="rtmp://192.168.0.215/bigbluebutton" 
 			host="http://192.168.0.215/bigbluebutton/api/enter"
 			allowKickUser="false"
 		/>
 			
-		<module name="ListenersModule" url="${project.artifactId}-${project.version}-ListenersModule.swf" 
+		<module name="ListenersModule" url="modules/ListenersModule.swf" 
 			uri="rtmp://192.168.0.215/bigbluebutton" 
 			recordingHost="http://192.168.0.215"
 		/>
 		
-		<module name="DeskShareModule" url="${project.artifactId}-${project.version}-DeskShareModule.swf" 
+		<module name="DeskShareModule" url="modules/DeskShareModule.swf" 
 			uri="rtmp://192.168.0.215/deskShare"
 		/>
 		
-		<module name="PhoneModule" url="${project.artifactId}-${project.version}-PhoneModule.swf" 
+		<module name="PhoneModule" url="modules/PhoneModule.swf" 
 			uri="rtmp://192.168.0.215/sip" 
 			autoJoin="false"
 			dependsOn="ViewersModule"
 		/>
 		
-		<module name="VideoconfModule" url="${project.artifactId}-${project.version}-VideoconfModule.swf" 
+		<module name="VideoconfModule" url="modules/VideoconfModule.swf" 
 			uri="rtmp://192.168.0.215/video"
 			dependsOn="ViewersModule"
 			videoQuality="70"
@@ -47,31 +47,31 @@
 			resolutions="160x120,320x240,640x480,1280x720"
 		/>
 		
-		<module name="WhiteboardModule" url="${project.artifactId}-${project.version}-WhiteboardModule.swf" 
+		<module name="WhiteboardModule" url="modules/WhiteboardModule.swf" 
 			uri="rtmp://192.168.0.215/bigbluebutton" 
 			dependsOn="PresentModule"
 		/>
 		
-		<module name="PresentModule" url="${project.artifactId}-${project.version}-PresentModule.swf" 
+		<module name="PresentModule" url="modules/PresentModule.swf" 
 			uri="rtmp://192.168.0.215/bigbluebutton" 
 			host="http://192.168.0.215" 
 			dependsOn="ViewersModule"
 		/>
 
 		<!-- new module in development: 
-		<module name="DynamicInfoModule" url="${project.artifactId}-${project.version}-DynamicInfoModule.swf" 
+		<module name="DynamicInfoModule" url="modules/DynamicInfoModule.swf" 
 			uri="rtmp://192.168.0.215/bigbluebutton" 
 			host="http://192.168.0.215" 
 			infoURL="http://192.168.0.215/client/conf/example-info-data.xml?user={userID}&role={role}&meetingID={meetingID}"
 		/>
 		-->
 		
-		<!--<module name="ExampleChatModule" url="${project.artifactId}-${project.version}-ExampleChatModule.swf" 
+		<!--<module name="ExampleChatModule" url="modules/ExampleChatModule.swf" 
             uri="rtmp://192.168.0.215/bigbluebutton" 
             host="http://192.168.0.215"
 		/>-->
 		
-		<!--<module name="BreakoutModule" url="${project.artifactId}-${project.version}-BreakoutModule.swf" 
+		<!--<module name="BreakoutModule" url="modules/BreakoutModule.swf" 
 			uri="rtmp://192.168.0.225/bigbluebutton" 
 			host="http://192.168.0.225" 
 			dependsOn="ViewersModule"

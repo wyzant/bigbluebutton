@@ -30,7 +30,7 @@ package org.bigbluebutton.main.model
 
 	public class ConfigParameters
 	{
-		public static const FILE_PATH:String = "conf/client-config.xml";
+		public static const FILE_PATH:String = "conf/client-config.xml"; 
 		
 		private var _urlLoader:URLLoader;
 		

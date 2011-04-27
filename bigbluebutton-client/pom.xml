@@ -29,7 +29,8 @@
   
   	<resources>
   	  <resource>
-        <directory>${basedir}/src/main/resources/conf</directory>
+  	  	<targetPath>../</targetPath>
+        <directory>${basedir}/src/main/resources</directory>
         <filtering>true</filtering>
       </resource>
     </resources>
@@ -57,78 +58,88 @@
         </dependencies>
         <configuration>
           <targetPlayer>10.0.0</targetPlayer>
-          <quick>true</quick.
-          <moduleFiles>
-  			<module>modules/BreakoutModule.mxml</module>
-  			<module>modules/ChatModule.mxml</module>
-  			<module>modules/ClassroomAudioModule.mxml</module>
-  			<module>modules/DeskShareModule.mxml</module>
-  			<module>modules/DynamicInfoModule.mxml</module>
-  			<module>modules/ExampleChatModule.mxml</module>
-  			<module>modules/ListenersModule.mxml</module>
-  			<module>modules/PhoneModule.mxml</module>
-  			<module>modules/PresentModule.mxml</module>
-  			<module>modules/SharedNotesModule.mxml</module>
-  			<module>modules/VideoconfModule.mxml</module>
-  			<module>modules/ViewersModule.mxml</module>
-  			<module>modules/ViewersModule.mxml</module>
-  			<module>modules/WhiteboardModule.mxml</module>
-		  </moduleFiles>
-		  <includeResourceBundles>
-		  	<rb>resources</rb>
-  			<rb>SharedResources</rb>
-  			<rb>collections</rb>
-  			<rb>containers</rb>
-  			<rb>controls</rb>
-  			<rb>core</rb>
-  			<rb>effects</rb>
-  			<rb>formatters</rb>
-  			<rb>logging</rb>
-  			<rb>skins</rb>
-  			<rb>states</rb>
-  			<rb>styles</rb>
-  			<rb>utils</rb>
-  			<rb>validators</rb>
-  			<rb>rpc</rb>
-  			<rb>messaging</rb>
-		  </includeResourceBundles>
-		  <resourceBundlePath>${basedir}/locale/{locale}</resourceBundlePath>
-          <localesRuntime>
-          	<locale>en_US</locale>
-          	<locale>az_AZ,en_US</locale>
-            <locale>bg_BG,en_US</locale>
-            <locale>cs_CZ,en_US</locale>
-            <locale>da_DK,en_US</locale>
-            <locale>de_DE,en_US</locale>
-            <locale>el_GR,en_US</locale>
-            <locale>es_ES,en_US</locale>
-            <locale>es_LA,en_US</locale>
-            <locale>fa_IR,en_US</locale>
-            <locale>fr_CA,en_US</locale>
-            <locale>fr_FR,en_US</locale>
-            <locale>hu_HU,en_US</locale>
-            <locale>id_ID,en_US</locale>
-            <locale>it_IT,en_US</locale>
-            <locale>ja_JP,en_US</locale>
-            <locale>ko_KR,en_US</locale>
-            <locale>lt_LT,en_US</locale>
-            <locale>lv_LV,en_US</locale>
-            <locale>nb_NO,en_US</locale>
-            <locale>nl_NL,en_US</locale>
-            <locale>pl_PL,en_US</locale>
-            <locale>pt_BR,en_US</locale>
-            <locale>pt_PT,en_US</locale>
-            <locale>ro_RO,en_US</locale>
-            <locale>ru_RU,en_US</locale>
-            <locale>sr_SR,en_US</locale>
-            <locale>sv_SE,en_US</locale>
-            <locale>th_TH,en_US</locale>
-            <locale>tr_TR,en_US</locale>
-            <locale>uk_UA,en_US</locale>
-            <locale>vi_VN,en_US</locale>
-            <locale>zh_CN,en_US</locale>
-            <locale>zh_TW,en_US</locale>
-          </localesRuntime>
+          <!--<quick>true</quick>-->
+          <!--<finalName>BigBlueButton</finalName>-->
+          <modules>
+  			<module>
+  			  <sourceFile>modules/BreakoutModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>BreakoutModule</finalName>
+              <destinationPath>modules/</destinationPath>
+  			</module>
+  			<module>
+  			  <sourceFile>modules/ChatModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>ChatModule</finalName>
+              <destinationPath>modules/</destinationPath>
+  			</module>
+  			<module>
+  			  <sourceFile>modules/ClassroomAudioModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>ClassroomAudioModule</finalName>
+              <destinationPath>modules/</destinationPath>
+  			</module>
+  			<module>
+  			  <sourceFile>modules/DeskShareModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>DeskShareModule</finalName>
+              <destinationPath>modules/</destinationPath>
+  			</module>
+  			<module>
+ 			  <sourceFile>modules/DynamicInfoModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>DynamicInfoModule</finalName>
+              <destinationPath>modules/</destinationPath>
+			</module>
+  			<module>
+  			  <sourceFile>modules/ExampleChatModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>ExampleChatModule</finalName>
+              <destinationPath>modules/</destinationPath>
+            </module>
+  			<module>
+  			  <sourceFile>modules/ListenersModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>ListenersModule</finalName>
+              <destinationPath>modules/</destinationPath>
+            </module>
+  			<module>
+  			  <sourceFile>modules/PhoneModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>PhoneModule</finalName>
+              <destinationPath>modules/</destinationPath>
+            </module>
+  			<module>
+  			  <sourceFile>modules/PresentModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>PresentModule</finalName>
+              <destinationPath>modules</destinationPath>
+            </module>
+  			<module>
+  			  <sourceFile>modules/SharedNotesModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>SharedNotesModule</finalName>
+              <destinationPath>modules</destinationPath>
+            </module>
+  			<module>
+  			  <sourceFile>modules/VideoconfModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>VideoconfModule</finalName>
+              <destinationPath>modules/</destinationPath>
+            </module>
+  			<module>
+  			  <sourceFile>modules/ViewersModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>ViewersModule</finalName>
+              <destinationPath>modules/</destinationPath>
+            </module>
+  			<module>
+  			  <sourceFile>modules/WhiteboardModule.mxml</sourceFile>
+    		  <optimize>true</optimize>
+              <finalName>WhiteboardModule</finalName>
+              <destinationPath>modules/</destinationPath>
+            </module>
+		  </modules>
         </configuration>
       </plugin>
       
@@ -143,6 +154,7 @@
             </goals>
              <configuration>
               <templateURI>folder:html-template/</templateURI>
+              <htmlName>BigBlueButton</htmlName>
             </configuration>
           </execution>
         </executions>
