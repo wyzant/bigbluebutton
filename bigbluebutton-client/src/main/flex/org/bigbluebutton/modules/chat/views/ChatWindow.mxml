@@ -39,6 +39,7 @@
 			import mx.resources.ResourceBundle;
 			import mx.resources.ResourceManager;
 			
+			import org.bigbluebutton.common.events.LocaleChangeEvent;
 			import org.bigbluebutton.main.views.MainCanvas;
 			import org.bigbluebutton.modules.chat.events.TranscriptEvent;
 			import org.bigbluebutton.util.i18n.ResourceUtil;
@@ -80,8 +81,14 @@
 				this.title = ResourceUtil.getInstance().getString("bbb.chat.title");
 			}
 			
+			private function localeChanged(e:LocaleChangeEvent):void{
+				resourcesChanged();
+			}
+			
 		]]>
 	</mx:Script>
+	
+	<mate:Listener type="{LocaleChangeEvent.LOCALE_CHANGED}" method="localeChanged" />
 	
 	<views:ChatView id="chatView"/>
 </MDIWindow>

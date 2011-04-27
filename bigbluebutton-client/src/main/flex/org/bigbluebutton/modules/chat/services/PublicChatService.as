@@ -27,7 +27,10 @@ package org.bigbluebutton.modules.chat.services
 		private var attributes:Object;
 		
 		private var chatSOService:PublicChatSharedObjectService;
-		
+
+		public function PublicChatService(){
+			
+		}
 
 		public function setModuleAttributes(attributes:Object):void {
 			this.attributes = attributes;

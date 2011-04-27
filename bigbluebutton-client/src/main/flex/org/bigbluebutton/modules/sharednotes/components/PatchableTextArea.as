@@ -32,6 +32,10 @@ package org.bigbluebutton.modules.sharednotes.components
 		private var _patch : String = "";
 		private var _patchChanged : Boolean = false;
 		
+		public function PatchableTextArea(){
+			
+		}
+		
 		public function set tackOnText(value:String):void
 		{
 			_tackOnText = value;

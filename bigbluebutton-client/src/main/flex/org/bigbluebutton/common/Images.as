@@ -21,6 +21,9 @@ package org.bigbluebutton.common
 	[Bindable]
 	public class Images
 	{
+		public function Images(){
+			
+		}
 		
         [Embed(source="../../../../resources/assets/images/user_gray.png")]
         public var user_gray:Class; 
@@ -142,6 +145,9 @@ package org.bigbluebutton.common
 		[Embed(source="../../../../resources/assets/images/presenter.png")]
 		public var presenter:Class;
 		
+		[Embed(source="../../../../resources/assets/images/headset.png")]
+		public var headset_icon:Class; 
+		
 		[Embed(source="../../../../resources/assets/images/sharednotes/play-icon.png")]
 		public var playIcon:Class;
 		
@@ -153,5 +159,6 @@ package org.bigbluebutton.common
 		
 		[Embed(source="../../../../resources/assets/images/sharednotes/note_edit.png")]
 		public var sharednotes:Class;
+		
 	}
 }

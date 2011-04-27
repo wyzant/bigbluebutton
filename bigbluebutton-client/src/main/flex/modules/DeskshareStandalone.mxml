@@ -33,17 +33,17 @@
 	<mate:Listener type="{CursorEvent.UPDATE_CURSOR_LOC_EVENT}" method="onUpdateCursorEvent" />
 	<mx:Script>
 		<![CDATA[
+			import mx.containers.Canvas;
+			import mx.controls.Button;
 			import mx.controls.Image;
-
+			import mx.core.UIComponent;
+			
+			import org.bigbluebutton.common.Images;
+			import org.bigbluebutton.modules.deskshare.events.AppletStartedEvent;
 			import org.bigbluebutton.modules.deskshare.events.CursorEvent;
 			import org.bigbluebutton.modules.deskshare.events.ViewStreamEvent;
-			import mx.controls.Button;
-			import mx.containers.Canvas;
-			import org.bigbluebutton.modules.deskshare.events.AppletStartedEvent;
-			import org.bigbluebutton.util.QueryStringParameters;
-			import mx.core.UIComponent;
 			import org.bigbluebutton.modules.deskshare.services.DeskshareService;
-			import org.bigbluebutton.common.Images;
+			import org.bigbluebutton.util.QueryStringParameters;
 			
 			private var videoHolder:UIComponent;
 
