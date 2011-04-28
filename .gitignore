@@ -1,2 +1,4 @@
 .metadata
 bigbluebutton-client/target/
+esl-client-bbb/org.freeswitch.esl.client.example/target/
+esl-client-bbb/org.freeswitch.esl.client/target/
