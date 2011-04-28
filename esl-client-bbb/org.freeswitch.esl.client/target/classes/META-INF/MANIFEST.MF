@@ -18,14 +18,14 @@ Export-Package: org.freeswitch.esl.client;uses:="org.freeswitch.esl.cl
  g.freeswitch.esl.client.manager.internal;uses:="org.freeswitch.esl.cl
  ient.transport,org.freeswitch.esl.client.inbound,org.freeswitch.esl.c
  lient.manager"
-Built-By: leif
+Built-By: firstuser
 Tool: Bnd-0.0.357
 Bundle-Name: FreeSWITCH Event Socket Library - Java Client
 Created-By: Apache Maven Bundle Plugin
 Bundle-Vendor: FreeSWITCH.org
 Build-Jdk: 1.6.0_20
 Bundle-Version: 0.9.0.SNAPSHOT
-Bnd-LastModified: 1277609270704
+Bnd-LastModified: 1303954270929
 Bundle-ManifestVersion: 2
 Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
 Bundle-Description: The FreeSWITCH Event Socket Library provides a TCP

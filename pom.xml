@@ -26,6 +26,7 @@
 
   <modules>
     <module>bbb-common-message</module>
+    <module>esl-client-bbb</module>
     <module>bigbluebutton-client</module>
     <module>bigbluebutton-apps</module>
     <module>bbb-voice</module>
