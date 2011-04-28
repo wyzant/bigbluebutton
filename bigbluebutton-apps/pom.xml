@@ -1,11 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>bigbluebutton</groupId>
   <artifactId>bigbluebutton-apps</artifactId>
-  <version>0.8-PRE</version>
   <packaging>war</packaging>
   <name>BigBlueButton-Apps</name>
   <description>BigBlueButton Apps for Red5</description>
+  
+  <parent>
+    <artifactId>bigbluebutton</artifactId>
+    <groupId>bigbluebutton</groupId>
+    <version>0.8-PRE</version>
+  </parent>
+  
   <dependencies>
   	<dependency>
   		<groupId>org.apache.activemq</groupId>
@@ -225,9 +230,9 @@
         <version>0.9</version>
      </dependency>
      <dependency>
-     	<groupId>org.bigbluebutton.common</groupId>
+     	<groupId>bigbluebutton</groupId>
         <artifactId>bbb-common-message</artifactId>
-        <version>0.7</version>
+        <version>0.8-PRE</version>
      </dependency>
   </dependencies>
   

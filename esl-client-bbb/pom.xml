@@ -22,6 +22,13 @@
   <packaging>pom</packaging>
   <name>FreeSWITCH Event Socket Library - Java Client project</name>
   <url>http://www.freeswitch.org</url>
+  
+   <parent>
+    <artifactId>bigbluebutton</artifactId>
+    <groupId>bigbluebutton</groupId>
+    <version>0.8-PRE</version>
+   </parent>
+  
   <description>
     The FreeSWITCH Event Socket Library provides a TCP based control and/or
     monitoring interface to a running switch.  This project provides a Java
