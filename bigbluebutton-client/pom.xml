@@ -262,6 +262,12 @@
     	<releases> <enabled>true</enabled> </releases>
       	<snapshots> <enabled>false</enabled> </snapshots>
     </repository>
+    
+    <repository>
+      	<id>client-local</id>
+      	<url>file://${basedir}/libs</url>
+    </repository>
+    
   </repositories>
   
   <pluginRepositories>
