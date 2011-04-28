@@ -85,7 +85,7 @@
   	<dependency>
      	<groupId>org.red5</groupId>
         <artifactId>red5</artifactId>
-        <version>0.9</version>
+        <version>0.9.1</version>
     </dependency>
   	<dependency>
   		<groupId>javax.media</groupId>
@@ -93,4 +93,15 @@
   		<version>2.1.1e</version>
   	</dependency>
   </dependencies>
+  
+  <repositories>
+    <repository>
+      <id>org.red5</id>
+      <url>http://red5-maven-repository.googlecode.com/svn/trunk/maven2/repo</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  
 </project>
