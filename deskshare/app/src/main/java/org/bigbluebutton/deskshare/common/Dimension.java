@@ -1,5 +1,4 @@
 /** 
-* ===License Header===
 *
 * BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
 *
@@ -17,23 +16,26 @@
 * You should have received a copy of the GNU Lesser General Public License along
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 * 
-* ===License Header===
-*/
-package org.bigbluebutton.deskshare.client.net;
+**/
+package org.bigbluebutton.deskshare.common;
 
-public class BlockMessage implements Message {
+public final class Dimension {
 
-	private Integer[] blocks;
+	private final int width;
+	private final int height;
 	
-	public BlockMessage(Integer[] blocks) {
-		this.blocks = blocks;
-	}
-	
-	public MessageType getMessageType() {
-		return MessageType.BLOCK;
+	public Dimension(int width, int height) {
+		this.width = width;
+		this.height = height;
 	}
 
-	public Integer[] getBlocks() {
-		return blocks;
+	public int getWidth() {
+		return width;
 	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	
 }

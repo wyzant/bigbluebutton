@@ -1,5 +1,4 @@
 /** 
-* ===License Header===
 *
 * BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
 *
@@ -17,23 +16,37 @@
 * You should have received a copy of the GNU Lesser General Public License along
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 * 
-* ===License Header===
-*/
-package org.bigbluebutton.deskshare.client.net;
+**/
+package org.bigbluebutton.deskshare.common;
 
-public class BlockMessage implements Message {
-
-	private Integer[] blocks;
+public enum CaptureEvents {
+	/**
+	 * WARNING: Must match corresponding values with deskshare-app on the server.
+	 * org.bigbluebutton.deskshare.CaptureEvents
+	 */
+	CAPTURE_START(0), CAPTURE_UPDATE(1), CAPTURE_END(2), MOUSE_LOCATION_EVENT(3);
 	
-	public BlockMessage(Integer[] blocks) {
-		this.blocks = blocks;
+	private final int event;
+	
+	CaptureEvents(int event) {
+		this.event = event;
 	}
 	
-	public MessageType getMessageType() {
-		return MessageType.BLOCK;
+	public int getEvent() {
+		return event;
 	}
-
-	public Integer[] getBlocks() {
-		return blocks;
+	
+	@Override
+	public String toString() {
+		switch (event) {
+		case 0:
+			return "Capture Start Event";
+		case 1:
+			return "Capture Update Event";
+		case 2: 
+			return "Capture End Event";
+		}
+		
+		return "Unknown Capture Event";
 	}
 }

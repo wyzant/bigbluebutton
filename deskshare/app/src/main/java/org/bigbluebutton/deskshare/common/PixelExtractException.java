@@ -1,5 +1,4 @@
 /** 
-* ===License Header===
 *
 * BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
 *
@@ -17,23 +16,14 @@
 * You should have received a copy of the GNU Lesser General Public License along
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 * 
-* ===License Header===
-*/
-package org.bigbluebutton.deskshare.client.net;
+**/
+package org.bigbluebutton.deskshare.common;
 
-public class BlockMessage implements Message {
+public class PixelExtractException extends Exception {
 
-	private Integer[] blocks;
-	
-	public BlockMessage(Integer[] blocks) {
-		this.blocks = blocks;
-	}
-	
-	public MessageType getMessageType() {
-		return MessageType.BLOCK;
-	}
+	private static final long serialVersionUID = -8836714569259091334L;
 
-	public Integer[] getBlocks() {
-		return blocks;
+	public PixelExtractException(String message) {
+		super(message);
 	}
 }

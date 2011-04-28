@@ -25,11 +25,12 @@
   </build>
 
   <modules>
+    <module>bbb-common-message</module>
     <module>bigbluebutton-client</module>
     <module>bigbluebutton-apps</module>
     <module>bbb-voice</module>
     <module>bbb-video</module>
-    <module>bbb-common-message</module>
+    <module>deskshare</module>
   </modules>
 
 </project>
