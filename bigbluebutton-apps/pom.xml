@@ -11,116 +11,26 @@
   		<groupId>org.apache.activemq</groupId>
   		<artifactId>activemq-core</artifactId>
   		<version>5.5.0</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.apache.geronimo.specs</groupId>
   		<artifactId>geronimo-jms_1.1_spec</artifactId>
   		<version>1.1</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.apache.geronimo.specs</groupId>
   		<artifactId>geronimo-j2ee-management_1.0_spec</artifactId>
   		<version>1.0</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>javax.servlet</groupId>
   		<artifactId>servlet-api</artifactId>
   		<version>2.5</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.apache.mina</groupId>
   		<artifactId>mina-integration-spring</artifactId>
   		<version>1.1.7</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.asteriskjava</groupId>
@@ -149,507 +59,111 @@
   		<groupId>org.freeswitch.esl.client</groupId>
   		<artifactId>freeswitch</artifactId>
   		<version>0.9.0-SNAPSHOT</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-web</artifactId>
   		<version>3.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-beans</artifactId>
   		<version>3.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-context</artifactId>
   		<version>3.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>aopalliance</groupId>
   		<artifactId>aopalliance</artifactId>
   		<version>1.0</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-aop</artifactId>
   		<version>3.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-core</artifactId>
   		<version>3.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-jms</artifactId>
   		<version>3.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-tx</artifactId>
   		<version>2.5.6</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework.integration</groupId>
   		<artifactId>spring-integration-core</artifactId>
   		<version>2.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework.integration</groupId>
   		<artifactId>spring-integration-adapter</artifactId>
   		<version>1.0.4.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework.integration</groupId>
   		<artifactId>spring-integration-stream</artifactId>
   		<version>2.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework.integration</groupId>
   		<artifactId>spring-integration-file</artifactId>
   		<version>2.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework.integration</groupId>
   		<artifactId>spring-integration-jms</artifactId>
   		<version>2.0.0.RELEASE</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>ch.qos.logback</groupId>
   		<artifactId>logback-core</artifactId>
   		<version>0.9.18</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>ch.qos.logback</groupId>
   		<artifactId>logback-classic</artifactId>
   		<version>0.9.18</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.slf4j</groupId>
   		<artifactId>slf4j-api</artifactId>
   		<version>1.5.10</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.slf4j</groupId>
   		<artifactId>jcl-over-slf4j</artifactId>
   		<version>1.5.10</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.slf4j</groupId>
   		<artifactId>log4j-over-slf4j</artifactId>
   		<version>1.5.10</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>net.jcip</groupId>
   		<artifactId>jcip-annotations</artifactId>
   		<version>1.0</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.jyaml</groupId>
   		<artifactId>jyaml</artifactId>
   		<version>1.3</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.codehaus.groovy</groupId>
   		<artifactId>groovy-all</artifactId>
   		<version>1.6.4</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.testng</groupId>
@@ -678,140 +192,32 @@
   		<groupId>org.fitnesse</groupId>
   		<artifactId>fitnesse</artifactId>
   		<version>20081201</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.easymock</groupId>
   		<artifactId>easymock</artifactId>
   		<version>2.4</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.scala-lang</groupId>
   		<artifactId>scala-compiler</artifactId>
   		<version>2.7.7</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.scala-lang</groupId>
   		<artifactId>scala-library</artifactId>
   		<version>2.7.7</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>org.apache.mina</groupId>
   		<artifactId>mina-core</artifactId>
   		<version>2.0.0</version>
-  		<exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
   	</dependency>
   	<dependency>
        <groupId>org.jboss.netty</groupId>
        <artifactId>netty</artifactId>
        <version>3.2.1.Final</version>
        <scope>compile</scope>
-       <exclusions>
-    		<exclusion>
-      			<groupId>javax.mail</groupId>
-      			<artifactId>mail</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>javax.jms</groupId>
-      			<artifactId>jms</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jdmk</groupId>
-      			<artifactId>jmxtools</artifactId>
-    		</exclusion>
-    		<exclusion>
-      			<groupId>com.sun.jmx</groupId>
-      			<artifactId>jmxri</artifactId>
-    		</exclusion>
-    	</exclusions>
      </dependency>
      <dependency>
      	<groupId>org.red5</groupId>
