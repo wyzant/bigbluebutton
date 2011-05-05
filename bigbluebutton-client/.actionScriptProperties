@@ -66,3 +66,4 @@
     <buildCSSFileEntry destPath="bin" sourcePath="src/main/resources/branding/css/theme.css"/>
   </buildCSSFiles>
 </actionScriptProperties>
+
