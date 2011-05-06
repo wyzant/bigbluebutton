@@ -122,9 +122,9 @@ package org.bigbluebutton.util.i18n
 		
 		private function handleLocaleLoaded(e:Event):void{
 			var fulltext:String = (e.target.data as String);
-			fulltext = com.adobe.utils.StringUtil.remove(fulltext, "\n");
+			fulltext = com.adobe.utils.StringUtil.remove(fulltext, "\r");
 			
-			var allStrings:Array = fulltext.split("\r");
+			var allStrings:Array = fulltext.split("\n");
 			for (var i:Number=0; i<allStrings.length; i++){
 				var str:String = allStrings[i] as String;
 				
