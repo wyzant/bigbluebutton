@@ -158,7 +158,12 @@ package org.bigbluebutton.util.i18n
         
         [Bindable("change")]
         public function getString(resourceName:String, parameters:Array = null, locale:String = null):String{
-			return currentLocalization[resourceName]; //resourceManager.getString(BBB_RESOURCE_BUNDLE, resourceName, parameters, locale);
+			if (!parameters) return currentLocalization[resourceName]; //resourceManager.getString(BBB_RESOURCE_BUNDLE, resourceName, parameters, locale);
+			else return insertParameters(currentLocalization[resourceName], parameters);
+		}
+		
+		private function insertParameters(text:String, parameters:Array):String{
+			return mx.utils.StringUtil.substitute(text, parameters);
 		}
 		
 		public function getCurrentLanguageCode():String{
