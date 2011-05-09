@@ -7,16 +7,12 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Servlet Filter implementation class Create
  */
 public class Create implements Filter {
 
-	Logger log = LoggerFactory.getLogger(Create.class);
-	
     /**
      * Default constructor. 
      */
@@ -46,7 +42,7 @@ public class Create implements Filter {
 	 * @see Filter#init(FilterConfig)
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
-		log.info("Create filter init : " + fConfig.toString());
+		// TODO Auto-generated method stub
 	}
 
 }
