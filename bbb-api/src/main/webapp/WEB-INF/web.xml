@@ -27,4 +27,14 @@
     <filter-name>Create</filter-name>
     <url-pattern>/bigbluebutton/api/create</url-pattern>
   </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>APIServlet</display-name>
+    <servlet-name>APIServlet</servlet-name>
+    <servlet-class>org.bigbluebutton.api.APIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>APIServlet</servlet-name>
+    <url-pattern>/bigbluebutton/api/*</url-pattern>
+  </servlet-mapping>
 </web-app>
