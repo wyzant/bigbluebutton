@@ -29,23 +29,12 @@ public class Security {
 			throw new RuntimeException("Programming error - you must pass the call name to doChecksumSecurity so it can be used in the checksum");
 		}
 		if (StringUtils.isEmpty(request.getQueryString())){
-			invalid("noQueryString", "No query string was found in your request.", response);
+			Invalid.invalid("noQueryString", "No query string was found in your request.", response);
 			return false;
 		}
 		
 		return true;
 	}
 	
-	private static void invalid(String key, String message, HttpServletResponse response){
-		log.debug("Security : #invalid");
-		try{
-			response.addHeader("Cache-Control", "no-cache");
-			response.setContentType("text/xml");
-			StandardResponse responseBody = new StandardResponse(StandardResponse.RESP_CODE_FAILED, key, message);
-			response.getWriter().println(xmlConverter.xml().toXML(responseBody));
-		} catch (IOException e){
-			
-		}
-		
-	}
+	
 }

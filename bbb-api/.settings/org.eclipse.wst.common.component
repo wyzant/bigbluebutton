@@ -25,6 +25,12 @@
         <dependent-module archiveName="xstream-1.3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/xstream-1.3.1.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="bbb-common-message-0.8-PRE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/bbb-common-message-0.8-PRE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/commons-collections-3.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="bbb-api"/>
         <property name="java-output-path" value="/bbb-api/target/classes"/>
     </wb-module>
