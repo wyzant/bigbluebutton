@@ -23,7 +23,7 @@ public class DynamicConference {
 	String meetingID;
 	String meetingToken;
 	private String voiceBridge;
-	String webVoiceConf;
+	private String webVoiceConf;
 	private String moderatorPassword;
 	private String attendeePassword;
 	private String welcome;
@@ -132,6 +132,19 @@ public class DynamicConference {
 
 	public String getName() {
 		return name;
+	}
+
+	public boolean isForciblyEnded() {
+		// TODO Auto-generated method stub
+		return this.forciblyEnded;
+	}
+
+	public void setWebVoiceConf(String webVoiceConf) {
+		this.webVoiceConf = webVoiceConf;
+	}
+
+	public String getWebVoiceConf() {
+		return webVoiceConf;
 	}
 
 }

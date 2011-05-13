@@ -16,6 +16,9 @@ import org.bigbluebutton.api.conference.DynamicConference;
 import org.bigbluebutton.api.conference.DynamicConferenceService;
 import org.bigbluebutton.api.util.Invalid;
 import org.bigbluebutton.api.util.Security;
+import org.bigbluebutton.api.xml.CreateResponse;
+import org.bigbluebutton.api.xml.StandardResponse;
+import org.bigbluebutton.api.xml.XMLConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,8 +33,9 @@ public class Create implements Filter {
 	public static final String CONF_NUM = "/%%CONFNUM%%/";
 	public static final String CONF_NAME = "/%%CONFNAME%%/";
 	
-	Logger log = LoggerFactory.getLogger(Create.class);
-	DynamicConferenceService dynamicConferenceService = DynamicConferenceService.getInstance();
+	static final Logger log = LoggerFactory.getLogger(Create.class);
+	static final DynamicConferenceService dynamicConferenceService = DynamicConferenceService.getInstance();
+	static final XMLConverter xmlConverter = XMLConverter.getInstance();
 	
     /**
      * Default constructor. 
@@ -92,7 +96,7 @@ public class Create implements Filter {
 				//trying to create a conference a second time
 				//return success, but give extra info
 				uploadDocuments(existing, httpReq, httpRes);
-				respondWithConference(existing, "duplicateWarning", "This conference was already in existence and may currently be in progress.");
+				respondWithConference(existing, httpRes, "duplicateWarning", "This conference was already in existence and may currently be in progress.");
 			} else{
 				//enfore meetingID unique-ness
 				Invalid.invalid("idNotUnique", "A meeting already exists with that meeting ID.  Please use a different meeting ID.", httpRes);
@@ -150,7 +154,7 @@ public class Create implements Filter {
 		//success!
 		uploadDocuments(conf, httpReq, httpRes);
 		dynamicConferenceService.storeConference(conf);
-		respondWithConference(conf, null, null);
+		respondWithConference(conf, httpRes, null, null);
 		
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
@@ -170,7 +174,18 @@ public class Create implements Filter {
 		//String requestBody = requestBody.geti
 	}
 	
-	private void respondWithConference(DynamicConference conf, String msgKey, String msg){
+	private void respondWithConference(DynamicConference conf, HttpServletResponse response, String msgKey, String msg){
+		try{
+			response.addHeader("Cache-Control", "no-cache");
+			response.setContentType("text/xml");
+			String messageKey = msgKey == null ? "" :msgKey;
+			String message = msg == null ? "" : msg;
+			CreateResponse responseBody = new CreateResponse(StandardResponse.RESP_CODE_SUCCESS, messageKey, message, 
+													conf.getMeetingID(), conf.getAttendeePassword(), conf.getModeratorPassword(), conf.isForciblyEnded());
+			response.getWriter().println(xmlConverter.xml().toXML(responseBody));
+		} catch (IOException e){
+			throw new RuntimeException("Could not respond with conference: " + conf.toString());
+		}
 		
 	}
 
