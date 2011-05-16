@@ -1,6 +1,9 @@
 package org.bigbluebutton.api;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Date;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -14,7 +17,10 @@ import org.bigbluebutton.api.conference.DynamicConference;
 import org.bigbluebutton.api.conference.DynamicConferenceService;
 import org.bigbluebutton.api.util.Invalid;
 import org.bigbluebutton.api.util.Security;
+import org.bigbluebutton.api.xml.GetMeetingInfoResponse;
+import org.bigbluebutton.api.xml.StandardResponse;
 import org.bigbluebutton.api.xml.XMLConverter;
+import org.bigbluebutton.conference.Participant;
 import org.bigbluebutton.conference.Room;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +30,7 @@ import org.slf4j.LoggerFactory;
  */
 public class GetMeetingInfo implements Filter {
 	
-	private static final String CALL_NAME = "create";
+	private static final String CALL_NAME = "getMeetingInfo";
 
 	static final Logger log = LoggerFactory.getLogger(Join.class);
 	static final DynamicConferenceService dynamicConferenceService = DynamicConferenceService.getInstance();
@@ -75,7 +81,24 @@ public class GetMeetingInfo implements Filter {
 			Invalid.invalid("invalidPassword", "You must supply the moderator password for this call.", httpRes);
 		}
 		
-		respondWithConferenceDetails(conf, room, null, null, httpRes);
+		httpRes.addHeader("Cache-Control", "no-cache");
+		httpRes.setContentType("text/xml");
+		String messageKey = "";
+		String message = "";
+		String meetingID = conf.getMeetingID();
+		String attendeePW = conf.getAttendeePassword();
+		String moderatorPW = conf.getModeratorPassword();
+		boolean running = conf.isRunning();
+		boolean hasBeenForciblyEnded = conf.isForciblyEnded();
+		Date startTime = conf.getStartTime();
+		Date endTime = conf.getEndTime();
+		int participantCount = (room == null) ? 0 : room.getNumberOfParticipants();
+		int moderatorCount = (room == null) ? 0 : room.getNumberOfModerators();
+		Collection<Participant> participants = room.getParticipantCollection();
+		GetMeetingInfoResponse responseBody = new GetMeetingInfoResponse(StandardResponse.RESP_CODE_SUCCESS, messageKey, message, meetingID, attendeePW, 
+																		 moderatorPW, running, hasBeenForciblyEnded, startTime, endTime, 
+																		 participantCount, moderatorCount, participants);
+		httpRes.getWriter().println(xmlConverter.xml().toXML(responseBody));
 
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
@@ -86,11 +109,6 @@ public class GetMeetingInfo implements Filter {
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
 		// TODO Auto-generated method stub
-	}
-	
-	private void respondWithConferenceDetails(DynamicConference conf, Room room, String messageKey, String message, HttpServletResponse response){
-		response.addHeader("Cache-Control", "no-cache");
-		
 	}
 
 }

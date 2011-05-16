@@ -65,6 +65,7 @@ public class IsMeetingRunning implements Filter {
 		DynamicConference conf = dynamicConferenceService.getConferenceByMeetingID(mtgID);
 		boolean isRunning = conf != null && conf.isRunning();
 		httpRes.addHeader("Cache-Control", "no-cache");
+		httpRes.setContentType("text/xml");
 		IsMeetingRunningResponse responseBody = new IsMeetingRunningResponse(StandardResponse.RESP_CODE_SUCCESS, isRunning);
 		httpRes.getWriter().println(xmlConverter.xml().toXML(responseBody));
 

@@ -11,6 +11,7 @@ import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
 import org.bigbluebutton.api.Create;
+import org.bigbluebutton.api.conference.DynamicConferenceService;
 import org.bigbluebutton.api.xml.StandardResponse;
 import org.bigbluebutton.api.xml.XMLConverter;
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ import org.slf4j.LoggerFactory;
 public class Security {
 	
 	static final Logger log = LoggerFactory.getLogger(Security.class);
+	static final DynamicConferenceService dynamicConferenceService = DynamicConferenceService.getInstance();
 	static final XMLConverter xmlConverter = XMLConverter.getInstance();
 	
 	public static Boolean doChecksumSecurity(String callName, HttpServletRequest request, HttpServletResponse response){
@@ -33,8 +35,29 @@ public class Security {
 			return false;
 		}
 		
+		if (StringUtils.isEmpty(securitySalt()) == false){
+			String qs = request.getQueryString();
+			// handle either checksum as first or middle / end parameter
+			// TODO: this is hackish - should be done better
+			qs = qs.replace("&checksum=" + request.getParameter("checksum"), "");
+			qs = qs.replace("checksum=" + request.getParameter("checksum") + "&", "");
+			log.debug("query string after checksum removed: " + qs);
+			String cs = DigestUtils.shaHex(callName + qs + securitySalt());
+			log.debug("our checksum: " + cs);
+			if (cs == null || cs.equals(request.getAttribute("checksum")) == false){
+				log.info("checksumError: request did not pass the checksum security check");
+				return false;
+			}
+			log.debug("checksum ok: request passed the checksum security check");
+			return true;
+		}
+		
+		log.warn("Security is disabled in this service. Make sure this is intentional.");
 		return true;
 	}
 	
+	private static String securitySalt(){
+		return dynamicConferenceService.getSecuritySalt();
+	}
 	
 }

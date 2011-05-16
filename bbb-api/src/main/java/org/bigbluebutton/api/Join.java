@@ -27,9 +27,6 @@ import org.slf4j.LoggerFactory;
  */
 public class Join implements Filter {
 	
-	//TODO need to put this in config file
-	public static final String SERVER_URL = "http://localhost";
-	
 	private static final String CALL_NAME = "join";
 	
 	private static final String ROLE_MODERATOR = "MODERATOR";
@@ -127,7 +124,7 @@ public class Join implements Filter {
 		
 		session.setMaxInactiveInterval(SESSION_TIMEOUT);
 		
-		String hostURL = SERVER_URL;
+		String hostURL = APIServlet.SERVER_URL;
 		String redirectUrl =  hostURL + "/client/BigBlueButton.html";
 		log.debug("join done, redirecting to " + redirectUrl);
 		httpRes.sendRedirect(redirectUrl);

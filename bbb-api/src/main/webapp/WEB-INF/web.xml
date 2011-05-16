@@ -82,4 +82,22 @@
     <filter-name>GetMeetingInfo</filter-name>
     <url-pattern>/bigbluebutton/api/getMeetingInfo</url-pattern>
   </filter-mapping>
+  <filter>
+    <display-name>GetMeetings</display-name>
+    <filter-name>GetMeetings</filter-name>
+    <filter-class>org.bigbluebutton.api.GetMeetings</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>GetMeetings</filter-name>
+    <url-pattern>/bigbluebutton/api/getMeetings</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>SignOut</display-name>
+    <filter-name>SignOut</filter-name>
+    <filter-class>org.bigbluebutton.api.SignOut</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SignOut</filter-name>
+    <url-pattern>/bigbluebutton/api/signOut</url-pattern>
+  </filter-mapping>
 </web-app>

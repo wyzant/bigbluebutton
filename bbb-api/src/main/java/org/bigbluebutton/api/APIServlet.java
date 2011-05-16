@@ -10,6 +10,11 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class APIServlet
  */
 public class APIServlet extends HttpServlet {
+	
+	//TODO need to put this in config file
+	public static final String SERVER_URL = "http://localhost";
+	public static final String LOGOUT_URL = "http://localhost/bigbluebutton/api/signOut";
+	
 	private static final long serialVersionUID = 1L;
        
     /**

@@ -111,7 +111,7 @@ public class DynamicConferenceService {
 		return confsByMtgID.get(meetingID);
 	}
 	
-	private DynamicConference getConferenceByToken(String token){
+	public DynamicConference getConferenceByToken(String token){
 		if (token == null){
 			return null;
 		}
@@ -188,5 +188,9 @@ public class DynamicConferenceService {
 
 	public String getApiVersion() {
 		return apiVersion;
+	}
+	
+	public String getSecuritySalt() {
+		return this.securitySalt;
 	}
 }

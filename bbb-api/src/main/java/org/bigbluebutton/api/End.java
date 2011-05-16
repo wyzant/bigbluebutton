@@ -79,6 +79,7 @@ public class End implements Filter {
 		conferenceEventListener.endMeetingRequest(room);
 		
 		httpRes.addHeader("Cache-Control", "no-cache");
+		httpRes.setContentType("text/xml");
 		StandardResponse responseBody = new StandardResponse(StandardResponse.RESP_CODE_SUCCESS, "sentEndMeetingRequest", 
 				"A request to end the meeting was sent.  Please wait a few seconds, and then use the getMeetingInfo or isMeetingRunning API calls to verify that it was ended.");
 		httpRes.getWriter().println(xmlConverter.xml().toXML(responseBody));
