@@ -7,15 +7,26 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import org.bigbluebutton.api.conference.DynamicConferenceService;
 import org.bigbluebutton.api.xml.JoinResponse;
 import org.bigbluebutton.api.xml.StandardResponse;
+import org.bigbluebutton.api.xml.XMLConverter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Servlet Filter implementation class Enter
  */
 public class Enter implements Filter {
 
+	static final Logger log = LoggerFactory.getLogger(Join.class);
+	static final DynamicConferenceService dynamicConferenceService = DynamicConferenceService.getInstance();
+	static final XMLConverter xmlConverter = XMLConverter.getInstance();
+	
     /**
      * Default constructor. 
      */
@@ -34,6 +45,16 @@ public class Enter implements Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+		if (!(request instanceof HttpServletRequest) || !(response instanceof HttpServletResponse)){
+			throw new RuntimeException("Only HTTP is supported by the BigBlueButton API");
+		}
+		
+		HttpServletRequest httpReq = (HttpServletRequest)request;
+		HttpServletResponse httpRes = (HttpServletResponse)response;
+		
+		log.debug("Entered /enter");
+		
+		HttpSession session = httpReq.getSession();
 		String fname = (String)session.getAttribute("fullname");
 		String rl = (String)session.getAttribute("role");
 		String cnf = (String)session.getAttribute("conference");
@@ -46,6 +67,8 @@ public class Enter implements Filter {
 		String welcomeMsg = (String)session.getAttribute("welcome");
 		String meetID = (String)session.getAttribute("meetingID");
 		String externUID = (String)session.getAttribute("externUserID");
+		
+		log.debug("After reading from session cookie");
 		
 		if (rm == null) {
 			log.info("Could not find conference");
@@ -61,7 +84,7 @@ public class Enter implements Filter {
 			httpRes.getWriter().println((xmlConverter.xml().toXML(joinResponseBody)));
 		}
 		
-		log.debug("Leaving join");
+		log.debug("Leaving /enter");
 
 		// pass the request along the filter chain
 		chain.doFilter(request, response);

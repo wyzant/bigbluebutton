@@ -46,4 +46,40 @@
     <filter-name>Enter</filter-name>
     <url-pattern>/bigbluebutton/api/enter</url-pattern>
   </filter-mapping>
+  <filter>
+    <display-name>Index</display-name>
+    <filter-name>Index</filter-name>
+    <filter-class>org.bigbluebutton.api.Index</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Index</filter-name>
+    <url-pattern>/bigbluebutton/api</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>IsMeetingRunning</display-name>
+    <filter-name>IsMeetingRunning</filter-name>
+    <filter-class>org.bigbluebutton.api.IsMeetingRunning</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>IsMeetingRunning</filter-name>
+    <url-pattern>/bigbluebutton/api/isMeetingRunning</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>End</display-name>
+    <filter-name>End</filter-name>
+    <filter-class>org.bigbluebutton.api.End</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>End</filter-name>
+    <url-pattern>/bigbluebutton/api/end</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>GetMeetingInfo</display-name>
+    <filter-name>GetMeetingInfo</filter-name>
+    <filter-class>org.bigbluebutton.api.GetMeetingInfo</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>GetMeetingInfo</filter-name>
+    <url-pattern>/bigbluebutton/api/getMeetingInfo</url-pattern>
+  </filter-mapping>
 </web-app>

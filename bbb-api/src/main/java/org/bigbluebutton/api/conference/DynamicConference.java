@@ -135,8 +135,11 @@ public class DynamicConference {
 	}
 
 	public boolean isForciblyEnded() {
-		// TODO Auto-generated method stub
 		return this.forciblyEnded;
+	}
+	
+	public void setForciblyEnded(boolean isForciblyEnded) {
+		this.forciblyEnded = isForciblyEnded;
 	}
 
 	public void setWebVoiceConf(String webVoiceConf) {

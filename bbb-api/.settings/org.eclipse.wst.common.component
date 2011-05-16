@@ -31,6 +31,21 @@
         <dependent-module archiveName="commons-collections-3.2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/commons-collections-3.2.1.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="spring-integration-jms-1.0.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/spring-integration-jms-1.0.2.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-integration-adapter-1.0.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/spring-integration-adapter-1.0.2.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-integration-file-1.0.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/spring-integration-file-1.0.2.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-integration-core-1.0.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/spring-integration-core-1.0.2.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-integration-stream-1.0.2.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/bbb-api/src/main/webapp/lib/spring-integration-stream-1.0.2.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="bbb-api"/>
         <property name="java-output-path" value="/bbb-api/target/classes"/>
     </wb-module>

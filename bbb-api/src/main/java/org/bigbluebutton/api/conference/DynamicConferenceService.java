@@ -22,8 +22,8 @@ public class DynamicConferenceService {
 	
 	static boolean transactional = false;
 	boolean serviceEnabled = false;
-	boolean apiVersion;
-	boolean securitySalt;
+	private String apiVersion;
+	String securitySalt;
 	int minutesElapsedBeforeMeetingExpiration = 60;
 	private String defaultWelcomeMessage;
 	private String defaultDialAccessNumber;
@@ -180,5 +180,13 @@ public class DynamicConferenceService {
 
 	public String getDefaultDialAccessNumber() {
 		return defaultDialAccessNumber;
+	}
+
+	public void setApiVersion(String apiVersion) {
+		this.apiVersion = apiVersion;
+	}
+
+	public String getApiVersion() {
+		return apiVersion;
 	}
 }
