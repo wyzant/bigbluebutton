@@ -30,6 +30,7 @@
     <module>esl-client-bbb</module>
     <module>bigbluebutton-client</module>
     <module>bigbluebutton-apps</module>
+    <module>bigbluebutton-web</module>
     <module>bbb-voice</module>
     <module>bbb-video</module>
     <!--<module>deskshare</module>-->

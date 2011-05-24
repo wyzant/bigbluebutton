@@ -4,3 +4,5 @@ stacktrace.log
 lib
 web-app/demo/bbb_api_conf.jsp
 web-app/plugins/
+plugins/
+target
