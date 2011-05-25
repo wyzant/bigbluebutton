@@ -19,11 +19,6 @@
  */
 package org.bigbluebutton.web.controllers
 
-import org.jsecurity.authc.AuthenticationException
-import org.jsecurity.authc.UsernamePasswordToken
-import org.jsecurity.SecurityUtils
-import org.jsecurity.session.Session
-import org.jsecurity.subject.Subject
 import org.springframework.util.FileCopyUtils
 
 import grails.converters.*
