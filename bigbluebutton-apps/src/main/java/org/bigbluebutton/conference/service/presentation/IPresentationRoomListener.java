@@ -25,11 +25,9 @@ package org.bigbluebutton.conference.service.presentation;
 import java.util.ArrayList;
 import java.util.Map;
 
-interface IPresentationRoomListener {
+public interface IPresentationRoomListener {
 	public String getName();
-	@SuppressWarnings("unchecked")
-	public void sendUpdateMessage(Map message);
-	@SuppressWarnings("unchecked")
+	public void sendUpdateMessage(Map<String, Object> message);
 	public void assignPresenter(ArrayList presenter);
 	public void gotoSlide(int curslide);
 	public void resizeAndMoveSlide(Double xOffset, Double yOffset, Double widthRatio, Double heightRatio);

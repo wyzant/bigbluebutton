@@ -130,7 +130,7 @@ public String getJoinMeetingURL(String username, String meetingID, String passwo
 // 
 // Create a meeting and return a URL to join it as moderator
 //
-public String getJoinURL(String username, String meetingID, String welcome) {
+public String getJoinURL(String username, String meetingID, String record, String welcome) {
 	String base_url_create = BigBlueButtonURL + "api/create?";
 	String base_url_join = BigBlueButtonURL + "api/join?";
 	
@@ -158,7 +158,7 @@ public String getJoinURL(String username, String meetingID, String welcome) {
 	//
 
 	String create_parameters = "name=" + urlEncode(meetingID) + "&meetingID=" + urlEncode(meetingID)
-	+ welcome_param + "&attendeePW=ap&moderatorPW=mp&voiceBridge="+voiceBridge;
+	+ welcome_param + "&attendeePW=ap&moderatorPW=mp&voiceBridge="+voiceBridge+"&record="+record;
 
 	Document doc = null;
 
@@ -418,10 +418,8 @@ public String endMeeting(String meetingID, String moderatorPassword) {
 //
 // parseXml() -- return a DOM of the XML
 //
-public static Document parseXml(String xml)
-		throws ParserConfigurationException, IOException, SAXException {
-	DocumentBuilderFactory docFactory = DocumentBuilderFactory
-			.newInstance();
+public static Document parseXml(String xml) throws ParserConfigurationException, IOException, SAXException {
+	DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 	DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 	Document doc = docBuilder.parse(new InputSource(new StringReader(xml)));
 	return doc;

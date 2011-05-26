@@ -82,6 +82,10 @@ package org.bigbluebutton.main.model.users
 				_conferenceParameters.voicebridge = result.voicebridge;
 				_conferenceParameters.welcome = result.welcome;
 				_conferenceParameters.externUserID = result.externUserID;
+				_conferenceParameters.record = true;
+				if(result.record=="false")
+					_conferenceParameters.record = false;
+				
 				
 				var e:ConferenceCreatedEvent = new ConferenceCreatedEvent(ConferenceCreatedEvent.CONFERENCE_CREATED_EVENT);
 				e.conference = _conference;

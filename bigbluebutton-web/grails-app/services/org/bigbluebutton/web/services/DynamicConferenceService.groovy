@@ -23,17 +23,17 @@ package org.bigbluebutton.web.services
 import org.bigbluebutton.conference.Room
 import java.util.concurrent.ConcurrentHashMap
 import org.apache.commons.collections.bidimap.DualHashBidiMap
-import java.util.Collection
-import java.util.Collections
-import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
-
+import java.util.*;
+import java.util.concurrent.*;
 import org.bigbluebutton.api.domain.DynamicConference;
- 
-public class DynamicConferenceService {	
+import org.bigbluebutton.api.domain.DynamicConferenceParticipant;
+import org.bigbluebutton.api.IRedisDispatcher
+import org.bigbluebutton.api.RedisDispatcherImp;
+
+public class DynamicConferenceService implements IDynamicConferenceService {	
 	static transactional = false
 	def serviceEnabled = false
+	
 	def apiVersion;
 	def securitySalt
 	int minutesElapsedBeforeMeetingExpiration = 60
@@ -41,6 +41,15 @@ public class DynamicConferenceService {
 	def defaultDialAccessNumber
 	def testVoiceBridge
 	def testConferenceMock
+	def recordingDir
+	def recordingFile
+
+	/** For record and playback **/
+	def recordStatusDir
+	def redisHost
+	def redisPort
+	
+	IRedisDispatcher redisDispatcher
 	
 	// TODO: need to remove use of DynamicConference and make it use "Room.groovy" instead
 	//				so that both apps and web are using common domain objects and we don't map between them
@@ -52,6 +61,7 @@ public class DynamicConferenceService {
 		confsByMtgID = new ConcurrentHashMap<String, DynamicConference>()
 		tokenMap = new DualHashBidiMap<String, String>()
 		roomsByToken = new ConcurrentHashMap<String, Room>()
+		redisDispatcher = new RedisDispatcherImp();
 		
 		// wait one minute to run, and run every five minutes:
 		TimerTask task = new DynamicConferenceServiceCleanupTimerTask(this);
@@ -80,6 +90,7 @@ public class DynamicConferenceService {
 			}
 			
 			if (remove) {
+				println "Removing meeting [" + conf.getMeetingToken() + "]"
 				confsByMtgID.remove(conf.getMeetingID());
 				roomsByToken.remove(conf.getMeetingToken());
 				tokenMap.remove(conf.getMeetingToken());
@@ -88,6 +99,7 @@ public class DynamicConferenceService {
 			}
 		}
 	}
+	
 	public Collection<DynamicConference> getAllConferences() {
 		return confsByMtgID.isEmpty() ? Collections.emptySet() : Collections.unmodifiableCollection(confsByMtgID.values());
 	}
@@ -96,6 +108,25 @@ public class DynamicConferenceService {
 		conf.setStoredTime(new Date());
 		confsByMtgID.put(conf.getMeetingID(), conf);
 		tokenMap.put(conf.getMeetingToken(), conf.getMeetingID());
+		if (conf.isRecord()) {
+			createConferenceRecord(conf);
+		}
+	}
+
+	public void createConferenceRecord(DynamicConference conf) {
+		String COLON = ":";
+		println("Putting meeting info to redis for " + conf.getMeetingID() + " " + redisHost + ":" + redisPort);
+		println("Conf name " + conf.getName() + " token " + conf.getMeetingToken());
+		if (redisDispatcher == null) {
+			println "Redis Dispatcher is NULL!!"
+		} else {
+			println "Redis Dispatcher is NOT NULL!!"
+			if (redisHost == null) println "redisHost is null"
+			else println redisHost
+			if (redisPort == null) println "redisPort is null"
+			else println redisPort
+			redisDispatcher.createConferenceRecord(conf, redisHost, Integer.parseInt(redisPort))
+		}
 	}
 	
 	public Room getRoomByMeetingID(String meetingID) {
@@ -104,6 +135,7 @@ public class DynamicConferenceService {
 		}
 		String token = tokenMap.getKey(meetingID);
 		if (token == null) {
+			System.out.println("Cannot find token for meetingId " + meetingID)
 			return null;
 		}
 		return roomsByToken.get(token);
@@ -138,8 +170,7 @@ public class DynamicConferenceService {
 		log.debug "could not find voice bridge $voiceBridge"
 		return false
 	}
-	
-	
+		
 	// these methods called by spring integration:
 	public void conferenceStarted(Room room) {
 		log.debug "conference started: " + room.getName();
@@ -163,8 +194,78 @@ public class DynamicConferenceService {
 	
 	public void participantsUpdated(Room room) {
 		log.debug "participants updated: " + room.getName();
+		System.out.println("participants updated: " + room.getName())
 		roomsByToken.put(room.getName(), room);
 	}
 	// end of spring integration-called methods
 	
+	//these methods are without using bbb-commons
+	public void conferenceStarted2(String roomname){
+		DynamicConference conf = getConferenceByToken(roomname);
+		if (conf != null) {
+			conf.setStartTime(new Date());
+			conf.setEndTime(null);
+			log.debug "redis: found conference and set start date"
+		}
+	}
+	public void conferenceEnded2(String roomname) {
+		log.debug "redis: conference ended: " + roomname;
+		DynamicConference conf = getConferenceByToken(roomname);
+		if (conf != null) {
+			conf.setEndTime(new Date());
+			log.debug "redis: found conference and set end date"
+		}
+	}
+	
+	public void participantsUpdatedJoin(String roomname, String userid, String fullname, String role) {
+		log.debug "redis: participants updated join: " + roomname;
+		DynamicConferenceParticipant dcp=new DynamicConferenceParticipant(userid,fullname,role);
+		DynamicConference conf = getConferenceByToken(roomname);
+		if(conf != null){
+			conf.addParticipant(dcp);
+			log.debug "redis: added participant"
+		}
+	}
+	
+	public void participantsUpdatedRemove(String roomname, String userid) {
+		log.debug "redis: participants updated remove: " + roomname;
+		System.out.println("participants updated: " + roomname);
+		DynamicConference conf = getConferenceByToken(roomname);
+		if(conf!=null){
+			conf.removeParticipant(userid);
+			log.debug "redis: removed participant"
+		}
+	}
+	
+	public void processRecording(String meetingId) {
+		System.out.println("enter processRecording " + meetingId)
+		Room room = roomsByToken.get(meetingId)
+		if (room != null) {
+			System.out.println("Number of participants in room " + room.getNumberOfParticipants())
+			if (room.getNumberOfParticipants() == 0) {
+				System.out.println("starting processRecording " + meetingId)
+				// Run conversion on another thread.
+				new Timer().runAfter(1000) {
+					startIngestAndProcessing(meetingId)
+				}		
+			} else {
+				System.out.println("Someone still in the room...not processRecording " + meetingId)
+			}
+		} else {
+			System.out.println("Could not find room " + meetingId + " ... Not processing recording")
+		}
+	}
+	
+	private void startIngestAndProcessing(meetingId) {	
+		String done = recordStatusDir + "/" + meetingId + ".done"
+		log.debug( "Writing done file " + done)
+		File doneFile = new File(done)
+		if (!doneFile.exists()) {
+			doneFile.createNewFile()
+			if (!doneFile.exists())
+				log.error("Failed to create " + done + " file.")
+		} else {
+			log.error(done + " file already exists.")
+		}
+	}	
 }

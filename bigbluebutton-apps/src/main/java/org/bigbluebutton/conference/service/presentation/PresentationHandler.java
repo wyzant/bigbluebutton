@@ -22,6 +22,9 @@
 
 package org.bigbluebutton.conference.service.presentation;
 
+import java.io.File;
+import java.io.FileFilter;
+
 import org.red5.server.adapter.IApplication;
 import org.red5.server.api.IClient;
 import org.red5.server.api.IConnection;
@@ -35,8 +38,7 @@ import org.red5.server.api.Red5;
 import org.bigbluebutton.conference.BigBlueButtonSession;
 import org.bigbluebutton.conference.Constants;
 import org.bigbluebutton.conference.service.recorder.RecorderApplication;
-
-import java.io.*;
+import org.bigbluebutton.conference.service.recorder.presentation.PresentationEventRecorder;
 
 public class PresentationHandler extends ApplicationAdapter implements IApplication{
 	private static Logger log = Red5LoggerFactory.getLogger( PresentationHandler.class, "bigbluebutton" );
@@ -93,12 +95,12 @@ public class PresentationHandler extends ApplicationAdapter implements IApplicat
 		ISharedObject so = getSharedObject(connection.getScope(), PRESENTATION_SO);
 		
 		log.debug("Setting up recorder");
-		PresentationEventRecorder recorder = new PresentationEventRecorder(so, getBbbSession().getRecord());
-		log.debug("adding event recorder to {}",connection.getScope().getName());
-		recorderApplication.addEventRecorder(connection.getScope().getName(), recorder);				
-		
+		PresentationEventSender sender = new PresentationEventSender(so, getBbbSession().getRecord());
+		PresentationEventRecorder recorder = new PresentationEventRecorder(connection.getScope().getName(), recorderApplication);
+						
 		log.debug("Adding room listener");
 		presentationApplication.addRoomListener(connection.getScope().getName(), recorder);
+		presentationApplication.addRoomListener(connection.getScope().getName(), sender);
 		log.debug("Done setting up recorder and listener");
 		return true;
 	}

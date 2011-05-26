@@ -35,7 +35,6 @@ public class ConferenceService implements ConferenceEventListener {
 	private ConferenceEventListener conferenceEventListener;
 	
 	public void startup() {
-		roomMgr = new RoomManager(this);
 		confProvider.startup();
 	}
 	
@@ -44,10 +43,11 @@ public class ConferenceService implements ConferenceEventListener {
 		roomMgr = null;
 	}
 	
-	public void createConference(String room) {
+	public void createConference(String room, String meetingid, boolean record) {
 		if (roomMgr.hasRoom(room)) return;
-		roomMgr.createRoom(room);
+		roomMgr.createRoom(room, record, meetingid);
 		confProvider.populateRoom(room);
+		
 	}
 	
 	public void destroyConference(String room) {
@@ -60,6 +60,10 @@ public class ConferenceService implements ConferenceEventListener {
 			ParticipantLockedEvent ple = new ParticipantLockedEvent(participant, room, lock);
 			conferenceEventListener.handleConferenceEvent(ple);
 		}			
+	}
+	
+	public void recordSession(String room, String meetingid){
+		confProvider.record(room, meetingid);
 	}
 	
 	public void mute(Integer participant, String room, Boolean mute) {
@@ -122,5 +126,10 @@ public class ConferenceService implements ConferenceEventListener {
 	
 	public void setConferenceEventListener(ConferenceEventListener l) {
 		conferenceEventListener = l;
+	}
+	
+	public void setRoomManager(RoomManager roomManager) {
+		this.roomMgr = roomManager;
+		roomManager.setConferenceService(this);
 	}
 }

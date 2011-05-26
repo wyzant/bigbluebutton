@@ -21,7 +21,7 @@
 -->
 
 <mx:ComboBox xmlns:mx="http://www.adobe.com/2006/mxml" dataProvider="{this.langNames}" 
-			 selectedIndex="6" change="changeLanguage()" rowCount="15" width="120">
+			 selectedIndex="7" change="changeLanguage()" rowCount="15" width="120">
 	<mx:Script>
 		<![CDATA[
 			import mx.controls.Alert;
@@ -29,10 +29,12 @@
 			import org.bigbluebutton.util.i18n.ResourceUtil;
 			[Bindable] private var langNames:Array=[ 
 				'Azeri' ,
+				'Bengali' ,
 				'Bulgarian',
 				'Czech',
 				'Chinese Simplified',
 				'Chinese Traditional' ,
+				'Croatian',
 				'Danish' , 
 				'English' , 
 				'Farsi',
@@ -57,7 +59,8 @@
 				'Spanish',
 				'Spanish (Latin)',
 				'Swedish',
-				'Serbian',
+				'Serbian (Cyrillic)',
+				'Serbian (Latin)',
 				'Thai',
 				'Turkish',
 				'Ukrainian',
@@ -65,10 +68,12 @@
 			
 			private var langCodes:Array=[
 				'az_AZ',
+				'bn_BN',
 				'bg_BG',
 				'cs_CZ',
 				'zh_CN',
 				'zh_TW',
+				'hr_HR',
 				'da_DK',
 				'en_US',
 				'fa_IR',
@@ -94,6 +99,7 @@
 				'es_LA',
 				'sv_SE',
 				'sr_SR',
+				'sr_RS',
 				'th_TH',
 				'tr_TR',
 				'uk_UA',

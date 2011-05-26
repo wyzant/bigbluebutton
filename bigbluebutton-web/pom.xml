@@ -307,6 +307,13 @@
 		<version>1.2.2</version>
 	</dependency>
 	
+	<dependency>
+		<groupId>redis.clients</groupId>
+		<artifactId>jedis</artifactId>
+		<version>1.5.2</version>
+		<type>jar</type>
+		<scope>compile</scope>
+	 </dependency>
   </dependencies>
   
   <dependencyManagement>

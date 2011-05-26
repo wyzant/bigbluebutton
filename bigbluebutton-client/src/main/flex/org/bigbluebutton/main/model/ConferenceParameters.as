@@ -81,5 +81,6 @@ package org.bigbluebutton.main.model
 		 * The unique userid internal to bbb-client.
 		 */		
 		public var userid:Number;
+		public var record:Boolean;
 	}
 }

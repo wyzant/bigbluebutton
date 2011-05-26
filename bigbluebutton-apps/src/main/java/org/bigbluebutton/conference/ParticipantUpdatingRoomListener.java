@@ -19,14 +19,19 @@
 
 package org.bigbluebutton.conference;
 
+import org.bigbluebutton.conference.service.recorder.pubsub.RedisPublisher;
+
+
 public class ParticipantUpdatingRoomListener implements IRoomListener{
 
+	RedisPublisher publisher;
 	private IConferenceEventListener conferenceEventListener;
 	private Room room;
-
-	public ParticipantUpdatingRoomListener(IConferenceEventListener lstnr, Room room) {
+	
+	public ParticipantUpdatingRoomListener(IConferenceEventListener lstnr, Room room, RedisPublisher publisher) {
 		this.conferenceEventListener = lstnr;
 		this.room = room;
+		this.publisher=publisher;
 	}
 	
 	public String getName() {
@@ -36,22 +41,32 @@ public class ParticipantUpdatingRoomListener implements IRoomListener{
 	public void participantStatusChange(Long userid, String status, Object value){
 		if (conferenceEventListener != null) {
 			conferenceEventListener.participantsUpdated(room);
+			//redis pubsub
 		}
 	}
 	
 	public void participantJoined(Participant p) {
 		if (conferenceEventListener != null) {
 			conferenceEventListener.participantsUpdated(room);
+			//redis pubsub
+			//redis pubsub test
+			publisher.publish("bigbluebutton:conference:join", room.getName()+":"+p.getUserid()+":"+p.getName()+":"+p.getRole());
+			
 		}
 	}
 	
 	public void participantLeft(Long userid) {		
 		if (conferenceEventListener != null) {
 			conferenceEventListener.participantsUpdated(room);
+			//redis pubsub
+			//redis pubsub test
+			publisher.publish("bigbluebutton:conference:remove", room.getName()+":"+userid);
 		}
 	}
 
 	public void endAndKickAll() {
 		// no-op
-	}	
+	}
+	
+	
 }

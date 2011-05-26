@@ -21,7 +21,13 @@
 	
 	<bean id="roomsManager" class="org.bigbluebutton.conference.RoomsManager">
 		<property name="conferenceEventListener" ref="conferenceEventListener" />
+		<property name="publisher" ref="redisPublisher"></property>
 	</bean>
+	
+	<bean id="redisPublisher" class="org.bigbluebutton.conference.service.recorder.pubsub.RedisPublisher">
+        <constructor-arg index="0" value="${redis.host}"/>
+        <constructor-arg index="1" value="${redis.port}"/>
+    </bean>
 			
 	<bean id="participantsHandler" class="org.bigbluebutton.conference.service.participants.ParticipantsHandler">
 		<property name="participantsApplication"> <ref local="participantsApplication"/></property>
@@ -50,9 +56,14 @@
 	</bean>
 	
 	<bean id="recorderApplication" class="org.bigbluebutton.conference.service.recorder.RecorderApplication">
-		<property name="jmsTemplate"><ref local="templateEvent" /> </property>
+		<property name="recorder"><ref local="redisRecorder" /> </property>
 	</bean>
 	
+	<bean id="redisRecorder" class="org.bigbluebutton.conference.service.recorder.RedisDispatcher">
+        <constructor-arg index="0" value="${redis.host}"/>
+        <constructor-arg index="1" value="${redis.port}"/>
+    </bean>
+    
 	<!-- END JMS EVENTS -->
 	<!-- BEGIN PRESENTATION -->	
 	<bean id="presentationRoomsManager" class="org.bigbluebutton.conference.service.presentation.PresentationRoomsManager"/>
@@ -129,6 +140,7 @@
 	<bean id="whiteboardApplication" 
 	    class="org.bigbluebutton.conference.service.whiteboard.WhiteboardApplication">
 	    <property name="roomManager"> <ref local="whiteboardRoomManager"/></property>
+	    <property name="recorderApplication"> <ref local="recorderApplication"/></property>
 	</bean>
 	
 	<bean id="whiteboard.service" class="org.bigbluebutton.conference.service.whiteboard.WhiteboardService">

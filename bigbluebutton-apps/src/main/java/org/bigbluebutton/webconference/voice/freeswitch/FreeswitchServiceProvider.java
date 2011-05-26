@@ -33,7 +33,13 @@ public class FreeswitchServiceProvider implements ConferenceServiceProvider {
 	
 	private ConferenceServiceProvider appDelegate;
 	private ManagerConnection connection;
+
+	@Override
+    public void record(String room, String meetingid){
+    	appDelegate.record(room,meetingid);
+    }
 	
+	@Override
 	public void eject(String room, Integer participant) {
 		appDelegate.eject(room, participant);
 	}

@@ -29,7 +29,7 @@ grails.war.resources = {stagingDir, args ->
 	//println '*** Copying our custom web.xml as workaround for logging problem. ***'
 	//copy(file: "grails-app/conf/custom-web.xml", tofile: "${stagingDir}/WEB-INF/web.xml")
 	println '*** Copying our custom log4j.properties as workaround for logging problem. ***'
-	copy(file: "grails-app/conf/log4j.properties", tofile: "${stagingDir}/WEB-INF/classes/log4j.properties")
+	copy(file: "bigbluebutton-web/grails-app/conf/log4j.properties", tofile: "${stagingDir}/WEB-INF/classes/log4j.properties")
 }	
 	
 

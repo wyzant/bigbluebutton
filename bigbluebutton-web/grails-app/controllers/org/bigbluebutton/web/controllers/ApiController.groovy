@@ -64,6 +64,7 @@ class ApiController {
 	DynamicConferenceService dynamicConferenceService;
 	PresentationService presentationService
 	IApiConferenceEventListener conferenceEventListener;
+	org.bigbluebutton.api.IRedisDispatcher redisDispatcher;
 
 	/* general methods */
 	def index = {
@@ -83,6 +84,7 @@ class ApiController {
 
 	/* interface (API) methods */
 	def create = {
+//		redisDispatcher.publish("bu","bu");
 		log.debug CONTROLLER_NAME + "#create"
 
 		if (!doChecksumSecurity("create")) {
@@ -100,6 +102,7 @@ class ApiController {
 			invalid("missingParamMeetingID", "You must specify a meeting ID for the meeting.");
 			return
 		}
+		
 		log.debug("passed parameter validation - creating conference");
 		String attPW = params.attendeePW
 		String modPW = params.moderatorPW
@@ -107,11 +110,21 @@ class ApiController {
 		String welcomeMessage = params.welcome
 		String dialNumber = params.dialNumber
 		String logoutUrl = params.logoutURL
+		/* record development */
+		boolean record = false
 		
+		if(!StringUtils.isEmpty(params.record)){
+			try {
+				record = Boolean.parseBoolean(params.record)
+			} catch(Exception ex){ }
+		}
+
 		Integer maxParts = -1;
+		
 		try {
 			maxParts = Integer.parseInt(params.maxParticipants);
 		} catch(Exception ex) { /* do nothing */ }
+		
 		String mmRoom = params.meetmeRoom
 		String mmServer = params.meetmeServer
 
@@ -138,7 +151,23 @@ class ApiController {
 		}
 		DynamicConference conf = new DynamicConference(name, mtgID, attPW, modPW, maxParts)
 		conf.setVoiceBridge(voiceBr == null || voiceBr == "" ? mtgID : voiceBr)
+
+                /* record development */
+		conf.record = record
 		
+		log.debug("Adding metadata values")
+		params.keySet().each{ metadata ->
+			if(metadata.contains("meta")){
+				String[] meta=metadata.split("_")
+				if(meta.length==2){
+					conf.addMetadataValue(meta[1],params.get(metadata))
+					log.debug(meta[1]+":"+params.get(metadata))
+				}
+				
+			}
+		}
+		
+                
 		if ((dynamicConferenceService.testVoiceBridge != null) && (conf.voiceBridge == dynamicConferenceService.testVoiceBridge)) {
 			if (dynamicConferenceService.testConferenceMock != null) 
 				conf.meetingToken = dynamicConferenceService.testConferenceMock
@@ -328,7 +357,7 @@ class ApiController {
 		session["voicebridge"] = conf.getVoiceBridge()
 		session["webvoiceconf"] = conf.getWebVoiceConf()
 		session["mode"] = "LIVE"
-		session["record"] = false
+		session["record"] = conf.record
 		session['welcome'] = conf.welcome
 		
 		session.setMaxInactiveInterval(SESSION_TIMEOUT);
@@ -391,6 +420,7 @@ class ApiController {
 		conf.setForciblyEnded(true);
 		
 		conferenceEventListener.endMeetingRequest(room);
+//		redisDispatcher.publish();
 		
 		response.addHeader("Cache-Control", "no-cache")
 		withFormat {	
@@ -430,6 +460,8 @@ class ApiController {
 		}
 
 		respondWithConferenceDetails(conf, room, null, null);
+		//just for redis testing purpose 
+		//respondWithConferenceDetails2(conf, room, null, null);
 	}
 	
 	def getMeetings = {
@@ -577,6 +609,12 @@ class ApiController {
         }
         // Log the user out of the application.
 	    session.invalidate()
+	    /**
+	     * Temporary way to trigger ingest and processing. For demo purposes only. (richard)
+	    **/
+	    if (conf.isRecord())
+	    	dynamicConferenceService.processRecording(meetingToken)
+	    
         println "serverURL $hostURL"	
 	    redirect(url: hostURL)
 	}
@@ -658,6 +696,39 @@ class ApiController {
 				}
 			}
 		}			 
+	}
+	
+	def respondWithConferenceDetails2(conf, room, msgKey, msg) {
+		response.addHeader("Cache-Control", "no-cache")
+		withFormat {
+			xml {
+				render(contentType:"text/xml") {
+					response() {
+						returncode(RESP_CODE_SUCCESS)
+						meetingID("${conf.meetingID}")
+						attendeePW("${conf.attendeePassword}")
+						moderatorPW("${conf.moderatorPassword}")
+						running(conf.isRunning() ? "true" : "false")
+						hasBeenForciblyEnded(conf.isForciblyEnded() ? "true" : "false")
+						startTime("${conf.startTime}")
+						endTime("${conf.endTime}")
+						participantCount(conf.getNumberOfParticipants())
+						moderatorCount(conf.getNumberOfModerators())
+						attendees() {
+							conf.getParticipants().each { att ->
+								attendee() {
+									userID("${att.userid}")
+									fullName("${att.fullname}")
+									role("${att.role}")
+								}
+							}
+						}
+						messageKey(msgKey == null ? "" : msgKey)
+						message(msg == null ? "" : msg)
+					}
+				}
+			}
+		}
 	}
 
 	def respondWithConference(conf, msgKey, msg) {
