@@ -16,7 +16,7 @@ BigBlueButton.logger = logger
 props = YAML::load(File.open('../../core/scripts/bigbluebutton.yml'))
 
 recording_dir = props['recording_dir']
-target_dir = "#{recording_dir}/process/matterhorn/#{meeting_id}"
+target_dir = "#{recording_dir}/process/#{meeting_id}/matterhorn"
 
 if not FileTest.directory?(target_dir)
   raw_archive_dir = "#{recording_dir}/raw/#{meeting_id}"

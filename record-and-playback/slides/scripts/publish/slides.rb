@@ -27,16 +27,18 @@ if (playback == "slides")
 	simple_props = YAML::load(File.open('slides.yml'))
 	
 	recording_dir = bbb_props['recording_dir']
-	process_dir = "#{recording_dir}/process/slides/#{meeting_id}"
-	publish_dir = simple_props['publish_dir']
+
+	process_dir = "#{recording_dir}/process/#{meeting_id}/slides"
+	publish_dir = simple_props['publish_dir'] + "/#{meeting_id}"
 	playback_host = simple_props['playback_host']
 	
-	target_dir = "#{recording_dir}/publish/slides/#{meeting_id}"
-	if not FileTest.directory?(target_dir)
-		FileUtils.mkdir_p target_dir
-		
-		package_dir = "#{target_dir}/#{meeting_id}"
+	package_dir = "#{recording_dir}/publish/#{meeting_id}/slides"
+	if not FileTest.directory?(package_dir)
 		FileUtils.mkdir_p package_dir
+		
+		if not FileTest.directory?(publish_dir)
+			FileUtils.mkdir_p publish_dir
+		end
 		
 		audio_dir = "#{package_dir}/audio"
 		FileUtils.mkdir_p audio_dir
@@ -48,7 +50,7 @@ if (playback == "slides")
 		# Create metadata.xml
 		b = Builder::XmlMarkup.new(:indent => 2)		 
 		metaxml = b.recording {
-		  b.id(meeting_id) 
+		  b.recordID(meeting_id)
 		  b.state("available")
 		  b.published(true)
 		  b.start_time(Time.at((BigBlueButton::Events.first_event_timestamp("#{process_dir}/events.xml").to_f/1000.0)).utc)

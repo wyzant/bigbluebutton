@@ -17,8 +17,8 @@ done_files.each do |df|
   if (match[2] == "matterhorn")
     BigBlueButton.logger = Logger.new("/var/log/bigbluebutton/matterhorn-publish-#{meeting_id}.log", 'daily' )
 
-    process_dir = "#{recording_dir}/process/matterhorn/#{meeting_id}"
-    target_dir = "#{recording_dir}/publish/matterhorn/#{meeting_id}"
+    process_dir = "#{recording_dir}/process/#{meeting_id}/matterhorn"
+    target_dir = "#{recording_dir}/publish/#{meeting_id}/matterhorn"
     if not FileTest.directory?(target_dir)
       FileUtils.mkdir_p target_dir
 
