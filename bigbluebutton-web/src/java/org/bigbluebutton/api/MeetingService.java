@@ -42,7 +42,12 @@ public class MeetingService {
 			if (m.hasExpired(defaultMeetingExpireDuration) || m.wasNeverStarted(defaultMeetingCreateJoinDuration)) {
 				log.info("Removing expired meeting [{} - {}]", m.getInternalId(), m.getName());
 		  		if (m.isRecord()) {
-		  			log.debug("[" + m.getInternalId() + "] is recorded. Process it.");		
+		  			log.debug("[" + m.getInternalId() + "] is recorded. Process it.");
+		  			//Adding start and end time to the metadata
+		  			m.getMetadata().put("meetingStart", Long.toString(m.getStartTime()));
+		  			m.getMetadata().put("meetingEnd", Long.toString(m.getEndTime()));
+		  			
+		  			messagingService.recordMeetingInfo(m.getInternalId(),m.getMetadata());
 		  			processRecording(m.getInternalId());
 		  		}
 				meetings.remove(m.getInternalId());
@@ -65,9 +70,9 @@ public class MeetingService {
 	public void createMeeting(Meeting m) {
 		log.debug("Storing Meeting with internal id:" + m.getInternalId());
 		meetings.put(m.getInternalId(), m);
-		if (m.isRecord()) {
-			messagingService.recordMeetingInfo(m.getInternalId(), m.getMetadata());
-		}
+		/*if (m.isRecord()) {
+			messagingService.recordMeetingMetadata(m.getInternalId(), m.getMetadata());
+		}*/
 	}
 
 	public Meeting getMeeting(String meetingId) {

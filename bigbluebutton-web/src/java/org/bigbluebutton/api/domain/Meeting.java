@@ -22,6 +22,7 @@ package org.bigbluebutton.api.domain;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -68,7 +69,8 @@ public class Meeting {
     	createdTime = builder.createdTime;
 		users = new ConcurrentHashMap<String, User>();
 				
-		metadata.put("meetingId", extMeetingId);
+		metadata.put("meetingID", extMeetingId);
+		metadata.put("meetingName", name);
 	}
 
 	public Map<String, String> getMetadata() {

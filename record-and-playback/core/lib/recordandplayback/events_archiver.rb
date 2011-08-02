@@ -23,7 +23,7 @@ module BigBlueButton
       @redis.client.connected?
     end
     
-    def metadata_for(meeting_id)
+	def metadata_for(meeting_id)
       @redis.hgetall("meeting:info:#{meeting_id}")
     end
     
@@ -57,7 +57,7 @@ module BigBlueButton
       meeting_metadata = @redis.metadata_for(meeting_id)
 
       if (meeting_metadata != nil)
-          xml.recording(:meeting_id => meeting_id) {
+          xml.recording(:recordID => meeting_id,:version => '0.1.0') {
             xml.metadata(meeting_metadata)
             msgs = @redis.events_for(meeting_id)                      
             msgs.each do |msg|

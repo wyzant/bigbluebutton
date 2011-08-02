@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+
+import org.bigbluebutton.api.domain.Meeting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.google.gson.Gson;
@@ -39,31 +41,16 @@ public class RedisMessagingService implements MessagingService {
  		listeners.remove(listener);
  	}
 
-	public void recordMeetingInfo(String meetingId, Map<String, String> info) {
+	public void recordMeetingInfo(String meetingId,	Map<String, String> info) {
 		Jedis jedis = redisPool.getResource();
 		try {
-		    for (String key: info.keySet()) {
-				    	log.debug("Storing metadata {} = {}", key, info.get(key));
-				}   
-
-		    log.debug("Saving metadata in {}", meetingId);
+			log.debug("Saving info in {}", meetingId);
 			jedis.hmset("meeting:info:" + meetingId, info);
 		} catch (Exception e){
 			log.warn("Cannot record the info meeting:"+meetingId,e);
 		} finally {
 			redisPool.returnResource(jedis);
 		}		
-	}
-
-	public void recordMeetingMetadata(String meetingId,	Map<String, String> metadata) {
-		Jedis jedis = redisPool.getResource();
-		try { 
-			jedis.hmset("meeting:metadata:" + meetingId, metadata);
-		} catch (Exception e) {
-			log.warn("Cannot record the metadata meeting:"+meetingId,e);
-		} finally {
-			redisPool.returnResource(jedis);
-		}				
 	}
 
 	public void endMeeting(String meetingId) {
