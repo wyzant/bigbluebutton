@@ -32,10 +32,14 @@ if (playback == "slides")
 	publish_dir = simple_props['publish_dir'] + "/#{meeting_id}"
 	playback_host = simple_props['playback_host']
 	
-	package_dir = "#{recording_dir}/publish/#{meeting_id}/slides"
-	if not FileTest.directory?(package_dir)
+	target_dir = "#{recording_dir}/publish/#{meeting_id}/slides"
+	if not FileTest.directory?(target_dir)
+		FileUtils.mkdir_p target_dir
+		
+		package_dir = "#{target_dir}/slides"
 		FileUtils.mkdir_p package_dir
-
+		
+		
 		audio_dir = "#{package_dir}/audio"
 		FileUtils.mkdir_p audio_dir
 		
@@ -64,6 +68,10 @@ if (playback == "slides")
 		
 		doc.xpath("//playback").first << format
 		
+		f=File.open("#{publish_dir}/metadata.xml","w+")
+		f.write(doc)
+		f.close
+
 		# Create index.html
 		#dir_list = Dir.entries(publish_dir) - ['.', '..']
 		#recordings = []

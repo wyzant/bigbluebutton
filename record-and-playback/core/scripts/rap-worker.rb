@@ -29,7 +29,7 @@ def process_archived_meeting(recording_dir)
   end	
 end
 
-def publish_processed_meeting(recording_dir)
+def publish_processed_meeting(recording_dir,published_dir)
   done_files = Dir.glob("#{recording_dir}/status/processed/*.done")
   
   done_files.each do |df|
@@ -37,9 +37,9 @@ def publish_processed_meeting(recording_dir)
     meeting_id = match[1]
     
 	# After a meeting is processed, a new directory in published for the meeting is created
-	published_dir = props['published_dir'] + "/#{meeting_id}"
-	create_metadata_file(recording_dir,published_dir,meeting_id)
-	
+	if not FileTest.file?("#{published_dir}/#{meeting_id}/metadata.xml")
+		create_metadata_file(recording_dir,published_dir,meeting_id)
+	end
 	
     # Execute all the scripts under the steps directory.
     # This script must be invoked from the scripts directory for the PATH to be resolved.
@@ -56,8 +56,8 @@ def publish_processed_meeting(recording_dir)
 end
 
 def create_metadata_file(recording_dir,published_dir,meeting_id)
-	if not FileTest.directory?(published_dir)
-		FileUtils.mkdir_p published_dir
+	if not FileTest.directory?(published_dir+ "/#{meeting_id}")
+		FileUtils.mkdir_p published_dir+ "/#{meeting_id}"
 		
 		raw_archive_dir = "#{recording_dir}/raw/#{meeting_id}"
 		metavalues=BigBlueButton::Events.get_meeting_metadata("#{raw_archive_dir}/events.xml")
@@ -79,8 +79,8 @@ def create_metadata_file(recording_dir,published_dir,meeting_id)
 		  			
 		}
 		
-		puts "writing metadata to #{published_dir}/metadata.xml" 
-		metadata_xml = File.new("#{published_dir}/metadata.xml","w")
+		puts "writing metadata to #{published_dir}/#{meeting_id}/metadata.xml" 
+		metadata_xml = File.new("#{published_dir}/#{meeting_id}/metadata.xml","w")
 		metadata_xml.write(metaxml)
 		metadata_xml.close
 	end
@@ -117,7 +117,8 @@ end
 
 props = YAML::load(File.open('bigbluebutton.yml'))
 recording_dir = props['recording_dir']
+published_dir = props['published_dir'] 
 archive_recorded_meeting()
 process_archived_meeting(recording_dir)
-publish_processed_meeting(recording_dir)
+publish_processed_meeting(recording_dir,published_dir)
 
