@@ -11,40 +11,40 @@
 			http://www.springframework.org/schema/integration/jms/spring-integration-jms-1.0.xsd
 			">
 	
-	<integration:gateway id="documentConversionService" service-interface="org.bigbluebutton.presentation.DocumentConversionService"/>
-	<integration:channel id="convertChannel"/>
+	<!-- integration:gateway id="documentConversionService" service-interface="org.bigbluebutton.presentation.DocumentConversionService"/>
+	<integration:channel id="convertChannel"/ -->
 
-	<integration:filter ref="supportedDocumentFilter" method="isSupported" input-channel="convertChannel" 
-						output-channel="docRouterChannel"/>
+	<!-- integration:filter ref="supportedDocumentFilter" method="isSupported" input-channel="convertChannel" 
+						output-channel="docRouterChannel"/-->
 	<bean id="supportedDocumentFilter" class="org.bigbluebutton.presentation.SupportedDocumentFilter">
 		<property name="conversionProgressNotifier" ref="conversionProgressNotifier"/>
 	</bean>
 		
-	<integration:channel id="docRouterChannel"/>	
-	<integration:router ref="fileTypeRouter" input-channel="docRouterChannel"/>
+	<!-- integration:channel id="docRouterChannel"/>	
+	<integration:router ref="fileTypeRouter" input-channel="docRouterChannel"/-->
 	<bean id="fileTypeRouter" class="org.bigbluebutton.presentation.FileTypeRouter"/>
 	
-	<integration:channel id="officeFileChannel"/>
-	<integration:channel id="pdfFileChannel"/>
-	<integration:channel id="imageFileChannel"/>
+	<!-- integration:channel id="officeFileChannel"/-->
+	<!-- integration:channel id="pdfFileChannel"/ -->
+	<!-- integration:channel id="imageFileChannel"/-->
 	<integration:channel id="conversionProgressChannel"/>
 	<integration:gateway id="conversionProgressNotifier" service-interface="org.bigbluebutton.presentation.ConversionProgressNotifier"/>
 	
-	<integration:service-activator input-channel="officeFileChannel" output-channel="officeToPdfConvertResultChannel" 
-			ref="officeToPdfConversionService" method="convertOfficeToPdf"/>
+	<!-- integration:service-activator input-channel="officeFileChannel" output-channel="officeToPdfConvertResultChannel" 
+			ref="officeToPdfConversionService" method="convertOfficeToPdf"/-->
 	<bean id="officeToPdfConversionService" class="org.bigbluebutton.presentation.imp.OfficeToPdfConversionService"/>
 	
-	<integration:channel id="officeToPdfConvertResultChannel"/>
+	<!-- integration:channel id="officeToPdfConvertResultChannel"/>
 	<integration:filter ref="officeToPdfConversionSuccessFilter" method="didConversionSucceed" input-channel="officeToPdfConvertResultChannel" 
-						output-channel="convertChannel"/>
+						output-channel="convertChannel"/-->
 	<bean id="officeToPdfConversionSuccessFilter" class="org.bigbluebutton.presentation.OfficeToPdfConversionSuccessFilter">
 		<property name="conversionProgressNotifier" ref="conversionProgressNotifier"/>
 	</bean>
 		
-    <integration:service-activator input-channel="pdfFileChannel" ref="pdfToSwfSlidesGenerationService" method="generateSlides"/>
-	<integration:channel id="discardChannel"/>
+    <!-- integration:service-activator input-channel="pdfFileChannel" ref="pdfToSwfSlidesGenerationService" method="generateSlides"/>
+	<integration:channel id="discardChannel"/-->
     
-    <integration:service-activator input-channel="imageFileChannel" ref="imageToSwfSlidesGenerationService" method="generateSlides"/>
+    <!-- integration:service-activator input-channel="imageFileChannel" ref="imageToSwfSlidesGenerationService" method="generateSlides"/-->
         
     <jms:outbound-channel-adapter id="jmsOut" destination-name="UpdatesQueue" channel="conversionProgressChannel"/>
         	

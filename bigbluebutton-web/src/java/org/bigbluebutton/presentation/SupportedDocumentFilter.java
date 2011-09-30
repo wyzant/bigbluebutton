@@ -32,6 +32,7 @@ public class SupportedDocumentFilter {
 	private ConversionProgressNotifier notifier;
 	
 	public boolean isSupported(UploadedPresentation pres) {
+		log.debug("Checking if the file is supported...");
 		File presentationFile = pres.getUploadedFile();
 		
 		/* Get file extension - Perhaps try to rely on a more accurate method than an extension type ? */
@@ -43,6 +44,8 @@ public class SupportedDocumentFilter {
 			log.info("Received supported file " + pres.getUploadedFile().getAbsolutePath());
 			pres.setFileType(ext);
 		}
+		log.debug("Finishing if the file is supported...");
+		
 		return supported;
 	}
 	
@@ -56,7 +59,9 @@ public class SupportedDocumentFilter {
 		}
 		
 		if (notifier != null) {
+			log.debug("init sending conversion progress. the document is supported?"+supported);
 			notifier.sendConversionProgress(builder.build().getMessage());
+			log.debug("end sending conversion progress");
 		} else {
 			log.warn("ConversionProgressNotifier has not been set!");
 		}

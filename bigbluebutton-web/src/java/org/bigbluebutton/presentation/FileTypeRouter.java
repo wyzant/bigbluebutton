@@ -22,11 +22,11 @@
  */
 package org.bigbluebutton.presentation;
 
-import org.springframework.integration.annotation.Router;
+//import org.springframework.integration.annotation.Router;
 
 public class FileTypeRouter {
 		
-	@Router
+	//@Router
 	public String route(UploadedPresentation pres) {
 		String fileType = pres.getFileType();
 		

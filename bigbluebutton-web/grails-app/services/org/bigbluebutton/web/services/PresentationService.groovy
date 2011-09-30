@@ -26,18 +26,34 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.lang.InterruptedException
 import org.springframework.util.FileCopyUtils
-import org.bigbluebutton.presentation.DocumentConversionService
+//import org.bigbluebutton.presentation.DocumentConversionService
 import org.bigbluebutton.presentation.UploadedPresentation
+//added for remove integration
+import org.bigbluebutton.presentation.SupportedDocumentFilter
+import org.bigbluebutton.presentation.FileTypeRouter
+import org.bigbluebutton.presentation.ChannelNameConstants
+import org.bigbluebutton.presentation.imp.OfficeToPdfConversionService
+import org.bigbluebutton.presentation.OfficeToPdfConversionSuccessFilter
+import org.bigbluebutton.presentation.imp.PdfToSwfSlidesGenerationService
+import org.bigbluebutton.presentation.imp.ImageToSwfSlidesGenerationService
 
 class PresentationService {
 
     static transactional = false
-	def documentConversionService
+	//def documentConversionService
 	def presentationDir
 	def testConferenceMock
 	def testRoomMock
 	def testPresentationName
 	def testUploadedPresentation
+	
+	//Added for remove spring integration
+	def supportedDocumentFilter
+	def fileTypeRouter
+	def officeToPdfConversionService
+	def officeToPdfConversionSuccessFilter
+	def pdfToSwfSlidesGenerationService
+	def imageToSwfSlidesGenerationService
 	
     def deletePresentation = {conf, room, filename ->
     		def directory = new File(roomDirectory(conf, room).absolutePath + File.separatorChar + filename)
@@ -92,11 +108,42 @@ class PresentationService {
 	
 	def processUploadedPresentation = {uploadedPres ->	
 		// Run conversion on another thread.
+		log.debug "Starting a new thread..."
 		new Timer().runAfter(1000) 
 		{
-			documentConversionService.processDocument(uploadedPres)
+			log.debug "Init the process for the conversion service"
+			//documentConversionService.processDocument(uploadedPres)
+			
+			if(supportedDocumentFilter.isSupported(uploadedPres)){
+				String type=fileTypeRouter.route(uploadedPres);
+				if(type.equalsIgnoreCase(ChannelNameConstants.officeFileChannel)){
+					processOffice(uploadedPres)
+				}
+				if(type.equalsIgnoreCase(ChannelNameConstants.pdfFileChannel)){
+					processPdf(uploadedPres)
+				}
+				if(type.equalsIgnoreCase(ChannelNameConstants.imageFileChannel)){
+					processImage(uploadedPres)
+				}
+				
+			} 
 		}
 	}
+	
+	public void processOffice(UploadedPresentation uploadedPres){
+		UploadedPresentation converted=officeToPdfConversionService.convertOfficeToPdf(uploadedPres);
+		if(officeToPdfConversionSuccessFilter.didConversionSucceed(converted))
+		{
+			processPdf(converted);
+		}
+	}
+	public void processPdf(UploadedPresentation uploadedPres){
+		pdfToSwfSlidesGenerationService.generateSlides(uploadedPres);
+	}
+	public void processImage(UploadedPresentation uploadedPres){
+		imageToSwfSlidesGenerationService.generateSlides(uploadedPres);
+	}
+	
  	
 	def showSlide(String conf, String room, String presentationName, String id) {
 		new File(roomDirectory(conf, room).absolutePath + File.separatorChar + presentationName + File.separatorChar + "slide-${id}.swf")
@@ -135,7 +182,7 @@ class PresentationService {
 				// Run conversion on another thread.
 				new Timer().runAfter(1000) 
 				{
-					documentConversionService.processDocument(uploadedPres)
+					//documentConversionService.processDocument(uploadedPres)
 				}
 			} else {
 				log.error "${pres.absolutePath} does NOT exist"

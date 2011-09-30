@@ -81,13 +81,15 @@ class PresentationController {
 			def presentationName = params.presentation_name.replaceAll(notValidCharsRegExp, '-')
 			log.debug "Uploaded presentation name : $presentationName"
 			File uploadDir = presentationService.uploadedPresentationDirectory(params.conference, params.room, presentationName)
-
+			
 			def newFilename = file.getOriginalFilename().replaceAll(notValidCharsRegExp, '-')
 			def pres = new File( uploadDir.absolutePath + File.separatorChar + newFilename )
+			log.debug "Executing file.transferTo"
 			file.transferTo(pres)	
 			
 			UploadedPresentation uploadedPres = new UploadedPresentation(params.conference, params.room, presentationName);
 			uploadedPres.setUploadedFile(pres);
+			log.debug "Sending to process the presentation"
 			presentationService.processUploadedPresentation(uploadedPres)							             			     	
 		}    
 	    	else {
