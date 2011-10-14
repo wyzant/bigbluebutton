@@ -116,10 +116,12 @@ class PresentationService {
 			
 			if(supportedDocumentFilter.isSupported(uploadedPres)){
 				String type=fileTypeRouter.route(uploadedPres);
+				System.out.println("File type = " + type);
 				if(type.equalsIgnoreCase(ChannelNameConstants.officeFileChannel)){
 					processOffice(uploadedPres)
 				}
 				if(type.equalsIgnoreCase(ChannelNameConstants.pdfFileChannel)){
+					System.out.println("File type = " + type);
 					processPdf(uploadedPres)
 				}
 				if(type.equalsIgnoreCase(ChannelNameConstants.imageFileChannel)){
@@ -131,13 +133,19 @@ class PresentationService {
 	}
 	
 	public void processOffice(UploadedPresentation uploadedPres){
+		System.out.println("Converting OpenOffice doc.");
 		UploadedPresentation converted=officeToPdfConversionService.convertOfficeToPdf(uploadedPres);
 		if(officeToPdfConversionSuccessFilter.didConversionSucceed(converted))
 		{
-			processPdf(converted);
+			 if(supportedDocumentFilter.isSupported(uploadedPres)){
+			   processPdf(converted);
+                         } else {
+		           System.out.println("Not supported document type: " + converted.getFileType());	
+                         }
 		}
 	}
 	public void processPdf(UploadedPresentation uploadedPres){
+		System.out.println("Processing PDF");
 		pdfToSwfSlidesGenerationService.generateSlides(uploadedPres);
 	}
 	public void processImage(UploadedPresentation uploadedPres){
