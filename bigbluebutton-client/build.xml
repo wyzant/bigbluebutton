@@ -17,6 +17,7 @@
 	<!-- Declare module names here -->
 	<property name="BBB_MAIN_TEST" value="BigBlueButtonTest" />
 	<property name="BBB_MAIN" value="BigBlueButton" />
+	<property name="BROADCAST" value="BroadcastModule" />
 	<property name="CHAT" value="ChatModule" />
 	<property name="VIEWERS" value="ViewersModule" />
 	<property name="LISTENERS" value="ListenersModule" />
@@ -166,6 +167,10 @@
 		<build-module src="${SRC_DIR}" target="${BREAKOUT}" />
 	</target>
 	
+	<target name="build-broadcast" description="Compile Broadcast Module" >
+		<build-module src="${SRC_DIR}" target="${BROADCAST}" />
+	</target>
+	
 	<target name="build-chat" description="Compile Chat Module">
 		<build-module src="${SRC_DIR}" target="${CHAT}" />
 	</target>
@@ -233,7 +238,7 @@
 	
 	<!-- just a grouping of modules to compile -->
 	<target name="build-main-chat-viewers-listeners-present" 
-			depends="build-bbb-main, build-bbb-main-test, build-chat, build-viewers, build-listeners, build-present, build-breakout"
+			depends="build-bbb-main, build-bbb-main-test, build-chat, build-viewers, build-listeners, build-present, build-breakout, build-broadcast"
 			description="Compile main, chat, viewers, listeners, present, breakout modules">
 	</target>
 	

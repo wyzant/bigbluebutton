@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bcast:MDIWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
+					  xmlns:bcast="flexlib.mdi.containers.*" 
+					  implements="org.bigbluebutton.common.IBbbModuleWindow"
+					  layout="absolute" 
+					  width="400" 
+					  height="300">
+	<mx:Script>
+		<![CDATA[
+			import mx.core.UIComponent;			
+			import org.bigbluebutton.main.views.MainCanvas;
+			
+			private function playVideo():void {
+				var _videoHolder:UIComponent;
+				_videoHolder = new UIComponent();
+				
+				var video:Video = new Video();
+				_videoHolder.addChild(video);
+				videoHolder.addChild(_videoHolder);
+				
+				var nc:NetConnection = new NetConnection();
+				nc.connect(null);
+				var ns:NetStream = new NetStream(nc);
+				ns.client = this;
+				video.attachNetStream(ns);
+				ns.play("http://www.helpexamples.com/flash/video/cuepoints.flv");
+			}				
+			
+			public function onCuePoint(infoObject:Object):void {
+				trace("onCuePoint");
+			}
+			
+			public function onMetaData(infoObject:Object):void {
+				trace("onMetaData");
+			}
+			
+			public function onPlayStatus(infoObject:Object):void {
+				trace("onMetaData");
+			}
+			
+			public function getPrefferedPosition():String{
+				return MainCanvas.MIDDLE;
+			}
+			
+		]]>
+	</mx:Script>
+	<mx:Canvas id="videoHolder" creationComplete="playVideo()"/>	
+</bcast:MDIWindow>
