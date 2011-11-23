@@ -10,6 +10,15 @@
 			import mx.core.UIComponent;			
 			import org.bigbluebutton.main.views.MainCanvas;
 			
+			[Bindable]
+			private var streams:Array = ["http://192.168.0.235/avatar.flv",
+				"http://192.168.0.235/avatar-vp6.flv", 
+				"http://192.168.0.235/toystory3-vp6.flv", 
+				"http://192.168.0.235/toystory3.flv"];
+			
+			private var nc:NetConnection = new NetConnection();
+			private var ns:NetStream;
+			
 			private function playVideo():void {
 				var _videoHolder:UIComponent;
 				_videoHolder = new UIComponent();
@@ -17,14 +26,19 @@
 				var video:Video = new Video();
 				_videoHolder.addChild(video);
 				videoHolder.addChild(_videoHolder);
-				
-				var nc:NetConnection = new NetConnection();
+								
 				nc.connect(null);
-				var ns:NetStream = new NetStream(nc);
+				ns = new NetStream(nc);
 				ns.client = this;
 				video.attachNetStream(ns);
-				ns.play("http://www.helpexamples.com/flash/video/cuepoints.flv");
+				//ns.play("http://www.helpexamples.com/flash/video/cuepoints.flv");
+				var s:String = streamsComboBox.selectedLabel;
+				ns.play(s);				
 			}				
+			
+			private function stopVideo():void {
+				ns.close();
+			}
 			
 			public function onCuePoint(infoObject:Object):void {
 				trace("onCuePoint");
@@ -44,5 +58,11 @@
 			
 		]]>
 	</mx:Script>
-	<mx:Canvas id="videoHolder" creationComplete="playVideo()"/>	
+	<mx:Canvas>
+		<mx:Canvas id="videoHolder" x="30" y="200"/>	
+		<mx:ComboBox id="streamsComboBox" x="1" y="30" width="365" dataProvider="{streams}"/>
+		<mx:Button id="playBtn" label="Play"  x="1" y="50" click="playVideo()" enabled="true"/>		
+		<mx:Button id="stopBtn" label="Stop"  x="1" y="70" click="stopVideo()" enabled="true"/>	
+	</mx:Canvas>
+
 </bcast:MDIWindow>
