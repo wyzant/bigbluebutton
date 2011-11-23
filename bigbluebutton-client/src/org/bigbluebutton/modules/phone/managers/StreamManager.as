@@ -224,7 +224,7 @@ package org.bigbluebutton.modules.phone.managers {
 		} 
 			
 		private function asyncErrorHandler(event:AsyncErrorEvent):void {
-	           trace("AsyncErrorEvent: " + event);
+			LogUtil.debug("AsyncErrorEvent: " + event);
 	    }
 	        
 	    private function playStatus(event:Object):void {
