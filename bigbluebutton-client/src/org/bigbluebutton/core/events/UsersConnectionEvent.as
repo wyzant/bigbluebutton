@@ -16,22 +16,19 @@
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 * 
 */
-package org.bigbluebutton.main.model.users.events
+package org.bigbluebutton.core.events
 {
 	import flash.events.Event;
+	import flash.net.NetConnection;
 
-	public class ConnectionFailedEvent extends Event
+	public class UsersConnectionEvent extends Event
 	{
-		public static const UNKNOWN_REASON:String = "unknownReason";
-		public static const CONNECTION_FAILED:String = "connectionFailed";
-		public static const CONNECTION_CLOSED:String = "connectionClosed";
-		public static const INVALID_APP:String = "invalidApp";
-		public static const APP_SHUTDOWN:String = "appShutdown";
-		public static const CONNECTION_REJECTED:String = "connectionRejected";
-		public static const ASYNC_ERROR:String = "asyncError";
-		public static const USER_LOGGED_OUT:String = "userHasLoggedOut";
-				
-		public function ConnectionFailedEvent(type:String)
+		public static const CONNECTION_SUCCESS:String = "usersConnectionSuccess";
+		
+		public var connection:NetConnection;
+		public var userid:Number;
+		
+		public function UsersConnectionEvent(type:String)
 		{
 			super(type, true, false);
 		}

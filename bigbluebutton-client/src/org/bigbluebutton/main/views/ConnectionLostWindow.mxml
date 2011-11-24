@@ -28,7 +28,7 @@
 			
 			import mx.managers.PopUpManager;
 			
-			import org.bigbluebutton.main.model.users.events.UsersConnectionEvent;
+			import org.bigbluebutton.core.events.UsersConnectionEvent;
 			
 			private function connectionReestablished(e:UsersConnectionEvent):void{
 				var url:URLRequest = new URLRequest(ExternalInterface.call("window.location.href.toString"));

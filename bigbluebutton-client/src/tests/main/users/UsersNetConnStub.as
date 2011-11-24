@@ -3,11 +3,11 @@ package tests.main.users
 	import flash.net.NetConnection;
 	import flash.net.Responder;
 	
-	import org.bigbluebutton.main.model.users.NetConnectionDelegate;
+	import org.bigbluebutton.core.model.Connection;
 	
 	public class UsersNetConnStub extends NetConnection
 	{
-		private var connectionDelegate:NetConnectionDelegate;
+		private var connectionDelegate:Connection;
 		
 		public function UsersNetConnStub()
 		{

@@ -33,7 +33,8 @@ package org.bigbluebutton.main.model.users {
 	import org.bigbluebutton.main.events.PresenterStatusEvent;
 	import org.bigbluebutton.main.model.ConferenceParameters;
 	import org.bigbluebutton.main.model.User;
-	import org.bigbluebutton.main.model.users.events.ConnectionFailedEvent;
+	import org.bigbluebutton.core.events.ConnectionFailedEvent;
+	import org.bigbluebutton.core.model.Connection;
 
 	public class UsersSOService {
 		public static const NAME:String = "ViewersSOService";
@@ -43,7 +44,7 @@ package org.bigbluebutton.main.model.users {
 		private static const SO_NAME : String = "participantsSO";
 		private static const STATUS:String = "_STATUS";
 		
-		private var netConnectionDelegate: NetConnectionDelegate;		
+		private var netConnectionDelegate: Connection;		
 		private var _room:String;
 		private var _applicationURI:String;
 		
@@ -51,7 +52,7 @@ package org.bigbluebutton.main.model.users {
 				
 		public function UsersSOService(uri:String) {			
 			_applicationURI = uri;
-			netConnectionDelegate = new NetConnectionDelegate(uri);
+			netConnectionDelegate = new Connection(uri);
 			dispatcher = new Dispatcher();
 		}
 		

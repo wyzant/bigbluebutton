@@ -16,15 +16,16 @@
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 * 
 */
-package org.bigbluebutton.main.model {
+package org.bigbluebutton.core.services {
 	import com.asfusion.mate.events.Dispatcher;
 	import flash.events.NetStatusEvent;
 	import flash.net.NetConnection;
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.main.events.PortTestEvent;
 	import org.bigbluebutton.main.model.modules.ModulesDispatcher;
+	import org.bigbluebutton.core.model.PortTest;
 
-	public class PortTestProxy {
+	public class PortTestService {
 		private var nc:NetConnection;
 		private var protocol:String;
 		private var port:String;
@@ -33,7 +34,7 @@ package org.bigbluebutton.main.model {
 		private var uri:String;
 		private var modulesDispatcher:ModulesDispatcher;
 		
-		public function PortTestProxy() {
+		public function PortTestService() {
 			modulesDispatcher = new ModulesDispatcher();
 		}
 		

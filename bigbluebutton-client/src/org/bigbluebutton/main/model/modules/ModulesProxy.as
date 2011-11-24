@@ -26,12 +26,12 @@ package org.bigbluebutton.main.model.modules
 	import org.bigbluebutton.main.events.PortTestEvent;
 	import org.bigbluebutton.main.events.SuccessfulLoginEvent;
 	import org.bigbluebutton.main.model.ConferenceParameters;
-	import org.bigbluebutton.main.model.PortTestProxy;
+	import org.bigbluebutton.core.services.PortTestService;
 	
 	public class ModulesProxy {
 		
 		private var modulesManager:ModuleManager;
-		private var portTestProxy:PortTestProxy;
+		private var portTestProxy:PortTestService;
 		
 		private var _user:Object;
 		
@@ -39,7 +39,7 @@ package org.bigbluebutton.main.model.modules
 		
 		public function ModulesProxy() {
 			modulesDispatcher = new ModulesDispatcher();
-			portTestProxy = new PortTestProxy();
+			portTestProxy = new PortTestService();
 			modulesManager = new ModuleManager();
 		}
 		
