@@ -26,7 +26,7 @@ public class BigBlueButton {
 		
 		ArrayList<Object> m = new ArrayList<Object>();
 		m.add("Hello World!");
-		ServiceUtils.invokeOnAllConnections(Red5.getConnectionLocal().getScope(), "booyeah", new Object[] {params.get("message")});
+		ServiceUtils.invokeOnAllConnections(Red5.getConnectionLocal().getScope(), "handleMessage", new Object[] {"publicChatMessageEvent", params.get("message")});
 	}
 	
 	

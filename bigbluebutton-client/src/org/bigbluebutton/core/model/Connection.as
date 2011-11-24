@@ -17,15 +17,17 @@
 * 
 */
 package org.bigbluebutton.core.model {
-	import com.asfusion.mate.events.Dispatcher;	
+	import com.asfusion.mate.events.Dispatcher;
+	
 	import flash.events.*;
 	import flash.net.NetConnection;
 	import flash.net.Responder;
 	import flash.utils.Timer;
+	
 	import org.bigbluebutton.common.LogUtil;
-	import org.bigbluebutton.main.model.ConferenceParameters;
 	import org.bigbluebutton.core.events.ConnectionFailedEvent;
 	import org.bigbluebutton.core.events.UsersConnectionEvent;
+	import org.bigbluebutton.main.model.ConferenceParameters;
 		
 	public class Connection {
 		private var alias:String = "unknown";
@@ -72,8 +74,8 @@ package org.bigbluebutton.core.model {
 			return _nc;
 		}
 		
-		public function booyeah(param:String):void {
-			LogUtil.debug("*****BBBBOOOOYEAHHHHH!!!! " + param);
+		public function handleMessage(messageName:String, param:Object):void {
+			LogUtil.debug("*****BBBBOOOOYEAHHHHH!!!! " + messageName);
 		}
 		
 		/**
