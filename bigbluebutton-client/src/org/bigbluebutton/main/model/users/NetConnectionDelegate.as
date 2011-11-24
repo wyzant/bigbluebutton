@@ -79,6 +79,10 @@ package org.bigbluebutton.main.model.users
 			return _netConnection;
 		}
 		
+		public function booyeah(param:String):void {
+			LogUtil.debug("*****BBBBOOOOYEAHHHHH!!!! " + param);
+		}
+		
 		/**
 		 * Connect to the server.
 		 * uri: The uri to the conference application.

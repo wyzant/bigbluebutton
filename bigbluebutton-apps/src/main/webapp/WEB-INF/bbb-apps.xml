@@ -70,7 +70,11 @@
 	    class="org.bigbluebutton.conference.service.chat.ChatApplication">
 		<property name="roomsManager"> <ref local="chatRoomsManager"/></property>
 	</bean>
-	
+
+  <bean id="bigbluebutton.service" class="org.bigbluebutton.conference.service.BigBlueButton">
+    <property name="roomsManager"> <ref local="roomsManager"/></property>
+  </bean>
+  	
 	<bean id="chat.service" class="org.bigbluebutton.conference.service.chat.ChatService">
 		<property name="chatApplication"> <ref local="chatApplication"/></property>
 	</bean>
