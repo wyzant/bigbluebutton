@@ -2,180 +2,46 @@
 <bcast:MDIWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
 					  xmlns:bcast="flexlib.mdi.containers.*" 
 					  implements="org.bigbluebutton.common.IBbbModuleWindow"
-					  layout="absolute" creationComplete="loadStreams()"
+					  layout="absolute"
 					  width="400" 
 					  height="300">
 	<mx:Script>
 		<![CDATA[
-			import flash.events.Event;
-			import flash.events.NetStatusEvent;
-			import flash.events.SecurityErrorEvent;
-			import flash.net.URLLoader;
-			import flash.net.URLRequest;
-			
 			import mx.core.UIComponent;
 			
-			import org.bigbluebutton.common.LogUtil;
 			import org.bigbluebutton.main.views.MainCanvas;
+			import org.bigbluebutton.modules.broadcast.managers.BroadcastManager;
+			import org.bigbluebutton.modules.broadcast.models.Streams;
+			
+			public var broadcastManager:BroadcastManager;
 			
 			[Bindable]
-			private var streamNames:Array = new Array();
-			private var streamUrls:Array = new Array();
-			private var streamIds:Array = new Array();
+			public var streams:Streams;
 			
-			private var nc:NetConnection = new NetConnection();
-			private var ns:NetStream;
-			private var streamsXml:XML;
-			
-			private function loadStreams():void {
-				var urlLoader:URLLoader = new URLLoader();
-				urlLoader.addEventListener(Event.COMPLETE, handleComplete);
-				var date:Date = new Date();
-				urlLoader.load(new URLRequest("http://192.168.0.235/streams.xml" + "?a=" + date.time));			
-			}		
-			
-			private function handleComplete(e:Event):void{
-				streamsXml = new XML(e.target.data);
-				LogUtil.debug(streamsXml);
-				
-				var mn:XMLList = streamsXml.stream..@name;
-				
-				for each (var n:XML in mn) {
-					LogUtil.debug(n);
-				}
-				var item:XML;
-				var list:XMLList = streamsXml.children();
-				for each(item in list) {
-					LogUtil.debug(item.@url + " " + item.@name + " " + item.@id);
-					streamNames.push(item.@name);
-					streamUrls.push(item.@url);
-					streamIds.push(item.@id);
-				}
-			}
+			public var videoHolder2:UIComponent;
 			
 			private function playVideo():void {
-				var _videoHolder:UIComponent;
-				_videoHolder = new UIComponent();
-				
-				var video:Video = new Video();
-				_videoHolder.addChild(video);
-				videoHolder.addChild(_videoHolder);
-				
-				ns = new NetStream(nc);
-				ns.client = this;
-				ns.bufferTime = 0;
-				ns.receiveVideo(true);
-				ns.receiveAudio(true);
-				ns.addEventListener(NetStatusEvent.NET_STATUS, netstreamStatus);
-				ns.addEventListener(AsyncErrorEvent.ASYNC_ERROR, nsAsyncErrorHandler);
-				video.attachNetStream(ns);
-				var s:String = streamIds[streamsComboBox.selectedIndex];
-				LogUtil.debug("*********Playing " + s);
-				ns.play(s);				
-			}		
-			
-			private function netstreamStatus (evt:NetStatusEvent ):void {		 
-
-				switch(evt.info.code) {			
-					case "NetStream.Play.StreamNotFound":
-						LogUtil.debug("NetStream.Play.StreamNotFound");
-						break;			
-					case "NetStream.Play.Failed":
-						LogUtil.debug("NetStream.Play.Failed");
-						break;
-					case "NetStream.Play.Start":	
-						LogUtil.debug("NetStream.Play.Start");
-						break;
-					case "NetStream.Play.Stop":			
-						LogUtil.debug("NetStream.Play.Stop");
-						break;
-					case "NetStream.Buffer.Full":
-						LogUtil.debug("NetStream.Buffer.Full");
-						break;
-					default:
-				}			 
-			} 
-			
-			private function nsAsyncErrorHandler(event:AsyncErrorEvent):void {
-				LogUtil.debug("nsAsyncErrorHandler: " + event);
-			}
-			
-			
-			public function connect():void {
-				var s:String = streamUrls[streamsComboBox.selectedIndex];
-				LogUtil.debug("********* Connecting " + s);
-				nc.connect(s);
-				nc.client = this;
-				nc.addEventListener( NetStatusEvent.NET_STATUS , netStatus );
-				nc.addEventListener(SecurityErrorEvent.SECURITY_ERROR, securityErrorHandler);
-			}
-			
-			private function netStatus (evt:NetStatusEvent ):void {		 
-
-				switch(evt.info.code) {				
-					case "NetConnection.Connect.Success":
-						LogUtil.debug("Successfully connected to SIP application.");
-						playVideo();
-						break;
-					
-					case "NetConnection.Connect.Failed":
-						LogUtil.debug("Failed to connect to SIP application.");
-						break;
-					
-					case "NetConnection.Connect.Closed":
-						trace("Connection to SIP application has closed.");
-						break;
-					
-					case "NetConnection.Connect.Rejected":
-						LogUtil.debug("Connection to SIP application was rejected.");
-						break;					
-					default:					
-				}			
-			}
-			
-			private function securityErrorHandler(event:SecurityErrorEvent):void {
-				LogUtil.debug("securityErrorHandler: " + event);
-			}
-			
-			public function onBWCheck(... rest):Number { 
-				return 0; 
-			} 
-			
-			public function onBWDone(... rest):void { 
-				var p_bw:Number; 
-				if (rest.length > 0) p_bw = rest[0]; 
-				// your application should do something here 
-				// when the bandwidth check is complete 
-				LogUtil.debug("bandwidth = " + p_bw + " Kbps."); 
+				broadcastManager.playVideo(streamsComboBox.selectedIndex);				
 			}
 			
 			private function stopVideo():void {
-				ns.close();
-				nc.close();
-			}
-			
-			public function onCuePoint(infoObject:Object):void {
-				LogUtil.debug("onCuePoint");
-			}
-			
-			public function onMetaData(infoObject:Object):void {
-				LogUtil.debug("onMetaData");
-			}
-			
-			public function onPlayStatus(infoObject:Object):void {
-				LogUtil.debug("onMetaData");
+				broadcastManager.stopVideo();
 			}
 			
 			public function getPrefferedPosition():String{
 				return MainCanvas.MIDDLE;
 			}
 			
+			private function addVideoHolder():void {
+				videoHolder2 = new UIComponent();
+				videoHolder.addChild(videoHolder2);
+			}
 		]]>
 	</mx:Script>
 	<mx:Canvas>
-		<mx:Canvas id="videoHolder" x="30" y="200"/>	
-		<mx:ComboBox id="streamsComboBox" x="1" y="30" width="365" dataProvider="{streamNames}"/>
-		<mx:Button id="playBtn" label="Play"  x="1" y="50" click="connect()" enabled="true"/>		
+		<mx:Canvas id="videoHolder" x="30" y="200" creationComplete="addVideoHolder()"/>	
+		<mx:ComboBox id="streamsComboBox" x="1" y="30" width="365" dataProvider="{streams.streamNames}"/>
+		<mx:Button id="playBtn" label="Play"  x="1" y="50" click="playVideo()" enabled="true"/>		
 		<mx:Button id="stopBtn" label="Stop"  x="1" y="70" click="stopVideo()" enabled="true"/>	
 	</mx:Canvas>
 

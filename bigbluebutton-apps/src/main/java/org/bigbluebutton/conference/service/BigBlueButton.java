@@ -15,7 +15,7 @@ public class BigBlueButton {
 	
 	public void sendMessage(HashMap<String, Object> params) {
 		String roomName = Red5.getConnectionLocal().getScope().getName();
-		
+/*		
 		log.debug(params.get("messageEvent") + " " + params.get("message") + " " + params.get("count"));
 		ArrayList<HashMap> ar = (ArrayList<HashMap>)params.get("array");
 
@@ -26,7 +26,10 @@ public class BigBlueButton {
 		
 		ArrayList<Object> m = new ArrayList<Object>();
 		m.add("Hello World!");
+		
 		ServiceUtils.invokeOnAllConnections(Red5.getConnectionLocal().getScope(), "handleMessage", new Object[] {"publicChatMessageEvent", params.get("message")});
+*/
+		ServiceUtils.invokeOnAllConnections(Red5.getConnectionLocal().getScope(), "handleMessage", new Object[] {params});
 	}
 	
 	

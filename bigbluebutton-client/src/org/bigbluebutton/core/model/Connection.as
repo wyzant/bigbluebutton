@@ -27,6 +27,7 @@ package org.bigbluebutton.core.model {
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.core.events.ConnectionFailedEvent;
 	import org.bigbluebutton.core.events.UsersConnectionEvent;
+	import org.bigbluebutton.main.events.BBBEvent;
 	import org.bigbluebutton.main.model.ConferenceParameters;
 		
 	public class Connection {
@@ -75,9 +76,37 @@ package org.bigbluebutton.core.model {
 			return _nc;
 		}
 		
-		public function handleMessage(messageName:String, param:Object):void {
-			LogUtil.debug("*****BBBBOOOOYEAHHHHH!!!! " + messageName);
+		public function handleMessage(param:Object):void {
+			LogUtil.debug("*****BBBBOOOOYEAHHHHH!!!! " + param["messageId"]);
+			var e:BBBEvent = new BBBEvent(param["messageId"]);
+			e.payload = param;
+			dispatcher.dispatchEvent(e);
 		}
+		
+		public function sendMessage(message:Object):void {
+			if (! _nc.connected) {
+				LogUtil.error("Failed to send message. Not connected.[" + alias + "]");
+				return;
+			}
+			_nc.call(
+				"bigbluebutton.sendMessage",// Remote function name
+				new Responder(
+					// On successful result
+					function(result:Object):void { 
+						LogUtil.debug("Successfully sent message: "); 
+					},	
+					// status - On error occurred
+					function(status:Object):void { 
+						LogUtil.error("Error occurred:"); 
+						for (var x:Object in status) { 
+							LogUtil.error(x + " : " + status[x]); 
+						} 
+					}
+				),//new Responder
+				message
+			); //_netConnection.call			
+		}
+
 		
 		/**
 		 * Connect to the server.
