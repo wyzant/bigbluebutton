@@ -43,5 +43,8 @@
 	<EventHandlers type="playBroadcastStream">
 		<MethodInvoker generator="{BroadcastManager}" method="playStream" arguments="{event}"/>
 	</EventHandlers>
-	
+
+	<EventHandlers type="stopBroadcastStream">
+		<MethodInvoker generator="{BroadcastManager}" method="stopStream" arguments="{event}"/>
+	</EventHandlers>
 </EventMap>

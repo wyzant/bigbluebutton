@@ -68,5 +68,10 @@ package org.bigbluebutton.modules.broadcast.managers
 			curStream = new Stream(event.payload["uri"], event.payload["streamId"], event.payload["streamName"]);
 			curStream.play(broadcastWindow.videoHolder2);
 		}
+		
+		public function stopStream(event:BBBEvent):void {
+			LogUtil.debug("Received " + event.payload["messageId"]);
+			curStream.stop();
+		}
 	}
 }
