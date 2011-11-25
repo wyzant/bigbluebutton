@@ -6,8 +6,10 @@ package org.bigbluebutton.core.managers
 		
 		private var conns:Object = new Object();
 		
-		public function addConnection(alias:String, connection:Connection):void {
-			conns[alias] = connection;	
+		public function createConnection(alias:String):void {
+			if (conns[alias] == null || conns[alias] == undefined) {				
+				conns[alias] = new Connection(alias);
+			}				
 		}
 		
 		public function getConnection(alias:String):Connection {

@@ -31,22 +31,15 @@ package org.bigbluebutton.core.model {
 		
 	public class Connection {
 		private var alias:String = "unknown";
-		
-		public static const CONNECT_SUCCESS:String = "NetConnection.Connect.Success";
-		public static const CONNECT_FAILED:String = "NetConnection.Connect.Failed";
-		public static const CONNECT_CLOSED:String = "NetConnection.Connect.Closed";
-		public static const INVALID_APP:String = "NetConnection.Connect.InvalidApp";
-		public static const APP_SHUTDOWN:String = "NetConnection.Connect.AppShutDown";
-		public static const CONNECT_REJECTED:String = "NetConnection.Connect.Rejected";
-
 		private var _nc:NetConnection;	
 		private var connectionId:Number;
 		private var connected:Boolean = false;
-		
+		private var fullUri:String;
 		private var _userid:Number = -1;
 		private var _role:String = "unknown";
-		private var _applicationURI:String;
 		private var _conferenceParameters:ConferenceParameters;
+		private var autoReconnect:Boolean = false;
+		private var numRetries:int = 1;
 		
 		// These two are just placeholders. We'll get this from the server later and
 		// then pass to other modules.
@@ -58,8 +51,8 @@ package org.bigbluebutton.core.model {
 		
 		private var dispatcher:Dispatcher;
 				
-		public function Connection(uri:String):void {
-			_applicationURI = uri;
+		public function Connection(alias:String):void {
+			this.alias = alias;
 			dispatcher = new Dispatcher();
 			
 			_nc = new NetConnection();				
@@ -68,6 +61,14 @@ package org.bigbluebutton.core.model {
 			_nc.addEventListener(AsyncErrorEvent.ASYNC_ERROR, netASyncError);
 			_nc.addEventListener(SecurityErrorEvent.SECURITY_ERROR, netSecurityError);
 			_nc.addEventListener(IOErrorEvent.IO_ERROR, netIOError);
+		}
+		
+		public function setAutoReconnect(reconnect:Boolean):void {
+			autoReconnect = reconnect;
+		}
+		
+		public function setNumRetries(retries:int):void {
+			numRetries = retries;
 		}
 		
 		public function get connection():NetConnection {
@@ -87,19 +88,21 @@ package org.bigbluebutton.core.model {
 		 * mode: LIVE/PLAYBACK - Live:when used to collaborate, Playback:when being used to playback a recorded conference.
 		 * room: Need the room number when playing back a recorded conference. When LIVE, the room is taken from the URI.
 		 */
-		public function connect(params:ConferenceParameters, tunnel:Boolean = false):void {	
-			_conferenceParameters = params;
+		public function connect(uri:String, params:ConferenceParameters, tunnel:Boolean = false):void {	
+			_conferenceParameters = params;			
+			tried_tunneling = tunnel;			
+			fullUri = uri;
 			
-			tried_tunneling = tunnel;	
-			
+			realConnect(fullUri, _conferenceParameters.username, _conferenceParameters.role, _conferenceParameters.conference, 
+							_conferenceParameters.room, _conferenceParameters.voicebridge, 
+							_conferenceParameters.record, _conferenceParameters.externUserID);			
+		}
+		
+		private function realConnect(uri:String, username:String, role:String, conference:String, 
+									 room:String, voicebridge:String, record:Boolean, externUserID:String):void {
 			try {	
-				var uri:String = _applicationURI + "/" + _conferenceParameters.room;
-				
-				LogUtil.debug(alias + "::Connecting to " + uri + " [" + _conferenceParameters.username + "," + _conferenceParameters.role + "," + 
-					_conferenceParameters.conference + "," + _conferenceParameters.record + "," + _conferenceParameters.room + "]");	
-				_nc.connect(uri, _conferenceParameters.username, _conferenceParameters.role, _conferenceParameters.conference, 
-											_conferenceParameters.room, _conferenceParameters.voicebridge, 
-											_conferenceParameters.record, _conferenceParameters.externUserID);			
+				LogUtil.debug(alias + "::Connecting to " + uri + " [" + username + "," + role + "," +  conference + "," + record + "," + room + "]");	
+				_nc.connect(uri, username, role, conference, room, voicebridge, record, externUserID);			
 			} catch(e:ArgumentError) {
 				// Invalid parameters.
 				switch (e.errorID) {
@@ -108,11 +111,11 @@ package org.bigbluebutton.core.model {
 						break;						
 					default :
 						LogUtil.debug("UNKNOWN Error! Invalid server location: " + uri);
-					   break;
+						break;
 				}
-			}	
+			}
 		}
-			
+		
 		public function disconnect(logoutOnUserCommand:Boolean):void {
 			this.logoutOnUserCommand = logoutOnUserCommand;
 			_nc.close();
@@ -127,10 +130,9 @@ package org.bigbluebutton.core.model {
 			var statusCode:String = info.code;
 
 			switch (statusCode) {
-				case CONNECT_SUCCESS:
+				case "NetConnection.Connect.Success":
 					LogUtil.debug(alias + ":Connection to viewers application succeeded.");
-					_nc.call(
-							"getMyUserId",// Remote function name
+					_nc.call("getMyUserId",// Remote function name
 							new Responder(
 	        					// result - On successful result
 								function(result:Object):void { 
@@ -145,11 +147,10 @@ package org.bigbluebutton.core.model {
 									} 
 								}
 							)//new Responder
-					); //_netConnection.call
-			
+					); //_netConnection.call			
 					break;
 			
-				case CONNECT_FAILED:					
+				case "NetConnection.Connect.Failed":					
 					if (tried_tunneling) {
 						LogUtil.debug(alias + ":Connection to viewers application failed...even when tunneling");
 						sendConnectionFailedEvent(ConnectionFailedEvent.CONNECTION_FAILED);
@@ -162,23 +163,23 @@ package org.bigbluebutton.core.model {
 					}									
 					break;
 					
-				case CONNECT_CLOSED :	
+				case "NetConnection.Connect.Closed":	
 					LogUtil.debug(alias + ":Connection to viewers application closed");					
 					sendConnectionFailedEvent(ConnectionFailedEvent.CONNECTION_CLOSED);								
 					break;
 					
-				case INVALID_APP :	
+				case "NetConnection.Connect.InvalidApp":	
 					LogUtil.debug(alias + ":viewers application not found on server");			
 					sendConnectionFailedEvent(ConnectionFailedEvent.INVALID_APP);				
 					break;
 					
-				case APP_SHUTDOWN :
+				case "NetConnection.Connect.AppShutDown":
 					LogUtil.debug(alias + ":viewers application has been shutdown");
 					sendConnectionFailedEvent(ConnectionFailedEvent.APP_SHUTDOWN);	
 					break;
 					
-				case CONNECT_REJECTED :
-					LogUtil.debug(alias + ":Connection to the server rejected. Uri: " + _applicationURI 
+				case "NetConnection.Connect.Rejected":
+					LogUtil.debug(alias + ":Connection to the server rejected. Uri: " + fullUri 
 						+ ". Check if the red5 specified in the uri exists and is running" );
 					sendConnectionFailedEvent(ConnectionFailedEvent.CONNECTION_REJECTED);		
 					break;
@@ -192,7 +193,7 @@ package org.bigbluebutton.core.model {
 		
 		private function rtmptRetryTimerHandler(event:TimerEvent):void {
             LogUtil.debug(alias + "rtmptRetryTimerHandler: " + event);
-            connect(_conferenceParameters, true);
+            connect(fullUri, _conferenceParameters, true);
         }
 			
 		protected function netSecurityError(event:SecurityErrorEvent):void {
@@ -242,8 +243,6 @@ package org.bigbluebutton.core.model {
 			
 			var e:ConnectionFailedEvent = new ConnectionFailedEvent(reason);
 			dispatcher.dispatchEvent(e);
-			
-			//attemptReconnect(backoff);
 		}
 		
 		private function sendUserLoggedOutEvent():void{
@@ -254,7 +253,7 @@ package org.bigbluebutton.core.model {
 		private function attemptReconnect(backoff:Number):void{
 			var retryTimer:Timer = new Timer(backoff, 1);
 			retryTimer.addEventListener(TimerEvent.TIMER, function():void{
-				connect(_conferenceParameters, tried_tunneling);
+				connect(fullUri, _conferenceParameters, tried_tunneling);
 			});
 			retryTimer.start();
 			if (this.backoff < 16000) this.backoff = backoff *2;
@@ -263,6 +262,7 @@ package org.bigbluebutton.core.model {
 		public function onBWCheck(... rest):Number { 
 			return 0; 
 		} 
+		
 		public function onBWDone(... rest):void { 
 			var p_bw:Number; 
 			if (rest.length > 0) p_bw = rest[0]; 
