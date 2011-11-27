@@ -15,6 +15,7 @@ package org.bigbluebutton.modules.broadcast.managers
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.common.events.OpenWindowEvent;
 	import org.bigbluebutton.main.events.BBBEvent;
+	import org.bigbluebutton.modules.broadcast.models.BroadcastOptions;
 	import org.bigbluebutton.modules.broadcast.models.Stream;
 	import org.bigbluebutton.modules.broadcast.models.Streams;
 	import org.bigbluebutton.modules.broadcast.services.BroadcastService;
@@ -45,11 +46,12 @@ package org.bigbluebutton.modules.broadcast.managers
 				broadcastWindow = new BroadcastWindow();
 				broadcastWindow.streams = streams;
 				broadcastWindow.broadcastManager = this;
+				var options:BroadcastOptions = new BroadcastOptions();
 				
 				var e:OpenWindowEvent = new OpenWindowEvent(OpenWindowEvent.OPEN_WINDOW_EVENT);
 				e.window = broadcastWindow;
 				dispatcher.dispatchEvent(e);
-				streamService.queryAvailableStreams("http://192.168.0.235/streams.xml");
+				streamService.queryAvailableStreams(options.streamsUri);
 			} else {
 				LogUtil.debug("*** Not Opening BroadcastModule Window");
 			}

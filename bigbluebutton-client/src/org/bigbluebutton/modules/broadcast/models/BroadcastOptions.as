@@ -1,5 +1,7 @@
 package org.bigbluebutton.modules.broadcast.models
 {
+	import org.bigbluebutton.core.BBB;
+
 	public class BroadcastOptions {
 		[Bindable]
 		public var streamsUri:String;
