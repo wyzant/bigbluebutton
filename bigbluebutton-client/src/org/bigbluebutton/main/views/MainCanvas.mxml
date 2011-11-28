@@ -86,8 +86,7 @@
 				}
 			}
 			
-			private function positionWindow(window:IBbbModuleWindow):void{
-				
+			private function positionWindow(window:IBbbModuleWindow):void{			
 				leftWindowHeight = this.height/3;
 				leftWindowWidth = 245;
 				rightWindowHeight = this.height * 0.6;

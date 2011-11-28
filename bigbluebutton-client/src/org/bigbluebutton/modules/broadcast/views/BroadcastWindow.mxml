@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <bcast:MDIWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
 					  xmlns:bcast="flexlib.mdi.containers.*" 
-					  implements="org.bigbluebutton.common.IBbbModuleWindow"
-					  xmlns:mate="http://mate.asfusion.com/"
+					  implements="org.bigbluebutton.common.IBbbModuleWindow" preinitialize="onCreationComplete()"
+					  xmlns:mate="http://mate.asfusion.com/" 
 					  layout="absolute"
-					  width="400" 
-					  height="300">
+					  >
 	<mate:Listener type="{MadePresenterEvent.SWITCH_TO_PRESENTER_MODE}" method="becomePresenter" />
 	<mate:Listener type="{MadePresenterEvent.SWITCH_TO_VIEWER_MODE}" method="becomeViewer" />
 	
@@ -22,9 +21,34 @@
 			public var broadcastManager:BroadcastManager;
 			
 			[Bindable]
+			private var xPosition:int = 1;
+			
+			[Bindable]
+			private var yPosition:int = 1;
+			
+			[Bindable]
+			private var defHeight:int = 300;
+			
+			[Bindable]
+			private var defWidth:int = 400;
+			
+			public var options:BroadcastOptions;
+			
+			[Bindable]
 			public var streams:Streams;
 			
 			public var videoHolder2:UIComponent;
+			
+			private function onCreationComplete():void {
+				xPosition = options.x;
+				yPosition = options.y;
+				defWidth = options.width;
+				defHeight = options.height;
+				this.x = options.x;
+				this.y = options.y;
+				this.width = options.width;
+				this.height = options.height;
+			}
 			
 			private function becomePresenter(e:MadePresenterEvent):void{
 				videoStreamList.visible = true;
@@ -47,15 +71,17 @@
 			public function removeDisplay():void {
 				videoHolder.removeChild(videoHolder2);			
 			}
-			
-			
+						
 			private function stopVideo():void {
 				broadcastManager.stopVideo();
 			}
 			
-			public function getPrefferedPosition():String {
-				var opt:BroadcastOptions = new BroadcastOptions();
-				return opt.position;
+			public function getPrefferedPosition():String {	
+				this.x = options.x;
+				this.y = options.y;
+				this.width = options.width;
+				this.height = options.height;
+				return options.position;
 			}
 			
 			public function addDisplay():void {

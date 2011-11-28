@@ -39,7 +39,11 @@ package org.bigbluebutton.modules.broadcast.managers
 			dispatcher = new Dispatcher();
 			if (broadcastWindow == null){
 				LogUtil.debug("*** Opening BroadcastModule Window");
+				var opt:BroadcastOptions = new BroadcastOptions();
+				
+				
 				broadcastWindow = new BroadcastWindow();
+				broadcastWindow.options = opt;
 				broadcastWindow.streams = streams;
 				broadcastWindow.broadcastManager = this;
 				var options:BroadcastOptions = new BroadcastOptions();
