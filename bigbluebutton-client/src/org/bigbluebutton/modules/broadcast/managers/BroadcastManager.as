@@ -1,17 +1,14 @@
 package org.bigbluebutton.modules.broadcast.managers
 {
-	import com.asfusion.mate.events.Dispatcher;
-	
+	import com.asfusion.mate.events.Dispatcher;	
 	import flash.events.AsyncErrorEvent;
 	import flash.events.Event;
 	import flash.events.NetStatusEvent;
 	import flash.events.SecurityErrorEvent;
 	import flash.media.Video;
 	import flash.net.NetConnection;
-	import flash.net.NetStream;
-	
-	import mx.core.UIComponent;
-	
+	import flash.net.NetStream;	
+	import mx.core.UIComponent;	
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.common.events.OpenWindowEvent;
 	import org.bigbluebutton.main.events.BBBEvent;
@@ -29,8 +26,7 @@ package org.bigbluebutton.modules.broadcast.managers
 		private var streamService:StreamsService;
 		
 		[Bindable]
-		public var streams:Streams = new Streams();
-		
+		public var streams:Streams = new Streams();	
 		private var curStream:Stream;
 		
 		public function BroadcastManager() {
@@ -68,11 +64,13 @@ package org.bigbluebutton.modules.broadcast.managers
 		public function playStream(event:BBBEvent):void {
 			LogUtil.debug("Received " + event.payload["messageId"]);
 			curStream = new Stream(event.payload["uri"], event.payload["streamId"], event.payload["streamName"]);
+			broadcastWindow.addDisplay();
 			curStream.play(broadcastWindow.videoHolder2);
 		}
 		
 		public function stopStream(event:BBBEvent):void {
 			LogUtil.debug("Received " + event.payload["messageId"]);
+			broadcastWindow.removeDisplay();
 			curStream.stop();
 		}
 	}

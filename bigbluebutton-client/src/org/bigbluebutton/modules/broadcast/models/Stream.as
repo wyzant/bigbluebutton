@@ -123,8 +123,8 @@ package org.bigbluebutton.modules.broadcast.models
 			LogUtil.debug("onCuePoint");
 		}
 		
-		public function onMetaData(infoObject:Object):void {
-			LogUtil.debug("onMetaData");
+		public function onMetaData(info:Object):void {
+			LogUtil.debug("****metadata: width=" + info.width + " height=" + info.height);
 		}
 		
 		public function onPlayStatus(infoObject:Object):void {

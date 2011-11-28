@@ -7,10 +7,10 @@
 					  height="300">
 	<mx:Script>
 		<![CDATA[
-			import mx.core.UIComponent;
-			
+			import mx.core.UIComponent;			
 			import org.bigbluebutton.main.views.MainCanvas;
 			import org.bigbluebutton.modules.broadcast.managers.BroadcastManager;
+			import org.bigbluebutton.modules.broadcast.models.BroadcastOptions;
 			import org.bigbluebutton.modules.broadcast.models.Streams;
 			
 			public var broadcastManager:BroadcastManager;
@@ -20,29 +20,42 @@
 			
 			public var videoHolder2:UIComponent;
 			
-			private function playVideo():void {
-				broadcastManager.playVideo(streamsComboBox.selectedIndex);				
+			private function playStopVideo():void {
+				if (playBtn.selected) {
+					broadcastManager.playVideo(streamsComboBox.selectedIndex);	
+					playBtn.label = "Stop";
+				} else {
+					playBtn.label = "Play";
+					stopVideo();
+				}
 			}
+			
+			public function removeDisplay():void {
+				videoHolder.removeChild(videoHolder2);			
+			}
+			
 			
 			private function stopVideo():void {
 				broadcastManager.stopVideo();
 			}
 			
-			public function getPrefferedPosition():String{
-				return MainCanvas.MIDDLE;
+			public function getPrefferedPosition():String {
+				var opt:BroadcastOptions = new BroadcastOptions();
+				return opt.position;
 			}
 			
-			private function addVideoHolder():void {
+			public function addDisplay():void {
 				videoHolder2 = new UIComponent();
 				videoHolder.addChild(videoHolder2);
 			}
 		]]>
 	</mx:Script>
-	<mx:Canvas>
-		<mx:Canvas id="videoHolder" x="30" y="200" creationComplete="addVideoHolder()"/>	
-		<mx:ComboBox id="streamsComboBox" x="1" y="30" width="365" dataProvider="{streams.streamNames}"/>
-		<mx:Button id="playBtn" label="Play"  x="1" y="50" click="playVideo()" enabled="true"/>		
-		<mx:Button id="stopBtn" label="Stop"  x="1" y="70" click="stopVideo()" enabled="true"/>	
-	</mx:Canvas>
+	<mx:VBox>
+		<mx:HBox x="1" y="1">
+			<mx:ComboBox id="streamsComboBox" width="150" dataProvider="{streams.streamNames}" selectedIndex="1"/>
+			<mx:Button id="playBtn" label="Play" click="playStopVideo()" toggle="true"/>				
+		</mx:HBox>
+		<mx:HBox id="videoHolder"/>		
+	</mx:VBox>
 
 </bcast:MDIWindow>
