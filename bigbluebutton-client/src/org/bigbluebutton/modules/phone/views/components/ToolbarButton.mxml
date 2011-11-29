@@ -20,9 +20,10 @@
   $Id: $
 -->
 
-<mx:Button xmlns:mx="http://www.adobe.com/2006/mxml"
-	icon="{phoneIcon}" click="startPhone()"
+<flc:CanvasButton xmlns:mx="http://www.adobe.com/2006/mxml"
+	click="startPhone()"
 	xmlns:mate="http://mate.asfusion.com/"
+	xmlns:flc="flexlib.controls.*"
 	toolTip="{ResourceUtil.getInstance().getString('bbb.toolbar.phone.toolTip')}"
 	implements="org.bigbluebutton.common.IBbbToolbarComponent">
 	
@@ -104,4 +105,8 @@
 			}
 		]]>
 	</mx:Script>
-</mx:Button>
+	<mx:HBox verticalAlign="middle" horizontalGap="0" paddingLeft="5" paddingTop="5" paddingRight="5" paddingBottom="5">
+		<mx:Image source="@Embed('../assets/images/sound.png')" />
+		<mx:Label text="MY AUDIO" />
+	</mx:HBox> 
+</flc:CanvasButton>

@@ -151,8 +151,9 @@
 			}
 			
 		]]>
-	</mx:Script>	
-	<mx:HBox id="addedBtns">
+	</mx:Script>
+	<mx:Image source="@Embed('assets/umrc_logo.png')"/>
+	<mx:HBox id="addedBtns">		
 	</mx:HBox>		
 	<mx:Spacer width="100%"/>
 	<views:LanguageSelector id="langSelector" visible="false" />

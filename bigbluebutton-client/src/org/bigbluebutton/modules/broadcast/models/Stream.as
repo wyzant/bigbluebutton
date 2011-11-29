@@ -19,6 +19,11 @@ package org.bigbluebutton.modules.broadcast.models
 		private var ns:NetStream;
 		private var nc:NetConnection;
 		
+		[Bindable]
+		public var width:int = 320;
+		[Bindable]
+		public var height:int = 240;
+		
 		public function Stream(uri:String, streamId:String, streamName:String) {
 			this.uri = uri;
 			this.streamId = streamId;
@@ -125,6 +130,8 @@ package org.bigbluebutton.modules.broadcast.models
 		
 		public function onMetaData(info:Object):void {
 			LogUtil.debug("****metadata: width=" + info.width + " height=" + info.height);
+			width = info.width;
+			height = info.height;
 		}
 		
 		public function onPlayStatus(infoObject:Object):void {

@@ -1,14 +1,17 @@
 package org.bigbluebutton.modules.broadcast.managers
 {
-	import com.asfusion.mate.events.Dispatcher;	
+	import com.asfusion.mate.events.Dispatcher;
+	
 	import flash.events.AsyncErrorEvent;
 	import flash.events.Event;
 	import flash.events.NetStatusEvent;
 	import flash.events.SecurityErrorEvent;
 	import flash.media.Video;
 	import flash.net.NetConnection;
-	import flash.net.NetStream;	
-	import mx.core.UIComponent;	
+	import flash.net.NetStream;
+	
+	import mx.core.UIComponent;
+	
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.common.events.OpenWindowEvent;
 	import org.bigbluebutton.main.events.BBBEvent;
@@ -40,8 +43,7 @@ package org.bigbluebutton.modules.broadcast.managers
 			if (broadcastWindow == null){
 				LogUtil.debug("*** Opening BroadcastModule Window");
 				var opt:BroadcastOptions = new BroadcastOptions();
-				
-				
+								
 				broadcastWindow = new BroadcastWindow();
 				broadcastWindow.options = opt;
 				broadcastWindow.streams = streams;
@@ -68,14 +70,20 @@ package org.bigbluebutton.modules.broadcast.managers
 		public function playStream(event:BBBEvent):void {
 			LogUtil.debug("Received " + event.payload["messageId"]);
 			curStream = new Stream(event.payload["uri"], event.payload["streamId"], event.payload["streamName"]);
+//			broadcastWindow.width = curStream.width + 20;
+//			broadcastWindow.height = curStream.height + 70;
 			broadcastWindow.addDisplay();
 			curStream.play(broadcastWindow.videoHolder2);
 		}
 		
 		public function stopStream(event:BBBEvent):void {
 			LogUtil.debug("Received " + event.payload["messageId"]);
+			stopPlayingStream();
+		}
+		
+		public function stopPlayingStream():void {
 			broadcastWindow.removeDisplay();
-			curStream.stop();
+			if (curStream != null)		curStream.stop();
 		}
 	}
 }

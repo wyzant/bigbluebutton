@@ -20,7 +20,7 @@
   $Id: $
 --> 
 
-<mx:Button xmlns:mx="http://www.adobe.com/2006/mxml" icon="{camIcon}" 
+<flc:CanvasButton xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:flc="flexlib.controls.*" 
 		   click="openPublishWindow()" creationComplete="init()" 
 		   toolTip="{ResourceUtil.getInstance().getString('bbb.toolbar.video.toolTip')}"
 		   visible="{isPresenter}"
@@ -60,4 +60,8 @@
 			}
 		]]>
 	</mx:Script>
-</mx:Button>
+	<mx:HBox verticalAlign="middle" horizontalGap="0" paddingLeft="5" paddingTop="5" paddingRight="5" paddingBottom="5">
+		<mx:Image source="@Embed('assets/images/webcam.png')" />
+		<mx:Label text="MY VIDEO" />
+	</mx:HBox> 
+</flc:CanvasButton>

@@ -2,7 +2,7 @@
 <bcast:MDIWindow xmlns:mx="http://www.adobe.com/2006/mxml" 
 					  xmlns:bcast="flexlib.mdi.containers.*" 
 					  implements="org.bigbluebutton.common.IBbbModuleWindow" preinitialize="onCreationComplete()"
-					  xmlns:mate="http://mate.asfusion.com/" 
+					  xmlns:mate="http://mate.asfusion.com/" showCloseButton="false"
 					  layout="absolute"
 					  >
 	<mate:Listener type="{MadePresenterEvent.SWITCH_TO_PRESENTER_MODE}" method="becomePresenter" />
@@ -88,14 +88,16 @@
 				videoHolder2 = new UIComponent();
 				videoHolder.addChild(videoHolder2);
 			}
+			
+			
 		]]>
 	</mx:Script>
-	<mx:VBox>
-		<mx:HBox x="1" y="1" id="videoStreamList">
-			<mx:ComboBox id="streamsComboBox" width="150" dataProvider="{streams.streamNames}" selectedIndex="1"/>
+	<mx:VBox id="vBoxContainer">
+		<mx:HBox x="1" y="1" id="videoStreamList" width="100%" height="30">
+			<mx:ComboBox id="streamsComboBox" width="150" dataProvider="{streams.streamNames}"/>
 			<mx:Button id="playBtn" label="Play" click="playStopVideo()" toggle="true"/>				
 		</mx:HBox>
-		<mx:HBox id="videoHolder"/>		
+		<mx:HBox id="videoHolder" width="100%" height="100%" horizontalAlign="center"/>		
 	</mx:VBox>
 
 </bcast:MDIWindow>
