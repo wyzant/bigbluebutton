@@ -22,6 +22,7 @@
 
 <flc:CanvasButton xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:flc="flexlib.controls.*" 
 		   click="openPublishWindow()" creationComplete="init()" 
+		   styleName="Webcam"
 		   toolTip="{ResourceUtil.getInstance().getString('bbb.toolbar.video.toolTip')}"
 		   visible="{isPresenter}"
 		   implements="org.bigbluebutton.common.IBbbToolbarComponent">

@@ -270,8 +270,8 @@
 		<views:BrandingLogo x="{this.width - 300}" y="{this.height - 300}" />
 	</views:MainCanvas>	
 	
-	<mx:Panel width="100%" height="30" footerColors="[#3d9abb, #43aacd]">
-		<mx:ControlBar width="100%" height="30" paddingTop="0" styleName="bbbFooter">		
+	<mx:Panel width="100%" height="60" styleName="bbbFooter" footerColors="[#3d9abb, #43aacd]">
+		<mx:ControlBar width="100%" height="60" paddingTop="0">		
 			<!--mx:Label text="{ResourceUtil.getInstance().getString('bbb.mainshell.copyrightLabel2',[appVersion])}" id="copyrightLabel2"/-->
 			<mx:Spacer width="20"/>
 			<mx:Spacer width="100%"/> 

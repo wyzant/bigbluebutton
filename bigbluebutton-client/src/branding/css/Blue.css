@@ -1,47 +1,131 @@
 Application 
 {  
-   backgroundColors: #000000,#3f3f3f;
-   backgroundImage: Embed(source="assets/img/bk3.jpg");
-   backgroundSize: "100%";
-   backgroundGradientColors: #B4BFCF, #78829C;
-   themeColor: #0094C7;
-   backgroundGradientAlphas: 0.62, 0.26;
+	themeColor: #CCC;
+	backgroundGradientAlphas: 1, 1;  
+	backgroundGradientColors: #FFF, #FFF;
+	color: #504f3d;
+	fontFamily: Arial;
+}
+
+ApplicationControlBar {
+   fillAlphas: 1, 1;
+   fillColors: #ffffff, #fffcf5;
+   backgroundAlpha: 0;
+   dropShadowEnabled: true;
+   shadowDistance: 1
 }
 
 
 MDICanvas 
 {
-	backgroundColor: #0094C7;
+	backgroundColor: #FFFFFF;
 	backgroundAlpha: 0;
 }
 
 
 Button 
 {
-   highlightAlphas: 1, 0.33;
-   fillAlphas: 1, 0.16, 0.18, 1;
-   fillColors: #5f89b9, #697182, #ffffff, #eeeeee;
+   cornerRadius: 0;
+   highlightAlphas: 0, 0;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #fff, #fff, #fff, #fff;
+   color: #504f3d;
+   textRollOverColor: #e6e3dc;
+   textSelectedColor: #d6d4c9;
+   borderColor: #504f3d;
+   themeColor:#d6d4c9;
+   fontFamily: Arial;
+   fontSize: 12;
 }
 
+Button.Present{
+   cornerRadius: 0;
+   highlightAlphas: 0, 0;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #ffd545, #ffd545, #ffd545, #ffd545;
+   color: #ffffff;
+   textRollOverColor: #ffffff;
+   textSelectedColor: #ffffff;
+   borderColor: #e2bd3b;
+   themeColor: #efb902;
+   fontFamily: Arial;
+   fontSize: 12;
+}
+
+Button.Send{
+   cornerRadius: 0;
+   highlightAlphas: 0, 0;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #ffd545, #ffd545, #ffd545, #ffd545;
+   color: #ffffff;
+   textRollOverColor: #ffffff;
+   textSelectedColor: #ffffff;
+   borderColor: #e2bd3b;
+   themeColor: #efb902;
+   fontFamily: Arial;
+   fontSize: 12;
+}
+
+Button.Logout{
+   cornerRadius: 0;
+   highlightAlphas: 0, 0;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #ffd545, #ffd545, #ffd545, #ffd545;
+   color: #ffffff;
+   textRollOverColor: #ffffff;
+   textSelectedColor: #ffffff;
+   borderColor: #e2bd3b;
+   themeColor: #efb902;
+   fontFamily: Arial;
+   fontSize: 12;
+}
+
+LinkButton {
+   rollOverColor: #cccccc;
+   selectionColor: #999999;
+   color: #504f3d;
+   textRollOverColor: #504f3d;
+   textSelectedColor: #504f3d;
+}
+
+VScrollBar {
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #ffffff, #ffffff, #ffffff, #ffffff;
+   trackColors: #94999b, #e7e7e7;
+   themeColor: #333333;
+}
+
+ComboBox {
+   color: #504f3d;
+   borderColor: #999999;
+   fillAlphas: 1, 1, 1, 1;
+   fillColors: #ffffff, #ffffff, #ffffff, #ffffff;
+   selectionColor: #cccccc;
+   textSelectedColor: #504f3d;
+   useRollOver: true;
+   rollOverColor: #cccccc;
+   textRollOverColor: #ffffff;
+   themeColor: #999999;
+}
 
 .mdiWindowFocus 
 {
 	headerHeight: 26;
-	roundedBottomCorners: true;
+	roundedBottomCorners: false;
 	backgroundAlpha: 1;
-	backgroundColor: #FFFFFF;
-	backgroundImage: Embed(source="assets/swf/Blue.swf", symbol="Window_Background");
+	backgroundColor: #fffcf5;
+	/* backgroundImage: Embed(source="assets/swf/Blue.swf", symbol="Window_Background"); */
 	backgroundSize: '100%';
 	
 	borderStyle: solid;
-	borderColor: #ffffff;
+	borderColor: #edece8;
 	borderAlpha: 1;
 	borderThickness: 2;
 	borderThicknessLeft: 0;
 	borderThicknessTop: 0;
 	borderThicknessBottom: 0;
 	borderThicknessRight: 0;
-	cornerRadius: 4;
+	cornerRadius: 0;
 	dropShadowEnabled: false;
 	titleStyleName: "mypanelTitle";
 	
@@ -59,20 +143,21 @@ Button
 .mdiWindowNoFocus 
 {
 	headerHeight: 26;
-	roundedBottomCorners: true;
+	roundedBottomCorners: false;
 	backgroundAlpha: 0.5;
-	backgroundImage: Embed(source="assets/swf/Blue.swf", symbol="Window_Background");
+	backgroundColor: #fffcf5;
+	/* backgroundImage: Embed(source="assets/swf/Blue.swf", symbol="Window_Background"); */
 	backgroundSize: '100%';
 	
 	borderStyle: solid;
-	borderColor: #ffffff;
+	borderColor: #edece8;
 	borderAlpha: 1;
 	borderThickness: 2;
 	borderThicknessLeft: 0;
 	borderThicknessTop: 0;
 	borderThicknessBottom: 0;
 	borderThicknessRight: 0;
-	cornerRadius: 4;
+	cornerRadius: 0;
 	dropShadowEnabled: false;
 	titleStyleName: "mypanelTitle";
 	
@@ -90,9 +175,9 @@ Button
 .mypanelTitle 
 {
 	fontFamily: Arial;
-	fontSize: 12;
-	fontWeight: bold;
-	color: #ffffff;
+	fontSize: 14;
+	paddingLeft: 15;
+	color: #4c4b39;
 }
 
 
@@ -171,3 +256,4 @@ Button
 	downSkin:      Embed('assets/img/resizeHandler.png');
 	disabledSkin:  Embed('assets/img/resizeHandler.png');
 }
+
