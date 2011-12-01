@@ -18,6 +18,7 @@ package org.bigbluebutton.modules.broadcast.models
 		private var videoDisplay:UIComponent;
 		private var ns:NetStream;
 		private var nc:NetConnection;
+		private var video:Video;
 		
 		[Bindable]
 		public var width:int = 320;
@@ -36,12 +37,8 @@ package org.bigbluebutton.modules.broadcast.models
 		}
 		
 		private function displayVideo():void {
-			var video:Video = new Video();
-			video.width = videoDisplay.width;
-			video.height = videoDisplay.height;
-			
-			LogUtil.debug("Video [" + video.width + "," + video.height + "]");
-			videoDisplay.addChild(video);
+			video = new Video();
+
 			ns = new NetStream(nc);
 			ns.client = this;
 			ns.bufferTime = 0;
@@ -135,13 +132,40 @@ package org.bigbluebutton.modules.broadcast.models
 		
 		public function onMetaData(info:Object):void {
 			LogUtil.debug("****metadata: width=" + info.width + " height=" + info.height);
-			width = info.width;
-			height = info.height;
+			video.width = info.width;
+			video.height = info.height;
+			
+			fitVideoToWindow();
+						
+			LogUtil.debug("Video [" + video.width + "," + video.height + "]");
+			videoDisplay.addChild(video);
 		}
 		
 		public function onPlayStatus(infoObject:Object):void {
-			LogUtil.debug("onMetaData");
+			LogUtil.debug("onPlayStatus");
 		}		
-				
+		
+		
+		private function fitVideoToWindow():void {
+			if (videoDisplay.width < videoDisplay.height) {
+				fitToWidthAndAdjustHeightToMaintainAspectRatio();				
+			} else {
+				fitToHeightAndAdjustWidthToMaintainAspectRatio();
+			}				
+		}
+		
+		private function fitToWidthAndAdjustHeightToMaintainAspectRatio():void {						
+			// Maintain aspect-ratio
+			video.height = (video.height / video.width) * videoDisplay.width;
+			video.width = videoDisplay.width;		
+			videoDisplay.height = video.height;
+		}
+		
+		private function fitToHeightAndAdjustWidthToMaintainAspectRatio():void {			
+			// Maintain aspect-ratio
+			video.width = (video.width / video.height) * videoDisplay.height;		
+			video.height = videoDisplay.height;
+			videoDisplay.width = video.width;
+		}
 	}
 }
