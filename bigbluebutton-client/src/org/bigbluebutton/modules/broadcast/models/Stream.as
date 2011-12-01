@@ -37,6 +37,10 @@ package org.bigbluebutton.modules.broadcast.models
 		
 		private function displayVideo():void {
 			var video:Video = new Video();
+			video.width = videoDisplay.width;
+			video.height = videoDisplay.height;
+			
+			LogUtil.debug("Video [" + video.width + "," + video.height + "]");
 			videoDisplay.addChild(video);
 			ns = new NetStream(nc);
 			ns.client = this;
@@ -45,6 +49,7 @@ package org.bigbluebutton.modules.broadcast.models
 			ns.receiveAudio(true);
 			ns.addEventListener(NetStatusEvent.NET_STATUS, netstreamStatus);
 			ns.addEventListener(AsyncErrorEvent.ASYNC_ERROR, nsAsyncErrorHandler);
+
 			video.attachNetStream(ns);
 			ns.play(streamId);				
 		}		

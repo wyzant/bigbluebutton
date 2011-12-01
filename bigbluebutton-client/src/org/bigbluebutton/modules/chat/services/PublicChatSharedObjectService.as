@@ -103,45 +103,9 @@ package org.bigbluebutton.modules.chat.services
 				),//new Responder
 				message
 			); //_netConnection.call
-			sendMessageMap(message);
+			
 		}
-		
-		public function sendMessageMap(message:String):void {
-			var m:Object = new Object();
-			m['messageEvent'] = "publicChatMessageEvent";
-			m['message'] = message;
-			m['count'] = 5;
-			
-			var p1:Object = new Object();
-			p1['e1'] = 2;
-			p1['e2'] = "The quick brown fox";
-			
-			var p2:Object = new Object();
-			p2['e1'] = 3;
-			p2['e2'] = "jumped over the lazy dogs";
-			
-			m['array'] = [p1,p2];
-			
-			var nc:NetConnection = connection;
-			nc.call(
-				"bigbluebutton.sendMessage",// Remote function name
-				new Responder(
-					// On successful result
-					function(result:Object):void { 
-						LogUtil.debug("Successfully sent message: "); 
-					},	
-					// status - On error occurred
-					function(status:Object):void { 
-						LogUtil.error("Error occurred:"); 
-						for (var x:Object in status) { 
-							LogUtil.error(x + " : " + status[x]); 
-						} 
-					}
-				),//new Responder
-				m
-			); //_netConnection.call
-		}
-		
+				
 		/**
 		 * Called by the server to deliver a new chat message.
 		 */	

@@ -1,8 +1,5 @@
 package org.bigbluebutton.conference.service.recorder.chat;
 
-import java.util.Hashtable;
-
-import org.bigbluebutton.conference.BigBlueButtonUtils;
 import org.bigbluebutton.conference.service.chat.IChatRoomListener;
 import org.bigbluebutton.conference.service.recorder.RecorderApplication;
 import org.red5.logging.Red5LoggerFactory;

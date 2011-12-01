@@ -86,13 +86,15 @@
 			
 			public function addDisplay():void {
 				videoHolder2 = new UIComponent();
+				videoHolder2.width = videoHolder.width;
+				videoHolder2.height = videoHolder.height;
 				videoHolder.addChild(videoHolder2);
 			}
 			
 			
 		]]>
 	</mx:Script>
-	<mx:VBox id="vBoxContainer">
+	<mx:VBox id="vBoxContainer" width="100%" height="100%">
 		<mx:HBox x="1" y="1" id="videoStreamList" width="100%" height="30">
 			<mx:ComboBox id="streamsComboBox" width="150" dataProvider="{streams.streamNames}"/>
 			<mx:Button id="playBtn" label="Play" click="playStopVideo()" toggle="true"/>				
