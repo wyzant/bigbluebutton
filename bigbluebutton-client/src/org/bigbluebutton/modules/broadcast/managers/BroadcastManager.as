@@ -47,6 +47,7 @@ package org.bigbluebutton.modules.broadcast.managers
 				broadcastWindow = new BroadcastWindow();
 				broadcastWindow.options = opt;
 				broadcastWindow.streams = streams;
+				
 				broadcastWindow.broadcastManager = this;
 				var options:BroadcastOptions = new BroadcastOptions();
 				
@@ -70,8 +71,7 @@ package org.bigbluebutton.modules.broadcast.managers
 		public function playStream(event:BBBEvent):void {
 			LogUtil.debug("Received " + event.payload["messageId"]);
 			curStream = new Stream(event.payload["uri"], event.payload["streamId"], event.payload["streamName"]);
-//			broadcastWindow.width = curStream.width + 20;
-//			broadcastWindow.height = curStream.height + 70;
+			broadcastWindow.curStream = curStream;
 			broadcastWindow.addDisplay();
 			curStream.play(broadcastWindow.videoHolder2);
 		}

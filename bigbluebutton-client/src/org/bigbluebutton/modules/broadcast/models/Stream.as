@@ -19,6 +19,8 @@ package org.bigbluebutton.modules.broadcast.models
 		private var ns:NetStream;
 		private var nc:NetConnection;
 		private var video:Video;
+		private var videoWidth:int;
+		private var videoHeight:int;
 		
 		[Bindable]
 		public var width:int = 320;
@@ -50,6 +52,8 @@ package org.bigbluebutton.modules.broadcast.models
 			video.attachNetStream(ns);
 			ns.play(streamId);				
 		}		
+		
+
 		
 		private function netstreamStatus(evt:NetStatusEvent):void {
 			switch(evt.info.code) {			
@@ -132,19 +136,23 @@ package org.bigbluebutton.modules.broadcast.models
 		
 		public function onMetaData(info:Object):void {
 			LogUtil.debug("****metadata: width=" + info.width + " height=" + info.height);
+			videoWidth = info.width;
+			videoHeight = info.height;
 			video.width = info.width;
 			video.height = info.height;
 			
-			fitVideoToWindow();
-						
-			LogUtil.debug("Video [" + video.width + "," + video.height + "]");
-			videoDisplay.addChild(video);
+			onResize();
 		}
 		
 		public function onPlayStatus(infoObject:Object):void {
 			LogUtil.debug("onPlayStatus");
 		}		
 		
+		public function onResize():void {
+			fitVideoToWindow();
+			LogUtil.debug("Video [" + video.width + "," + video.height + "]");
+			videoDisplay.addChild(video);
+		}
 		
 		private function fitVideoToWindow():void {
 			if (videoDisplay.width < videoDisplay.height) {
@@ -156,14 +164,17 @@ package org.bigbluebutton.modules.broadcast.models
 		
 		private function fitToWidthAndAdjustHeightToMaintainAspectRatio():void {						
 			// Maintain aspect-ratio
-			video.height = (video.height / video.width) * videoDisplay.width;
-			video.width = videoDisplay.width;		
+			var aspectRatio:Number =  videoWidth / videoHeight;
+			video.width = videoDisplay.width;	
+			video.height = (videoDisplay.width * videoHeight) / videoWidth;
 			videoDisplay.height = video.height;
+			videoDisplay.width = video.width;
 		}
 		
 		private function fitToHeightAndAdjustWidthToMaintainAspectRatio():void {			
 			// Maintain aspect-ratio
-			video.width = (video.width / video.height) * videoDisplay.height;		
+			var aspectRatio:Number = videoWidth / videoHeight;
+			video.width = aspectRatio * videoDisplay.height;		
 			video.height = videoDisplay.height;
 			videoDisplay.width = video.width;
 		}
