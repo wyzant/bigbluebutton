@@ -38,6 +38,10 @@ package org.bigbluebutton.modules.broadcast.models
 			connect();
 		}
 		
+		public function getStreamId():String {
+			return streamId;
+		}
+		
 		private function displayVideo():void {
 			video = new Video();
 
@@ -166,7 +170,8 @@ package org.bigbluebutton.modules.broadcast.models
 			// Maintain aspect-ratio
 			var aspectRatio:Number =  videoWidth / videoHeight;
 			video.width = videoDisplay.width;	
-			video.height = (videoDisplay.width * videoHeight) / videoWidth;
+			video.height = videoDisplay.height;
+//			video.height = Math.floor((videoDisplay.width * videoHeight) / videoWidth);
 			videoDisplay.height = video.height;
 			videoDisplay.width = video.width;
 		}
@@ -174,7 +179,7 @@ package org.bigbluebutton.modules.broadcast.models
 		private function fitToHeightAndAdjustWidthToMaintainAspectRatio():void {			
 			// Maintain aspect-ratio
 			var aspectRatio:Number = videoWidth / videoHeight;
-			video.width = aspectRatio * videoDisplay.height;		
+			video.width = Math.floor(aspectRatio * videoDisplay.height);		
 			video.height = videoDisplay.height;
 			videoDisplay.width = video.width;
 		}

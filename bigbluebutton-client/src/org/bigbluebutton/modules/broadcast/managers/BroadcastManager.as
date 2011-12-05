@@ -14,6 +14,7 @@ package org.bigbluebutton.modules.broadcast.managers
 	
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.common.events.OpenWindowEvent;
+	import org.bigbluebutton.core.managers.UserManager;
 	import org.bigbluebutton.main.events.BBBEvent;
 	import org.bigbluebutton.modules.broadcast.models.BroadcastOptions;
 	import org.bigbluebutton.modules.broadcast.models.Stream;
@@ -58,6 +59,8 @@ package org.bigbluebutton.modules.broadcast.managers
 			} else {
 				LogUtil.debug("*** Not Opening BroadcastModule Window");
 			}
+			
+			sendWhatIsTheCurrentStreamRequest();
 		}
 		
 		public function playVideo(index:int):void {
@@ -67,23 +70,54 @@ package org.bigbluebutton.modules.broadcast.managers
 		public function stopVideo():void {
 			broadcastService.stopStream();
 		}
-			
-		public function playStream(event:BBBEvent):void {
-			LogUtil.debug("Received " + event.payload["messageId"]);
-			curStream = new Stream(event.payload["uri"], event.payload["streamId"], event.payload["streamName"]);
-			broadcastWindow.curStream = curStream;
-			broadcastWindow.addDisplay();
-			curStream.play(broadcastWindow.videoHolder2);
+		
+		public function sendWhatIsTheCurrentStreamRequest():void {
+			broadcastService.sendWhatIsTheCurrentStreamRequest();
 		}
 		
-		public function stopStream(event:BBBEvent):void {
+		public function handleWhatIsTheCurrentStreamRequest(event:BBBEvent):void {
+			LogUtil.debug("Received " + event.payload["messageId"] );
+			var isPresenter:Boolean = UserManager.getInstance().getConference().amIPresenter();
+			if (isPresenter && curStream != null) {
+				broadcastService.sendWhatIsTheCurrentStreamReply(event.payload["requestedBy"], curStream.getStreamId());
+			}
+		}
+		
+		public function handleWhatIsTheCurrentStreamReply(event:BBBEvent):void {
+			LogUtil.debug("Received " + event.payload["messageId"] );
+			var amIRequester:Boolean = UserManager.getInstance().getConference().amIThisUser(event.payload["requestedBy"]);
+			if (amIRequester) {
+				var streamId:String = event.payload["streamId"];
+				var info:Object = streams.getStreamNameAndUrl(streamId);
+				if (info != null) {
+					playStream(info["url"], streamId, info["name"]);
+				}
+			}
+		}		
+		
+		private function playStream(url:String, streamId:String, streamName:String):void {
+			curStream = new Stream(url, streamId, streamName);
+			broadcastWindow.curStream = curStream;
+			broadcastWindow.addDisplay();
+			curStream.play(broadcastWindow.videoHolder2);			
+		}
+		
+		public function handlePlayStreamRequest(event:BBBEvent):void {
+			LogUtil.debug("Received " + event.payload["messageId"]);
+			playStream(event.payload["uri"], event.payload["streamId"], event.payload["streamName"]);
+		}
+		
+		public function handleStopStreamRequest(event:BBBEvent):void {
 			LogUtil.debug("Received " + event.payload["messageId"]);
 			stopPlayingStream();
 		}
 		
 		public function stopPlayingStream():void {
 			broadcastWindow.removeDisplay();
-			if (curStream != null)		curStream.stop();
+			if (curStream != null)	{
+				curStream.stop();
+				curStream == null;
+			}	
 		}
 	}
 }

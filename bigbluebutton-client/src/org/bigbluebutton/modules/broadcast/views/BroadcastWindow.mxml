@@ -98,8 +98,9 @@
 			
 			public function onWindowResize():void {
 				if (videoHolder2 != null && curStream != null) {
-					videoHolder2.percentHeight = 100;
-					videoHolder2.percentWidth = 100;
+					videoHolder2.width = videoHolder.width - 5;
+					videoHolder2.height = videoHolder.height - 5;
+					LogUtil.debug("vh=[" + videoHolder.width + "," + videoHolder.height + "," + videoHolder2.width + "," + videoHolder.height + "]");
 					curStream.onResize();
 				}
 			}

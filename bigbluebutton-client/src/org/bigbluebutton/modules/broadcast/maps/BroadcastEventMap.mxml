@@ -41,10 +41,21 @@
 	</EventHandlers>	
 	
 	<EventHandlers type="playBroadcastStream">
-		<MethodInvoker generator="{BroadcastManager}" method="playStream" arguments="{event}"/>
+		<MethodInvoker generator="{BroadcastManager}" method="handlePlayStreamRequest" arguments="{event}"/>
 	</EventHandlers>
 
 	<EventHandlers type="stopBroadcastStream">
-		<MethodInvoker generator="{BroadcastManager}" method="stopStream" arguments="{event}"/>
+		<MethodInvoker generator="{BroadcastManager}" method="handleStopStreamRequest" arguments="{event}"/>
 	</EventHandlers>
+	
+	<EventHandlers type="whatIsTheCurrentStreamRequest">
+		<MethodInvoker generator="{BroadcastManager}" method="handleWhatIsTheCurrentStreamRequest" arguments="{event}"/>
+	</EventHandlers>
+	
+	<EventHandlers type="whatIsTheCurrentStreamReply">
+		<MethodInvoker generator="{BroadcastManager}" method="handleWhatIsTheCurrentStreamReply" arguments="{event}"/>
+	</EventHandlers>
+	
+	
+	
 </EventMap>

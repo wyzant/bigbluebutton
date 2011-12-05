@@ -77,7 +77,7 @@ package org.bigbluebutton.core.model {
 		}
 		
 		public function handleMessage(param:Object):void {
-			LogUtil.debug("*****BBBBOOOOYEAHHHHH!!!! " + param["messageId"]);
+			LogUtil.debug("Received from server: " + param["messageId"]);
 			var e:BBBEvent = new BBBEvent(param["messageId"]);
 			e.payload = param;
 			dispatcher.dispatchEvent(e);
