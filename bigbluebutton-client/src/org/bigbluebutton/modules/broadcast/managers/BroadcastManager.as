@@ -1,17 +1,14 @@
 package org.bigbluebutton.modules.broadcast.managers
 {
-	import com.asfusion.mate.events.Dispatcher;
-	
+	import com.asfusion.mate.events.Dispatcher;	
 	import flash.events.AsyncErrorEvent;
 	import flash.events.Event;
 	import flash.events.NetStatusEvent;
 	import flash.events.SecurityErrorEvent;
 	import flash.media.Video;
 	import flash.net.NetConnection;
-	import flash.net.NetStream;
-	
-	import mx.core.UIComponent;
-	
+	import flash.net.NetStream;	
+	import mx.core.UIComponent;	
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.common.events.OpenWindowEvent;
 	import org.bigbluebutton.core.managers.UserManager;

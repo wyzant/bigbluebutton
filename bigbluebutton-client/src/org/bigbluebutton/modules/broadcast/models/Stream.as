@@ -44,7 +44,6 @@ package org.bigbluebutton.modules.broadcast.models
 		
 		private function displayVideo():void {
 			video = new Video();
-
 			ns = new NetStream(nc);
 			ns.client = this;
 			ns.bufferTime = 0;
@@ -144,7 +143,6 @@ package org.bigbluebutton.modules.broadcast.models
 			videoHeight = info.height;
 			video.width = info.width;
 			video.height = info.height;
-			
 			onResize();
 		}
 		
@@ -152,36 +150,26 @@ package org.bigbluebutton.modules.broadcast.models
 			LogUtil.debug("onPlayStatus");
 		}		
 		
+		public function resizeVideo(w:Number, h:Number):void {
+			video.width = w;
+			video.height = h;
+			videoDisplay.addChild(video);
+		}
+		
 		public function onResize():void {
 			fitVideoToWindow();
 			LogUtil.debug("Video [" + video.width + "," + video.height + "]");
 			videoDisplay.addChild(video);
 		}
-		
+				
 		private function fitVideoToWindow():void {
-			if (videoDisplay.width < videoDisplay.height) {
-				fitToWidthAndAdjustHeightToMaintainAspectRatio();				
-			} else {
-				fitToHeightAndAdjustWidthToMaintainAspectRatio();
-			}				
+			video.width = videoDisplay.width;
+			video.height = videoDisplay.height;
 		}
 		
-		private function fitToWidthAndAdjustHeightToMaintainAspectRatio():void {						
-			// Maintain aspect-ratio
-			var aspectRatio:Number =  videoWidth / videoHeight;
-			video.width = videoDisplay.width;	
-			video.height = videoDisplay.height;
-//			video.height = Math.floor((videoDisplay.width * videoHeight) / videoWidth);
-			videoDisplay.height = video.height;
-			videoDisplay.width = video.width;
+		public function getAstpectRatio():Number {
+			return videoWidth / videoHeight;
 		}
-		
-		private function fitToHeightAndAdjustWidthToMaintainAspectRatio():void {			
-			// Maintain aspect-ratio
-			var aspectRatio:Number = videoWidth / videoHeight;
-			video.width = Math.floor(aspectRatio * videoDisplay.height);		
-			video.height = videoDisplay.height;
-			videoDisplay.width = video.width;
-		}
+
 	}
 }
