@@ -10,12 +10,14 @@ package org.bigbluebutton.modules.broadcast.models
 	import mx.core.UIComponent;
 	
 	import org.bigbluebutton.common.LogUtil;
+	import org.bigbluebutton.modules.broadcast.views.BroadcastWindow;
 
 	public class Stream {
 		private var uri:String;
 		private var streamId:String;
 		private var streamName:String;
-		private var videoDisplay:UIComponent;
+//		private var videoDisplay:UIComponent;
+		private var window:BroadcastWindow;
 		private var ns:NetStream;
 		private var nc:NetConnection;
 		private var video:Video;
@@ -33,8 +35,10 @@ package org.bigbluebutton.modules.broadcast.models
 			this.streamName = streamName;
 		}
 		
-		public function play(videoHolder:UIComponent):void {
-			videoDisplay = videoHolder;
+		//public function play(videoHolder:UIComponent):void {
+		public function play(w:BroadcastWindow):void {
+		//	videoDisplay = videoHolder;
+			window = w;
 			connect();
 		}
 		
@@ -143,7 +147,7 @@ package org.bigbluebutton.modules.broadcast.models
 			videoHeight = info.height;
 			video.width = info.width;
 			video.height = info.height;
-			onResize();
+			window.onResize();
 		}
 		
 		public function onPlayStatus(infoObject:Object):void {
@@ -153,18 +157,18 @@ package org.bigbluebutton.modules.broadcast.models
 		public function resizeVideo(w:Number, h:Number):void {
 			video.width = w;
 			video.height = h;
-			videoDisplay.addChild(video);
+		//	videoDisplay.addChild(video);
 		}
 		
 		public function onResize():void {
 			fitVideoToWindow();
 			LogUtil.debug("Video [" + video.width + "," + video.height + "]");
-			videoDisplay.addChild(video);
+			window.videoHolder2.addChild(video);
 		}
 				
 		private function fitVideoToWindow():void {
-			video.width = videoDisplay.width;
-			video.height = videoDisplay.height;
+			video.width = window.videoHolder2.width;
+			video.height = window.videoHolder2.height;
 		}
 		
 		public function getAstpectRatio():Number {

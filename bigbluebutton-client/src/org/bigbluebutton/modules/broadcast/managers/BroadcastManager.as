@@ -96,7 +96,7 @@ package org.bigbluebutton.modules.broadcast.managers
 			curStream = new Stream(url, streamId, streamName);
 			broadcastWindow.curStream = curStream;
 			broadcastWindow.addDisplay();
-			curStream.play(broadcastWindow.videoHolder2);			
+			curStream.play(broadcastWindow);			
 		}
 		
 		public function handlePlayStreamRequest(event:BBBEvent):void {

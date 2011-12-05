@@ -164,7 +164,7 @@
 				resizeDirection = RESIZING_DIRECTION_BOTH;
 			}
 			
-			protected function onResize():void {
+			public function onResize():void {
 				if (videoHolder2 == null || curStream == null) return;
 				var aspectRatio:Number =  curStream.getAstpectRatio();
 				
