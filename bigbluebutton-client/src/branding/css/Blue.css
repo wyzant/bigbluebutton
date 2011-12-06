@@ -127,10 +127,10 @@ MDIWindow {
 	borderColor: #bebcac;
 	borderAlpha: 1;
 	borderThickness: 2;
-	borderThicknessLeft: 0;
-	borderThicknessTop: 0;
-	borderThicknessBottom: 0;
-	borderThicknessRight: 0;
+	borderThicknessLeft: 6;
+	borderThicknessTop: 6;
+	borderThicknessBottom: 6;
+	borderThicknessRight: 6;
 	cornerRadius: 0;
 	dropShadowEnabled: false;
 	titleStyleName: "mypanelTitle";
@@ -159,10 +159,10 @@ MDIWindow {
 	borderColor: #bebcac;
 	borderAlpha: 1;
 	borderThickness: 2;
-	borderThicknessLeft: 0;
-	borderThicknessTop: 0;
-	borderThicknessBottom: 0;
-	borderThicknessRight: 0;
+	borderThicknessLeft: 6;
+	borderThicknessTop: 6;
+	borderThicknessBottom: 6;
+	borderThicknessRight: 6;
 	cornerRadius: 0;
 	dropShadowEnabled: false;
 	titleStyleName: "mypanelTitle";
@@ -239,14 +239,6 @@ MDIWindow {
 
 
 .minimizeBtnFocus 
-{
-	upSkin:        Embed('assets/img/3_minimizeButton.png');
-	overSkin:      Embed('assets/img/3_minimizeButton.png');
-	downSkin:      Embed('assets/img/3_minimizeButton.png');
-	disabledSkin:  Embed('assets/img/3_minimizeButton.png');
-}
-
-.minimizeBtnNoFocus 
 {
 	upSkin:        Embed('assets/img/3_minimizeButton.png');
 	overSkin:      Embed('assets/img/3_minimizeButton.png');
