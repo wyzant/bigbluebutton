@@ -8,11 +8,11 @@ Application
 }
 
 ApplicationControlBar {
-   fillAlphas: 1, 1;
-   fillColors: #ffffff, #fffcf5;
-   backgroundAlpha: 0;
-   dropShadowEnabled: true;
-   shadowDistance: 1
+	fillAlphas: 1, 1;
+	fillColors: #ffffff, #fffcf5;
+	backgroundAlpha: 0;
+	dropShadowEnabled: true;
+	shadowDistance: 1
 }
 
 
@@ -25,87 +25,93 @@ MDICanvas
 
 Button 
 {
-   cornerRadius: 0;
-   highlightAlphas: 0, 0;
-   fillAlphas: 1, 1, 1, 1;
-   fillColors: #fff, #fff, #fff, #fff;
-   color: #504f3d;
-   textRollOverColor: #e6e3dc;
-   textSelectedColor: #d6d4c9;
-   borderColor: #504f3d;
-   themeColor:#d6d4c9;
-   fontFamily: Arial;
-   fontSize: 12;
+	cornerRadius: 0;
+	highlightAlphas: 0, 0;
+	fillAlphas: 1, 1, 1, 1;
+	fillColors: #fff, #fff, #f6eded, #f6eded;
+	color: #504f3d;
+	textRollOverColor: #e6e3dc;
+	textSelectedColor: #d6d4c9;
+	borderColor: #bebcac;
+	themeColor:#d6d4c9;
+	fontFamily: Arial;
+	fontSize: 12;
+	
+	
 }
 
 Button.Present{
-   cornerRadius: 0;
-   highlightAlphas: 0, 0;
-   fillAlphas: 1, 1, 1, 1;
-   fillColors: #ffd545, #ffd545, #ffd545, #ffd545;
-   color: #ffffff;
-   textRollOverColor: #ffffff;
-   textSelectedColor: #ffffff;
-   borderColor: #e2bd3b;
-   themeColor: #efb902;
-   fontFamily: Arial;
-   fontSize: 12;
+	cornerRadius: 0;
+	highlightAlphas: 0, 0;
+	fillAlphas: 1, 1, 1, 1;
+	fillColors: #262626, #262626, #454545, #454545;
+	color: #ffffff;
+	textRollOverColor: #ffffff;
+	textSelectedColor: #262626;
+	borderColor: #000000;
+	themeColor: #000000;
+	fontFamily: Arial;
+	fontSize: 12;
 }
 
 Button.Send{
-   cornerRadius: 0;
-   highlightAlphas: 0, 0;
-   fillAlphas: 1, 1, 1, 1;
-   fillColors: #ffd545, #ffd545, #ffd545, #ffd545;
-   color: #ffffff;
-   textRollOverColor: #ffffff;
-   textSelectedColor: #ffffff;
-   borderColor: #e2bd3b;
-   themeColor: #efb902;
-   fontFamily: Arial;
-   fontSize: 12;
+	cornerRadius: 0;
+	highlightAlphas: 0, 0;
+	fillAlphas: 1, 1, 1, 1;
+	fillColors: #262626, #262626, #454545, #454545;
+	color: #ffffff;
+	textRollOverColor: #ffffff;
+	textSelectedColor: #262626;
+	borderColor: #000000;
+	themeColor: #000000;
+	fontFamily: Arial;
+	fontSize: 12;
 }
 
 Button.Logout{
-   cornerRadius: 0;
-   highlightAlphas: 0, 0;
-   fillAlphas: 1, 1, 1, 1;
-   fillColors: #ffd545, #ffd545, #ffd545, #ffd545;
-   color: #ffffff;
-   textRollOverColor: #ffffff;
-   textSelectedColor: #ffffff;
-   borderColor: #e2bd3b;
-   themeColor: #efb902;
-   fontFamily: Arial;
-   fontSize: 12;
+	cornerRadius: 0;
+	highlightAlphas: 0, 0;
+	fillAlphas: 1, 1, 1, 1;
+	fillColors: #262626, #262626, #454545, #454545;
+	color: #ffffff;
+	textRollOverColor: #ffffff;
+	textSelectedColor: #262626;
+	borderColor: #000000;
+	themeColor: #000000;
+	fontFamily: Arial;
+	fontSize: 12;
 }
 
 LinkButton {
-   rollOverColor: #cccccc;
-   selectionColor: #999999;
-   color: #504f3d;
-   textRollOverColor: #504f3d;
-   textSelectedColor: #504f3d;
+	rollOverColor: #cccccc;
+	selectionColor: #999999;
+	color: #504f3d;
+	textRollOverColor: #504f3d;
+	textSelectedColor: #504f3d;
 }
 
 VScrollBar {
-   fillAlphas: 1, 1, 1, 1;
-   fillColors: #ffffff, #ffffff, #ffffff, #ffffff;
-   trackColors: #94999b, #e7e7e7;
-   themeColor: #333333;
+	fillAlphas: 1, 1, 1, 1;
+	fillColors: #ffffff, #ffffff, #ffffff, #ffffff;
+	trackColors: #94999b, #e7e7e7;
+	themeColor: #333333;
 }
 
 ComboBox {
-   color: #504f3d;
-   borderColor: #999999;
-   fillAlphas: 1, 1, 1, 1;
-   fillColors: #ffffff, #ffffff, #ffffff, #ffffff;
-   selectionColor: #cccccc;
-   textSelectedColor: #504f3d;
-   useRollOver: true;
-   rollOverColor: #cccccc;
-   textRollOverColor: #ffffff;
-   themeColor: #999999;
+	color: #504f3d;
+	borderColor: #999999;
+	fillAlphas: 1, 1, 1, 1;
+	fillColors: #ffffff, #ffffff, #ffffff, #ffffff;
+	selectionColor: #cccccc;
+	textSelectedColor: #504f3d;
+	useRollOver: true;
+	rollOverColor: #cccccc;
+	textRollOverColor: #ffffff;
+	themeColor: #999999;
+}
+
+MDIWindow {
+	resizeCursorHorizontalXOffset: 20	
 }
 
 .mdiWindowFocus 
@@ -118,7 +124,7 @@ ComboBox {
 	backgroundSize: '100%';
 	
 	borderStyle: solid;
-	borderColor: #edece8;
+	borderColor: #bebcac;
 	borderAlpha: 1;
 	borderThickness: 2;
 	borderThicknessLeft: 0;
@@ -150,7 +156,7 @@ ComboBox {
 	backgroundSize: '100%';
 	
 	borderStyle: solid;
-	borderColor: #edece8;
+	borderColor: #bebcac;
 	borderAlpha: 1;
 	borderThickness: 2;
 	borderThicknessLeft: 0;
