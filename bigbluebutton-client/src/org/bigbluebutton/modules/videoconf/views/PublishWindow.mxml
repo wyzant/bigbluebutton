@@ -392,11 +392,11 @@
 	<mx:Fade id="dissolveOut" duration="1000" alphaFrom="1.0" alphaTo="0.0"/>
 	<mx:Fade id="dissolveIn" duration="1000" alphaFrom="0.0" alphaTo="1.0"/>
 	<mx:Text id="lblWarning" width="100%" textAlign="right" fontSize="14" fontWeight="bold" y="{this.height - (videoOptionsBar.visible? videoOptionsBar.height: 0) - lblWarning.height - 30}" visible="false" selectable="false" hideEffect="{dissolveOut}" showEffect="{dissolveIn}"/>
-	<mx:ControlBar id="videoOptionsBar" visible="true">
+	<mx:ApplicationControlBar id="videoOptionsBar" visible="true">
 		<mx:Button id="btnStartPublish" toolTip="{ResourceUtil.getInstance().getString('bbb.publishVideo.startPublishBtn.toolTip')}" icon="{camIcon}" click="startPublishing()" enabled="false"/>
 		<mx:ComboBox id="cmbCameraSelector" dataProvider="{Camera.names}" width="150" visible="false" change="updateCamera()"/>
 		<mx:ComboBox id="cmbResolution" dataProvider="{resolutions}" width="20%" visible="false" change="updateCamera()"/>
-	</mx:ControlBar>
+	</mx:ApplicationControlBar>
 	
 	<mate:Listener type="{CloseAllWindowsEvent.CLOSE_ALL_WINDOWS}" method="closeWindow" />
 </pubVid:VideoWindowItf>
