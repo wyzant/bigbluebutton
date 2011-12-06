@@ -201,7 +201,7 @@
 			itemRollOut="onItemRollOut(event)">          
     	</mx:List>				
     	    	
-    	<mx:ControlBar width="100%">
+    	<mx:ApplicationControlBar width="100%">
 			<flc:CanvasButton id="pushToTalkBtn" visible="{showPushToTalkBtn}" 
 							  toolTip="{UserManager.getInstance().getConference().voiceMuted ? ResourceUtil.getInstance().getString('bbb.listeners.pushToTalk.toolTip') : ResourceUtil.getInstance().getString('bbb.listeners.pushToMute.toolTip')}" 
 							  click="toggleMuteMeState()" height="30" maxWidth="180">
@@ -214,6 +214,6 @@
 			<mx:Button id="muteAllBtn" icon="{muteAllIcon}" visible="{moderator}" toggle="true" selected="false"
 					   toolTip="{ResourceUtil.getInstance().getString('bbb.listeners.muteAllBtn.toolTip')}" 
 					   click="toggleMuteState()" width="18" height="18"/> 
-    	</mx:ControlBar>
+    	</mx:ApplicationControlBar>
 
 </MDIWindow>

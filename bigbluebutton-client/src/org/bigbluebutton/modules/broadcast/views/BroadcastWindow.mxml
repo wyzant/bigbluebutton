@@ -3,19 +3,16 @@
 					  xmlns:bcast="flexlib.mdi.containers.*" 
 					  implements="org.bigbluebutton.common.IBbbModuleWindow" preinitialize="onCreationComplete()"
 					  xmlns:mate="http://mate.asfusion.com/" showCloseButton="false"
-					  layout="absolute" backgroundColor="blue"
-					  resize="onResize()" resizeEnd="onResize()"
-					  >
+					  layout="absolute" title="Broadcast"
+					  resize="onResize()" resizeEnd="onResize()">
 	<mate:Listener type="{MadePresenterEvent.SWITCH_TO_PRESENTER_MODE}" method="becomePresenter" />
 	<mate:Listener type="{MadePresenterEvent.SWITCH_TO_VIEWER_MODE}" method="becomeViewer" />
 	
 	<mx:Script>
 		<![CDATA[
-			import flexlib.mdi.events.MDIWindowEvent;
-			
+			import flexlib.mdi.events.MDIWindowEvent;			
 			import mx.core.UIComponent;
-			import mx.events.ResizeEvent;
-			
+			import mx.events.ResizeEvent;			
 			import org.bigbluebutton.common.LogUtil;
 			import org.bigbluebutton.main.events.MadePresenterEvent;
 			import org.bigbluebutton.main.views.MainCanvas;
@@ -98,48 +95,7 @@
 				videoHolder2.height = videoHolder.height;
 				videoHolder.addChild(videoHolder2);
 			}
-			
-			public function onWindowResize():void {
-				if (videoHolder2 != null && curStream != null) {	
-//					curStream.resizeVideo(this.width, this.height);
-					fitVideoToWindow();
-					LogUtil.debug("vh=[" + this.width + "," + this.height + "," 
-						+ videoHolder.width + "," + videoHolder.height + "," + videoHolder2.width + "," + videoHolder.height + "]");
-					curStream.onResize();
-				}
-			}
-			
-			private function fitVideoToWindow():void {
-				if (videoHolder2.width < videoHolder2.height) {
-					fitToWidthAndAdjustHeightToMaintainAspectRatio();				
-				} else {
-					fitToHeightAndAdjustWidthToMaintainAspectRatio();
-				}				
-			}
-			
-			private function fitToWidthAndAdjustHeightToMaintainAspectRatio():void {						
-				// Maintain aspect-ratio
-				var aspectRatio:Number =  curStream.getAstpectRatio();
-//				videoHolder2.width = videoHolder.width;	
-//				videoHolder2.height = aspectRatio * videoHolder.height;
-//				videoHolder2.width = this.width - 100;	
-//				videoHolder2.height = this.height - 100;
-				videoHolder2.width = videoHolder.width - 100;	
-				videoHolder2.height = videoHolder.width * aspectRatio;
-			}
-			
-			private function fitToHeightAndAdjustWidthToMaintainAspectRatio():void {			
-				// Maintain aspect-ratio
-				var aspectRatio:Number = curStream.getAstpectRatio();
-//				videoHolder2.width = videoHolder.height * curStream.getAstpectRatio();		
-//				videoHolder2.height = videoHolder.height;
-//				videoHolder2.width = this.width - 100;	
-//				videoHolder2.height = this.height - 100;
-					
-				videoHolder2.height = videoHolder.height - 100;
-				videoHolder2.width = videoHolder.height / aspectRatio;
-			}			
-			
+						
 			static private var RESIZING_DIRECTION_UNKNOWN:int = 0; 
 			static private var RESIZING_DIRECTION_VERTICAL:int = 1; 
 			static private var RESIZING_DIRECTION_HORIZONTAL:int = 2; 
@@ -166,12 +122,7 @@
 			
 			public function onResize():void {
 				if (videoHolder2 == null || curStream == null) return;
-				var aspectRatio:Number =  curStream.getAstpectRatio();
-				
-				// limits the window size to the parent size
-//				this.width = (this.parent != null? Math.min(this.width, this.parent.width): this.width);
-//				this.height = (this.parent != null? Math.min(this.height, this.parent.height): this.height); 
-				
+				var aspectRatio:Number =  curStream.getAstpectRatio();				
 				var tmpWidth:Number = this.width - PADDING_HORIZONTAL;
 				var tmpHeight:Number = this.height - PADDING_VERTICAL;
 				
@@ -185,20 +136,8 @@
 						resizeDirection = RESIZING_DIRECTION_BOTH;
 				}
 				
-				// depending on the direction, the tmp size is different
-//				switch (resizeDirection) {
-//					case RESIZING_DIRECTION_VERTICAL:
-//						tmpWidth = Math.floor(tmpHeight * aspectRatio);
-//						break;
-//					case RESIZING_DIRECTION_HORIZONTAL:
-//						tmpHeight = Math.floor(tmpWidth / aspectRatio);
-//						break;
-//					case RESIZING_DIRECTION_BOTH:
-						// this direction is used also for non-user window resize actions
-						tmpWidth = Math.min (tmpWidth, Math.floor(tmpHeight * aspectRatio));
-						tmpHeight = Math.min (tmpHeight, Math.floor(tmpWidth / aspectRatio));
-//						break;
-//				}
+				tmpWidth = Math.min (tmpWidth, Math.floor(tmpHeight * aspectRatio));
+				tmpHeight = Math.min (tmpHeight, Math.floor(tmpWidth / aspectRatio));
 				
 				videoHolder2.width = videoHolder.width = tmpWidth;
 				videoHolder2.height = videoHolder.height = tmpHeight;
@@ -207,37 +146,15 @@
 					+ videoHolder.width + "," + videoHolder.height + "," + videoHolder2.width + "," + videoHolder2.height + "]");
 				curStream.onResize();
 				
-//				if (!keepAspect || this.maximized) {
-					// center the video in the window
-//					videoHolder.x = Math.floor ((this.width - PADDING_HORIZONTAL - tmpWidth) / 2);
-//					videoHolder.y = Math.floor ((this.height - PADDING_VERTICAL - tmpHeight) / 2);
-//				} else {
-					// fit window dimensions on video
-					videoHolder.x = 0;
-					videoHolder.y = 0;
-					this.width = tmpWidth + PADDING_HORIZONTAL;
-					this.height = tmpHeight + PADDING_VERTICAL;
-//				}
-				
-				// reposition the window to fit inside the parent window
-/*				if (this.parent != null) {
-					if (this.x + this.width > this.parent.width)
-						this.x = this.parent.width - this.width;
-					if (this.x < 0)
-						this.x = 0;
-					if (this.y + this.height > this.parent.height)
-						this.y = this.parent.height - this.height;
-					if (this.y < 0)
-						this.y = 0;
-				}
-*/				
-
+				videoHolder.x = 0;
+				videoHolder.y = 0;
+				this.width = tmpWidth + PADDING_HORIZONTAL;
+				this.height = tmpHeight + PADDING_VERTICAL;
 			}
 			// horizontalAlign="center" verticalAlign="middle" 
 		]]>
 	</mx:Script>
-		<mx:HBox id="videoHolder" width="100%" height="100%" backgroundColor="blue" horizontalAlign="center" verticalAlign="middle" 
-				/>		
+		<mx:HBox id="videoHolder" width="100%" height="100%" horizontalAlign="center" verticalAlign="middle" />		
 		<mx:ControlBar width="100%" height="30" paddingTop="0" borderStyle="outset" horizontalAlign="center">
 			<mx:HBox x="1" y="1" id="videoStreamList" width="100%" height="30" horizontalAlign="center">
 				<mx:ComboBox id="streamsComboBox" width="85%" dataProvider="{streams.streamNames}" />

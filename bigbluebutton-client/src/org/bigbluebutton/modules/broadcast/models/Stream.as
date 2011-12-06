@@ -5,10 +5,8 @@ package org.bigbluebutton.modules.broadcast.models
 	import flash.events.SecurityErrorEvent;
 	import flash.media.Video;
 	import flash.net.NetConnection;
-	import flash.net.NetStream;
-	
-	import mx.core.UIComponent;
-	
+	import flash.net.NetStream;	
+	import mx.core.UIComponent;	
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.modules.broadcast.views.BroadcastWindow;
 
@@ -16,7 +14,6 @@ package org.bigbluebutton.modules.broadcast.models
 		private var uri:String;
 		private var streamId:String;
 		private var streamName:String;
-//		private var videoDisplay:UIComponent;
 		private var window:BroadcastWindow;
 		private var ns:NetStream;
 		private var nc:NetConnection;
@@ -34,10 +31,8 @@ package org.bigbluebutton.modules.broadcast.models
 			this.streamId = streamId;
 			this.streamName = streamName;
 		}
-		
-		//public function play(videoHolder:UIComponent):void {
+
 		public function play(w:BroadcastWindow):void {
-		//	videoDisplay = videoHolder;
 			window = w;
 			connect();
 		}
@@ -55,13 +50,10 @@ package org.bigbluebutton.modules.broadcast.models
 			ns.receiveAudio(true);
 			ns.addEventListener(NetStatusEvent.NET_STATUS, netstreamStatus);
 			ns.addEventListener(AsyncErrorEvent.ASYNC_ERROR, nsAsyncErrorHandler);
-
 			video.attachNetStream(ns);
 			ns.play(streamId);				
 		}		
-		
-
-		
+				
 		private function netstreamStatus(evt:NetStatusEvent):void {
 			switch(evt.info.code) {			
 				case "NetStream.Play.StreamNotFound":
@@ -157,7 +149,6 @@ package org.bigbluebutton.modules.broadcast.models
 		public function resizeVideo(w:Number, h:Number):void {
 			video.width = w;
 			video.height = h;
-		//	videoDisplay.addChild(video);
 		}
 		
 		public function onResize():void {

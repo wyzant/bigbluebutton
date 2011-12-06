@@ -20,8 +20,10 @@
   $Id: $
 -->
 
-<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" 
-		xmlns:flexmdi="flexlib.mdi.containers.*"
+<mx:Panel xmlns:mx="http://www.adobe.com/2006/mxml" borderThickness="0" headerHeight="0"
+		xmlns:flexmdi="flexlib.mdi.containers.*" paddingLeft="0" 
+		footerColors="[#3d9abb, #43aacd]"
+		borderThicknessLeft="0" borderThicknessRight="0" borderThicknessTop="0"		
 		xmlns:logModule="org.bigbluebutton.modules.log.view.components.*"
 		xmlns:views="org.bigbluebutton.main.views.*"
 		xmlns:mate="http://mate.asfusion.com/"
@@ -44,6 +46,7 @@
 	
 	<mx:Script>
 		<![CDATA[
+			//footerColors="[#3d9abb, #43aacd]"
 			import com.asfusion.mate.events.Dispatcher;			
 			import flash.events.MouseEvent;			
 			import flexlib.mdi.containers.MDIWindow;
@@ -278,4 +281,4 @@
 			<!--mx:Button width="20" height="20" visible="{layoutOptions.showResetLayout}" toolTip="{ResourceUtil.getInstance().getString('bbb.mainshell.resetLayoutBtn.toolTip')}" id="btnResetLayout" icon="{reset_layout_icon}" click="resetLayout()" /-->
 			<mx:Image source="@Embed('assets/pwrd_by.png')"/>
 		</mx:ControlBar>		
-</mx:VBox>
+</mx:Panel>

@@ -179,7 +179,7 @@
     	</mx:columns>
     </mx:DataGrid>
     
-   <mx:ControlBar width="100%"> 
+   <mx:ApplicationControlBar width="100%"> 
    		 <mx:Button id="presentBtn" label="{ResourceUtil.getInstance().getString('bbb.viewers.presentBtn.label')}" visible="{isModerator}"
     	   			width="130" height="20"
     	   			styleName="Present"
@@ -190,6 +190,6 @@
     	   			width="20" height="20"
     	   			toolTip="{ResourceUtil.getInstance().getString('bbb.viewers.raiseHandBtn.toolTip')}" 
     	   			click="raiseHand()"/>  			
-    </mx:ControlBar>  
+    </mx:ApplicationControlBar>  
     
 </viewer:MDIWindow>
