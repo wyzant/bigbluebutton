@@ -60,6 +60,14 @@ package org.bigbluebutton.modules.broadcast.managers
 			sendWhatIsTheCurrentStreamRequest();
 		}
 		
+		public function handleSwitchToPresenterMode():void {
+			broadcastWindow.becomePresenter();
+		}
+		
+		public function handleSwitchToViewerMode():void {
+			broadcastWindow.becomeViewer();
+		}
+		
 		public function playVideo(index:int):void {
 			broadcastService.playStream(streams.streamUrls[index], streams.streamIds[index], streams.streamNames[index]);
 		}
@@ -113,6 +121,7 @@ package org.bigbluebutton.modules.broadcast.managers
 			broadcastWindow.removeDisplay();
 			if (curStream != null)	{
 				curStream.stop();
+				broadcastWindow.curStream = null;
 				curStream == null;
 			}	
 		}

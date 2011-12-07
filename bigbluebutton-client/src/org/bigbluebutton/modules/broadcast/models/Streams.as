@@ -20,5 +20,16 @@ package org.bigbluebutton.modules.broadcast.models
 			
 			return null;
 		} 
+		
+		public function getStreamIndex(streamId:String):Number {
+			var streamIndex:int = 0;
+			for (var i:int = 0; i < streamIds.length; i++) {
+				if (streamId == streamIds[i]) {
+					return i;
+				}
+			}
+			
+			return 0;
+		}
 	}
 }

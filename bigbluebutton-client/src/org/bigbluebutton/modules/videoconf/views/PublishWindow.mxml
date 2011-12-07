@@ -360,8 +360,7 @@
 			override protected function resourcesChanged():void{
 				super.resourcesChanged();
 			}		
-			
-			
+						
 			private var hideWarningTimer:Timer = null;
 			
 			private function showWarning(resourceName:String, autoHide:Boolean=false, color:String="0xFF0000"):void {

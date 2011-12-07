@@ -5,16 +5,14 @@
 					  xmlns:mate="http://mate.asfusion.com/" showCloseButton="false"
 					  layout="absolute" title="Broadcast"
 					  resize="onResize()" resizeEnd="onResize()">
-	<mate:Listener type="{MadePresenterEvent.SWITCH_TO_PRESENTER_MODE}" method="becomePresenter" />
-	<mate:Listener type="{MadePresenterEvent.SWITCH_TO_VIEWER_MODE}" method="becomeViewer" />
-	
+
 	<mx:Script>
 		<![CDATA[
-			import flexlib.mdi.events.MDIWindowEvent;			
+			import flexlib.mdi.events.MDIWindowEvent;
 			import mx.core.UIComponent;
-			import mx.events.ResizeEvent;			
+			import mx.events.ResizeEvent;
+			import mx.skins.Border;			
 			import org.bigbluebutton.common.LogUtil;
-			import org.bigbluebutton.main.events.MadePresenterEvent;
 			import org.bigbluebutton.main.views.MainCanvas;
 			import org.bigbluebutton.modules.broadcast.managers.BroadcastManager;
 			import org.bigbluebutton.modules.broadcast.models.BroadcastOptions;
@@ -55,12 +53,30 @@
 				onResize();
 			}
 			
-			private function becomePresenter(e:MadePresenterEvent):void{
+			public function becomePresenter():void{
 				videoStreamList.visible = true;
+				if (curStream != null) {
+					playBtn.selected = true;
+					playBtn.label = "Stop";
+					streamsComboBox.selectedIndex = streams.getStreamIndex(curStream.getStreamId());
+				} else {
+					playBtn.selected = false;
+					playBtn.label = "Play";				
+					streamsComboBox.selectedIndex = 0;
+				}
 			}
 			
-			private function becomeViewer(e:MadePresenterEvent):void{
+			public function becomeViewer():void{
 				videoStreamList.visible = false;
+				if (curStream != null) {
+					playBtn.selected = true;
+					playBtn.label = "Stop";
+					streamsComboBox.selectedIndex = streams.getStreamIndex(curStream.getStreamId());
+				} else {
+					playBtn.selected = false;
+					playBtn.label = "Play";				
+					streamsComboBox.selectedIndex = 0;
+				}
 			}
 			
 			private function playStopVideo():void {
@@ -101,8 +117,8 @@
 			static private var RESIZING_DIRECTION_HORIZONTAL:int = 2; 
 			static private var RESIZING_DIRECTION_BOTH:int = 3;
 			private var resizeDirection:int = RESIZING_DIRECTION_BOTH;
-			static public var PADDING_HORIZONTAL:Number = 6; // 10;
-			static public var PADDING_VERTICAL:Number = 60; // 30;
+			static public var PADDING_HORIZONTAL:Number = 18; 
+			static public var PADDING_VERTICAL:Number = 72;
 			
 			/**
 			 * when the window is resized by the user, the application doesn't know
@@ -151,7 +167,7 @@
 				this.width = tmpWidth + PADDING_HORIZONTAL;
 				this.height = tmpHeight + PADDING_VERTICAL;
 			}
-			// horizontalAlign="center" verticalAlign="middle" 
+			
 		]]>
 	</mx:Script>
 		<mx:HBox id="videoHolder" width="100%" height="100%" horizontalAlign="center" verticalAlign="middle" />		

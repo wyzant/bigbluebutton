@@ -46,7 +46,6 @@
 	
 	<mx:Script>
 		<![CDATA[
-			//footerColors="[#3d9abb, #43aacd]"
 			import com.asfusion.mate.events.Dispatcher;			
 			import flash.events.MouseEvent;			
 			import flexlib.mdi.containers.MDIWindow;
