@@ -25,6 +25,7 @@ package org.bigbluebutton.main.model.users
 	import mx.collections.ArrayCollection;
 	
 	import org.bigbluebutton.core.BBB;
+	import org.bigbluebutton.core.events.UsersConnectionEvent;
 	import org.bigbluebutton.core.managers.UserConfigManager;
 	import org.bigbluebutton.core.managers.UserManager;
 	import org.bigbluebutton.main.events.SuccessfulLoginEvent;
@@ -37,7 +38,6 @@ package org.bigbluebutton.main.model.users
 	import org.bigbluebutton.main.model.users.events.LowerHandEvent;
 	import org.bigbluebutton.main.model.users.events.RaiseHandEvent;
 	import org.bigbluebutton.main.model.users.events.RoleChangeEvent;
-	import org.bigbluebutton.main.model.users.events.UsersConnectionEvent;
 
 	public class UserService {
 		private var joinService:JoinService;

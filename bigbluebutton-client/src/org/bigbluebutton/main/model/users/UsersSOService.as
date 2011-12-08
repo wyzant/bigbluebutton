@@ -37,7 +37,6 @@ package org.bigbluebutton.main.model.users {
 	import org.bigbluebutton.main.events.PresenterStatusEvent;
 	import org.bigbluebutton.main.model.ConferenceParameters;
 	import org.bigbluebutton.main.model.User;
-	import org.bigbluebutton.main.model.users.events.ConnectionFailedEvent;
 	import org.bigbluebutton.main.model.users.events.RoleChangeEvent;
 
 	public class UsersSOService {
@@ -123,7 +122,7 @@ package org.bigbluebutton.main.model.users {
 		}
 		
 		public function assignPresenter(userid:Number, name:String, assignedBy:Number):void {
-			var nc:NetConnection = netConnectionDelegate.connection;
+			var nc:NetConnection = nc.connection;
 			nc.call("participants.assignPresenter",// Remote function name
 				new Responder(
 					// On successful result
@@ -254,16 +253,6 @@ package org.bigbluebutton.main.model.users {
 			}		
 		}
 					
-		public function assignPresenter(userid:Number, assignedBy:Number):void {	
-			var nc:NetConnection = nc.connection;
-			nc.call(
-				"participants.assignPresenter",// Remote function name
-				responder,
-				userid,
-				assignedBy
-			); //_netConnection.call
-		}
-
 		public function raiseHand(userid:Number, raise:Boolean):void {
 			var nc:NetConnection = nc.connection;			
 			nc.call(
