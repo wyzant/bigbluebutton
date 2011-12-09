@@ -117,8 +117,8 @@
 			static private var RESIZING_DIRECTION_HORIZONTAL:int = 2; 
 			static private var RESIZING_DIRECTION_BOTH:int = 3;
 			private var resizeDirection:int = RESIZING_DIRECTION_BOTH;
-			static public var PADDING_HORIZONTAL:Number = 18; 
-			static public var PADDING_VERTICAL:Number = 72;
+			static public var PADDING_HORIZONTAL:Number = 6; 
+			static public var PADDING_VERTICAL:Number = 60;
 			
 			/**
 			 * when the window is resized by the user, the application doesn't know
@@ -158,8 +158,8 @@
 				videoHolder2.width = videoHolder.width = tmpWidth;
 				videoHolder2.height = videoHolder.height = tmpHeight;
 
-				LogUtil.debug("vh=[" + this.width + "," + this.height + "," 
-					+ videoHolder.width + "," + videoHolder.height + "," + videoHolder2.width + "," + videoHolder2.height + "]");
+//				LogUtil.debug("vh=[" + this.width + "," + this.height + "," 
+//					+ videoHolder.width + "," + videoHolder.height + "," + videoHolder2.width + "," + videoHolder2.height + "]");
 				curStream.onResize();
 				
 				videoHolder.x = 0;
