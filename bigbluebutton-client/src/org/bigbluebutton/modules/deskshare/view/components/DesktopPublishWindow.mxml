@@ -290,13 +290,13 @@
 	<dspub:states>	    
         <mx:State name="dispFullRegionControlBar">   
             <mx:AddChild>
-				<mx:ControlBar id="fullRegionBottomBar">
+				<mx:ApplicationControlBar id="fullRegionBottomBar">
 					<mx:Button id="btnFSPublish" toolTip="{ResourceUtil.getInstance().getString('bbb.desktopPublish.fullscreen.tooltip')}" label="{ResourceUtil.getInstance().getString('bbb.desktopPublish.fullscreen.label')}" visible="true" click="shareScreen(true)" />
 					<mx:Spacer width="100%"/>
 					<mx:Button id="btnClosePublish" toolTip="{ResourceUtil.getInstance().getString('bbb.desktopPublish.stop.tooltip')}" label="{ResourceUtil.getInstance().getString('bbb.desktopPublish.stop.label')}" visible="true" enabled="false" click="stopSharing()" />
 					<mx:Spacer width="100%"/>
 					<mx:Button id="btnRegionPublish" toolTip="{ResourceUtil.getInstance().getString('bbb.desktopPublish.region.tooltip')}" label="{ResourceUtil.getInstance().getString('bbb.desktopPublish.region.label')}" visible="true" click="shareScreen(false)" />		
-				</mx:ControlBar>
+				</mx:ApplicationControlBar>
             </mx:AddChild>
         </mx:State>	
 	</dspub:states>
