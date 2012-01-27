@@ -32,7 +32,7 @@
 	verticalScrollPolicy="off" 
 	horizontalScrollPolicy="off" 
 	showControls="true" resize="maximizeHandler()"
-	backgroundColor="red"
+	backgroundColor="#efefef"
 	implements="org.bigbluebutton.common.IBbbModuleWindow"
 	creationComplete="onCreationComplete()" 
 	width="{DEFAULT_WINDOW_WIDTH}" height="{DEFAULT_WINDOW_HEIGHT}" 
@@ -135,7 +135,7 @@
 			private var externalButtons:ArrayCollection = new ArrayCollection();
 			
 			private function maximizeHandler():void {
-				LogUtil.debug("Max handler");
+//				LogUtil.debug("Max handler");
 				// When the window is maximized, we want to resize the slide maintaining the aspect ratio.			
 				fitSlideToWindowMaintainingAspectRatio();
 				//Remove focus from the maximize button in case the user presses the space bar, the window doesn't get maximized again.	
@@ -154,7 +154,7 @@
 			}
 			
 			private function onResizeEndEvent(event:MDIWindowEvent):void {
-				LogUtil.debug("onResizeEndEvent");
+//				LogUtil.debug("onResizeEndEvent");
 				fitSlideToWindowMaintainingAspectRatio();
 			}
 			
@@ -173,26 +173,26 @@
 					if (this.height < this.width) {					
 						slideHeight = this.height - CONTROL_BAR_HEIGHT - TOP_WINDOW_BORDER;
 						slideWidth = ((currentSlideWidth * slideHeight)/currentSlideHeight);
-						LogUtil.debug("[" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");
+//						LogUtil.debug("[" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");
 						if (this.width < slideWidth) {
 							slideWidth = this.width - WIDTH_PADDING;
 							slideHeight = ((currentSlideHeight * slideWidth)/currentSlideWidth);
-							LogUtil.debug("recalc [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");							
+//							LogUtil.debug("recalc [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");							
 						}
 					} else {
 						slideWidth = this.width - WIDTH_PADDING;
 						slideHeight = ((currentSlideHeight * slideWidth)/currentSlideWidth);
-						LogUtil.debug("**** [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");
+//						LogUtil.debug("**** [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");
 						if (this.height < slideHeight) {
 							slideHeight = this.height - CONTROL_BAR_HEIGHT - TOP_WINDOW_BORDER;
 							slideWidth = ((currentSlideWidth * slideHeight)/currentSlideHeight);
-							LogUtil.debug("*** recalc [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");							
+//							LogUtil.debug("*** recalc [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");							
 						}												
 					}					
 				} else {
 					slideWidth = this.width - WIDTH_PADDING;
 					slideHeight = ((currentSlideHeight * slideWidth)/currentSlideWidth);
-					LogUtil.debug("FTW **** [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");
+//					LogUtil.debug("FTW **** [" + this.width + "," + this.height + "] [" + slideView.x + "," + slideView.y + "] [" + slideWidth + "," + slideHeight + "] [" + currentSlideWidth + "," + currentSlideHeight + "]");
 				}
 
 				sendWindowResizedEvent(slideWidth, slideHeight);
@@ -215,11 +215,11 @@
 				currentSlideWidth = event.slideWidth;
 				currentSlideHeight = event.slideHeight;		
 				
-				fitToPage = true;
+//				fitToPage = true;
 				
-				if (event.slideHeight > event.slideWidth) {
-					fitToPage = false;
-				}
+//				if (event.slideHeight > event.slideWidth) {
+//					fitToPage = false;
+//				}
 				
 				fitSlideToWindowMaintainingAspectRatio();			
 			}
@@ -511,7 +511,7 @@
 	<mx:Fade id="thumbFadeIn" alphaFrom="1" alphaTo="0" duration="100" />
 	<mx:Fade id="thumbFadeOut" alphaFrom="0" alphaTo="1" duration="100" />
 
-	<views:SlideView id="slideView" width="100%" height="100%" visible="false" mouseDown="mouseDown = true" backgroundColor="blue"
+	<views:SlideView id="slideView" width="100%" height="100%" visible="false" mouseDown="mouseDown = true" backgroundColor="gray"
 						 mouseUp="mouseDown = false" verticalScrollPolicy="off" horizontalScrollPolicy="off" />			    
     <mx:ApplicationControlBar id="presCtrlBar" width="100%" height="{CONTROL_BAR_HEIGHT}">
     	  <mx:Button id="uploadPres" icon="{uploadIcon}" visible="false" width="20" height="20"
@@ -532,8 +532,8 @@
     	<mx:Spacer width="50%" id="spacer3"/>
     	<mx:Button id="btnResetZoom" icon="{magnifierIcon}" visible="false" width="20" height="20" 
     		toolTip="{ResourceUtil.getInstance().getString('bbb.presentation.resetZoomBtn.toolTip')}" click="onResetZoom()"/>
-		<mx:Button id="btnFitToPage" icon="{magnifierIcon}" visible="true" width="20" height="20" 
-				   click="onFitToPage()"/>
+<!--		<mx:Button id="btnFitToPage" icon="{magnifierIcon}" visible="true" width="20" height="20" 
+				   click="onFitToPage()"/>-->
     	<mx:Spacer width="5" id="spacer4"/>
     </mx:ApplicationControlBar>
 </pres:MDIWindow>
