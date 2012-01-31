@@ -287,6 +287,7 @@ public class SipRegisterAgent implements TransactionClientListener {
 		if (keepAlive != null)
 			keepAlive.halt();
 	}
+	
 
 	// ***************************** run() *****************************
 

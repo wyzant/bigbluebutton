@@ -39,6 +39,7 @@ public final class SipPeerManager {
 	
 	private ClientConnectionManager clientConnManager;
 	private CallStreamFactory callStreamFactory;
+	SipRegisterNotifier sipRegisterNotifier;
 	
     private Map<String, SipPeer> sipPeers;
     private int sipStackDebugLevel = 8;
@@ -51,6 +52,7 @@ public final class SipPeerManager {
     	SipPeer sipPeer = new SipPeer(peerId, host, sipPort, startRtpPort, stopRtpPort);
     	sipPeer.setClientConnectionManager(clientConnManager);
     	sipPeer.setCallStreamFactory(callStreamFactory);
+    	sipPeer.setSipRegisterNotifier(sipRegisterNotifier);
     	sipPeers.put(peerId, sipPeer);    	
     }
     
@@ -134,5 +136,9 @@ public final class SipPeerManager {
 	
 	public void setClientConnectionManager(ClientConnectionManager ccm) {
 		clientConnManager = ccm;
+	}
+	
+	public void setSipRegisterNotifier(SipRegisterNotifier sipRegisterNotifier){
+		this.sipRegisterNotifier = sipRegisterNotifier;
 	}
 }

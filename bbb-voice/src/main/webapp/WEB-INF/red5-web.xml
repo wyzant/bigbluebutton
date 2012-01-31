@@ -2,8 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
-                           http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.0.xsd">
+                           http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.0.xsd
+                           http://www.springframework.org/schema/util 
+						   http://www.springframework.org/schema/util/spring-util-2.0.xsd">
 
 	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 	    <property name="locations">
@@ -45,8 +48,39 @@
     	
 	<bean id="sipPeerManager" class="org.bigbluebutton.voiceconf.sip.SipPeerManager">
 		<property name="sipStackDebugLevel" value="${sipStackDebugLevel}"/>
+		<property name="sipRegisterNotifier" ref="sipRegisterNotifier"></property>
 	</bean>
 	
 	<bean id="clientConnectionManager" class="org.bigbluebutton.voiceconf.red5.ClientConnectionManager"/>
-      
+    
+    <bean id="sipRegisterNotifier" class="org.bigbluebutton.voiceconf.sip.SipRegisterNotifier">
+    	<property name="messagingService" ref="messagingService"></property>
+    </bean>
+    
+    <bean id="messagingService" class="org.bigbluebutton.messaging.RedisMessagingService">
+    	<property name="redisPool" ref="redisPool"/>
+  	</bean>
+    
+    <bean id="config" class="org.bigbluebutton.messaging.GenericObjectPoolConfigWrapper">
+	  <property name="whenExhaustedAction">
+	    <util:constant static-field="org.apache.commons.pool.impl.GenericObjectPool.WHEN_EXHAUSTED_FAIL" />
+	  </property>
+	  <property name="maxActive" value="12" />
+	  <property name="maxIdle" value="6" />
+	  <property name="minIdle" value="1" />
+	  <property name="testOnBorrow" value="true" />
+	  <property name="testOnReturn" value="true" />
+	  <property name="testWhileIdle" value="true" />
+	  <property name="numTestsPerEvictionRun" value="12" />
+	  <property name="timeBetweenEvictionRunsMillis" value="60000" />
+	  <property name="maxWait" value="5000" />
+	</bean>
+    
+    <bean id="redisPool" class="redis.clients.jedis.JedisPool">
+    	<constructor-arg index="0">
+    		<bean factory-bean="config" factory-method="getConfig" />
+  		</constructor-arg>
+        <constructor-arg index="1" value="${redis.host}"/>
+        <constructor-arg index="2" value="${redis.port}"/>
+    </bean>  
 </beans>

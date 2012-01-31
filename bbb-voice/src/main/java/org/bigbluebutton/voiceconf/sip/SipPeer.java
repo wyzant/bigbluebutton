@@ -48,6 +48,7 @@ public class SipPeer implements SipRegisterAgentListener {
     
     private SipProvider sipProvider;
     private SipRegisterAgent registerAgent;
+    SipRegisterNotifier sipRegisterNotifier;
     private final String id;
     private final AudioConferenceProvider audioconfProvider;
     
@@ -74,6 +75,7 @@ public class SipPeer implements SipRegisterAgentListener {
         			registeredProfile.contactUrl, registeredProfile.username, 
         			registeredProfile.realm, registeredProfile.passwd);
         	registerAgent.addListener(this);
+        	registerAgent.addListener(sipRegisterNotifier);
         	registerAgent.register(registeredProfile.expires, registeredProfile.expires/2, registeredProfile.keepaliveTime);
         }                              
     }
@@ -189,11 +191,21 @@ public class SipPeer implements SipRegisterAgentListener {
 		registered = false;
 	}
 	
+	@Override
+	public void onStopRegistering(){
+		log.info("Stopped registering Sip Server");
+		registered = false;
+	}
+	
 	public void setCallStreamFactory(CallStreamFactory csf) {
 		callStreamFactory = csf;
 	}
 	
 	public void setClientConnectionManager(ClientConnectionManager ccm) {
 		clientConnManager = ccm;
+	}
+
+	public void setSipRegisterNotifier(SipRegisterNotifier sipRegisterNotifier) {
+		this.sipRegisterNotifier = sipRegisterNotifier;
 	}
 }
