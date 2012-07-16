@@ -21,6 +21,12 @@ package org.bigbluebutton.common
 	[Bindable]
 	public class Images
 	{
+		[Embed(source="assets/images/webcam_close.png")]
+		public var webcamClose:Class;
+		
+		[Embed(source="assets/images/deskshare_close.png")]
+		public var deskshareClose:Class;
+				
 		[Embed(source="assets/images/fit-to-page.png")]
 		public var fitToPage:Class;
 		
@@ -135,10 +141,10 @@ package org.bigbluebutton.common
         [Embed(source="assets/images/bullet_go.png")]
         public var bulletGo:Class;
 
-        [Embed(source="assets/images/page_white_get.png")]
+        [Embed(source="assets/images/upload.png")]
         public var upload:Class;
 		
-		[Embed(source="assets/images/whiteboard_icon.png")]
+		[Embed(source="assets/images/annotation.png")]
 		public var whiteboard:Class;
 		
 		[Embed(source="assets/images/whiteboard_thick.png")]
@@ -167,5 +173,11 @@ package org.bigbluebutton.common
 		
 		[Embed(source="assets/images/shape_handles.png")]
 		public var shape_handles:Class;		
+
+		[Embed(source="assets/images/disk.png")]
+		public var disk:Class;		
+
+		[Embed(source="assets/images/folder.png")]
+		public var folder:Class;		
 	}
 }

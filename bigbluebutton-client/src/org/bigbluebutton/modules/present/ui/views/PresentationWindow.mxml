@@ -128,7 +128,7 @@
 			private var mouseDown:Boolean = false;
 			[Bindable] private var isPresenter:Boolean = false;
 			[Bindable] private var presentationLoaded:Boolean = false;
-			[Bindable] private var currentPresentation:String = ResourceUtil.getInstance().getString('bbb.presentation.title');
+			[Bindable] private var currentPresentation:String = "";
 			
 			private var externalButtons:ArrayCollection = new ArrayCollection();
 			
@@ -500,10 +500,10 @@
     		useHandCursor="true" snapInterval="5" allowTrackClick="true" liveDragging="true" 
     		dataTipFormatFunction="removeDecimalFromDataTip" change="onSliderZoom()" width="100"/>
     	<mx:Spacer width="50%" id="spacer3"/>
-    	<mx:Button id="btnFitToWidth" icon="{fitToWidthIcon}" visible="false" width="20" height="20" 
+    	<mx:Button id="btnFitToWidth" icon="{fitToWidthIcon}" visible="false" width="25" height="25" 
 				   toolTip="{ResourceUtil.getInstance().getString('bbb.presentation.fitToWidth.toolTip')}" 
 				   click="onFitToPage(false)"/>
-		<mx:Button id="btnFitToPage" icon="{fitToPageIcon}" visible="false" width="20" height="20" 
+		<mx:Button id="btnFitToPage" icon="{fitToPageIcon}" visible="false" width="25" height="25" 
 				   toolTip="{ResourceUtil.getInstance().getString('bbb.presentation.fitToPage.toolTip')}" 
 				   click="onFitToPage(true)"/>
     	<mx:Spacer width="5" id="spacer4"/>
