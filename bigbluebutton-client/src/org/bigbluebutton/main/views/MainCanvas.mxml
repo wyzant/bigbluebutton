@@ -37,6 +37,7 @@
 			public static const TOP_LEFT:String = "top-left";
 			public static const BOTTOM_LEFT:String = "bottom-left";
 			public static const MIDDLE:String = "middle";
+			public static const MIDDLE_LEFT:String = "middle-left";
 			public static const BOTTOM:String = "bottom";
 			public static const TOP_RIGHT:String = "top-right";
 			public static const BOTTOM_RIGHT:String = "bottom-right";
@@ -125,13 +126,27 @@
 						x = 1;
 						y = 1;
 						win.width = leftWindowWidth;
-						win.height = leftWindowHeight;
+						win.height = 150;
+						win.minHeight = 150;
 						break;
+					case MIDDLE_LEFT:
+						x = 1;
+						y = 160;
+						win.width = leftWindowWidth;												
+						if (this.height < MIN_HEIGHT) 
+							win.height = (this.height/3) +30;
+						else 
+							win.height = 450;	
+						break;	
 					case BOTTOM_LEFT:
 						x = 1;
-						y = leftWindowHeight + 20;
+						if (this.height < MIN_HEIGHT)
+							y = (this.height/3) + 200;
+						else 
+							y = 630;
+						
 						win.width = leftWindowWidth;
-						win.height = leftWindowHeight + 350;
+						win.height = 250;
 						break;
 					case MIDDLE:
 						x = leftWindowWidth + 10;
@@ -178,7 +193,7 @@
 							win.width = rightWindowWidth;
 							win.height = this.height - rightWindowHeight - 10;							
 						}
-						break;					
+						break;	
 					case POPUP:
 						x = (Math.random() * this.width) - 640;
 						y = (Math.random() * this.height) - 520;

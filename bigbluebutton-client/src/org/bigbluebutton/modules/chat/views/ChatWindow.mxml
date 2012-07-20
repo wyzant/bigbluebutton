@@ -52,12 +52,7 @@
 			[Bindable] public var chatOptions:ChatOptions;
 			
 			public function getPrefferedPosition():String{
-<<<<<<< HEAD
-				return MainCanvas.BOTTOM_LEFT;
-				//return chatOptions.position;
-=======
-				return chatOptions.position;
->>>>>>> bbb/master
+				return MainCanvas.MIDDLE_LEFT;			
 			} 
 			
 			private function onCreationComplete():void {
@@ -102,11 +97,6 @@
 			
 		]]>
 	</mx:Script>
-<<<<<<< HEAD
-	
-	<views:ChatView id="chatView" chatOptions="{chatOptions}"/>
-
-=======
 	
 	<views:ChatView id="chatView" chatOptions="{chatOptions}" chatWindow="{this}"/>
     
@@ -117,5 +107,5 @@
         <mx:Button label="{ResourceUtil.getInstance().getString('bbb.chat.sendBtn')}" id="sendBtn" styleName="chatControlBarSendButtonStyle"
                    toolTip="{ResourceUtil.getInstance().getString('bbb.chat.sendBtn.toolTip')}" click="chatView.sendMessages()"/> 
     </mx:ControlBar>	
->>>>>>> bbb/master
+
 </MDIWindow>
