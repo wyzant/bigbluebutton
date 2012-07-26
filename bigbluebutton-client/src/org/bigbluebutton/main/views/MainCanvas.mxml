@@ -94,7 +94,7 @@
 				leftWindowWidth = 350;
 				rightWindowHeight = this.height * 0.6;
 				rightWindowWidth = (this.width / 20) * 6;
-				centerWindowHeight = this.height - 10;
+				centerWindowHeight = this.height - 40;
 				centerWindowWidth = this.width - 400;
 				
 				var position:String = window.getPrefferedPosition();

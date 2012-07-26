@@ -107,8 +107,8 @@
 				if (res == null) // error
 					return;
 				_video = new Video(Number(res[0]), Number(res[1]));
-				_video.width = originalWidth = Number(res[0]);
-				_video.height = originalHeight = Number(res[1]);
+				_video.width = originalWidth = Number(res[0]) - 80;
+				_video.height = originalHeight = Number(res[1]) - 80;
 				setAspectRatio(Number(res[0]), Number(res[1])); 
 				_video.attachNetStream(ns);
 				ns.play(stream);
@@ -163,7 +163,11 @@
 			private function closeWindow(e:CloseAllWindowsEvent):void{
 				this.close();
 			}
-												
+			
+			public function getPrefferedPosition():String {
+				return MainCanvas.BOTTOM_LEFT;
+				//return options.position;
+			}
 		]]>
 	</mx:Script>
 	
