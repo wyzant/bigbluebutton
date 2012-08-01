@@ -5,6 +5,6 @@
 linker-report.xml
 bundles.txt
 build/
-client
+
 bbbResources.properties.*
 asdoc/
