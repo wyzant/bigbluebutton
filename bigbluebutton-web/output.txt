@@ -1,0 +1,144 @@
+Welcome to Grails 1.1.1 - http://grails.org/
+Licensed under Apache Standard License 2.0
+Grails home is set to: /home/firstuser/dev/tools/grails-1.1.1
+
+Base Directory: /home/firstuser/dev/bigbluebutton/bigbluebutton-web
+Running script /home/firstuser/dev/tools/grails-1.1.1/scripts/War.groovy
+Environment set to production
+     [copy] Copied 3 empty directories to 2 empty directories under /home/firstuser/.grails/1.1.1/projects/bigbluebutton-web/resources
+    [mkdir] Created dir: /home/firstuser/dev/bigbluebutton/bigbluebutton-web/web-app/plugins/jsecurity-0.4.1
+     [copy] Copying 28 files to /home/firstuser/dev/bigbluebutton/bigbluebutton-web/web-app/plugins/jsecurity-0.4.1
+  [groovyc] Compiling 61 source files to /home/firstuser/.grails/1.1.1/projects/bigbluebutton-web/classes
+  [groovyc] org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed, Compile error during compilation with javac.
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:11: package com.google.gson does not exist
+  [groovyc] import com.google.gson.Gson;
+  [groovyc]                       ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:12: package com.google.gson.reflect does not exist
+  [groovyc] import com.google.gson.reflect.TypeToken;
+  [groovyc]                               ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:13: package redis.clients.jedis does not exist
+  [groovyc] import redis.clients.jedis.Jedis;
+  [groovyc]                           ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:14: package redis.clients.jedis does not exist
+  [groovyc] import redis.clients.jedis.JedisPool;
+  [groovyc]                           ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:15: package redis.clients.jedis does not exist
+  [groovyc] import redis.clients.jedis.JedisPubSub;
+  [groovyc]                           ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:20: cannot find symbol
+  [groovyc] symbol  : class JedisPool
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 	private JedisPool redisPool;
+  [groovyc] 	        ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:98: cannot find symbol
+  [groovyc] symbol  : class JedisPool
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 	public void setRedisPool(JedisPool redisPool){
+  [groovyc] 	                         ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:102: cannot find symbol
+  [groovyc] symbol  : class JedisPubSub
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 	private class PubSubListener extends JedisPubSub {
+  [groovyc] 	                                     ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/imp/SwfSlidesGenerationProgressNotifier.java:38: package com.google.gson does not exist
+  [groovyc] import com.google.gson.Gson;
+  [groovyc]                       ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/OfficeToPdfConversionSuccessFilter.java:33: package com.google.gson does not exist
+  [groovyc] import com.google.gson.Gson;
+  [groovyc]                       ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/SupportedDocumentFilter.java:32: package com.google.gson does not exist
+  [groovyc] import com.google.gson.Gson;
+  [groovyc]                       ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:40: cannot find symbol
+  [groovyc] symbol  : class Jedis
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 		Jedis jedis = redisPool.getResource();
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:59: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 		Gson gson = new Gson();
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:59: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 		Gson gson = new Gson();
+  [groovyc] 		                ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:64: cannot find symbol
+  [groovyc] symbol  : class Jedis
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 		Jedis jedis = redisPool.getResource();
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:77: cannot find symbol
+  [groovyc] symbol  : class Jedis
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService
+  [groovyc] 		final Jedis jedis = redisPool.getResource();
+  [groovyc] 		      ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:108: method does not override or implement a method from a supertype
+  [groovyc] 		@Override
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:118: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService.PubSubListener
+  [groovyc] 			Gson gson = new Gson();
+  [groovyc] 			^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:118: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService.PubSubListener
+  [groovyc] 			Gson gson = new Gson();
+  [groovyc] 			                ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:119: cannot find symbol
+  [groovyc] symbol  : class TypeToken
+  [groovyc] location: class org.bigbluebutton.api.messaging.RedisMessagingService.PubSubListener
+  [groovyc] 			HashMap<String,String> map = gson.fromJson(message, new TypeToken<Map<String, String>>() {}.getType());
+  [groovyc] 			                                                        ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:113: method does not override or implement a method from a supertype
+  [groovyc] 		@Override
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:168: method does not override or implement a method from a supertype
+  [groovyc] 		@Override
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:173: method does not override or implement a method from a supertype
+  [groovyc] 		@Override
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:178: method does not override or implement a method from a supertype
+  [groovyc] 		@Override
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/api/messaging/RedisMessagingService.java:183: method does not override or implement a method from a supertype
+  [groovyc] 		@Override
+  [groovyc] 		^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/imp/SwfSlidesGenerationProgressNotifier.java:49: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.presentation.imp.SwfSlidesGenerationProgressNotifier
+  [groovyc] 			Gson gson= new Gson();
+  [groovyc] 			^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/imp/SwfSlidesGenerationProgressNotifier.java:49: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.presentation.imp.SwfSlidesGenerationProgressNotifier
+  [groovyc] 			Gson gson= new Gson();
+  [groovyc] 			               ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/OfficeToPdfConversionSuccessFilter.java:71: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.presentation.OfficeToPdfConversionSuccessFilter
+  [groovyc] 			Gson gson = new Gson();
+  [groovyc] 			^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/OfficeToPdfConversionSuccessFilter.java:71: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.presentation.OfficeToPdfConversionSuccessFilter
+  [groovyc] 			Gson gson = new Gson();
+  [groovyc] 			                ^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/SupportedDocumentFilter.java:68: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.presentation.SupportedDocumentFilter
+  [groovyc] 			Gson gson= new Gson();
+  [groovyc] 			^
+  [groovyc] /home/firstuser/dev/bigbluebutton/bigbluebutton-web/src/java/org/bigbluebutton/presentation/SupportedDocumentFilter.java:68: cannot find symbol
+  [groovyc] symbol  : class Gson
+  [groovyc] location: class org.bigbluebutton.presentation.SupportedDocumentFilter
+  [groovyc] 			Gson gson= new Gson();
+  [groovyc] 			               ^
+  [groovyc] 31 errors
+  [groovyc] 
+  [groovyc] 
+  [groovyc] 1 error
+Compilation error: Compilation Failed
