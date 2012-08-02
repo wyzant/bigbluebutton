@@ -111,12 +111,15 @@
 			}
 			
 			private function handleAddToolbarButtonEvent(event:ToolbarButtonEvent):void {
-				addedBtns.addChild(event.button as UIComponent);
-				realignButtons();
+				if (event.location == ToolbarButtonEvent.TOP_TOOLBAR) {
+					addedBtns.addChild(event.button as UIComponent);
+					realignButtons();
+				}
 			}
 			
 			private function handleRemoveToolbarButtonEvent(event:ToolbarButtonEvent):void {
-				addedBtns.removeChild(event.button as UIComponent);
+				if (addedBtns.contains(event.button as UIComponent))
+					addedBtns.removeChild(event.button as UIComponent);
 			}
 			
 			private function realignButtons():void{
@@ -128,7 +131,7 @@
 			}
 						
 			private function gotConfigParameters(e:ConfigEvent):void{
-				langSelector.visible = e.config.languageEnabled;
+				langSelector.visible = false; /*e.config.languageEnabled;*/
 				DEFAULT_HELP_URL = e.config.helpURL;
 			}
 			
@@ -155,9 +158,10 @@
 	</mx:Script>	
 	<mx:HBox id="addedBtns">
 	</mx:HBox>		
-	<mx:Spacer width="100%"/>
+	<mx:Spacer width="95%"/>
 	<views:LanguageSelector id="langSelector" visible="false" />
-	<mx:LinkButton id="helpBtn" label="{ResourceUtil.getInstance().getString('bbb.mainToolbar.helpBtn')}" visible="{showHelpBtn}" click="onHelpButtonClicked()"/>
+	<!--<mx:LinkButton id="helpBtn" label="{ResourceUtil.getInstance().getString('bbb.mainToolbar.helpBtn')}" visible="{showHelpBtn}" click="onHelpButtonClicked()"/>-->
+	<mx:Button id="helpBtn" label="{ResourceUtil.getInstance().getString('bbb.mainToolbar.helpBtn')}" visible="{showHelpBtn}" click="onHelpButtonClicked()"/>
 	<mx:Button label="{ResourceUtil.getInstance().getString('bbb.mainToolbar.logoutBtn')}" id="btnLogout" 
-			   toolTip="{ResourceUtil.getInstance().getString('bbb.mainToolbar.logoutBtn.toolTip')}" right="10" click="doLogout()"/>
+			   toolTip="{ResourceUtil.getInstance().getString('bbb.mainToolbar.logoutBtn.toolTip')}" right="10" click="doLogout()" height="22"/>
 </mx:ApplicationControlBar>

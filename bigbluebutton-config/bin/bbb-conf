@@ -42,6 +42,7 @@
 #   2011-06-26 FFD  Updates for 0.8
 #   2012-01-14 FFD  Tsting the development environment for 0.8
 #   2012-02-22 FFD  Updates to development environment
+#   2012-04-27 FFD  Added sum of version numbers in --check
 
 ##set -x
 #set -e
@@ -660,14 +661,24 @@ if [ $SETUPDEV ]; then
 		fi
 
 
-		if [ ! -f $BASE/flex-4.5.0.20967/frameworks/libs/player/10.3/playerglobal.swc ]; then
-			mkdir -p $BASE/flex-4.5.0.20967/frameworks/libs/player/10.3
-			cd $BASE/flex-4.5.0.20967/frameworks/libs/player/10.3
-			if [ ! -f playerglobal10_3.swc ]; then
-				wget http://fpdownload.macromedia.com/pub/flashplayer/updaters/10/playerglobal10_3.swc
+		if [ ! -f $BASE/flex-4.5.0.20967/frameworks/libs/player/11.2/playerglobal.swc ]; then
+			mkdir -p $BASE/flex-4.5.0.20967/frameworks/libs/player/11.2
+			cd $BASE/flex-4.5.0.20967/frameworks/libs/player/11.2
+			if [ ! -f playerglobal11_2.swc ]; then
+				wget http://download.macromedia.com/get/flashplayer/updaters/11/playerglobal11_2.swc
 			fi
-			mv -f playerglobal10_3.swc playerglobal.swc
+			mv -f playerglobal11_2.swc playerglobal.swc
 		fi
+
+
+#		if [ ! -f $BASE/flex-4.5.0.20967/frameworks/libs/player/10.3/playerglobal.swc ]; then
+#			mkdir -p $BASE/flex-4.5.0.20967/frameworks/libs/player/10.3
+#			cd $BASE/flex-4.5.0.20967/frameworks/libs/player/10.3
+#			if [ ! -f playerglobal10_3.swc ]; then
+#				wget http://fpdownload.macromedia.com/pub/flashplayer/updaters/10/playerglobal10_3.swc
+#			fi
+#			mv -f playerglobal10_3.swc playerglobal.swc
+#		fi
 
 		if ! grep -q GROOVY_HOME ~/.profile; then
 			echo "
@@ -1323,7 +1334,7 @@ check_state() {
 			echo 
 		fi
 
-		SIP_SERVER_HOST=$(cat /usr/share/red5/webapps/sip/WEB-INF/bigbluebutton-sip.properties | sed -n '/sip.server.host=/{s/.*=//;s/;//;p}')
+		SIP_SERVER_HOST=$(cat /usr/share/red5/webapps/sip/WEB-INF/bigbluebutton-sip.properties | sed -n '/^sip.server.host=/{s/.*=//;s/;//;p}')
 		if [ $SIP_SERVER_HOST != "127.0.0.1" ]; then
 			if [ $SIP_SERVER_HOST != $IP ]; then
 				echo "# Error: The setting of ($SIP_SERVER_HOST) for sip.server.host in"
@@ -1340,9 +1351,9 @@ check_state() {
 				echo "# The IP address ($SIP_SERVER_HOST) set for sip.server.host."
 				echo "#"
 				echo "# If your audio is not working (users click the  headset icon "
-				echo "# and don't appear in the Listeners window, try the command"
-				echo "#"
-				echo "#   sudo bbb-conf --setfreeswitchip $SIP_IP"
+				echo "# and don't appear in the Listeners window, ensure FreeSWITCH uses"
+				echo "# the local loopback 127.0.0.1 address.  See"
+				echo "#   http://code.google.com/p/bigbluebutton/wiki/FAQ#Users_do_not_appear_in_the_listeners_window"
 				echo 
 			fi
 		fi
@@ -1412,7 +1423,7 @@ check_state() {
                 echo
         fi
 
-        if (( $MEM < 1990 )); then
+        if (( $MEM < 1975 )); then
 		echo "# Warning: You are running BigBlueButton on a server with less than 2G of memory.  Your"
 		echo "# performance may suffer."
                 echo
@@ -1431,6 +1442,28 @@ check_state() {
 		echo 
 	fi
 
+	BBB_WEB=$(cat ${SERVLET_DIR}/bigbluebutton/WEB-INF/classes/bigbluebutton.properties | sed -n '/^bigbluebutton.web.serverURL/{s/.*=//;p}')
+	DEFAULT_PDF=$(cat ${SERVLET_DIR}/bigbluebutton/WEB-INF/classes/bigbluebutton.properties | sed -n '/^beans.presentationService.defaultUploadedPresentation/{s/.*=//;p}')
+	if echo $DEFAULT_PDF | grep -q "bigbluebutton.web.serverURL"; then
+        	if ! echo "$BBB_WEB$(echo $DEFAULT_PDF | sed 's/${bigbluebutton.web.serverURL}//g')" | xargs wget -q -O /dev/null; then
+			echo "# Error: Unable to reach default URL for presentation:"
+			echo "#"
+			echo "#    $BBB_WEB$(echo $DEFAULT_PDF | sed 's/${bigbluebutton.web.serverURL}//g')"
+			echo "#"
+                	echo "# Check value for beans.presentationService.defaultUploadedPresentation in"
+                	echo "#   ${SERVLET_DIR}/bigbluebutton/WEB-INF/classes/bigbluebutton.properties"
+        	fi
+	else
+        	if ! echo "$DEFAULT_PDF" | xargs wget -q -O /dev/null; then
+			echo "# Error: Unable to reach default URL for presentation"
+			echo "#"
+			echo "#    $DEFAULT_PDF"
+			echo "#"
+                	echo "# Check value for beans.presentationService.defaultUploadedPresentation in"
+                	echo "#   ${SERVLET_DIR}/bigbluebutton/WEB-INF/classes/bigbluebutton.properties"
+        	fi
+	fi
+
 	exit 0
 }
 
@@ -1442,7 +1475,7 @@ if [ $CHECK ]; then
 	need_root
 	
 	echo 
-	echo "BigBlueButton Server $BIGBLUEBUTTON_RELEASE"
+        echo "BigBlueButton Server $BIGBLUEBUTTON_RELEASE ($(dpkg -l | grep bbb  | sed -n '/0.[0-9][0-9]ubuntu/{s/.*ubuntu//;s/;//;p}' | awk '{ sum+=$1} END {print sum}'))"
 	echo "                    Kernel version:" `uname -r`
 
 	if [ -e /etc/lsb-release ]; then
@@ -1978,6 +2011,7 @@ if [ $CLEAN ]; then
 	rm -f /var/log/asterisk/messages* 
 	rm -f /var/log/asterisk/queue* 
 	rm -f /var/log/bigbluebutton/bbb-web.log*
+	rm -f /var/log/bigbluebutton/*.log
 
 	#
 	# Clean out the log files for record and playback

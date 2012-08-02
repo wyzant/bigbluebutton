@@ -1,8 +1,13 @@
 .settings/org.eclipse.core.resources.prefs
+.project
 .actionScriptProperties
 .flexProperties
 linker-report.xml
 bundles.txt
-client
+build/
+
 bbbResources.properties.*
 asdoc/
+html-templateBackup/
+.actionScriptProperties.bak
+.flexProperties.bak

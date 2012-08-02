@@ -37,6 +37,7 @@
 			public static const TOP_LEFT:String = "top-left";
 			public static const BOTTOM_LEFT:String = "bottom-left";
 			public static const MIDDLE:String = "middle";
+			public static const MIDDLE_LEFT:String = "middle-left";
 			public static const BOTTOM:String = "bottom";
 			public static const TOP_RIGHT:String = "top-right";
 			public static const BOTTOM_RIGHT:String = "bottom-right";
@@ -89,12 +90,12 @@
 			}
 			
 			private function positionWindow(window:IBbbModuleWindow):void{
-				leftWindowHeight = this.height/3;
-				leftWindowWidth = 245;
+				leftWindowHeight = this.height/4;
+				leftWindowWidth = 350;
 				rightWindowHeight = this.height * 0.6;
 				rightWindowWidth = (this.width / 20) * 6;
-				centerWindowHeight = this.height - 10;
-				centerWindowWidth = this.width / 2;
+				centerWindowHeight = this.height - 40;
+				centerWindowWidth = this.width - 400;
 				
 				var position:String = window.getPrefferedPosition();
 				var win:MDIWindow = window as MDIWindow;
@@ -125,13 +126,27 @@
 						x = 1;
 						y = 1;
 						win.width = leftWindowWidth;
-						win.height = leftWindowHeight;
+						win.height = 150;
+						win.minHeight = 150;
 						break;
+					case MIDDLE_LEFT:
+						x = 1;
+						y = 160;
+						win.width = leftWindowWidth;												
+						if (this.height < MIN_HEIGHT) 
+							win.height = (this.height/3) +30;
+						else 
+							win.height = 450;	
+						break;	
 					case BOTTOM_LEFT:
 						x = 1;
-						y = leftWindowHeight + 10;
+						if (this.height < MIN_HEIGHT)
+							y = (this.height/3) + 200;
+						else 
+							y = 630;
+						
 						win.width = leftWindowWidth;
-						win.height = leftWindowHeight;
+						win.height = 250;
 						break;
 					case MIDDLE:
 						x = leftWindowWidth + 10;
@@ -178,7 +193,7 @@
 							win.width = rightWindowWidth;
 							win.height = this.height - rightWindowHeight - 10;							
 						}
-						break;					
+						break;	
 					case POPUP:
 						x = (Math.random() * this.width) - 640;
 						y = (Math.random() * this.height) - 520;
@@ -199,75 +214,6 @@
 						y = win.y;
 				}
 				windowManager.absPos(win, x, y);
-			}
-			
-			private function getVideoWindows():Array
-			{
-				var windows:Array = this.windowManager.getOpenWindowList();
-				var videowindows:Array = new Array();
-				for (var i:Number=0; i<windows.length; i++) {
-					var window:IBbbModuleWindow = windows[i] as IBbbModuleWindow;
-					var type:String = getType(window);
-					if (type == "PublishWindow" || type == "VideoWindow")
-						videowindows.push(window);
-				}
-				return videowindows;
-			}
-			
-			private function getType(window:IBbbModuleWindow):String {
-				return String(window).substr(String(window).lastIndexOf(".") + 1).match(/[a-zA-Z]+/).join();
-			}
-			
-			public function layoutSmallVideos():void
-			{
-				var windows:Array = getVideoWindows();
-				if (windows.length == 0)
-					return;
-					
-				var width:int = 166;
-				var height:int = 149;
-				
-				var rows:int = Math.ceil(this.height/height);
-				var winPerRow:int = Math.floor(windows.length/rows);
-
-				// try to fit better the number of windows per row
-				winPerRow = Math.floor(this.width / width);
-				rows = Math.ceil(windows.length / winPerRow);
-				while (Math.ceil(windows.length / (winPerRow - 1)) == rows) {
-					winPerRow -= 1;
-				}
-
-				var x:int = 0;
-				var y:int = this.height;
-							
-				for (var i:Number=0; i<windows.length; i++) {
-					var window:IBbbModuleWindow = windows[i] as IBbbModuleWindow;
-					var type:String = getType(window);
-					
-					(window as MDIWindow).width = width;
-					
-					var win:MDIWindow = window as MDIWindow;
-					if (win.minimized || win.maximized)
-						win.restore();
-					windowManager.bringToFront(win);
-					
-					// change the row
-					if (i % winPerRow == 0) {
-						x = Math.floor((this.width - (width * winPerRow)) / 2);
-						y -= height;
-					}
-
-					windowManager.absPos(win, x, y);
-					x += win.width;
-				}				
-			}
-			
-			public function layoutPresenter():void
-			{
-			}
-			
-			public function layoutMeeting():void
-			{
 			}
 			
 		]]>

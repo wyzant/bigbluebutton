@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <config>
-    <localeversion suppressWarning="false">0.8-beta4</localeversion>
+    <localeversion suppressWarning="false">0.8</localeversion>
     <version>VERSION</version>
     <help url="http://HOST/help.html"/>
     <porttest host="HOST" application="video"/>    
@@ -65,7 +65,12 @@
 			camModeFps = "10"
 			camQualityBandwidth = "0"
 			camQualityPicture = "90"
-			enableH264 = "false"
+			smoothVideo="false"
+			applyConvolutionFilter="false"
+			convolutionFilter="-1, 0, -1, 0, 6, 0, -1, 0, -1"
+			filterBias="0"
+			filterDivisor="4"
+			enableH264 = "true"
 			h264Level = "2.1"
 			h264Profile = "main"			
 		/>
@@ -95,6 +100,12 @@
 			oneAlwaysBigger="false"
 		/>
 		
+		<module name="LayoutModule" url="LayoutModule.swf?v=VERSION"
+			uri="rtmp://HOST/bigbluebutton"
+			layoutConfig="conf/layout.xml"
+			enableEdit="true"
+		/>
+
 		<!-- new module in development: 
 		<module name="DynamicInfoModule" url="DynamicInfoModule.swf?v=VERSION" 
 			uri="rtmp://HOST/bigbluebutton" 

@@ -1154,6 +1154,7 @@ class ApiController {
             returncode(RESP_CODE_SUCCESS)
 			meetingName(meeting.getName())
             meetingID(meeting.getExternalId())
+			meetingIDInternal(meeting.getInternalId())
 			createTime(meeting.getCreateTime())
 			voiceBridge(meeting.getTelVoice())
             attendeePW(meeting.getViewerPassword())
