@@ -316,7 +316,7 @@ def processSlideEvents
 			slide_start = ((slide_timestamp.to_f - $meeting_start.to_f) / 1000).round(1)
 			slide_number = node.xpath(".//slide")[0].text()
 			slide_src = "presentation/#{$presentation_name}/slide-#{slide_number.to_i + 1}.png"
-
+                        slide_text = "presentation/#{$presentation_name}/textfiles/slide-#{slide_number.to_i + 1}.txt"
 			image_url = "#{$process_dir}/#{slide_src}"
 			slide_size = FastImage.size(image_url)
 			current_index = $slides_events.index(node)
@@ -330,7 +330,7 @@ def processSlideEvents
 			# Is this a new image or one previously viewed?
 			if($slides_compiled[[slide_src, slide_size[1], slide_size[0]]] == nil)
 				# If it is, add it to the list with all the data.
-				$slides_compiled[[slide_src, slide_size[1], slide_size[0]]] = [[slide_start], [slide_end], $global_slide_count]
+				$slides_compiled[[slide_src, slide_size[1], slide_size[0]]] = [[slide_start], [slide_end], $global_slide_count, slide_text]
 				$global_slide_count = $global_slide_count + 1
 			elsif
 				# If not, append new in and out times to the old entry
@@ -373,7 +373,7 @@ def processShapesAndClears
 			# Print out the gathered/detected images. 
 			$slides_compiled.each do |key, val|
 				$val = val
-				$xml.image(:id => "image#{$val[2].to_i}", :in => $val[0].join(' '), :out => $val[1].join(' '), 'xlink:href' => key[0], :height => key[1], :width => key[2], :visibility => :hidden)
+				$xml.image(:id => "image#{$val[2].to_i}", :in => $val[0].join(' '), :out => $val[1].join(' '), 'xlink:href' => key[0], :height => key[1], :width => key[2], :visibility => :hidden, :text => $val[3])
 				$canvas_number+=1
 				$xml.g(:class => :canvas, :id => "canvas#{$val[2].to_i}", :image => "image#{$val[2].to_i}", :display => :none) do
 					
@@ -490,9 +490,9 @@ def processChatMessages
 			$chat_events.each do |node|
 				chat_timestamp =  node[:timestamp]
 				chat_sender = node.xpath(".//sender")[0].text()
-				chat_message =  node.xpath(".//message")[0].text()
+				chat_message =  BigBlueButton::Events.linkify(node.xpath(".//message")[0].text())
 				chat_start = (chat_timestamp.to_i - $meeting_start.to_i) / 1000
-				$xml.timeline(:in => chat_start, :direction => :down,  :innerHTML => "<span><strong>#{chat_sender}:</strong> #{chat_message}</span>", :target => :chat )
+				$xml.chattimeline(:in => chat_start, :direction => :down,  :name => chat_sender, :message => chat_message, :target => :chat )
 			end
 		}
 	end
@@ -543,7 +543,7 @@ $playback = match[2]
 puts $meeting_id
 puts $playback
 if ($playback == "slides")
-	logger = Logger.new("/var/log/bigbluebutton/slides/publish-#{$meeting_id}.log", 'daily' )
+	logger = Logger.new("/var/log/bigbluebutton/presentation/publish-#{$meeting_id}.log", 'daily' )
 	BigBlueButton.logger = logger
   BigBlueButton.logger.info("RUNNING SLIDES_NEW.RB - Publishing #{$meeting_id}")
 	# This script lives in scripts/archive/steps while properties.yaml lives in scripts/
@@ -570,16 +570,24 @@ if ($playback == "slides")
 		audio_dir = "#{package_dir}/audio"
 		BigBlueButton.logger.info("Making audio dir")
 		FileUtils.mkdir_p audio_dir
-		BigBlueButton.logger.info("Made audio dir - coping this -> #{$process_dir}/audio.ogg to -> #{audio_dir}")
+		BigBlueButton.logger.info("Made audio dir - copying: #{$process_dir}/audio.ogg to -> #{audio_dir}")
 		FileUtils.cp("#{$process_dir}/audio.ogg", audio_dir)
-		BigBlueButton.logger.info("copied file 1")
+		BigBlueButton.logger.info("Copied .ogg file - copying: #{$process_dir}/temp/#{$meeting_id}/audio/recording.wav to -> #{audio_dir}")
 		FileUtils.cp("#{$process_dir}/temp/#{$meeting_id}/audio/recording.wav", audio_dir)
-		BigBlueButton.logger.info("copied file 2")
+		BigBlueButton.logger.info("Copied .wav file - copying #{$process_dir}/events.xml to -> #{package_dir}")
 		FileUtils.cp("#{$process_dir}/events.xml", package_dir)
-		BigBlueButton.logger.info("copied file 3")
+		BigBlueButton.logger.info("Copied events.xml file")
+
+		BigBlueButton.logger.info("Making video dir")
+		video_dir = "#{package_dir}/video"
+		FileUtils.mkdir_p video_dir
+		BigBlueButton.logger.info("Made video dir - copying: #{$process_dir}/webcams.webm to -> #{video_dir}")
+		FileUtils.cp("#{$process_dir}/webcams.webm", video_dir)
+		BigBlueButton.logger.info("Copied .webm file")
+
 		BigBlueButton.logger.info("Copying files to package dir")
 		FileUtils.cp_r("#{$process_dir}/presentation", package_dir)
-	  BigBlueButton.logger.info("Copied files to package dir")
+		BigBlueButton.logger.info("Copied files to package dir")
 		BigBlueButton.logger.info("Creating metadata.xml")
 		# Create metadata.xml
 		b = Builder::XmlMarkup.new(:indent => 2)
