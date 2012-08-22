@@ -1,0 +1,8 @@
+:clean
+:compileJava
+:processResources
+:classes
+:war
+:deploy
+Deleting /usr/share/red5/webapps/bigbluebutton
+Total time: 4.69 secs

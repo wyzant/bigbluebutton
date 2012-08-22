@@ -182,10 +182,10 @@
 				this.close();
 			}
 			
-			public function getPrefferedPosition():String {
+			/*public function getPrefferedPosition():String {
 				return MainCanvas.BOTTOM_LEFT;
 				//return options.position;
-			}
+			}*/
 		]]>
 	</mx:Script>
 	
