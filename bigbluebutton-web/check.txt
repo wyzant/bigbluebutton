@@ -1,0 +1,44 @@
+
+BigBlueButton Server 0.8-beta-4
+                    Kernel version: 2.6.32-39-generic-pae
+                      Distribution: Ubuntu 10.04.4 LTS (32-bit)
+                            Memory: 2013 MB
+
+/var/www/bigbluebutton/client/conf/config.xml (bbb-client)
+  		Port test (tunnel): 172.18.0.138
+                              Red5: 172.18.0.138
+
+/etc/nginx/sites-available/bigbluebutton (nginx)
+                       server name: 172.18.0.138
+                              port: 80
+                    bbb-client dir: /home/firstuser/dev/bigbluebutton/bigbluebutton-client
+
+/var/lib/tomcat6/webapps/bigbluebutton/WEB-INF/classes/bigbluebutton.properties (bbb-web)
+                      bbb-web host: 172.18.0.138
+
+/var/lib/tomcat6/webapps/demo/bbb_api_conf.jsp (API demos)
+                           api url: 172.18.0.138
+
+/usr/share/red5/webapps/bigbluebutton/WEB-INF/red5-web.xml (red5)
+                  voice conference: FreeSWITCH
+
+/usr/local/bigbluebutton/core/scripts/slides.yml (record and playback)
+                     playback host: 172.18.0.138
+
+
+** Potential problems described below **
+# Warning: nginx is not serving the client from /var/www/bigbluebutton/.
+# Instead, it's being served from
+#
+#    /home/firstuser/dev/bigbluebutton/bigbluebutton-client
+#
+# (This is OK if you have setup a development environment.) 
+
+# Warning: The API demos are installed and accessible from:
+#
+#    http://172.18.0.138/
+#
+# Use the API demos test your BigBlueButton setup. To remove
+#
+#    sudo apt-get purge bbb-demo
+
