@@ -1,56 +1,139 @@
+Buildfile: build.xml
 
-BigBlueButton Server 0.8-beta-4
-                    Kernel version: 2.6.32-39-generic-pae
-                      Distribution: Ubuntu 10.04.4 LTS (32-bit)
-                            Memory: 2013 MB
+clean:
 
-/var/www/bigbluebutton/client/conf/config.xml (bbb-client)
-  		Port test (tunnel): 172.18.0.133
-                              Red5: 172.18.0.133
+init-ant-contrib:
 
-/etc/nginx/sites-available/bigbluebutton (nginx)
-                       server name: 172.18.0.133
-                              port: 80
-                    bbb-client dir: /home/firstuser/dev/bigbluebutton/bigbluebutton-client
+generate-html-wrapper:
 
-/var/lib/tomcat6/webapps/bigbluebutton/WEB-INF/classes/bigbluebutton.properties (bbb-web)
-                      bbb-web host: 172.18.0.133
+build-deskshare-no-linker:
+     [echo] Compiling deskshare without optimization.
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/DeskShareModule.swf (452654 bytes)
 
-/var/lib/tomcat6/webapps/demo/bbb_api_conf.jsp (API demos)
-                           api url: 172.18.0.133
+build-deskshare-standalone:
+     [echo] Compiling deskshare standalone without optimization.
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] Warning: DeskShareModule is a module or application that is directly referenced. This will cause DeskShareModule and all of its dependencies to be linked in with DeskshareStandalone. Using an interface is the recommended practice to avoid this.
+    [mxmlc] 
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/DeskshareStandalone.swf (452256 bytes)
 
-/usr/share/red5/webapps/bigbluebutton/WEB-INF/red5-web.xml (red5)
-                  voice conference: FreeSWITCH
+compile-deskshare-standalone:
+     [echo] Deskshare standalone built without optimization.
 
-/usr/local/bigbluebutton/core/scripts/slides.yml (record and playback)
-                     playback host: 172.18.0.133
+build-bbb-main:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/BigBlueButton.swf (687787 bytes)
+     [echo] **********************************************
+     [echo] *    Generated bundles.txt                   *
+     [echo] * Make sure you include all resources listed *
+     [echo] * in the file when building the locales.     *
+     [echo] **********************************************
+     [echo] Copying common assets for BBB Main
+     [copy] Copying 73 files to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/org/bigbluebutton/common/assets/images
 
+build-bbb-main-test:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/BigBlueButtonTest.swf (696255 bytes)
+     [echo] **********************************************
+     [echo] *    Generated bundles.txt                   *
+     [echo] * Make sure you include all resources listed *
+     [echo] * in the file when building the locales.     *
+     [echo] **********************************************
 
-** Potential problems described below **
-# Nginx: BigBlueButton appears to be disabled
-         - no symbolic link in /etc/nginx/sites-enabled/bigbluebutton to /etc/nginx/sites-available/bigbluebutton 
-# Warning: nginx is not serving the client from /var/www/bigbluebutton/.
-# Instead, it's being served from
-#
-#    /home/firstuser/dev/bigbluebutton/bigbluebutton-client
-#
-# (This is OK if you have setup a development environment.) 
+build-chat:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/ChatModule.swf (198460 bytes)
 
-# Error: Could not connect to the configured hostname/IP address
-#
-#    http://172.18.0.133/
-#
-# If your BigBlueButton server is behind a firewall, see FAQ:
-#
-#   http://code.google.com/p/bigbluebutton/wiki/FAQ
-#
-# (See entry for setting up BigBlueButton behind a firewall.)
+build-viewers:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/ViewersModule.swf (61499 bytes)
 
-# Warning: The API demos are installed and accessible from:
-#
-#    http://172.18.0.133/
-#
-# Use the API demos test your BigBlueButton setup. To remove
-#
-#    sudo apt-get purge bbb-demo
+build-listeners:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/src/org/bigbluebutton/modules/listeners/views/ListenersWindow.mxml(222): Warning: Data binding will not be able to detect assignments to "images".
+    [mxmlc] 
+    [mxmlc] 					<mx:Image source="{UserManager.getInstance().getConference().voiceMuted ? images.sound_mute : images.sound_none}" />
+    [mxmlc] 
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/src/org/bigbluebutton/modules/listeners/views/ListenersWindow.mxml(222): Warning: Data binding will not be able to detect assignments to "images".
+    [mxmlc] 
+    [mxmlc] 					<mx:Image source="{UserManager.getInstance().getConference().voiceMuted ? images.sound_mute : images.sound_none}" />
+    [mxmlc] 
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/ListenersModule.swf (67784 bytes)
 
+build-present:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/PresentModule.swf (116909 bytes)
+
+build-breakout:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+OpenJDK Client VM warning: CodeCache is full. Compiler has been disabled.
+OpenJDK Client VM warning: Try increasing the code cache size using -XX:ReservedCodeCacheSize=
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/BreakoutModule.swf (48975 bytes)
+
+build-layout:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/LayoutModule.swf (61112 bytes)
+
+build-main-chat-viewers-listeners-present:
+
+build-deskshare:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/DeskShareModule.swf (70052 bytes)
+     [echo] Copying deskshare applet for Deskshare Module
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin
+
+build-phone:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/PhoneModule.swf (51628 bytes)
+     [echo] Copying assets for Phone Module
+     [copy] Copying 3 files to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/org/bigbluebutton/modules/phone/views/assets/images
+
+build-video:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/VideoconfModule.swf (59285 bytes)
+
+build-videodock:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/VideodockModule.swf (46838 bytes)
+
+build-whiteboard:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/WhiteboardModule.swf (182497 bytes)
+
+build-dyn:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/DynamicInfoModule.swf (41165 bytes)
+
+build-classroom-audio:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/ClassroomAudioModule.swf (51493 bytes)
+
+build-settings:
+    [mxmlc] Loading configuration file /home/firstuser/dev/tools/flex-4.5.0.20967/frameworks/flex-config.xml
+    [mxmlc] /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/SettingsModule.swf (72641 bytes)
+
+build-deskshare-phone-video-whiteboard-dyn:
+
+copy-resource-files:
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/swfobject
+     [copy] Copying 6 files to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/lib
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/conf
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/conf
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/conf
+     [echo] Copying config.xml for development environment
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/conf
+     [echo] Copying join-mock.xml for development environment
+     [copy] Copying 1 file to /home/firstuser/dev/bigbluebutton/bigbluebutton-client/bin/conf
+
+compile-bbb:
+
+clean-build-all:
+
+BUILD SUCCESSFUL
+Total time: 1 minute 53 seconds

@@ -1,0 +1,88 @@
+Application 
+{  
+   /*backgroundColors: #000000,#3f3f3f;*/
+   backgroundColors: #ffffff,#efefef;
+   backgroundImage: Embed(source="assets/img/bk3.jpg");
+   backgroundSize: "100%";
+   backgroundGradientColors: #e0e0e0, #cacaca;
+   /*only used as background on initial page load progress bar*/
+   themeColor: #b0bbc0;
+   backgroundGradientAlphas: 0.20, 0.1;
+}
+MDIWindow
+{
+	titleStyleName: "title";
+}
+.title 
+{
+	color:#ffffff;
+	font-weight:bold;	
+	font-size:13pt;
+}
+
+/*The image for your logo is 200x200 pixels. No other size is currently supported so resize your logo accordingly. The logo will always appear in the lower right corner. */
+BrandingLogo
+{
+	backgroundImage: Embed(source="assets/img/logo.png");
+	backgroundSize: "100%";
+}
+
+Button 
+{
+	fillAlphas: 1, 1, 1, 1;
+	fillColors: #ffffff, #ffffff, #ffffff, #ffffff;
+	themeColor: #ffffff;
+	color: #72ad21;
+	borderColor: #72ad21;
+	borderAlpha: 1;
+	borderThickness: 3;
+}
+
+.mdiWindowFocus
+{
+	borderColor: #5580a4;
+	borderAlpha: 1;
+	borderThicknessLeft: 2;
+	borderThicknessTop: 0;
+	borderThicknessBottom: 2;
+	borderThicknessRight: 2;
+	roundedBottomCorners: false;
+	cornerRadius: 5;
+	dropShadowEnabled: false;  
+	headerHeight: 29;
+	backgroundAlpha: 1; 
+	backgroundColor: #FFFFFF;
+	backgroundImage: Embed(source="assets/img/windowBG.jpg");
+	titleBackgroundSkin: Embed(source="assets/img/toolbarBG.jpg");
+	color: #255074;
+	/*titleBackgroundSkin: Embed(source="assets/swf/WindowsAssets.swf", symbol="headerBgDefault");*/
+}
+
+.mdiWindowNoFocus
+{
+	borderColor: #b0bbc0;
+	borderAlpha: 1;
+	borderThicknessLeft: 2;
+	borderThicknessTop: 0;
+	borderThicknessBottom: 2;
+	borderThicknessRight: 2;
+	roundedBottomCorners: false;
+	cornerRadius: 5;
+	dropShadowEnabled: false;
+	headerHeight: 29;
+	backgroundAlpha: 1; 
+	backgroundColor: #FFFFFF;
+	backgroundImage: Embed(source="assets/img/windowBG.jpg");
+	titleBackgroundSkin: Embed(source="assets/img/toolbarBG_nofocus.jpg");
+	color: #255074;
+	/*titleBackgroundSkin: Embed(source="assets/swf/WindowsAssets.swf", symbol="headerBgDefaultNoFocus");*/
+	
+}
+
+.mypanelTitle 
+{
+	fontFamily: Arial;
+	fontSize: 13;
+	fontWeight: bold;
+	color: #f0f0f0;
+}
