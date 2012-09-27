@@ -11,7 +11,7 @@
   version. 
   
   BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY 
-  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
+  WARRANTY	; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
   PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
   
   You should have received a copy of the GNU Lesser General Public License along 
@@ -131,28 +131,33 @@
 						break;
 					case MIDDLE_LEFT:
 						x = 1;
-						y = 160;
+						y = 155;
 						win.width = leftWindowWidth;												
 						if (this.height < MIN_HEIGHT) 
-							win.height = (this.height/3) +30;
+						{
+							if((this.height/3) +30 	> 300)
+                win.height = (this.height/3) +30;
+              else 
+                win.height = 300;
+						}
 						else 
-							win.height = 450;	
+							win.height = 440;	
 						break;	
 					case BOTTOM_LEFT:
 						x = 1;
 						if (this.height < MIN_HEIGHT)
-							y = (this.height/3) + 200;
+							y = (this.height/3) + 195;
 						else 
-							y = 630;
+							y = 600;
 						
 						win.width = leftWindowWidth;
-						win.height = 250;
+						win.height = 230;
 						break;
 					case MIDDLE:
 						x = leftWindowWidth + 10;
 						y = 1;
 						win.width = centerWindowWidth;
-						win.height = centerWindowHeight;
+						win.height = centerWindowHeight - 20;
 						break;
 					case BOTTOM:
 						x = 1;
@@ -179,11 +184,11 @@
 					case BOTTOM_RIGHT:
 						/**
 						 * If the display is small, move the video dock
-						 * window to the bottom left so that the chat
-						 * window occupies the left section.
+						 * window to th	e bottom left so that the chat
+						 * window occupies the left section.	
 						 */
 						if (this.height < MIN_HEIGHT) {
-							x = 1;
+							x = 1;	
 							y = (this.height/3) * 2 + 15;
 							win.width = leftWindowWidth;
 							win.height = (this.height/3) - 15;							

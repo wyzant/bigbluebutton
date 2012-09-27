@@ -3,6 +3,7 @@ var blinking = false;
 
 var startblink = function(message1, message2)
 {
+        return;
         if(!blinking)
         {
                 document.title = (document.title == message2)?message1:message2;
@@ -24,7 +25,7 @@ var clearblink = function()
         {
                 window.clearTimeout(blinkTimer);
         }
-        document.title = 'BigBlueButton';
+        document.title = 'WyzAnt - Online Tutoring';
 }
 
 var i = 1;

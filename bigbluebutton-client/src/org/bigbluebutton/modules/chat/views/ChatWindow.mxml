@@ -58,7 +58,7 @@
 			[Bindable] public var chatOptions:ChatOptions;
 			
 			public function getPrefferedPosition():String{
-				return MainCanvas.MIDDLE_LEFT;			
+				return chatOptions.position;
 			} 
 			
 			private function onCreationComplete():void {

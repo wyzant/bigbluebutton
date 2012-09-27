@@ -20,9 +20,9 @@
   $Id: $
 -->
 
-<mx:ApplicationControlBar xmlns:mx="http://www.adobe.com/2006/mxml" 
+<mx:ApplicationControlBar xmlns:mx="http://www.adobe.com/2006/mxml" styleName="mainToolBar"
 	xmlns:mate="http://mate.asfusion.com/" visible="{showToolbar}"
-	enabled="true" xmlns:views="org.bigbluebutton.main.views.*" >   
+	enabled="true" xmlns:views="org.bigbluebutton.main.views.*">   
 	
 	<mate:Listener type="{ToolbarButtonEvent.ADD}" method="handleAddToolbarButtonEvent" />	
 	<mate:Listener type="{ToolbarButtonEvent.REMOVE}" method="handleRemoveToolbarButtonEvent"/>

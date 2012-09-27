@@ -119,8 +119,8 @@ $Id: $
 			}
 			
 			public function getPrefferedPosition():String {
-				return MainCanvas.BOTTOM_LEFT;
-				//return options.position;
+				//return MainCanvas.BOTTOM_LEFT;
+				return options.position;
 			}
 			
 			private function onDragVideoWindow(e:DragWindowEvent):void{

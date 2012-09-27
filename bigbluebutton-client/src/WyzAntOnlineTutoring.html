@@ -6,9 +6,11 @@
                 <style type="text/css" media="screen">
                         #header{height:60px;background:url('images/header.png') repeat-x;}
                         #logo{margin:10px 0 0 5%;}
-                        html, body, #content    { height:100%; }
+                        html, body, #content    { height:100%;font-family: Tahoma;color:#4F4F4F;}
+                        #content{height:97%;}
                         body                                    { margin:0; padding:0; overflow:hidden; }
                         #altContent                             { /* style alt content */ }
+                        h1{border: medium none;color:#5F9C0C;font-size: 32px;font-weight: normal;margin: 5px 0;padding-bottom: 5px;text-align: left;}
                 </style>
                 <script type="text/javascript" src="swfobject/swfobject.js"></script>
                 <script type="text/javascript">
@@ -35,9 +37,14 @@
                                         <param name="quality" value="high" />
                                         <param name="bgcolor" value="#869ca7" />
                                 <!--<![endif]-->
-                                        <a href="http://www.adobe.com/go/getflashplayer">
-                                                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-                                        </a>
+                                        <div style="padding:0 0 0 20px;border-top:1px solid #477704;"> 
+                                          <h1>You need flashed installed to use online tutoring</h1>
+                                           
+                                          <a href="http://www.adobe.com/go/getflashplayer" target="_blank">
+                                              <img src="images/AdobeFlashPlayer.png" alt="Get Adobe Flash player" />
+                                          </a>
+                                          <div style="margin-top:10px;"><strong>refresh this page after you have installed flash to enter your lesson.</strong></div>
+                                        </div>
                                 <!--[if !IE]>-->
                                 </object>
                                 <!--<![endif]-->

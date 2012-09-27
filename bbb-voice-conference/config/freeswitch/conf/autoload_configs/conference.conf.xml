@@ -62,16 +62,16 @@
       <param name="muted-sound" value="conference/conf-muted.wav"/>
       <!-- File to play to acknowledge unmuted -->
       <param name="unmuted-sound" value="conference/conf-unmuted.wav"/>
-      <!-- File to play if you are alone in the conference -->
-      <param name="alone-sound" value="conference/conf-alone.wav"/>
+      <!-- File to play if you are alone in the conference
+      <param name="alone-sound" value="conference/conf-alone.wav"/>-->
       <!-- File to play endlessly (nobody will ever be able to talk) -->
       <!--<param name="perpetual-sound" value="perpetual.wav"/>-->
       <!-- File to play when you're alone (music on hold)-->
       <param name="moh-sound" value="$${hold_music}"/>
       <!-- File to play when you join the conference -->
-      <param name="enter-sound" value="tone_stream://%(200,0,500,600,700)"/>
+      <param name="enter-sound" value="conference/conf-welcome.wav"/>
       <!-- File to play when you leave the conference -->
-      <param name="exit-sound" value="tone_stream://%(500,0,300,200,100,50,25)"/>
+      <param name="exit-sound" value="conference/conf-goodbye.wav"/>
       <!-- File to play when you ae ejected from the conference -->
       <param name="kicked-sound" value="conference/conf-kicked.wav"/>
       <!-- File to play when the conference is locked -->
@@ -110,10 +110,12 @@
       <param name="sound-prefix" value="$${sounds_dir}/en/us/callie"/>
       <param name="muted-sound" value="conference/conf-muted.wav"/>
       <param name="unmuted-sound" value="conference/conf-unmuted.wav"/>
-      <param name="alone-sound" value="conference/conf-alone.wav"/>
-      <param name="moh-sound" value="$${hold_music}"/>
+      <!--<param name="alone-sound" value="conference/conf-alone.wav"/>-->
+      <!-- param name="moh-sound" value="$${hold_music}"/>
       <param name="enter-sound" value="tone_stream://%(200,0,500,600,700)"/>
-      <param name="exit-sound" value="tone_stream://%(500,0,300,200,100,50,25)"/>
+      <param name="exit-sound" value="tone_stream://%(500,0,300,200,100,50,25)"/-->
+      <param name="enter-sound" value="conference/conf-welcome.wav"/>
+      <param name="exit-sound" value="conference/conf-goodbye.wav"/>
       <param name="kicked-sound" value="conference/conf-kicked.wav"/>
       <param name="locked-sound" value="conference/conf-locked.wav"/>
       <param name="is-locked-sound" value="conference/conf-is-locked.wav"/>
@@ -135,10 +137,12 @@
       <param name="sound-prefix" value="$${sounds_dir}/en/us/callie"/>
       <param name="muted-sound" value="conference/conf-muted.wav"/>
       <param name="unmuted-sound" value="conference/conf-unmuted.wav"/>
-      <param name="alone-sound" value="conference/conf-alone.wav"/>
+      <!--<param name="alone-sound" value="conference/conf-alone.wav"/>-->
       <param name="moh-sound" value="$${hold_music}"/>
-      <param name="enter-sound" value="tone_stream://%(200,0,500,600,700)"/>
-      <param name="exit-sound" value="tone_stream://%(500,0,300,200,100,50,25)"/>
+      <!--<param name="enter-sound" value="tone_stream://%(200,0,500,600,700)"/>
+      <param name="exit-sound" value="tone_stream://%(500,0,300,200,100,50,25)"/>-->
+      <param name="enter-sound" value="conference/conf-welcome.wav"/>
+      <param name="exit-sound" value="conference/conf-goodbye.wav"/>
       <param name="kicked-sound" value="conference/conf-kicked.wav"/>
       <param name="locked-sound" value="conference/conf-locked.wav"/>
       <param name="is-locked-sound" value="conference/conf-is-locked.wav"/>
@@ -160,10 +164,10 @@
       <param name="sound-prefix" value="$${sounds_dir}/en/us/callie"/>
       <param name="muted-sound" value="conference/conf-muted.wav"/>
       <param name="unmuted-sound" value="conference/conf-unmuted.wav"/>
-      <param name="alone-sound" value="conference/conf-alone.wav"/>
+      <!--<param name="alone-sound" value="conference/conf-alone.wav"/>-->
       <param name="moh-sound" value="$${hold_music}"/>
-      <param name="enter-sound" value="tone_stream://%(200,0,500,600,700)"/>
-      <param name="exit-sound" value="tone_stream://%(500,0,300,200,100,50,25)"/>
+      <param name="enter-sound" value="conference/conf-welcome.wav"/>
+      <param name="exit-sound" value="conference/conf-goodbye.wav"/>
       <param name="kicked-sound" value="conference/conf-kicked.wav"/>
       <param name="locked-sound" value="conference/conf-locked.wav"/>
       <param name="is-locked-sound" value="conference/conf-is-locked.wav"/>
