@@ -1,0 +1,1063 @@
+Script started on Mon 01 Oct 2012 07:24:02 PM UTC
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ red[K[K[Kred5
+bash: red5: command not found
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ red5.sh
+bash: red5.sh: command not found
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ bash reed[K[Kd5.s h
+bash: red5.sh: No such file or directory
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ bash red5.shh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch red5.sh [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@s
+sh: Can't open red5.sh
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ 
+bash     red5     red5.sh  sh       
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ chmod red5. sh 777
+chmod: invalid mode: `red5.sh'
+Try `chmod --help' for more information.
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ chmod red5.ssh 777[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7red5.[1@s[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7red5[1@.[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7red[1@5[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C re[1@d[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C r[1@e[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cre[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[K[K[K[K
+chmod: cannot access `red5.sh': No such file or directory
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ ls
+[0m[01;34mbuild[0m         build.txt  [01;34mlib[0m     [01;34msrc[0m         [01;32mvm-build-debug.sh[0m
+[01;32mbuild.gradle[0m  check.txt  README  typescript  [01;32mvm-build.sh[0m
+[mfirstuser@bbb-vm-20120316-21:~/dev/bigbluebutton/bigbluebutton-apps$ cd ..
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton$ cd ..[3Plschmod 777 red5.shred5.sh 777[7Psh red5.sh
+--2012-10-01 19:28:04--  http://ubuntu.bigbluebutton.org/bigbluebutton.asc
+Resolving ubuntu.bigbluebutton.org... [sudo] password for firstuser: 134.117.48.101
+Connecting to ubuntu.bigbluebutton.org|134.117.48.101|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1195 (1.2K) [text/plain]
+Saving to: `STDOUT'
+
+ 0% [                                       ] 0           --.-K/s              100%[======================================>] 1,195       --.-K/s   in 0s      
+
+2012-10-01 19:28:04 (76.6 MB/s) - written to stdout [1195/1195]
+
+
+
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton$ sudo apt-get update
+[sudo] password for firstuser: 
+0% [Working]            Get:1 http://ubuntu.bigbluebutton.org bigbluebutton-lucid Release.gpg [198B]
+            91% [Waiting for headers] [Connecting to archive.canonical.com (91.189.92.150)]                                                                               Ign http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main Translation-en_US
+91% [Waiting for headers] [Connecting to archive.canonical.com (91.189.92.150)]                                                                               Hit http://us.archive.ubuntu.com lucid Release.gpg
+91% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Ign http://us.archive.ubuntu.com/ubuntu/ lucid/main Translation-en_US
+                                                                               Ign http://us.archive.ubuntu.com/ubuntu/ lucid/restricted Translation-en_US
+92% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Ign http://us.archive.ubuntu.com/ubuntu/ lucid/universe Translation-en_US
+                                                                               Ign http://us.archive.ubuntu.com/ubuntu/ lucid/multiverse Translation-en_US
+                                                                               Get:2 http://us.archive.ubuntu.com lucid-updates Release.gpg [198B]
+96% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Ign http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main Translation-en_US
+96% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Ign http://us.archive.ubuntu.com/ubuntu/ lucid-updates/restricted Translation-en_US
+97% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Ign http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe Translation-en_US
+97% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Ign http://us.archive.ubuntu.com/ubuntu/ lucid-updates/multiverse Translation-en_US
+97% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Get:3 http://ubuntu.bigbluebutton.org bigbluebutton-lucid Release [1,647B]
+                                                                               99% [Waiting for headers] [Waiting for headers] [Waiting for headers]                                                                     99% [3 Release gpgv 1,647B] [Waiting for headers] [Waiting for headers] [Waitin                                                                               Hit http://us.archive.ubuntu.com lucid Release
+99% [3 Release gpgv 1,647B] [Waiting for headers] [Waiting for headers] [Waitin                                                                               99% [Waiting for headers] [Waiting for headers] [Waiting for headers]                                                                     99% [Release gpgv 57.2kB] [Waiting for headers] [Waiting for headers] [Waiting 99% [Waiting for headers] [Waiting for headers] [Waiting for headers] [Waiting                                                                                Get:4 http://us.archive.ubuntu.com lucid-updates Release [58.3kB]
+5% [4 Release 1,102B/58.3kB 1%] [Waiting for headers] [Waiting for headers] [Wa                                                                               Get:5 http://security.ubuntu.com lucid-security Release.gpg [198B]
+31% [4 Release 17.0kB/58.3kB 29%] [Waiting for headers] [Waiting for headers] [                                                                               Ign http://security.ubuntu.com/ubuntu/ lucid-security/main Translation-en_US
+                                                                               Ign http://security.ubuntu.com/ubuntu/ lucid-security/restricted Translation-en_US
+31% [4 Release 17.0kB/58.3kB 29%] [Waiting for headers] [Waiting for headers] [                                                                               Ign http://ubuntu.bigbluebutton.org bigbluebutton-lucid/main Packages
+                                                                               31% [4 Release 17.0kB/58.3kB 29%] [Waiting for headers] [Waiting for headers]                                                                             Get:6 http://archive.canonical.com lucid Release.gpg [198B]
+                                                                             32% [4 Release 17.0kB/58.3kB 29%] [Waiting for headers] [Waiting for headers] [                                                                               Ign http://archive.canonical.com/ubuntu/ lucid/partner Translation-en_US
+                                                                               32% [4 Release 17.0kB/58.3kB 29%] [Waiting for headers] [Waiting for headers]                                                                             Ign http://ubuntu.bigbluebutton.org bigbluebutton-lucid/main Packages
+75% [4 Release 43.1kB/58.3kB 73%] [Waiting for headers] [Waiting for headers]                                                                             Ign http://security.ubuntu.com/ubuntu/ lucid-security/universe Translation-en_US
+                                                                             Ign http://security.ubuntu.com/ubuntu/ lucid-security/multiverse Translation-en_US
+                                                                             75% [4 Release 43.1kB/58.3kB 73%] [Waiting for headers] [Waiting for headers] [                                                                               Get:7 http://archive.canonical.com lucid Release [8,215B]
+                                                                               Get:8 http://security.ubuntu.com lucid-security Release [57.3kB]
+37% [4 Release 43.1kB/58.3kB 73%] [7 Release 1,180B/8,215B 14%] [8 Release 1,0559% [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3kB 11%] [Waiting for he                                                                               Get:9 http://ubuntu.bigbluebutton.org bigbluebutton-lucid/main Packages [4,983B]
+57% [4 Release gpgv 58.3kB] [Waiting for headers] [7 Release 6,972B/8,215B 84%]60% [4 Release gpgv 58.3kB] [Waiting for headers] [7 Release 6,972B/8,215B 84%]60% [Waiting for headers] [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3k60% [9 Packages gzip 0B] [Waiting for headers] [7 Release 6,972B/8,215B 84%] [860% [Waiting for headers] [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3k                                                                               Hit http://us.archive.ubuntu.com lucid/main Packages
+60% [Waiting for headers] [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3k                                                                               Hit http://us.archive.ubuntu.com lucid/restricted Packages
+60% [Waiting for headers] [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3k                                                                               Hit http://us.archive.ubuntu.com lucid/main Sources
+60% [Waiting for headers] [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3k                                                                               Hit http://us.archive.ubuntu.com lucid/restricted Sources
+60% [Waiting for headers] [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3k                                                                               Hit http://us.archive.ubuntu.com lucid/universe Packages
+60% [Waiting for headers] [7 Release 6,972B/8,215B 84%] [8 Release 6,849B/57.3k                                                                               64% [Waiting for headers] [8 Release 11.2kB/57.3kB 19%]                                                       67% [7 Release gpgv 8,215B] [Waiting for headers] [8 Release 14.1kB/57.3kB 24%]                                                                               Hit http://us.archive.ubuntu.com lucid/universe Sources
+                                                                               Hit http://us.archive.ubuntu.com lucid/multiverse Packages
+68% [7 Release gpgv 8,215B] [Waiting for headers] [8 Release 15.5kB/57.3kB 27%]                                                                               Hit http://us.archive.ubuntu.com lucid/multiverse Sources
+68% [7 Release gpgv 8,215B] [Waiting for headers] [8 Release 15.5kB/57.3kB 27%]                                                                               Get:10 http://us.archive.ubuntu.com lucid-updates/main Packages [645kB]
+11% [7 Release gpgv 8,215B] [10 Packages 1,065B/645kB 0%] [8 Release 15.5kB/57.                                                                               14% [10 Packages 21.3kB/645kB 3%] [8 Release 15.5kB/57.3kB 27%]                                                               Get:11 http://archive.canonical.com lucid/partner Packages [13.6kB]
+                                                               25% [10 Packages 93.7kB/645kB 14%] [11 Packages 1,144B/13.6kB 8%] [8 Release 32                                                                               40% [10 Packages 172kB/645kB 26%] [8 Release 57.3kB/57.3kB 100%]                                                                40% [10 Packages 172kB/645kB 26%]                                 40% [8 Release gpgv 57.3kB] [10 Packages 172kB/645kB 26%] [Waiting for headers]40% [11 Packages bzip2 0B] [8 Release gpgv 57.3kB] [10 Packages 172kB/645kB 26%                                                                               42% [11 Packages bzip2 0B] [10 Packages 189kB/645kB 29%] [Waiting for headers]                                                                              43% [10 Packages 198kB/645kB 30%] [Waiting for headers] [Waiting for headers]                                                                             Get:12 http://archive.canonical.com lucid/partner Sources [6,734B]
+                                                                             50% [10 Packages 253kB/645kB 39%] [12 Sources 1,145B/6,734B 17%] [Waiting for h                                                                               50% [10 Packages 253kB/645kB 39%] [Waiting for headers]                                                       50% [12 Sources bzip2 0B] [10 Packages 253kB/645kB 39%] [Waiting for headers]                                                                             50% [10 Packages 253kB/645kB 39%] [Waiting for headers]                                                       Get:13 http://security.ubuntu.com lucid-security/main Packages [451kB]
+                                                       33% [10 Packages 265kB/645kB 41%] [13 Packages 1,046B/451kB 0%]77% [10 Packages 634kB/645kB 98%] [13 Packages 185kB/451kB 41%]                                                               78% [13 Packages 185kB/451kB 41%]                                 78% [10 Packages bzip2 0B] [13 Packages 185kB/451kB 41%]                                                        Get:14 http://us.archive.ubuntu.com lucid-updates/restricted Packages [4,630B]
+                                                        78% [10 Packages bzip2 0B] [14 Packages 0B/4,630B 0%] [13 Packages 185kB/451kB                                                                                78% [10 Packages bzip2 0B] [13 Packages 185kB/451kB 41%]                                                        Get:15 http://us.archive.ubuntu.com lucid-updates/main Sources [229kB]
+                                                        66% [10 Packages bzip2 0B] [15 Sources 0B/229kB 0%] [13 Packages 185kB/451kB 41                                                                               Get:16 http://us.archive.ubuntu.com lucid-updates/restricted Sources [2,196B]
+87% [10 Packages bzip2 2,691kB] [16 Sources 70B/2,196B 3%] [13 Packages 266kB/4                                                                               Get:17 http://us.archive.ubuntu.com lucid-updates/universe Packages [277kB]
+73% [10 Packages bzip2 2,691kB] [17 Packages 1,835B/277kB 0%] [13 Packages 266k                                                                               91% [17 Packages 231kB/277kB 83%] [13 Packages 351kB/451kB 77%]                                                               91% [14 Packages bzip2 0B] [17 Packages 231kB/277kB 83%] [13 Packages 351kB/451                                                                               92% [17 Packages 238kB/277kB 85%] [13 Packages 364kB/451kB 80%]                                                               92% [15 Sources bzip2 0B] [17 Packages 239kB/277kB 86%] [13 Packages 364kB/451k                                                                               Get:18 http://us.archive.ubuntu.com lucid-updates/universe Sources [104kB]
+89% [15 Sources bzip2 0B] [18 Sources 2,016B/104kB 1%] [13 Packages 364kB/451kB                                                                               96% [18 Sources 104kB/104kB 100%] [13 Packages 383kB/451kB 85%]                                                               Get:19 http://us.archive.ubuntu.com lucid-updates/multiverse Packages [11.5kB]
+                                                               96% [19 Packages 8,154B/11.5kB 71%] [13 Packages 386kB/451kB 85%]                                                                 96% [16 Sources bzip2 0B] [19 Packages 8,154B/11.5kB 71%] [13 Packages 386kB/45                                                                               97% [19 Packages 8,154B/11.5kB 71%] [13 Packages 402kB/451kB 89%]                                                                 97% [17 Packages bzip2 0B] [19 Packages 8,154B/11.5kB 71%] [13 Packages 402kB/4                                                                               Get:20 http://us.archive.ubuntu.com lucid-updates/multiverse Sources [5,821B]
+97% [17 Packages bzip2 0B] [20 Sources 655B/5,821B 11%] [13 Packages 402kB/451k                                                                               97% [17 Packages bzip2 0B] [13 Packages 402kB/451kB 89%]                                                        99% [13 Packages 443kB/451kB 98%]                                 99% [18 Sources bzip2 0B] [13 Packages 447kB/451kB 99%]                                                       99% [18 Sources bzip2 0B]99% [Waiting for headers]                         99% [19 Packages bzip2 0B] [Waiting for headers]                                                99% [Waiting for headers]                         99% [20 Sources bzip2 0B] [Waiting for headers]                                               99% [Waiting for headers]                         99% [13 Packages bzip2 0B] [Waiting for headers]                                                Get:21 http://security.ubuntu.com lucid-security/restricted Packages [2,867B]
+                                                99% [13 Packages bzip2 1,171kB] [21 Packages 1,050B/2,867B 36%]                                                               99% [13 Packages bzip2 1,180kB] [Waiting for headers]                                                     Get:22 http://security.ubuntu.com lucid-security/main Sources [130kB]
+                                                     93% [13 Packages bzip2 1,266kB] [22 Sources 1,046B/130kB 0%]                                                            96% [22 Sources 60.4kB/130kB 46%]                                 96% [21 Packages bzip2 0B] [22 Sources 61.9kB/130kB 47%]                                                        97% [22 Sources 73.4kB/130kB 56%]                                 99% [Working]             99% [22 Sources bzip2 0B]                         Get:23 http://security.ubuntu.com lucid-security/restricted Sources [1,267B]
+                         99% [22 Sources bzip2 0B] [23 Sources 0B/1,267B 0%]                                                   99% [22 Sources bzip2 0B]                         Get:24 http://security.ubuntu.com lucid-security/universe Packages [135kB]
+                         93% [22 Sources bzip2 0B] [24 Packages 0B/135kB 0%]                                                   94% [24 Packages 19.6kB/135kB 14%]                                  94% [23 Sources bzip2 0B] [24 Packages 19.6kB/135kB 14%]                                                        94% [24 Packages 21.1kB/135kB 15%]                                  99% [Working]             99% [24 Packages bzip2 0B]                          Get:25 http://security.ubuntu.com lucid-security/universe Sources [42.0kB]
+                          98% [24 Packages bzip2 0B] [25 Sources 0B/42.0kB 0%]                                                    99% [25 Sources 36.9kB/42.0kB 87%]                                  Get:26 http://security.ubuntu.com lucid-security/multiverse Packages [5,372B]
+                                  99% [26 Packages 4,622B/5,372B 86%]                                   Get:27 http://security.ubuntu.com lucid-security/multiverse Sources [2,321B]
+                                   99% [27 Sources 0B/2,321B 0%]                             99% [Working]             99% [25 Sources bzip2 0B]                         99% [Working]             99% [26 Packages bzip2 0B]                          99% [Working]             99% [27 Sources bzip2 0B]                         100% [Working]              Fetched 2,201kB in 3s (708kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 17%Reading package lists... 17%Reading package lists... 18%Reading package lists... 18%Reading package lists... 67%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+firstuser@bbb-vm-20120316-21:~/dev/bigbluebutton$ sudo apt-get dist-upgrrade[K[K[K[Kade
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  icedtea-netx libpcsclite1 linux-image-2.6.32-43-virtual
+The following packages will be upgraded:
+  apt apt-utils bbb-apps bbb-apps-deskshare bbb-apps-sip bbb-apps-video
+  bbb-client bbb-common bbb-config bbb-demo bbb-openoffice-headless
+  bbb-playback-slides bbb-record-core bbb-web bind9-host ca-certificates-java
+  cron dhcp3-client dhcp3-common dpkg dpkg-dev ghostscript gnupg gnupg-curl
+  gpgv icedtea-6-jre-cacao imagemagick insserv krb5-multidev libavcodec52
+  libavformat52 libavutil49 libbind9-60 libcups2 libcupsimage2 libdbus-1-3
+  libdns64 libexpat1 libexpat1-dev libfreetype6 libfreetype6-dev libgcrypt11
+  libgl1-mesa-dri libgl1-mesa-glx libgnutls26 libgs8 libgssapi-krb5-2
+  libgssrpc4 libisc60 libisccc60 libisccfg60 libk5crypto3 libkadm5clnt-mit7
+  libkadm5srv-mit7 libkdb5-4 libkrb5-3 libkrb5-dev libkrb5support0 liblwres60
+  libmagickcore2 libmagickcore2-extra libmagickwand2 libnss3-1d libpng12-0
+  libpostproc51 libraptor1 libsmbclient libssl-dev libssl0.9.8 libswscale0
+  libtasn1-3 libtiff4 libwbclient0 libxml2 libxml2-dev linux-firmware
+  linux-image-virtual linux-libc-dev nginx openjdk-6-jdk openjdk-6-jre
+  openjdk-6-jre-headless openjdk-6-jre-lib openoffice.org openoffice.org-base
+  openoffice.org-base-core openoffice.org-calc openoffice.org-common
+  openoffice.org-core openoffice.org-draw openoffice.org-emailmerge
+  openoffice.org-filter-binfilter openoffice.org-filter-mobiledev
+  openoffice.org-impress openoffice.org-java-common openoffice.org-math
+  openoffice.org-officebean openoffice.org-report-builder-bin
+  openoffice.org-style-galaxy openoffice.org-writer openssl procps
+  python-software-properties python-uno red5 samba samba-common
+  samba-common-bin sudo ttf-opensymbol tzdata tzdata-java uno-libs3 ure
+114 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 292MB of archives.
+After this operation, 28.4MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+0% [Working]            Get:1 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-apps 0.80ubuntu35 [2,239kB]
+            0% [Waiting for headers] [1 bbb-apps 4,025B/2,239kB 0%]                                                       Get:2 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main dpkg 1.15.5.6ubuntu4.6 [2,191kB]
+                                                       0% [2 dpkg 0B/2,191kB 0%] [1 bbb-apps 4,025B/2,239kB 0%]                                                        0% [2 dpkg 402kB/2,191kB 18%] [1 bbb-apps 173kB/2,239kB 7%]                                                           0% [2 dpkg 679kB/2,191kB 30%] [1 bbb-apps 615kB/2,239kB 27%]                                                            0% [2 dpkg 868kB/2,191kB 39%] [1 bbb-apps 1,284kB/2,239kB 57%]                                                              0% [2 dpkg 1,016kB/2,191kB 46%] [1 bbb-apps 1,795kB/2,239kB 80%]1% [2 dpkg 1,358kB/2,191kB 61%] [1 bbb-apps 1,798kB/2,239kB 80%]1% [2 dpkg 2,189kB/2,191kB 99%] [1 bbb-apps 1,808kB/2,239kB 80%]                                                                1% [1 bbb-apps 1,808kB/2,239kB 80%]                                   Get:3 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main linux-image-2.6.32-43-virtual 2.6.32-43.97 [12.1MB]
+                                   1% [3 linux-image-2.6.32-43-virtual 0B/12.1MB 0%] [1 bbb-apps 1,808kB/2,239kB 81% [3 linux-image-2.6.32-43-virtual 871kB/12.1MB 7%] [1 bbb-apps 1,815kB/2,239k1% [3 linux-image-2.6.32-43-virtual 1,744kB/12.1MB 14%] [1 bbb-apps 1,821kB/2,22% [3 linux-image-2.6.32-43-virtual 2,626kB/12.1MB 21%] [1 bbb-apps 1,827kB/2,22% [3 linux-image-2.6.32-43-virtual 3,467kB/12.1MB 28%] [1 bbb-apps 1,830kB/2,22% [3 linux-image-2.6.32-43-virtual 4,307kB/12.1MB 35%] [1 bbb-apps 1,834kB/2,23% [3 linux-image-2.6.32-43-virtual 5,237kB/12.1MB 43%] [1 bbb-apps 1,837kB/2,23% [3 linux-image-2.6.32-43-virtual 6,127kB/12.1MB 50%] [1 bbb-apps 1,840kB/2,23% [3 linux-image-2.6.32-43-virtual 7,028kB/12.1MB 57%] [1 bbb-apps 1,842kB/2,24% [3 linux-image-2.6.32-43-virtual 7,970kB/12.1MB 65%] [1 bbb-apps 1,844kB/2,24% [3 linux-image-2.6.32-43-virtual 8,859kB/12.1MB 73%] [1 bbb-apps 1,846kB/2,24% [3 linux-image-2.6.32-43-virtual 9,763kB/12.1MB 80%] [1 bbb-apps 1,847kB/2,24% [3 linux-image-2.6.32-43-virtual 9,812kB/12.1MB 80%]       1,491kB/s 3min 6s                                                                               Get:4 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-apps-deskshare 0.80ubuntu37 [5,766kB]
+4% [3 linux-image-2.6.32-43-virtual 9,824kB/12.1MB 81%] [4 bbb-apps-deskshare 05% [3 linux-image-2.6.32-43-virtual 10.7MB/12.1MB 88%] [4 bbb-apps-deskshare 155% [3 linux-image-2.6.32-43-virtual 11.6MB/12.1MB 95%] [4 bbb-apps-deskshare 155% [4 bbb-apps-deskshare 157kB/5,766kB 2%]                    1,491kB/s 3min 4s                                                                               Get:5 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-emailmerge 1:3.2.0-7ubuntu4.4 [10.4kB]
+5% [5 openoffice.org-emailmerge 0B/10.4kB 0%] [4 bbb-apps-deskshare 157kB/5,7665% [4 bbb-apps-deskshare 157kB/5,766kB 2%]                    1,491kB/s 3min 4s                                                                               Get:6 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main ure 1.6.0+OOo3.2.0-7ubuntu4.4 [1,223kB]
+                                                                               5% [6 ure 0B/1,223kB 0%] [4 bbb-apps-deskshare 157kB/5,766kB 2%]                                                                6% [6 ure 906kB/1,223kB 74%] [4 bbb-apps-deskshare 162kB/5,766kB 2%]                                                                    6% [4 bbb-apps-deskshare 162kB/5,766kB 2%]                    1,491kB/s 3min 3s                                                                               Get:7 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main uno-libs3 1.6.0+OOo3.2.0-7ubuntu4.4 [2,333kB]
+                                                                               6% [7 uno-libs3 0B/2,333kB 0%] [4 bbb-apps-deskshare 162kB/5,766kB 2%]                                                                      6% [7 uno-libs3 888kB/2,333kB 38%] [4 bbb-apps-deskshare 162kB/5,766kB 2%]                                                                          6% [7 uno-libs3 1,743kB/2,333kB 74%] [4 bbb-apps-deskshare 162kB/5,766kB 2%]6% [7 uno-libs3 2,089kB/2,333kB 89%] [4 bbb-apps-deskshare 165kB/5,766kB 2%]                                                                            6% [4 bbb-apps-deskshare 171kB/5,766kB 2%]                   1,794kB/s 2min 31s                                                                               Get:8 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libxml2-dev 2.7.6.dfsg-1ubuntu1.6 [754kB]
+                                                                               6% [8 libxml2-dev 0B/754kB 0%] [4 bbb-apps-deskshare 171kB/5,766kB 2%]                                                                      7% [4 bbb-apps-deskshare 171kB/5,766kB 2%]                   1,794kB/s 2min 31s                                                                               Get:9 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libxml2 2.7.6.dfsg-1ubuntu1.6 [830kB]
+                                                                               7% [9 libxml2 0B/830kB 0%] [4 bbb-apps-deskshare 171kB/5,766kB 2%]                                                                  7% [9 libxml2 504kB/830kB 60%] [4 bbb-apps-deskshare 171kB/5,766kB 2%]                                                                      7% [4 bbb-apps-deskshare 171kB/5,766kB 2%]                   1,794kB/s 2min 30s                                                                               Get:10 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-writer 1:3.2.0-7ubuntu4.4 [6,092kB]
+7% [10 openoffice.org-writer 0B/6,092kB 0%] [4 bbb-apps-deskshare 171kB/5,766kB7% [10 openoffice.org-writer 803kB/6,092kB 13%] [4 bbb-apps-deskshare 171kB/5,78% [10 openoffice.org-writer 1,992kB/6,092kB 32%] [4 bbb-apps-deskshare 174kB/58% [10 openoffice.org-writer 2,324kB/6,092kB 38%] [4 bbb-apps-deskshare 186kB/58% [10 openoffice.org-writer 2,885kB/6,092kB 47%] [4 bbb-apps-deskshare 186kB/58% [10 openoffice.org-writer 3,847kB/6,092kB 63%] [4 bbb-apps-deskshare 186kB/59% [10 openoffice.org-writer 4,585kB/6,092kB 75%] [4 bbb-apps-deskshare 186kB/59% [10 openoffice.org-writer 5,294kB/6,092kB 86%] [4 bbb-apps-deskshare 186kB/59% [4 bbb-apps-deskshare 186kB/5,766kB 3%]                   1,794kB/s 2min 27s                                                                               Get:11 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-calc 1:3.2.0-7ubuntu4.4 [4,654kB]
+9% [11 openoffice.org-calc 0B/4,654kB 0%] [4 bbb-apps-deskshare 186kB/5,766kB 39% [11 openoffice.org-calc 621kB/4,654kB 13%] [4 bbb-apps-deskshare 187kB/5,76610% [11 openoffice.org-calc 1,267kB/4,654kB 27%] [4 bbb-apps-deskshare 210kB/5,10% [11 openoffice.org-calc 1,946kB/4,654kB 41%] [4 bbb-apps-deskshare 245kB/5,10% [11 openoffice.org-calc 2,497kB/4,654kB 53%] [4 bbb-apps-deskshare 286kB/5,10% [11 openoffice.org-calc 3,193kB/4,654kB 68%] [4 bbb-apps-deskshare 332kB/5,10% [11 openoffice.org-calc 3,782kB/4,654kB 81%] [4 bbb-apps-deskshare 365kB/5,11% [11 openoffice.org-calc 4,291kB/4,654kB 92%] [4 bbb-apps-deskshare 416kB/5,11% [4 bbb-apps-deskshare 416kB/5,766kB 7%]                  1,455kB/s 2min 58s                                                                               Get:12 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-base 1:3.2.0-7ubuntu4.4 [2,076kB]
+11% [12 openoffice.org-base 0B/2,076kB 0%] [4 bbb-apps-deskshare 416kB/5,766kB 11% [12 openoffice.org-base 676kB/2,076kB 32%] [4 bbb-apps-deskshare 469kB/5,7611% [12 openoffice.org-base 1,100kB/2,076kB 52%] [4 bbb-apps-deskshare 520kB/5,11% [12 openoffice.org-base 1,621kB/2,076kB 78%] [4 bbb-apps-deskshare 574kB/5,12% [12 openoffice.org-base 2,019kB/2,076kB 97%] [4 bbb-apps-deskshare 629kB/5,12% [4 bbb-apps-deskshare 640kB/5,766kB 11%]                 1,455kB/s 2min 56s                                                                               Get:13 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-base-core 1:3.2.0-7ubuntu4.4 [592kB]
+12% [13 openoffice.org-base-core 0B/592kB 0%] [4 bbb-apps-deskshare 640kB/5,76612% [13 openoffice.org-base-core 246kB/592kB 41%] [4 bbb-apps-deskshare 678kB/512% [13 openoffice.org-base-core 486kB/592kB 82%] [4 bbb-apps-deskshare 678kB/512% [4 bbb-apps-deskshare 679kB/5,766kB 11%]                  1,063kB/s 4min 1s                                                                               Get:14 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main icedtea-6-jre-cacao 6b24-1.11.4-1ubuntu0.10.04.1 [437kB]
+12% [14 icedtea-6-jre-cacao 0B/437kB 0%] [4 bbb-apps-deskshare 679kB/5,766kB 1112% [4 bbb-apps-deskshare 727kB/5,766kB 12%]                  1,063kB/s 4min 0s                                                                               Get:15 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openjdk-6-jre-headless 6b24-1.11.4-1ubuntu0.10.04.1 [26.9MB]
+12% [15 openjdk-6-jre-headless 0B/26.9MB 0%] [4 bbb-apps-deskshare 727kB/5,766k12% [15 openjdk-6-jre-headless 490kB/26.9MB 1%] [4 bbb-apps-deskshare 785kB/5,712% [15 openjdk-6-jre-headless 872kB/26.9MB 3%] [4 bbb-apps-deskshare 833kB/5,712% [15 openjdk-6-jre-headless 1,181kB/26.9MB 4%] [4 bbb-apps-deskshare 868kB/513% [15 openjdk-6-jre-headless 1,585kB/26.9MB 5%] [4 bbb-apps-deskshare 924kB/513% [15 openjdk-6-jre-headless 2,058kB/26.9MB 7%] [4 bbb-apps-deskshare 998kB/513% [15 openjdk-6-jre-headless 2,471kB/26.9MB 9%] [4 bbb-apps-deskshare 1,082kB13% [15 openjdk-6-jre-headless 2,968kB/26.9MB 11%] [4 bbb-apps-deskshare 1,202k13% [15 openjdk-6-jre-headless 3,361kB/26.9MB 12%] [4 bbb-apps-deskshare 1,327k13% [15 openjdk-6-jre-headless 3,793kB/26.9MB 14%] [4 bbb-apps-deskshare 1,516k14% [15 openjdk-6-jre-headless 4,249kB/26.9MB 15%] [4 bbb-apps-deskshare 1,761k14% [15 openjdk-6-jre-headless 4,640kB/26.9MB 17%] [4 bbb-apps-deskshare 2,032k14% [15 openjdk-6-jre-headless 4,866kB/26.9MB 18%] [4 bbb-apps-deskshare 2,104k14% [15 openjdk-6-jre-headless 5,251kB/26.9MB 19%] [4 bbb-apps-deskshare 2,110k14% [15 openjdk-6-jre-headless 5,622kB/26.9MB 20%] [4 bbb-apps-deskshare 2,114k14% [15 openjdk-6-jre-headless 5,855kB/26.9MB 21%] [4 bbb-apps-deskshare 2,117k15% [15 openjdk-6-jre-headless 6,269kB/26.9MB 23%] [4 bbb-apps-deskshare 2,119k15% [15 openjdk-6-jre-headless 6,779kB/26.9MB 25%] [4 bbb-apps-deskshare 2,236k15% [15 openjdk-6-jre-headless 7,078kB/26.9MB 26%] [4 bbb-apps-deskshare 2,295k15% [15 openjdk-6-jre-headless 7,426kB/26.9MB 27%] [4 bbb-apps-deskshare 2,498k15% [15 openjdk-6-jre-headless 7,742kB/26.9MB 28%] [4 bbb-apps-deskshare 2,747k16% [15 openjdk-6-jre-headless 8,179kB/26.9MB 30%] [4 bbb-apps-deskshare 3,084k16% [15 openjdk-6-jre-headless 8,496kB/26.9MB 31%] [4 bbb-apps-deskshare 3,352k16% [15 openjdk-6-jre-headless 8,890kB/26.9MB 33%] [4 bbb-apps-deskshare 3,669k16% [15 openjdk-6-jre-headless 9,331kB/26.9MB 34%] [4 bbb-apps-deskshare 4,018k17% [15 openjdk-6-jre-headless 9,738kB/26.9MB 36%] [4 bbb-apps-deskshare 4,405k17% [15 openjdk-6-jre-headless 10.1MB/26.9MB 37%] [4 bbb-apps-deskshare 4,813kB17% [15 openjdk-6-jre-headless 10.5MB/26.9MB 39%] [4 bbb-apps-deskshare 5,200kB17% [15 openjdk-6-jre-headless 10.9MB/26.9MB 40%] [4 bbb-apps-deskshare 5,620kB17% [15 openjdk-6-jre-headless 11.1MB/26.9MB 41%]               980kB/s 4min 4s                                                                               Get:16 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-apps-sip 0.80ubuntu17 [3,187kB]
+17% [15 openjdk-6-jre-headless 11.1MB/26.9MB 41%] [16 bbb-apps-sip 0B/3,187kB 018% [15 openjdk-6-jre-headless 11.4MB/26.9MB 42%] [16 bbb-apps-sip 439kB/3,187k18% [15 openjdk-6-jre-headless 11.8MB/26.9MB 43%] [16 bbb-apps-sip 496kB/3,187k18% [15 openjdk-6-jre-headless 12.5MB/26.9MB 46%] [16 bbb-apps-sip 676kB/3,187k18% [15 openjdk-6-jre-headless 13.1MB/26.9MB 48%] [16 bbb-apps-sip 795kB/3,187k19% [15 openjdk-6-jre-headless 13.5MB/26.9MB 50%] [16 bbb-apps-sip 1,103kB/3,1819% [15 openjdk-6-jre-headless 13.9MB/26.9MB 51%] [16 bbb-apps-sip 1,470kB/3,1819% [15 openjdk-6-jre-headless 14.3MB/26.9MB 53%] [16 bbb-apps-sip 1,817kB/3,1819% [15 openjdk-6-jre-headless 14.7MB/26.9MB 54%] [16 bbb-apps-sip 2,201kB/3,1820% [15 openjdk-6-jre-headless 15.1MB/26.9MB 56%] [16 bbb-apps-sip 2,574kB/3,1820% [15 openjdk-6-jre-headless 15.5MB/26.9MB 57%] [16 bbb-apps-sip 2,973kB/3,1820% [15 openjdk-6-jre-headless 15.7MB/26.9MB 58%]            1,505kB/s 2min 34s                                                                               Get:17 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-apps-video 0.80ubuntu16 [984kB]
+20% [15 openjdk-6-jre-headless 15.7MB/26.9MB 58%] [17 bbb-apps-video 0B/984kB 020% [15 openjdk-6-jre-headless 16.2MB/26.9MB 60%] [17 bbb-apps-video 411kB/984k21% [15 openjdk-6-jre-headless 16.6MB/26.9MB 61%] [17 bbb-apps-video 848kB/984k21% [15 openjdk-6-jre-headless 16.7MB/26.9MB 62%]            1,505kB/s 2min 32s                                                                               Get:18 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-client 0.80ubuntu286 [5,224kB]
+21% [15 openjdk-6-jre-headless 16.7MB/26.9MB 62%] [18 bbb-client 0B/5,224kB 0%]21% [15 openjdk-6-jre-headless 17.0MB/26.9MB 63%] [18 bbb-client 476kB/5,224kB 21% [15 openjdk-6-jre-headless 17.4MB/26.9MB 64%] [18 bbb-client 767kB/5,224kB 22% [15 openjdk-6-jre-headless 18.0MB/26.9MB 67%] [18 bbb-client 768kB/5,224kB 22% [15 openjdk-6-jre-headless 18.6MB/26.9MB 69%] [18 bbb-client 971kB/5,224kB 22% [15 openjdk-6-jre-headless 19.3MB/26.9MB 71%] [18 bbb-client 1,182kB/5,224k22% [15 openjdk-6-jre-headless 19.7MB/26.9MB 73%] [18 bbb-client 1,568kB/5,224k23% [15 openjdk-6-jre-headless 20.1MB/26.9MB 74%] [18 bbb-client 1,990kB/5,224k23% [15 openjdk-6-jre-headless 20.5MB/26.9MB 76%] [18 bbb-client 2,367kB/5,224k23% [15 openjdk-6-jre-headless 20.9MB/26.9MB 77%] [18 bbb-client 2,735kB/5,224k23% [15 openjdk-6-jre-headless 21.3MB/26.9MB 79%] [18 bbb-client 3,124kB/5,224k24% [15 openjdk-6-jre-headless 21.7MB/26.9MB 80%] [18 bbb-client 3,525kB/5,224k24% [15 openjdk-6-jre-headless 22.0MB/26.9MB 81%] [18 bbb-client 3,832kB/5,224k24% [15 openjdk-6-jre-headless 22.4MB/26.9MB 83%] [18 bbb-client 4,226kB/5,224k24% [15 openjdk-6-jre-headless 22.8MB/26.9MB 84%] [18 bbb-client 4,669kB/5,224k25% [15 openjdk-6-jre-headless 22.9MB/26.9MB 85%] [18 bbb-client 4,927kB/5,224k25% [15 openjdk-6-jre-headless 23.5MB/26.9MB 87%] [18 bbb-client 4,928kB/5,224k25% [15 openjdk-6-jre-headless 24.1MB/26.9MB 89%] [18 bbb-client 5,102kB/5,224k25% [15 openjdk-6-jre-headless 24.7MB/26.9MB 91%] [18 bbb-client 5,224kB/5,224k                                                                               Get:19 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-common 0.80ubuntu99 [890kB]
+25% [15 openjdk-6-jre-headless 24.8MB/26.9MB 92%] [19 bbb-common 975B/890kB 0%]26% [15 openjdk-6-jre-headless 25.2MB/26.9MB 93%] [19 bbb-common 430kB/890kB 4826% [15 openjdk-6-jre-headless 25.6MB/26.9MB 95%] [19 bbb-common 768kB/890kB 86                                                                               Get:20 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-openoffice-headless 0.80ubuntu2 [3,112B]
+26% [15 openjdk-6-jre-headless 25.8MB/26.9MB 95%] [20 bbb-openoffice-headless 7                                                                               Get:21 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-web 0.80ubuntu107 [34.2MB]
+26% [15 openjdk-6-jre-headless 25.8MB/26.9MB 95%] [21 bbb-web 1,673B/34.2MB 0%]                                                                               26% [15 openjdk-6-jre-headless 26.1MB/26.9MB 97%] [21 bbb-web 387kB/34.2MB 1%]27% [15 openjdk-6-jre-headless 26.5MB/26.9MB 98%] [21 bbb-web 717kB/34.2MB 2%]                                                                              27% [21 bbb-web 1,085kB/34.2MB 3%]                           1,449kB/s 2min 26s                                                                               Get:22 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openjdk-6-jre-lib 6b24-1.11.4-1ubuntu0.10.04.1 [5,796kB]
+                                                                               27% [22 openjdk-6-jre-lib 0B/5,796kB 0%] [21 bbb-web 1,085kB/34.2MB 3%]                                                                       27% [22 openjdk-6-jre-lib 327kB/5,796kB 5%] [21 bbb-web 1,496kB/34.2MB 4%]                                                                          27% [22 openjdk-6-jre-lib 661kB/5,796kB 11%] [21 bbb-web 1,896kB/34.2MB 5%]                                                                           28% [22 openjdk-6-jre-lib 1,097kB/5,796kB 18%] [21 bbb-web 2,329kB/34.2MB 6%]28% [22 openjdk-6-jre-lib 1,423kB/5,796kB 24%] [21 bbb-web 2,777kB/34.2MB 8%]28% [22 openjdk-6-jre-lib 1,739kB/5,796kB 29%] [21 bbb-web 3,166kB/34.2MB 9%]                                                                             28% [22 openjdk-6-jre-lib 2,049kB/5,796kB 35%] [21 bbb-web 3,552kB/34.2MB 10%]28% [22 openjdk-6-jre-lib 2,338kB/5,796kB 40%] [21 bbb-web 3,797kB/34.2MB 11%]29% [22 openjdk-6-jre-lib 2,719kB/5,796kB 46%] [21 bbb-web 3,803kB/34.2MB 11%]29% [22 openjdk-6-jre-lib 3,434kB/5,796kB 59%] [21 bbb-web 4,042kB/34.2MB 11%]29% [22 openjdk-6-jre-lib 3,970kB/5,796kB 68%] [21 bbb-web 4,120kB/34.2MB 12%]29% [22 openjdk-6-jre-lib 4,447kB/5,796kB 76%] [21 bbb-web 4,340kB/34.2MB 12%]30% [22 openjdk-6-jre-lib 4,820kB/5,796kB 83%] [21 bbb-web 4,716kB/34.2MB 13%]30% [22 openjdk-6-jre-lib 5,144kB/5,796kB 88%] [21 bbb-web 5,075kB/34.2MB 14%]30% [22 openjdk-6-jre-lib 5,412kB/5,796kB 93%] [21 bbb-web 5,395kB/34.2MB 15%]30% [22 openjdk-6-jre-lib 5,729kB/5,796kB 98%] [21 bbb-web 5,742kB/34.2MB 16%]                                                                              Get:23 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main ca-certificates-java 20100406ubuntu1.1 [101kB]
+                                                                              30% [23 ca-certificates-java 718B/101kB 0%] [21 bbb-web 5,886kB/34.2MB 17%]                                                                           Get:24 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main tzdata-java 2012e-0ubuntu0.10.04 [147kB]
+                                                                           30% [24 tzdata-java 78B/147kB 0%] [21 bbb-web 5,992kB/34.2MB 17%]                                                                 31% [21 bbb-web 6,146kB/34.2MB 17%]                          1,417kB/s 2min 22s                                                                               Get:25 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main tzdata 2012e-0ubuntu0.10.04 [684kB]
+31% [25 tzdata 0B/684kB 0%] [21 bbb-web 6,147kB/34.2MB 17%]  1,417kB/s 2min 22s                                                                               31% [25 tzdata 322kB/684kB 47%] [21 bbb-web 6,607kB/34.2MB 19%]31% [25 tzdata 566kB/684kB 82%] [21 bbb-web 7,046kB/34.2MB 20%]                                                               31% [21 bbb-web 7,178kB/34.2MB 20%]                          1,417kB/s 2min 20s                                                                               Get:26 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgcrypt11 1.4.4-5ubuntu2.1 [254kB]
+                                                                               31% [26 libgcrypt11 0B/254kB 0%] [21 bbb-web 7,178kB/34.2MB 20%]                                                                31% [26 libgcrypt11 230kB/254kB 90%] [21 bbb-web 7,515kB/34.2MB 21%]                                                                    31% [21 bbb-web 7,515kB/34.2MB 21%]                          1,417kB/s 2min 20s                                                                               Get:27 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libtasn1-3 2.4-1ubuntu0.1 [45.9kB]
+                                                                               31% [27 libtasn1-3 0B/45.9kB 0%] [21 bbb-web 7,515kB/34.2MB 21%]                                                                31% [21 bbb-web 7,651kB/34.2MB 22%]                          1,417kB/s 2min 20s                                                                               Get:28 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgnutls26 2.8.5-2ubuntu0.2 [384kB]
+                                                                               31% [28 libgnutls26 0B/384kB 0%] [21 bbb-web 7,651kB/34.2MB 22%]                                                                32% [28 libgnutls26 224kB/384kB 58%] [21 bbb-web 7,928kB/34.2MB 23%]                                                                    32% [21 bbb-web 7,928kB/34.2MB 23%]                          1,367kB/s 2min 24s                                                                               Get:29 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libkrb5-dev 1.8.1+dfsg-2ubuntu0.11 [36.0kB]
+                                                                               32% [29 libkrb5-dev 0B/36.0kB 0%] [21 bbb-web 7,928kB/34.2MB 23%]                                                                 Get:30 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main krb5-multidev 1.8.1+dfsg-2ubuntu0.11 [104kB]
+                                                                 32% [30 krb5-multidev 1,940B/104kB 1%] [21 bbb-web 7,928kB/34.2MB 23%]                                                                      32% [21 bbb-web 7,928kB/34.2MB 23%]                          1,367kB/s 2min 24s                                                                               Get:31 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libk5crypto3 1.8.1+dfsg-2ubuntu0.11 [97.7kB]
+                                                                               32% [31 libk5crypto3 0B/97.7kB 0%] [21 bbb-web 7,928kB/34.2MB 23%]                                                                  32% [21 bbb-web 7,928kB/34.2MB 23%]                          1,367kB/s 2min 24s                                                                               Get:32 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgssapi-krb5-2 1.8.1+dfsg-2ubuntu0.11 [122kB]
+                                                                               32% [32 libgssapi-krb5-2 0B/122kB 0%] [21 bbb-web 7,928kB/34.2MB 23%]                                                                     32% [21 bbb-web 7,928kB/34.2MB 23%]                          1,367kB/s 2min 24s                                                                               Get:33 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libkrb5-3 1.8.1+dfsg-2ubuntu0.11 [351kB]
+                                                                               32% [33 libkrb5-3 0B/351kB 0%] [21 bbb-web 7,928kB/34.2MB 23%]                                                              32% [21 bbb-web 7,995kB/34.2MB 23%]                          1,367kB/s 2min 24s                                                                               Get:34 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libkrb5support0 1.8.1+dfsg-2ubuntu0.11 [43.8kB]
+                                                                               32% [34 libkrb5support0 0B/43.8kB 0%] [21 bbb-web 7,995kB/34.2MB 23%]                                                                     32% [Waiting for headers] [21 bbb-web 7,995kB/34.2MB 23%]    1,367kB/s 2min 24s                                                                               Get:35 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgssrpc4 1.8.1+dfsg-2ubuntu0.11 [76.2kB]
+                                                                               32% [35 libgssrpc4 4,325B/76.2kB 5%] [21 bbb-web 7,995kB/34.2MB 23%]                                                                    Get:36 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libkdb5-4 1.8.1+dfsg-2ubuntu0.11 [60.2kB]
+                                                                    32% [36 libkdb5-4 1,074B/60.2kB 1%] [21 bbb-web 7,999kB/34.2MB 23%]                                                                   32% [Waiting for headers] [21 bbb-web 7,999kB/34.2MB 23%]    1,367kB/s 2min 24s                                                                               Get:37 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libkadm5srv-mit7 1.8.1+dfsg-2ubuntu0.11 [73.4kB]
+                                                                               32% [37 libkadm5srv-mit7 1,401B/73.4kB 1%] [21 bbb-web 7,999kB/34.2MB 23%]                                                                          32% [21 bbb-web 8,008kB/34.2MB 23%]                          1,367kB/s 2min 24s                                                                               Get:38 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libkadm5clnt-mit7 1.8.1+dfsg-2ubuntu0.11 [60.2kB]
+                                                                               32% [38 libkadm5clnt-mit7 0B/60.2kB 0%] [21 bbb-web 8,008kB/34.2MB 23%]                                                                       Get:39 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libcups2 1.4.3-1ubuntu1.6 [218kB]
+                                                                       32% [39 libcups2 4,769B/218kB 2%] [21 bbb-web 8,008kB/34.2MB 23%]                                                                 32% [21 bbb-web 8,054kB/34.2MB 23%]                          1,367kB/s 2min 23s                                                                               Get:40 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libnss3-1d 3.12.9+ckbi-1.82-0ubuntu0.10.04.4 [1,149kB]
+                                                                               32% [40 libnss3-1d 0B/1,149kB 0%] [21 bbb-web 8,054kB/34.2MB 23%]                                                                 32% [40 libnss3-1d 351kB/1,149kB 30%] [21 bbb-web 8,174kB/34.2MB 23%]32% [40 libnss3-1d 965kB/1,149kB 83%] [21 bbb-web 8,216kB/34.2MB 24%]                                                                     33% [21 bbb-web 8,281kB/34.2MB 24%]                          1,367kB/s 2min 22s                                                                               Get:41 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libpcsclite1 1.5.3-1ubuntu4.2 [46.1kB]
+                                                                               33% [41 libpcsclite1 0B/46.1kB 0%] [21 bbb-web 8,281kB/34.2MB 24%]                                                                  Get:42 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libfreetype6-dev 2.3.11-1ubuntu2.6 [705kB]
+                                                                  33% [42 libfreetype6-dev 6,932B/705kB 0%] [21 bbb-web 8,281kB/34.2MB 24%]33% [42 libfreetype6-dev 275kB/705kB 38%] [21 bbb-web 8,413kB/34.2MB 24%]33% [42 libfreetype6-dev 612kB/705kB 86%] [21 bbb-web 8,584kB/34.2MB 25%]                                                                         33% [21 bbb-web 8,682kB/34.2MB 25%]                          1,367kB/s 2min 22s                                                                               Get:43 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libfreetype6 2.3.11-1ubuntu2.6 [420kB]
+                                                                               33% [43 libfreetype6 0B/420kB 0%] [21 bbb-web 8,682kB/34.2MB 25%]                                                                 33% [43 libfreetype6 76.2kB/420kB 18%] [21 bbb-web 8,817kB/34.2MB 25%]                                                                      33% [21 bbb-web 8,817kB/34.2MB 25%]                          1,367kB/s 2min 21s                                                                               Get:44 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libpng12-0 1.2.42-1ubuntu2.5 [177kB]
+                                                                               33% [44 libpng12-0 0B/177kB 0%] [21 bbb-web 8,817kB/34.2MB 25%]                                                               33% [21 bbb-web 8,817kB/34.2MB 25%]                          1,367kB/s 2min 21s                                                                               Get:45 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openjdk-6-jre 6b24-1.11.4-1ubuntu0.10.04.1 [218kB]
+                                                                               33% [45 openjdk-6-jre 0B/218kB 0%] [21 bbb-web 8,817kB/34.2MB 25%]                                                                  33% [21 bbb-web 8,819kB/34.2MB 25%]                          1,367kB/s 2min 21s                                                                               Get:46 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-impress 1:3.2.0-7ubuntu4.4 [496kB]
+                                                                               33% [46 openoffice.org-impress 0B/496kB 0%] [21 bbb-web 8,819kB/34.2MB 25%]                                                                           34% [21 bbb-web 8,992kB/34.2MB 26%]                          1,367kB/s 2min 20s                                                                               Get:47 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-draw 1:3.2.0-7ubuntu4.4 [2,252kB]
+                                                                               34% [47 openoffice.org-draw 0B/2,252kB 0%] [21 bbb-web 8,992kB/34.2MB 26%]                                                                          34% [47 openoffice.org-draw 223kB/2,252kB 9%] [21 bbb-web 9,072kB/34.2MB 26%]                                                                             34% [47 openoffice.org-draw 408kB/2,252kB 18%] [21 bbb-web 9,205kB/34.2MB 26%]34% [47 openoffice.org-draw 620kB/2,252kB 27%] [21 bbb-web 9,438kB/34.2MB 27%]34% [47 openoffice.org-draw 985kB/2,252kB 43%] [21 bbb-web 9,894kB/34.2MB 28%]                                                                              34% [47 openoffice.org-draw 1,352kB/2,252kB 60%] [21 bbb-web 10.3MB/34.2MB 30%]35% [47 openoffice.org-draw 1,680kB/2,252kB 74%] [21 bbb-web 10.7MB/34.2MB 31%]35% [47 openoffice.org-draw 2,017kB/2,252kB 89%] [21 bbb-web 11.1MB/34.2MB 32%]35% [21 bbb-web 11.5MB/34.2MB 33%]                             942kB/s 3min 19s                                                                               Get:48 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-math 1:3.2.0-7ubuntu4.4 [247kB]
+                                                                               35% [48 openoffice.org-math 0B/247kB 0%] [21 bbb-web 11.5MB/34.2MB 33%]                                                                       Get:49 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe openoffice.org-report-builder-bin 1:3.2.0-7ubuntu4.4 [749kB]
+                                                                       35% [49 openoffice.org-report-builder-bin 1,898B/749kB 0%] [21 bbb-web 11.8MB/336% [49 openoffice.org-report-builder-bin 319kB/749kB 42%] [21 bbb-web 12.2MB/336% [49 openoffice.org-report-builder-bin 596kB/749kB 79%] [21 bbb-web 12.6MB/336% [49 openoffice.org-report-builder-bin 677kB/749kB 90%] [21 bbb-web 12.7MB/336% [21 bbb-web 12.7MB/34.2MB 37%]                             942kB/s 3min 16s                                                                               Get:50 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-officebean 1:3.2.0-7ubuntu4.4 [45.1kB]
+                                                                               36% [50 openoffice.org-officebean 0B/45.1kB 0%] [21 bbb-web 12.7MB/34.2MB 37%]                                                                              Get:51 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe openoffice.org-filter-mobiledev 1:3.2.0-7ubuntu4.4 [92.9kB]
+                                                                              Get:52 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe openoffice.org 1:3.2.0-7ubuntu4.4 [4,594B]
+                                                                              Get:53 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-style-galaxy 1:3.2.0-7ubuntu4.4 [3,623kB]
+                                                                              36% [53 openoffice.org-style-galaxy 24.6kB/3,623kB 0%] [21 bbb-web 12.7MB/34.2M36% [53 openoffice.org-style-galaxy 446kB/3,623kB 12%] [21 bbb-web 12.9MB/34.2M36% [53 openoffice.org-style-galaxy 766kB/3,623kB 21%] [21 bbb-web 13.1MB/34.2M37% [53 openoffice.org-style-galaxy 992kB/3,623kB 27%] [21 bbb-web 13.4MB/34.2M37% [53 openoffice.org-style-galaxy 1,228kB/3,623kB 33%] [21 bbb-web 13.8MB/34.37% [53 openoffice.org-style-galaxy 1,438kB/3,623kB 39%] [21 bbb-web 14.2MB/34.37% [53 openoffice.org-style-galaxy 1,629kB/3,623kB 44%] [21 bbb-web 14.5MB/34.37% [53 openoffice.org-style-galaxy 1,884kB/3,623kB 51%] [21 bbb-web 15.0MB/34.38% [53 openoffice.org-style-galaxy 2,143kB/3,623kB 59%] [21 bbb-web 15.4MB/34.38% [53 openoffice.org-style-galaxy 2,357kB/3,623kB 65%] [21 bbb-web 15.9MB/34.38% [53 openoffice.org-style-galaxy 2,618kB/3,623kB 72%] [21 bbb-web 16.3MB/34.38% [53 openoffice.org-style-galaxy 2,858kB/3,623kB 78%] [21 bbb-web 16.9MB/34.39% [53 openoffice.org-style-galaxy 3,103kB/3,623kB 85%] [21 bbb-web 17.4MB/34.39% [53 openoffice.org-style-galaxy 3,289kB/3,623kB 90%] [21 bbb-web 17.8MB/34.39% [53 openoffice.org-style-galaxy 3,582kB/3,623kB 98%] [21 bbb-web 17.9MB/34.39% [21 bbb-web 17.9MB/34.2MB 52%]                           1,275kB/s 2min 18s                                                                               Get:54 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-common 1:3.2.0-7ubuntu4.4 [18.3MB]
+                                                                               39% [54 openoffice.org-common 0B/18.3MB 0%] [21 bbb-web 17.9MB/34.2MB 52%]                                                                          39% [54 openoffice.org-common 392kB/18.3MB 2%] [21 bbb-web 18.1MB/34.2MB 52%]39% [54 openoffice.org-common 711kB/18.3MB 3%] [21 bbb-web 18.4MB/34.2MB 53%]40% [54 openoffice.org-common 929kB/18.3MB 5%] [21 bbb-web 19.1MB/34.2MB 55%]                                                                             40% [54 openoffice.org-common 1,136kB/18.3MB 6%] [21 bbb-web 19.5MB/34.2MB 57%]40% [54 openoffice.org-common 1,322kB/18.3MB 7%] [21 bbb-web 20.1MB/34.2MB 58%]40% [54 openoffice.org-common 1,534kB/18.3MB 8%] [21 bbb-web 20.7MB/34.2MB 60%]41% [54 openoffice.org-common 1,759kB/18.3MB 9%] [21 bbb-web 21.3MB/34.2MB 62%]41% [54 openoffice.org-common 1,973kB/18.3MB 10%] [21 bbb-web 21.8MB/34.2MB 63%41% [54 openoffice.org-common 2,169kB/18.3MB 11%] [21 bbb-web 22.4MB/34.2MB 65%41% [54 openoffice.org-common 2,250kB/18.3MB 12%] [21 bbb-web 22.6MB/34.2MB 66%41% [54 openoffice.org-common 2,463kB/18.3MB 13%] [21 bbb-web 22.6MB/34.2MB 66%42% [54 openoffice.org-common 2,829kB/18.3MB 15%] [21 bbb-web 22.8MB/34.2MB 66%42% [54 openoffice.org-common 3,208kB/18.3MB 17%] [21 bbb-web 23.1MB/34.2MB 67%42% [54 openoffice.org-common 3,426kB/18.3MB 18%] [21 bbb-web 23.6MB/34.2MB 69%42% [54 openoffice.org-common 3,712kB/18.3MB 20%] [21 bbb-web 24.1MB/34.2MB 70%43% [54 openoffice.org-common 3,973kB/18.3MB 21%] [21 bbb-web 24.6MB/34.2MB 72%43% [54 openoffice.org-common 4,245kB/18.3MB 23%] [21 bbb-web 25.1MB/34.2MB 73%43% [54 openoffice.org-common 4,506kB/18.3MB 24%] [21 bbb-web 25.7MB/34.2MB 75%43% [54 openoffice.org-common 4,707kB/18.3MB 25%] [21 bbb-web 26.2MB/34.2MB 76%44% [54 openoffice.org-common 4,968kB/18.3MB 27%] [21 bbb-web 26.7MB/34.2MB 77%44% [54 openoffice.org-common 5,223kB/18.3MB 28%] [21 bbb-web 27.2MB/34.2MB 79%44% [54 openoffice.org-common 5,446kB/18.3MB 29%] [21 bbb-web 27.8MB/34.2MB 81%45% [54 openoffice.org-common 5,679kB/18.3MB 31%] [21 bbb-web 28.4MB/34.2MB 83%45% [54 openoffice.org-common 5,900kB/18.3MB 32%] [21 bbb-web 29.0MB/34.2MB 84%45% [54 openoffice.org-common 6,162kB/18.3MB 33%] [21 bbb-web 29.5MB/34.2MB 86%45% [54 openoffice.org-common 6,287kB/18.3MB 34%] [21 bbb-web 29.8MB/34.2MB 87%45% [54 openoffice.org-common 6,878kB/18.3MB 37%] [21 bbb-web 29.8MB/34.2MB 87%46% [54 openoffice.org-common 7,503kB/18.3MB 41%] [21 bbb-web 30.0MB/34.2MB 87%46% [54 openoffice.org-common 8,129kB/18.3MB 44%] [21 bbb-web 30.2MB/34.2MB 88%46% [54 openoffice.org-common 8,579kB/18.3MB 46%] [21 bbb-web 30.4MB/34.2MB 88%46% [54 openoffice.org-common 8,871kB/18.3MB 48%] [21 bbb-web 30.8MB/34.2MB 90%47% [54 openoffice.org-common 9,071kB/18.3MB 49%] [21 bbb-web 31.1MB/34.2MB 90%47% [54 openoffice.org-common 9,639kB/18.3MB 52%] [21 bbb-web 31.2MB/34.2MB 91%47% [54 openoffice.org-common 10.1MB/18.3MB 55%] [21 bbb-web 31.4MB/34.2MB 91%]47% [54 openoffice.org-common 10.5MB/18.3MB 57%] [21 bbb-web 31.7MB/34.2MB 92%]48% [54 openoffice.org-common 10.8MB/18.3MB 58%] [21 bbb-web 32.2MB/34.2MB 94%]48% [54 openoffice.org-common 11.1MB/18.3MB 60%] [21 bbb-web 32.6MB/34.2MB 95%]48% [54 openoffice.org-common 11.5MB/18.3MB 62%] [21 bbb-web 33.0MB/34.2MB 96%]48% [54 openoffice.org-common 11.8MB/18.3MB 64%] [21 bbb-web 33.5MB/34.2MB 97%]49% [54 openoffice.org-common 12.2MB/18.3MB 66%] [21 bbb-web 33.9MB/34.2MB 99%]49% [54 openoffice.org-common 12.4MB/18.3MB 67%]             1,346kB/s 1min 50s                                                                               Get:55 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-record-core 0.80ubuntu104 [22.7kB]
+49% [54 openoffice.org-common 12.4MB/18.3MB 67%] [55 bbb-record-core 0B/22.7kB                                                                                Get:56 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-playback-slides 0.80ubuntu84 [75.5kB]
+49% [54 openoffice.org-common 12.4MB/18.3MB 67%] [56 bbb-playback-slides 1,768B                                                                               49% [54 openoffice.org-common 12.4MB/18.3MB 67%] [Waiting for headers]                                                                      Get:57 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-config 0.80ubuntu94 [4,250B]
+                                                                      49% [54 openoffice.org-common 12.4MB/18.3MB 67%] [57 bbb-config 1,223B/4,250B 2                                                                               Get:58 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main bbb-demo 0.80ubuntu63 [1,695kB]
+                                                                               49% [54 openoffice.org-common 12.4MB/18.3MB 67%] [58 bbb-demo 999B/1,695kB 0%]                                                                              49% [54 openoffice.org-common 12.8MB/18.3MB 69%] [58 bbb-demo 469kB/1,695kB 27%49% [54 openoffice.org-common 13.1MB/18.3MB 71%] [58 bbb-demo 970kB/1,695kB 57%50% [54 openoffice.org-common 13.4MB/18.3MB 73%] [58 bbb-demo 1,501kB/1,695kB 850% [54 openoffice.org-common 13.6MB/18.3MB 74%]             1,346kB/s 1min 47s                                                                               Get:59 http://ubuntu.bigbluebutton.org/lucid_dev_08/ bigbluebutton-lucid/main red5 1.0RC1-ubuntu32 [34.1MB]
+                                                                               50% [54 openoffice.org-common 13.6MB/18.3MB 74%] [59 red5 0B/34.1MB 0%]                                                                       50% [54 openoffice.org-common 13.9MB/18.3MB 75%] [59 red5 572kB/34.1MB 1%]                                                                          50% [54 openoffice.org-common 14.2MB/18.3MB 77%] [59 red5 1,135kB/34.1MB 3%]51% [54 openoffice.org-common 14.3MB/18.3MB 78%] [59 red5 1,397kB/34.1MB 4%]51% [54 openoffice.org-common 15.1MB/18.3MB 82%] [59 red5 1,413kB/34.1MB 4%]51% [54 openoffice.org-common 15.7MB/18.3MB 86%] [59 red5 1,704kB/34.1MB 5%]51% [54 openoffice.org-common 16.3MB/18.3MB 89%] [59 red5 1,953kB/34.1MB 5%]52% [54 openoffice.org-common 16.7MB/18.3MB 91%] [59 red5 2,453kB/34.1MB 7%]52% [54 openoffice.org-common 17.0MB/18.3MB 92%] [59 red5 2,903kB/34.1MB 8%]52% [54 openoffice.org-common 17.4MB/18.3MB 95%] [59 red5 2,903kB/34.1MB 8%]52% [54 openoffice.org-common 17.9MB/18.3MB 97%] [59 red5 2,936kB/34.1MB 8%]                                                                            52% [59 red5 3,032kB/34.1MB 8%]                              1,570kB/s 1min 27s                                                                               Get:60 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-java-common 1:3.2.0-7ubuntu4.4 [4,285kB]
+                                                                               52% [60 openoffice.org-java-common 0B/4,285kB 0%] [59 red5 3,032kB/34.1MB 8%]                                                                             53% [60 openoffice.org-java-common 487kB/4,285kB 11%] [59 red5 3,146kB/34.1MB 953% [60 openoffice.org-java-common 932kB/4,285kB 21%] [59 red5 3,443kB/34.1MB 153% [60 openoffice.org-java-common 1,162kB/4,285kB 27%] [59 red5 3,699kB/34.1MB53% [60 openoffice.org-java-common 1,472kB/4,285kB 34%] [59 red5 4,035kB/34.1MB54% [60 openoffice.org-java-common 1,785kB/4,285kB 41%] [59 red5 4,462kB/34.1MB54% [60 openoffice.org-java-common 2,059kB/4,285kB 48%] [59 red5 4,725kB/34.1MB54% [60 openoffice.org-java-common 2,465kB/4,285kB 57%] [59 red5 4,726kB/34.1MB54% [60 openoffice.org-java-common 3,068kB/4,285kB 71%] [59 red5 4,890kB/34.1MB54% [60 openoffice.org-java-common 3,394kB/4,285kB 79%] [59 red5 5,083kB/34.1MB55% [60 openoffice.org-java-common 3,776kB/4,285kB 88%] [59 red5 5,447kB/34.1MB55% [60 openoffice.org-java-common 4,215kB/4,285kB 98%] [59 red5 5,819kB/34.1MB55% [59 red5 5,822kB/34.1MB 17%]                             1,329kB/s 1min 38s                                                                               Get:61 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main python-uno 1:3.2.0-7ubuntu4.4 [95.5kB]
+                                                                               55% [61 python-uno 0B/95.5kB 0%] [59 red5 5,822kB/34.1MB 17%]                                                             55% [59 red5 5,915kB/34.1MB 17%]                             1,329kB/s 1min 37s                                                                               Get:62 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main ttf-opensymbol 1:3.2.0-7ubuntu4.4 [1,490kB]
+                                                                               55% [62 ttf-opensymbol 0B/1,490kB 0%] [59 red5 5,915kB/34.1MB 17%]                                                                  55% [62 ttf-opensymbol 432kB/1,490kB 28%] [59 red5 6,312kB/34.1MB 18%]55% [62 ttf-opensymbol 797kB/1,490kB 53%] [59 red5 6,645kB/34.1MB 19%]                                                                      56% [62 ttf-opensymbol 1,226kB/1,490kB 82%] [59 red5 7,028kB/34.1MB 20%]                                                                        56% [59 red5 7,299kB/34.1MB 21%]                             1,329kB/s 1min 35s                                                                               Get:63 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libexpat1-dev 2.0.1-7ubuntu1.1 [215kB]
+                                                                               56% [63 libexpat1-dev 0B/215kB 0%] [59 red5 7,299kB/34.1MB 21%]                                                               Get:64 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libexpat1 2.0.1-7ubuntu1.1 [139kB]
+56% [64 libexpat1 1,958B/139kB 1%] [59 red5 7,547kB/34.1MB 22%]                                                               56% [59 red5 7,661kB/34.1MB 22%]                             1,329kB/s 1min 35s                                                                               Get:65 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libssl-dev 0.9.8k-7ubuntu8.13 [2,007kB]
+                                                                               56% [65 libssl-dev 0B/2,007kB 0%] [59 red5 7,661kB/34.1MB 22%]                                                              56% [65 libssl-dev 316kB/2,007kB 15%] [59 red5 8,017kB/34.1MB 23%]57% [65 libssl-dev 501kB/2,007kB 24%] [59 red5 8,274kB/34.1MB 24%]57% [65 libssl-dev 839kB/2,007kB 41%] [59 red5 8,679kB/34.1MB 25%]                                                                  57% [65 libssl-dev 1,122kB/2,007kB 55%] [59 red5 9,092kB/34.1MB 26%]57% [65 libssl-dev 1,429kB/2,007kB 71%] [59 red5 9,251kB/34.1MB 27%]                                                                    57% [59 red5 9,264kB/34.1MB 27%]                             1,384kB/s 1min 28s                                                                               Get:66 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libssl0.9.8 0.9.8k-7ubuntu8.13 [3,018kB]
+                                                                               57% [66 libssl0.9.8 0B/3,018kB 0%] [59 red5 9,264kB/34.1MB 27%]                                                               58% [66 libssl0.9.8 681kB/3,018kB 22%] [59 red5 9,549kB/34.1MB 28%]                                                                   58% [66 libssl0.9.8 1,148kB/3,018kB 38%] [59 red5 9,959kB/34.1MB 29%]                                                                     58% [66 libssl0.9.8 1,556kB/3,018kB 51%] [59 red5 10.4MB/34.1MB 30%]59% [66 libssl0.9.8 1,998kB/3,018kB 66%] [59 red5 10.9MB/34.1MB 32%]59% [66 libssl0.9.8 2,409kB/3,018kB 79%] [59 red5 11.4MB/34.1MB 33%]59% [66 libssl0.9.8 2,824kB/3,018kB 93%] [59 red5 11.9MB/34.1MB 34%]                                                                    Get:67 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-filter-binfilter 1:3.2.0-7ubuntu4.4 [6,407kB]
+                                                                    59% [67 openoffice.org-filter-binfilter 3,290B/6,407kB 0%] [59 red5 12.1MB/34.160% [67 openoffice.org-filter-binfilter 431kB/6,407kB 6%] [59 red5 12.6MB/34.1M60% [67 openoffice.org-filter-binfilter 765kB/6,407kB 11%] [59 red5 13.1MB/34.160% [67 openoffice.org-filter-binfilter 1,140kB/6,407kB 17%] [59 red5 13.5MB/3461% [67 openoffice.org-filter-binfilter 1,492kB/6,407kB 23%] [59 red5 14.1MB/3461% [67 openoffice.org-filter-binfilter 1,849kB/6,407kB 28%] [59 red5 14.6MB/3461% [67 openoffice.org-filter-binfilter 2,183kB/6,407kB 34%] [59 red5 15.1MB/3462% [67 openoffice.org-filter-binfilter 2,493kB/6,407kB 38%] [59 red5 15.7MB/3462% [67 openoffice.org-filter-binfilter 2,820kB/6,407kB 44%] [59 red5 16.3MB/3462% [67 openoffice.org-filter-binfilter 3,126kB/6,407kB 48%] [59 red5 16.9MB/3462% [67 openoffice.org-filter-binfilter 3,375kB/6,407kB 52%] [59 red5 17.5MB/3463% [67 openoffice.org-filter-binfilter 3,657kB/6,407kB 57%] [59 red5 18.0MB/3463% [67 openoffice.org-filter-binfilter 3,908kB/6,407kB 60%] [59 red5 18.6MB/3463% [67 openoffice.org-filter-binfilter 4,187kB/6,407kB 65%] [59 red5 19.1MB/3464% [67 openoffice.org-filter-binfilter 4,398kB/6,407kB 68%] [59 red5 19.7MB/3464% [67 openoffice.org-filter-binfilter 4,533kB/6,407kB 70%] [59 red5 19.8MB/3464% [67 openoffice.org-filter-binfilter 5,154kB/6,407kB 80%] [59 red5 19.8MB/3464% [67 openoffice.org-filter-binfilter 5,858kB/6,407kB 91%] [59 red5 19.8MB/3464% [59 red5 19.8MB/34.1MB 58%]                               1,601kB/s 1min 4s                                                                               Get:68 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openoffice.org-core 1:3.2.0-7ubuntu4.4 [28.0MB]
+                                                                               64% [68 openoffice.org-core 0B/28.0MB 0%] [59 red5 19.8MB/34.1MB 58%]                                                                     65% [68 openoffice.org-core 793kB/28.0MB 2%] [59 red5 19.9MB/34.1MB 58%]                                                                        65% [68 openoffice.org-core 1,496kB/28.0MB 5%] [59 red5 19.9MB/34.1MB 58%]65% [68 openoffice.org-core 2,169kB/28.0MB 7%] [59 red5 19.9MB/34.1MB 58%]                                                                          65% [68 openoffice.org-core 2,903kB/28.0MB 10%] [59 red5 20.0MB/34.1MB 58%]66% [68 openoffice.org-core 3,434kB/28.0MB 12%] [59 red5 20.1MB/34.1MB 58%]66% [68 openoffice.org-core 4,063kB/28.0MB 14%] [59 red5 20.1MB/34.1MB 58%]66% [68 openoffice.org-core 4,531kB/28.0MB 16%] [59 red5 20.1MB/34.1MB 58%]66% [68 openoffice.org-core 5,058kB/28.0MB 18%] [59 red5 20.1MB/34.1MB 58%]66% [68 openoffice.org-core 5,716kB/28.0MB 20%] [59 red5 20.1MB/34.1MB 58%]67% [68 openoffice.org-core 6,429kB/28.0MB 22%] [59 red5 20.1MB/34.1MB 58%]67% [68 openoffice.org-core 7,049kB/28.0MB 25%] [59 red5 20.1MB/34.1MB 58%]67% [68 openoffice.org-core 7,765kB/28.0MB 27%] [59 red5 20.3MB/34.1MB 59%]67% [68 openoffice.org-core 8,417kB/28.0MB 30%] [59 red5 20.4MB/34.1MB 59%]68% [68 openoffice.org-core 9,087kB/28.0MB 32%] [59 red5 20.4MB/34.1MB 59%]68% [68 openoffice.org-core 9,630kB/28.0MB 34%] [59 red5 20.6MB/34.1MB 60%]                                                                           68% [68 openoffice.org-core 10.1MB/28.0MB 36%] [59 red5 20.9MB/34.1MB 61%]68% [68 openoffice.org-core 10.5MB/28.0MB 37%] [59 red5 21.1MB/34.1MB 61%]68% [68 openoffice.org-core 10.8MB/28.0MB 38%] [59 red5 21.1MB/34.1MB 61%]69% [68 openoffice.org-core 11.6MB/28.0MB 41%] [59 red5 21.4MB/34.1MB 62%]69% [68 openoffice.org-core 12.1MB/28.0MB 43%] [59 red5 21.4MB/34.1MB 62%]69% [68 openoffice.org-core 12.6MB/28.0MB 44%] [59 red5 21.6MB/34.1MB 63%]69% [68 openoffice.org-core 12.9MB/28.0MB 46%] [59 red5 21.9MB/34.1MB 64%]70% [68 openoffice.org-core 13.4MB/28.0MB 47%] [59 red5 21.9MB/34.1MB 64%]70% [68 openoffice.org-core 14.0MB/28.0MB 50%] [59 red5 21.9MB/34.1MB 64%]70% [68 openoffice.org-core 14.6MB/28.0MB 52%] [59 red5 21.9MB/34.1MB 64%]70% [68 openoffice.org-core 15.3MB/28.0MB 54%] [59 red5 21.9MB/34.1MB 64%]70% [68 openoffice.org-core 15.9MB/28.0MB 56%] [59 red5 21.9MB/34.1MB 64%]71% [68 openoffice.org-core 16.6MB/28.0MB 59%] [59 red5 22.0MB/34.1MB 64%]71% [68 openoffice.org-core 17.3MB/28.0MB 62%] [59 red5 22.1MB/34.1MB 64%]71% [68 openoffice.org-core 18.0MB/28.0MB 64%] [59 red5 22.2MB/34.1MB 65%]72% [68 openoffice.org-core 18.4MB/28.0MB 65%] [59 red5 22.5MB/34.1MB 66%]72% [68 openoffice.org-core 18.8MB/28.0MB 67%] [59 red5 22.9MB/34.1MB 67%]72% [68 openoffice.org-core 19.0MB/28.0MB 67%] [59 red5 23.0MB/34.1MB 67%]72% [68 openoffice.org-core 19.6MB/28.0MB 70%] [59 red5 23.2MB/34.1MB 68%]72% [68 openoffice.org-core 20.0MB/28.0MB 71%] [59 red5 23.5MB/34.1MB 69%]73% [68 openoffice.org-core 20.3MB/28.0MB 72%] [59 red5 24.0MB/34.1MB 70%]73% [68 openoffice.org-core 20.6MB/28.0MB 73%] [59 red5 24.5MB/34.1MB 71%]73% [68 openoffice.org-core 20.9MB/28.0MB 74%] [59 red5 24.9MB/34.1MB 73%]73% [68 openoffice.org-core 21.3MB/28.0MB 76%] [59 red5 25.4MB/34.1MB 74%]74% [68 openoffice.org-core 21.5MB/28.0MB 77%] [59 red5 25.9MB/34.1MB 75%]74% [68 openoffice.org-core 21.8MB/28.0MB 78%] [59 red5 26.3MB/34.1MB 77%]74% [68 openoffice.org-core 22.1MB/28.0MB 79%] [59 red5 26.8MB/34.1MB 78%]74% [68 openoffice.org-core 22.3MB/28.0MB 79%] [59 red5 27.1MB/34.1MB 79%]75% [68 openoffice.org-core 22.6MB/28.0MB 80%] [59 red5 27.2MB/34.1MB 79%]75% [68 openoffice.org-core 22.9MB/28.0MB 81%] [59 red5 27.5MB/34.1MB 80%]75% [68 openoffice.org-core 23.1MB/28.0MB 82%] [59 red5 27.9MB/34.1MB 81%]75% [68 openoffice.org-core 23.3MB/28.0MB 83%] [59 red5 28.4MB/34.1MB 83%]75% [68 openoffice.org-core 23.6MB/28.0MB 84%] [59 red5 29.0MB/34.1MB 85%]76% [68 openoffice.org-core 23.8MB/28.0MB 85%] [59 red5 29.5MB/34.1MB 86%]76% [68 openoffice.org-core 24.0MB/28.0MB 85%] [59 red5 29.9MB/34.1MB 87%]76% [68 openoffice.org-core 24.2MB/28.0MB 86%] [59 red5 30.4MB/34.1MB 89%]76% [68 openoffice.org-core 24.4MB/28.0MB 87%] [59 red5 30.9MB/34.1MB 90%]77% [68 openoffice.org-core 24.6MB/28.0MB 88%] [59 red5 31.4MB/34.1MB 92%]77% [68 openoffice.org-core 24.8MB/28.0MB 88%] [59 red5 31.8MB/34.1MB 93%]77% [68 openoffice.org-core 25.0MB/28.0MB 89%] [59 red5 32.2MB/34.1MB 94%]77% [68 openoffice.org-core 25.1MB/28.0MB 89%] [59 red5 32.7MB/34.1MB 95%]78% [68 openoffice.org-core 25.4MB/28.0MB 90%] [59 red5 33.2MB/34.1MB 97%]78% [68 openoffice.org-core 25.5MB/28.0MB 91%] [59 red5 33.4MB/34.1MB 98%]78% [68 openoffice.org-core 25.9MB/28.0MB 92%] [59 red5 33.4MB/34.1MB 98%]78% [68 openoffice.org-core 26.5MB/28.0MB 94%] [59 red5 33.4MB/34.1MB 98%]78% [68 openoffice.org-core 27.1MB/28.0MB 96%] [59 red5 33.4MB/34.1MB 98%]78% [68 openoffice.org-core 27.7MB/28.0MB 99%] [59 red5 33.5MB/34.1MB 98%]                                                                          79% [59 red5 33.5MB/34.1MB 98%]                                   1,322kB/s 46s                                                                               Get:69 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main apt 0.7.25.3ubuntu9.14 [1,821kB]
+79% [69 apt 0B/1,821kB 0%] [59 red5 33.5MB/34.1MB 98%]            1,322kB/s 46s79% [69 apt 650kB/1,821kB 35%] [59 red5 33.7MB/34.1MB 98%]        1,322kB/s 45s79% [69 apt 1,275kB/1,821kB 70%] [59 red5 33.7MB/34.1MB 99%]      1,322kB/s 45s79% [69 apt 1,684kB/1,821kB 92%]                                  1,322kB/s 44s79% [Working]                                                     1,322kB/s 44s                                                                               Get:70 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main apt-utils 0.7.25.3ubuntu9.14 [245kB]
+79% [70 apt-utils 0B/245kB 0%]                                    1,322kB/s 44s79% [Working]                                                     1,322kB/s 44s                                                                               Get:71 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main cron 3.0pl1-106ubuntu7 [84.6kB]
+79% [71 cron 0B/84.6kB 0%]                                        1,322kB/s 44s79% [Waiting for headers]                                         1,322kB/s 44s                                                                               Get:72 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main dhcp3-client 3.1.3-2ubuntu3.4 [258kB]
+79% [72 dhcp3-client 2,875B/258kB 1%]                             1,322kB/s 44s80% [Working]                                                     1,322kB/s 44s                                                                               Get:73 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main dhcp3-common 3.1.3-2ubuntu3.4 [319kB]
+80% [73 dhcp3-common 0B/319kB 0%]                                 1,322kB/s 44s80% [Working]                                                     1,322kB/s 43s                                                                               Get:74 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main gpgv 1.4.10-2ubuntu1.1 [206kB]
+80% [74 gpgv 0B/206kB 0%]                                         1,322kB/s 43s80% [Working]                                                     1,322kB/s 43s                                                                               Get:75 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main gnupg 1.4.10-2ubuntu1.1 [1,072kB]
+80% [75 gnupg 0B/1,072kB 0%]                                      1,322kB/s 43s80% [75 gnupg 694kB/1,072kB 64%]                                  1,322kB/s 43s80% [Working]                                                     1,322kB/s 42s                                                                               Get:76 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main gnupg-curl 1.4.10-2ubuntu1.1 [75.5kB]
+80% [76 gnupg-curl 0B/75.5kB 0%]                                  1,322kB/s 42s                                                                               Get:77 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main insserv 1.12.0-14ubuntu0.2 [69.2kB]
+80% [77 insserv 794B/69.2kB 1%]                                   1,322kB/s 42s80% [Working]                                                     1,322kB/s 42s                                                                               Get:78 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main procps 1:3.2.8-1ubuntu4.3 [232kB]
+80% [78 procps 0B/232kB 0%]                                       1,322kB/s 42s80% [Working]                                                     1,322kB/s 42s                                                                               Get:79 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main bind9-host 1:9.7.0.dfsg.P1-1ubuntu0.7 [65.4kB]
+80% [79 bind9-host 0B/65.4kB 0%]                                  1,322kB/s 42s                                                                               Get:80 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libisc60 1:9.7.0.dfsg.P1-1ubuntu0.7 [157kB]
+80% [80 libisc60 140B/157kB 0%]                                   1,322kB/s 42s80% [Working]                                                     1,322kB/s 42s                                                                               Get:81 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libdns64 1:9.7.0.dfsg.P1-1ubuntu0.7 [652kB]
+80% [81 libdns64 0B/652kB 0%]                                     1,322kB/s 42s81% [Working]                                                     1,349kB/s 41s                                                                               Get:82 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libisccc60 1:9.7.0.dfsg.P1-1ubuntu0.7 [28.7kB]
+81% [82 libisccc60 0B/28.7kB 0%]                                  1,349kB/s 41s81% [Waiting for headers]                                         1,349kB/s 41s                                                                               Get:83 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libisccfg60 1:9.7.0.dfsg.P1-1ubuntu0.7 [46.8kB]
+81% [83 libisccfg60 2,618B/46.8kB 5%]                             1,349kB/s 41s                                                                               Get:84 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libbind9-60 1:9.7.0.dfsg.P1-1ubuntu0.7 [35.2kB]
+81% [84 libbind9-60 0B/35.2kB 0%]                                 1,349kB/s 41s                                                                               Get:85 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main liblwres60 1:9.7.0.dfsg.P1-1ubuntu0.7 [47.4kB]
+81% [85 liblwres60 658B/47.4kB 1%]                                1,349kB/s 40s                                                                               Get:86 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main dpkg-dev 1.15.5.6ubuntu4.6 [653kB]
+81% [86 dpkg-dev 2,160B/653kB 0%]                                 1,349kB/s 40s81% [86 dpkg-dev 452kB/653kB 69%]                                 1,349kB/s 40s81% [Working]                                                     1,349kB/s 40s                                                                               Get:87 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libtiff4 3.9.2-2ubuntu0.10 [138kB]
+81% [87 libtiff4 0B/138kB 0%]                                     1,349kB/s 40s81% [Working]                                                     1,349kB/s 40s                                                                               Get:88 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libcupsimage2 1.4.3-1ubuntu1.6 [52.3kB]
+81% [88 libcupsimage2 0B/52.3kB 0%]                               1,349kB/s 40s81% [Working]                                                     1,349kB/s 40s                                                                               Get:89 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main ghostscript 8.71.dfsg.1-0ubuntu5.5 [811kB]
+81% [89 ghostscript 0B/811kB 0%]                                  1,349kB/s 40s81% [89 ghostscript 707kB/811kB 87%]                              1,349kB/s 39s81% [Working]                                                     1,349kB/s 39s                                                                               Get:90 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgs8 8.71.dfsg.1-0ubuntu5.5 [2,371kB]
+81% [90 libgs8 0B/2,371kB 0%]                                     1,349kB/s 39s81% [90 libgs8 821kB/2,371kB 34%]                                 1,349kB/s 39s82% [90 libgs8 1,616kB/2,371kB 68%]                               1,349kB/s 38s82% [Working]                                                     1,349kB/s 37s                                                                               Get:91 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libmagickcore2 7:6.5.7.8-1ubuntu1.3 [1,680kB]
+82% [91 libmagickcore2 0B/1,680kB 0%]                             1,349kB/s 37s82% [91 libmagickcore2 832kB/1,680kB 49%]                         1,349kB/s 37s83% [91 libmagickcore2 1,598kB/1,680kB 95%]                       1,349kB/s 36s83% [Working]                                                     1,349kB/s 36s                                                                               Get:92 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libmagickwand2 7:6.5.7.8-1ubuntu1.3 [355kB]
+83% [92 libmagickwand2 0B/355kB 0%]                               1,349kB/s 36s83% [Working]                                                     1,349kB/s 36s                                                                               Get:93 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main imagemagick 7:6.5.7.8-1ubuntu1.3 [102kB]
+83% [93 imagemagick 0B/102kB 0%]                                  1,349kB/s 36s83% [Working]                                                     1,349kB/s 36s                                                                               Get:94 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libpostproc51 4:0.5.9-0ubuntu0.10.04.1 [192kB]
+83% [94 libpostproc51 0B/192kB 0%]                                1,349kB/s 36s83% [Working]                                                     1,349kB/s 36s                                                                               Get:95 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libswscale0 4:0.5.9-0ubuntu0.10.04.1 [233kB]
+83% [95 libswscale0 0B/233kB 0%]                                  1,349kB/s 36s83% [Working]                                                     1,349kB/s 36s                                                                               Get:96 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libavformat52 4:0.5.9-0ubuntu0.10.04.1 [723kB]
+83% [96 libavformat52 0B/723kB 0%]                                1,349kB/s 36s83% [Working]                                                     1,349kB/s 35s                                                                               Get:97 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libavcodec52 4:0.5.9-0ubuntu0.10.04.1 [4,007kB]
+83% [97 libavcodec52 0B/4,007kB 0%]                               1,349kB/s 35s83% [97 libavcodec52 867kB/4,007kB 21%]                           1,349kB/s 34s84% [97 libavcodec52 1,663kB/4,007kB 41%]                         1,349kB/s 34s84% [97 libavcodec52 2,522kB/4,007kB 62%]                         1,542kB/s 29s84% [97 libavcodec52 3,278kB/4,007kB 81%]                         1,542kB/s 28s84% [97 libavcodec52 3,284kB/4,007kB 81%]                         1,542kB/s 28s84% [Working]                                                     1,542kB/s 28s                                                                               Get:98 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libavutil49 4:0.5.9-0ubuntu0.10.04.1 [96.4kB]
+84% [98 libavutil49 0B/96.4kB 0%]                                 1,542kB/s 28s84% [Working]                                                     1,542kB/s 28s                                                                               Get:99 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libdbus-1-3 1.2.16-2ubuntu4.5 [129kB]
+84% [99 libdbus-1-3 0B/129kB 0%]                                  1,542kB/s 28s85% [Working]                                                     1,542kB/s 28s                                                                               Get:100 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgl1-mesa-dri 7.7.1-1ubuntu3.1 [2,869kB]
+85% [100 libgl1-mesa-dri 0B/2,869kB 0%]                           1,542kB/s 28s85% [100 libgl1-mesa-dri 1,202kB/2,869kB 41%]                     1,542kB/s 27s85% [100 libgl1-mesa-dri 1,924kB/2,869kB 67%]                     1,542kB/s 27s85% [100 libgl1-mesa-dri 2,676kB/2,869kB 93%]                     1,542kB/s 26s86% [Working]                                                     1,542kB/s 26s                                                                               Get:101 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libgl1-mesa-glx 7.7.1-1ubuntu3.1 [123kB]
+86% [101 libgl1-mesa-glx 0B/123kB 0%]                             1,542kB/s 26s86% [Working]                                                     1,542kB/s 26s                                                                               Get:102 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libmagickcore2-extra 7:6.5.7.8-1ubuntu1.3 [115kB]
+86% [102 libmagickcore2-extra 0B/115kB 0%]                        1,542kB/s 26s86% [Working]                                                     1,542kB/s 26s                                                                               Get:103 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libraptor1 1.4.21-1ubuntu1.1 [169kB]
+86% [103 libraptor1 0B/169kB 0%]                                  1,542kB/s 26s86% [Working]                                                     1,542kB/s 26s                                                                               Get:104 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main samba 2:3.4.7~dfsg-1ubuntu3.10 [6,264kB]
+86% [104 samba 0B/6,264kB 0%]                                     1,542kB/s 26s86% [104 samba 790kB/6,264kB 12%]                                 1,542kB/s 25s86% [104 samba 1,601kB/6,264kB 25%]                               1,542kB/s 25s86% [104 samba 2,442kB/6,264kB 38%]                               1,542kB/s 24s87% [104 samba 3,230kB/6,264kB 51%]                               1,542kB/s 24s87% [104 samba 4,083kB/6,264kB 65%]                               1,542kB/s 23s87% [104 samba 4,881kB/6,264kB 77%]                               1,535kB/s 23s88% [104 samba 5,611kB/6,264kB 89%]                               1,535kB/s 22s88% [Working]                                                     1,535kB/s 22s                                                                               Get:105 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main samba-common 2:3.4.7~dfsg-1ubuntu3.10 [402kB]
+88% [105 samba-common 0B/402kB 0%]                                1,535kB/s 22s88% [Working]                                                     1,535kB/s 21s                                                                               Get:106 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main samba-common-bin 2:3.4.7~dfsg-1ubuntu3.10 [4,799kB]
+88% [106 samba-common-bin 0B/4,799kB 0%]                          1,535kB/s 21s88% [106 samba-common-bin 774kB/4,799kB 16%]                      1,535kB/s 21s88% [106 samba-common-bin 1,552kB/4,799kB 32%]                    1,535kB/s 20s89% [106 samba-common-bin 2,299kB/4,799kB 47%]                    1,535kB/s 20s89% [106 samba-common-bin 2,943kB/4,799kB 61%]                    1,535kB/s 20s89% [106 samba-common-bin 3,779kB/4,799kB 78%]                    1,535kB/s 19s90% [106 samba-common-bin 4,614kB/4,799kB 96%]                    1,535kB/s 18s90% [Working]                                                     1,535kB/s 18s                                                                               Get:107 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libwbclient0 2:3.4.7~dfsg-1ubuntu3.10 [108kB]
+90% [107 libwbclient0 0B/108kB 0%]                                1,535kB/s 18s90% [Working]                                                     1,535kB/s 18s                                                                               Get:108 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main libsmbclient 2:3.4.7~dfsg-1ubuntu3.10 [1,653kB]
+90% [108 libsmbclient 0B/1,653kB 0%]                              1,535kB/s 18s90% [108 libsmbclient 866kB/1,653kB 52%]                          1,535kB/s 18s90% [Working]                                                     1,535kB/s 17s                                                                               Get:109 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main linux-firmware 1.34.14 [13.6MB]
+90% [109 linux-firmware 0B/13.6MB 0%]                             1,535kB/s 17s90% [109 linux-firmware 885kB/13.6MB 6%]                          1,535kB/s 17s91% [109 linux-firmware 1,637kB/13.6MB 12%]                       1,565kB/s 16s91% [109 linux-firmware 2,445kB/13.6MB 17%]                       1,565kB/s 15s91% [109 linux-firmware 3,172kB/13.6MB 23%]                       1,565kB/s 15s92% [109 linux-firmware 3,999kB/13.6MB 29%]                       1,565kB/s 14s92% [109 linux-firmware 4,765kB/13.6MB 35%]                       1,565kB/s 14s92% [109 linux-firmware 5,550kB/13.6MB 40%]                       1,565kB/s 13s92% [109 linux-firmware 6,377kB/13.6MB 46%]                       1,565kB/s 13s93% [109 linux-firmware 7,172kB/13.6MB 52%]                       1,565kB/s 12s93% [109 linux-firmware 7,983kB/13.6MB 58%]                       1,565kB/s 12s93% [109 linux-firmware 8,791kB/13.6MB 64%]                       1,565kB/s 11s93% [109 linux-firmware 9,603kB/13.6MB 70%]                       1,565kB/s 11s94% [109 linux-firmware 10.4MB/13.6MB 76%]                        1,565kB/s 10s94% [109 linux-firmware 11.2MB/13.6MB 82%]                        1,595kB/s 10s94% [109 linux-firmware 12.0MB/13.6MB 87%]                         1,595kB/s 9s95% [109 linux-firmware 12.6MB/13.6MB 92%]                         1,595kB/s 9s95% [109 linux-firmware 13.4MB/13.6MB 98%]                         1,595kB/s 8s95% [Working]                                                      1,595kB/s 8s                                                                               Get:110 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main linux-image-virtual 2.6.32.43.50 [5,020B]
+95% [110 linux-image-virtual 0B/5,020B 0%]                         1,595kB/s 8s95% [Working]                                                      1,595kB/s 8s                                                                               Get:111 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main linux-libc-dev 2.6.32-43.97 [860kB]
+95% [111 linux-libc-dev 0B/860kB 0%]                               1,595kB/s 8s95% [111 linux-libc-dev 796kB/860kB 92%]                           1,595kB/s 8s95% [Working]                                                      1,595kB/s 7s                                                                               Get:112 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/universe nginx 0.7.65-1ubuntu2.3 [337kB]
+95% [112 nginx 0B/337kB 0%]                                        1,595kB/s 7s95% [Working]                                                      1,595kB/s 7s                                                                               Get:113 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openjdk-6-jdk 6b24-1.11.4-1ubuntu0.10.04.1 [11.2MB]
+95% [113 openjdk-6-jdk 0B/11.2MB 0%]                               1,595kB/s 7s96% [113 openjdk-6-jdk 758kB/11.2MB 6%]                            1,595kB/s 7s96% [113 openjdk-6-jdk 1,564kB/11.2MB 14%]                         1,595kB/s 6s96% [113 openjdk-6-jdk 2,393kB/11.2MB 21%]                         1,595kB/s 6s96% [113 openjdk-6-jdk 3,227kB/11.2MB 28%]                         1,595kB/s 5s97% [113 openjdk-6-jdk 3,651kB/11.2MB 32%]                         1,595kB/s 5s97% [113 openjdk-6-jdk 4,510kB/11.2MB 40%]                         1,595kB/s 4s97% [113 openjdk-6-jdk 5,186kB/11.2MB 46%]                         1,595kB/s 4s97% [113 openjdk-6-jdk 5,978kB/11.2MB 53%]                         1,494kB/s 4s98% [113 openjdk-6-jdk 6,757kB/11.2MB 60%]                         1,494kB/s 3s98% [113 openjdk-6-jdk 7,491kB/11.2MB 67%]                         1,494kB/s 3s98% [113 openjdk-6-jdk 8,268kB/11.2MB 74%]                         1,494kB/s 2s98% [113 openjdk-6-jdk 8,997kB/11.2MB 80%]                         1,494kB/s 2s99% [113 openjdk-6-jdk 9,699kB/11.2MB 86%]                         1,494kB/s 1s99% [113 openjdk-6-jdk 10.2MB/11.2MB 91%]                          1,494kB/s 1s99% [113 openjdk-6-jdk 10.8MB/11.2MB 96%]                          1,494kB/s 1s99% [Working]                                                      1,494kB/s 0s                                                                               Get:114 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main openssl 0.9.8k-7ubuntu8.13 [400kB]
+99% [114 openssl 0B/400kB 0%]                                      1,494kB/s 0s99% [Working]                                                      1,494kB/s 0s                                                                               Get:115 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main python-software-properties 0.75.10.3 [30.9kB]
+99% [115 python-software-properties 0B/30.9kB 0%]                  1,494kB/s 0s99% [Working]                                                      1,494kB/s 0s                                                                               Get:116 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main sudo 1.7.2p1-1ubuntu5.4 [313kB]
+99% [116 sudo 6,093B/313kB 1%]                                     1,494kB/s 0s99% [Working]                                                      1,494kB/s 0s                                                                               Get:117 http://us.archive.ubuntu.com/ubuntu/ lucid-updates/main icedtea-netx 1.2-2ubuntu0.10.04.2 [500kB]
+99% [117 icedtea-netx 0B/500kB 0%]                                 1,494kB/s 0s100% [Working]                                                     1,494kB/s 0s                                                                               Fetched 292MB in 3min 29s (1,397kB/s)
+Extracting templates from packages: 25%Extracting templates from packages: 51%Extracting templates from packages: 76%Extracting templates from packages: 100%
+Preconfiguring packages ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39747 files and directories currently installed.)
+Preparing to replace dpkg 1.15.5.6ubuntu4.5 (using .../dpkg_1.15.5.6ubuntu4.6_i386.deb) ...
+Unpacking replacement dpkg ...
+Processing triggers for man-db ...
+Setting up dpkg (1.15.5.6ubuntu4.6) ...
+
+Selecting previously deselected package linux-image-2.6.32-43-virtual.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39747 files and directories currently installed.)
+Unpacking linux-image-2.6.32-43-virtual (from .../linux-image-2.6.32-43-virtual_2.6.32-43.97_i386.deb) ...
+Done.
+Preparing to replace openoffice.org-emailmerge 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-emailmerge_1%3a3.2.0-7ubuntu4.4_all.deb) ...
+Disabling: mailmerge.py
+
+unopkg done.
+Unpacking replacement openoffice.org-emailmerge ...
+Preparing to replace ure 1.6.0+OOo3.2.0-7ubuntu4.2 (using .../ure_1.6.0+OOo3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement ure ...
+Preparing to replace uno-libs3 1.6.0+OOo3.2.0-7ubuntu4.2 (using .../uno-libs3_1.6.0+OOo3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement uno-libs3 ...
+Preparing to replace libxml2-dev 2.7.6.dfsg-1ubuntu1.4 (using .../libxml2-dev_2.7.6.dfsg-1ubuntu1.6_i386.deb) ...
+Unpacking replacement libxml2-dev ...
+Preparing to replace libxml2 2.7.6.dfsg-1ubuntu1.4 (using .../libxml2_2.7.6.dfsg-1ubuntu1.6_i386.deb) ...
+Unpacking replacement libxml2 ...
+Preparing to replace openoffice.org-writer 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-writer_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-writer ...
+Preparing to replace openoffice.org-calc 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-calc_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-calc ...
+Preparing to replace openoffice.org-base 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-base_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-base ...
+Preparing to replace openoffice.org-base-core 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-base-core_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-base-core ...
+Preparing to replace icedtea-6-jre-cacao 6b20-1.9.13-0ubuntu1~10.04.1 (using .../icedtea-6-jre-cacao_6b24-1.11.4-1ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement icedtea-6-jre-cacao ...
+Preparing to replace openjdk-6-jre-headless 6b20-1.9.13-0ubuntu1~10.04.1 (using .../openjdk-6-jre-headless_6b24-1.11.4-1ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement openjdk-6-jre-headless ...
+Replacing files in old package openjdk-6-jre-lib ...
+Preparing to replace openjdk-6-jre-lib 6b20-1.9.13-0ubuntu1~10.04.1 (using .../openjdk-6-jre-lib_6b24-1.11.4-1ubuntu0.10.04.1_all.deb) ...
+Unpacking replacement openjdk-6-jre-lib ...
+Preparing to replace ca-certificates-java 20100406ubuntu1 (using .../ca-certificates-java_20100406ubuntu1.1_all.deb) ...
+Unpacking replacement ca-certificates-java ...
+Preparing to replace tzdata-java 2012b-0ubuntu0.10.04 (using .../tzdata-java_2012e-0ubuntu0.10.04_all.deb) ...
+Unpacking replacement tzdata-java ...
+Preparing to replace tzdata 2012b-0ubuntu0.10.04 (using .../tzdata_2012e-0ubuntu0.10.04_all.deb) ...
+Unpacking replacement tzdata ...
+Processing triggers for man-db ...
+Setting up tzdata (2012e-0ubuntu0.10.04) ...
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Mon Oct  1 19:41:44 UTC 2012.
+Universal Time is now:  Mon Oct  1 19:41:44 UTC 2012.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40556 files and directories currently installed.)
+Preparing to replace libgcrypt11 1.4.4-5ubuntu2 (using .../libgcrypt11_1.4.4-5ubuntu2.1_i386.deb) ...
+Unpacking replacement libgcrypt11 ...
+Preparing to replace libtasn1-3 2.4-1 (using .../libtasn1-3_2.4-1ubuntu0.1_i386.deb) ...
+Unpacking replacement libtasn1-3 ...
+Preparing to replace libgnutls26 2.8.5-2 (using .../libgnutls26_2.8.5-2ubuntu0.2_i386.deb) ...
+Unpacking replacement libgnutls26 ...
+Preparing to replace libkrb5-dev 1.8.1+dfsg-2ubuntu0.10 (using .../libkrb5-dev_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libkrb5-dev ...
+Preparing to replace krb5-multidev 1.8.1+dfsg-2ubuntu0.10 (using .../krb5-multidev_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement krb5-multidev ...
+Preparing to replace libk5crypto3 1.8.1+dfsg-2ubuntu0.10 (using .../libk5crypto3_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libk5crypto3 ...
+Preparing to replace libgssapi-krb5-2 1.8.1+dfsg-2ubuntu0.10 (using .../libgssapi-krb5-2_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libgssapi-krb5-2 ...
+Preparing to replace libkrb5-3 1.8.1+dfsg-2ubuntu0.10 (using .../libkrb5-3_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libkrb5-3 ...
+Preparing to replace libkrb5support0 1.8.1+dfsg-2ubuntu0.10 (using .../libkrb5support0_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libkrb5support0 ...
+Preparing to replace libgssrpc4 1.8.1+dfsg-2ubuntu0.10 (using .../libgssrpc4_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libgssrpc4 ...
+Preparing to replace libkdb5-4 1.8.1+dfsg-2ubuntu0.10 (using .../libkdb5-4_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libkdb5-4 ...
+Preparing to replace libkadm5srv-mit7 1.8.1+dfsg-2ubuntu0.10 (using .../libkadm5srv-mit7_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libkadm5srv-mit7 ...
+Preparing to replace libkadm5clnt-mit7 1.8.1+dfsg-2ubuntu0.10 (using .../libkadm5clnt-mit7_1.8.1+dfsg-2ubuntu0.11_i386.deb) ...
+Unpacking replacement libkadm5clnt-mit7 ...
+Preparing to replace libcups2 1.4.3-1ubuntu1.5 (using .../libcups2_1.4.3-1ubuntu1.6_i386.deb) ...
+Unpacking replacement libcups2 ...
+Preparing to replace libnss3-1d 3.12.9+ckbi-1.82-0ubuntu0.10.04.3 (using .../libnss3-1d_3.12.9+ckbi-1.82-0ubuntu0.10.04.4_i386.deb) ...
+Unpacking replacement libnss3-1d ...
+Selecting previously deselected package libpcsclite1.
+Unpacking libpcsclite1 (from .../libpcsclite1_1.5.3-1ubuntu4.2_i386.deb) ...
+Preparing to replace libfreetype6-dev 2.3.11-1ubuntu2.5 (using .../libfreetype6-dev_2.3.11-1ubuntu2.6_i386.deb) ...
+Unpacking replacement libfreetype6-dev ...
+Preparing to replace libfreetype6 2.3.11-1ubuntu2.5 (using .../libfreetype6_2.3.11-1ubuntu2.6_i386.deb) ...
+Unpacking replacement libfreetype6 ...
+Preparing to replace libpng12-0 1.2.42-1ubuntu2.3 (using .../libpng12-0_1.2.42-1ubuntu2.5_i386.deb) ...
+Unpacking replacement libpng12-0 ...
+Preparing to replace openjdk-6-jre 6b20-1.9.13-0ubuntu1~10.04.1 (using .../openjdk-6-jre_6b24-1.11.4-1ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement openjdk-6-jre ...
+Preparing to replace openoffice.org-impress 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-impress_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-impress ...
+Preparing to replace openoffice.org-draw 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-draw_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-draw ...
+Preparing to replace openoffice.org-math 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-math_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-math ...
+Preparing to replace openoffice.org-report-builder-bin 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-report-builder-bin_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-report-builder-bin ...
+Preparing to replace openoffice.org-officebean 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-officebean_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-officebean ...
+Preparing to replace openoffice.org-filter-mobiledev 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-filter-mobiledev_1%3a3.2.0-7ubuntu4.4_all.deb) ...
+Unpacking replacement openoffice.org-filter-mobiledev ...
+Preparing to replace openoffice.org 1:3.2.0-7ubuntu4.2 (using .../openoffice.org_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org ...
+Preparing to replace openoffice.org-style-galaxy 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-style-galaxy_1%3a3.2.0-7ubuntu4.4_all.deb) ...
+Unpacking replacement openoffice.org-style-galaxy ...
+Preparing to replace openoffice.org-common 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-common_1%3a3.2.0-7ubuntu4.4_all.deb) ...
+Unpacking replacement openoffice.org-common ...
+Preparing to replace openoffice.org-java-common 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-java-common_1%3a3.2.0-7ubuntu4.4_all.deb) ...
+Unpacking replacement openoffice.org-java-common ...
+Preparing to replace python-uno 1:3.2.0-7ubuntu4.2 (using .../python-uno_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement python-uno ...
+Preparing to replace ttf-opensymbol 1:3.2.0-7ubuntu4.2 (using .../ttf-opensymbol_1%3a3.2.0-7ubuntu4.4_all.deb) ...
+Unpacking replacement ttf-opensymbol ...
+Preparing to replace libexpat1-dev 2.0.1-7ubuntu1 (using .../libexpat1-dev_2.0.1-7ubuntu1.1_i386.deb) ...
+Unpacking replacement libexpat1-dev ...
+Preparing to replace libexpat1 2.0.1-7ubuntu1 (using .../libexpat1_2.0.1-7ubuntu1.1_i386.deb) ...
+Unpacking replacement libexpat1 ...
+Preparing to replace libssl-dev 0.9.8k-7ubuntu8.8 (using .../libssl-dev_0.9.8k-7ubuntu8.13_i386.deb) ...
+Unpacking replacement libssl-dev ...
+Preparing to replace libssl0.9.8 0.9.8k-7ubuntu8.8 (using .../libssl0.9.8_0.9.8k-7ubuntu8.13_i386.deb) ...
+Unpacking replacement libssl0.9.8 ...
+Processing triggers for man-db ...
+Processing triggers for hicolor-icon-theme ...
+Processing triggers for shared-mime-info ...
+Processing triggers for fontconfig ...
+Setting up libssl0.9.8 (0.9.8k-7ubuntu8.13) ...
+
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40547 files and directories currently installed.)
+Preparing to replace openoffice.org-filter-binfilter 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-filter-binfilter_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+file:///usr/lib/openoffice/basis3.2/program/libbf_migratefilterli.so
+revoke component 'file:///usr/lib/openoffice/basis3.2/program/libbf_migratefilterli.so' from registry '/var/lib/openoffice/basis3.2/program/services.rdb' succesful!
+Unpacking replacement openoffice.org-filter-binfilter ...
+Preparing to replace openoffice.org-core 1:3.2.0-7ubuntu4.2 (using .../openoffice.org-core_1%3a3.2.0-7ubuntu4.4_i386.deb) ...
+Unpacking replacement openoffice.org-core ...
+Preparing to replace apt 0.7.25.3ubuntu9.11 (using .../apt_0.7.25.3ubuntu9.14_i386.deb) ...
+Unpacking replacement apt ...
+Processing triggers for man-db ...
+Setting up apt (0.7.25.3ubuntu9.14) ...
+
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 40547 files and directories currently installed.)
+Preparing to replace apt-utils 0.7.25.3ubuntu9.11 (using .../apt-utils_0.7.25.3ubuntu9.14_i386.deb) ...
+Unpacking replacement apt-utils ...
+Preparing to replace cron 3.0pl1-106ubuntu6 (using .../cron_3.0pl1-106ubuntu7_i386.deb) ...
+cron stop/waiting
+Unpacking replacement cron ...
+Preparing to replace dhcp3-client 3.1.3-2ubuntu3.3 (using .../dhcp3-client_3.1.3-2ubuntu3.4_i386.deb) ...
+Unpacking replacement dhcp3-client ...
+Preparing to replace dhcp3-common 3.1.3-2ubuntu3.3 (using .../dhcp3-common_3.1.3-2ubuntu3.4_i386.deb) ...
+Unpacking replacement dhcp3-common ...
+Preparing to replace gpgv 1.4.10-2ubuntu1 (using .../gpgv_1.4.10-2ubuntu1.1_i386.deb) ...
+Unpacking replacement gpgv ...
+Preparing to replace gnupg 1.4.10-2ubuntu1 (using .../gnupg_1.4.10-2ubuntu1.1_i386.deb) ...
+Unpacking replacement gnupg ...
+Preparing to replace gnupg-curl 1.4.10-2ubuntu1 (using .../gnupg-curl_1.4.10-2ubuntu1.1_i386.deb) ...
+Leaving `diversion of /usr/lib/gnupg/gpgkeys_curl to /usr/lib/gnupg/gpgkeys_curl.non_curl by gnupg-curl'
+Leaving `diversion of /usr/lib/gnupg/gpgkeys_hkp to /usr/lib/gnupg/gpgkeys_hkp.non_curl by gnupg-curl'
+Unpacking replacement gnupg-curl ...
+Preparing to replace insserv 1.12.0-14 (using .../insserv_1.12.0-14ubuntu0.2_i386.deb) ...
+Unpacking replacement insserv ...
+Preparing to replace procps 1:3.2.8-1ubuntu4.2 (using .../procps_1%3a3.2.8-1ubuntu4.3_i386.deb) ...
+Unpacking replacement procps ...
+Preparing to replace bind9-host 1:9.7.0.dfsg.P1-1ubuntu0.4 (using .../bind9-host_1%3a9.7.0.dfsg.P1-1ubuntu0.7_i386.deb) ...
+Unpacking replacement bind9-host ...
+Preparing to replace libisc60 1:9.7.0.dfsg.P1-1ubuntu0.4 (using .../libisc60_1%3a9.7.0.dfsg.P1-1ubuntu0.7_i386.deb) ...
+Unpacking replacement libisc60 ...
+Preparing to replace libdns64 1:9.7.0.dfsg.P1-1ubuntu0.4 (using .../libdns64_1%3a9.7.0.dfsg.P1-1ubuntu0.7_i386.deb) ...
+Unpacking replacement libdns64 ...
+Preparing to replace libisccc60 1:9.7.0.dfsg.P1-1ubuntu0.4 (using .../libisccc60_1%3a9.7.0.dfsg.P1-1ubuntu0.7_i386.deb) ...
+Unpacking replacement libisccc60 ...
+Preparing to replace libisccfg60 1:9.7.0.dfsg.P1-1ubuntu0.4 (using .../libisccfg60_1%3a9.7.0.dfsg.P1-1ubuntu0.7_i386.deb) ...
+Unpacking replacement libisccfg60 ...
+Preparing to replace libbind9-60 1:9.7.0.dfsg.P1-1ubuntu0.4 (using .../libbind9-60_1%3a9.7.0.dfsg.P1-1ubuntu0.7_i386.deb) ...
+Unpacking replacement libbind9-60 ...
+Preparing to replace liblwres60 1:9.7.0.dfsg.P1-1ubuntu0.4 (using .../liblwres60_1%3a9.7.0.dfsg.P1-1ubuntu0.7_i386.deb) ...
+Unpacking replacement liblwres60 ...
+Preparing to replace dpkg-dev 1.15.5.6ubuntu4.5 (using .../dpkg-dev_1.15.5.6ubuntu4.6_all.deb) ...
+Unpacking replacement dpkg-dev ...
+Preparing to replace libtiff4 3.9.2-2ubuntu0.7 (using .../libtiff4_3.9.2-2ubuntu0.10_i386.deb) ...
+Unpacking replacement libtiff4 ...
+Preparing to replace libcupsimage2 1.4.3-1ubuntu1.5 (using .../libcupsimage2_1.4.3-1ubuntu1.6_i386.deb) ...
+Unpacking replacement libcupsimage2 ...
+Preparing to replace ghostscript 8.71.dfsg.1-0ubuntu5.4 (using .../ghostscript_8.71.dfsg.1-0ubuntu5.5_i386.deb) ...
+Cleaning up font configuration of gs...
+Cleaning up category psprint..
+Cleaning up category cmap..
+Cleaning up category cid..
+Cleaning up category truetype..
+Cleaning up category gsfontderivative..
+Cleaning up category type3..
+Cleaning up category type1..
+Unpacking replacement ghostscript ...
+Preparing to replace libgs8 8.71.dfsg.1-0ubuntu5.4 (using .../libgs8_8.71.dfsg.1-0ubuntu5.5_i386.deb) ...
+Unpacking replacement libgs8 ...
+Preparing to replace libmagickcore2 7:6.5.7.8-1ubuntu1.1 (using .../libmagickcore2_7%3a6.5.7.8-1ubuntu1.3_i386.deb) ...
+Unpacking replacement libmagickcore2 ...
+Preparing to replace libmagickwand2 7:6.5.7.8-1ubuntu1.1 (using .../libmagickwand2_7%3a6.5.7.8-1ubuntu1.3_i386.deb) ...
+Unpacking replacement libmagickwand2 ...
+Preparing to replace imagemagick 7:6.5.7.8-1ubuntu1.1 (using .../imagemagick_7%3a6.5.7.8-1ubuntu1.3_i386.deb) ...
+Unpacking replacement imagemagick ...
+Preparing to replace libpostproc51 4:0.5.1-1ubuntu1.3 (using .../libpostproc51_4%3a0.5.9-0ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement libpostproc51 ...
+Preparing to replace libswscale0 4:0.5.1-1ubuntu1.3 (using .../libswscale0_4%3a0.5.9-0ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement libswscale0 ...
+Preparing to replace libavformat52 4:0.5.1-1ubuntu1.3 (using .../libavformat52_4%3a0.5.9-0ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement libavformat52 ...
+Preparing to replace libavcodec52 4:0.5.1-1ubuntu1.3 (using .../libavcodec52_4%3a0.5.9-0ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement libavcodec52 ...
+Preparing to replace libavutil49 4:0.5.1-1ubuntu1.3 (using .../libavutil49_4%3a0.5.9-0ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement libavutil49 ...
+Preparing to replace libdbus-1-3 1.2.16-2ubuntu4.3 (using .../libdbus-1-3_1.2.16-2ubuntu4.5_i386.deb) ...
+Unpacking replacement libdbus-1-3 ...
+Preparing to replace libgl1-mesa-dri 7.7.1-1ubuntu3 (using .../libgl1-mesa-dri_7.7.1-1ubuntu3.1_i386.deb) ...
+Unpacking replacement libgl1-mesa-dri ...
+Preparing to replace libgl1-mesa-glx 7.7.1-1ubuntu3 (using .../libgl1-mesa-glx_7.7.1-1ubuntu3.1_i386.deb) ...
+Unpacking replacement libgl1-mesa-glx ...
+Preparing to replace libmagickcore2-extra 7:6.5.7.8-1ubuntu1.1 (using .../libmagickcore2-extra_7%3a6.5.7.8-1ubuntu1.3_i386.deb) ...
+Unpacking replacement libmagickcore2-extra ...
+Preparing to replace libraptor1 1.4.21-1ubuntu1 (using .../libraptor1_1.4.21-1ubuntu1.1_i386.deb) ...
+Unpacking replacement libraptor1 ...
+Preparing to replace samba 2:3.4.7~dfsg-1ubuntu3.8 (using .../samba_2%3a3.4.7~dfsg-1ubuntu3.10_i386.deb) ...
+nmbd stop/waiting
+smbd stop/waiting
+Unpacking replacement samba ...
+Preparing to replace samba-common 2:3.4.7~dfsg-1ubuntu3.8 (using .../samba-common_2%3a3.4.7~dfsg-1ubuntu3.10_all.deb) ...
+Unpacking replacement samba-common ...
+Preparing to replace samba-common-bin 2:3.4.7~dfsg-1ubuntu3.8 (using .../samba-common-bin_2%3a3.4.7~dfsg-1ubuntu3.10_i386.deb) ...
+Unpacking replacement samba-common-bin ...
+Preparing to replace libwbclient0 2:3.4.7~dfsg-1ubuntu3.8 (using .../libwbclient0_2%3a3.4.7~dfsg-1ubuntu3.10_i386.deb) ...
+Unpacking replacement libwbclient0 ...
+Preparing to replace libsmbclient 2:3.4.7~dfsg-1ubuntu3.8 (using .../libsmbclient_2%3a3.4.7~dfsg-1ubuntu3.10_i386.deb) ...
+Unpacking replacement libsmbclient ...
+Preparing to replace linux-firmware 1.34.7 (using .../linux-firmware_1.34.14_all.deb) ...
+Unpacking replacement linux-firmware ...
+Preparing to replace linux-image-virtual 2.6.32.39.46 (using .../linux-image-virtual_2.6.32.43.50_i386.deb) ...
+Unpacking replacement linux-image-virtual ...
+Preparing to replace linux-libc-dev 2.6.32-39.86 (using .../linux-libc-dev_2.6.32-43.97_i386.deb) ...
+Unpacking replacement linux-libc-dev ...
+Preparing to replace nginx 0.7.65-1ubuntu2.2 (using .../nginx_0.7.65-1ubuntu2.3_i386.deb) ...
+Unpacking replacement nginx ...
+Preparing to replace openjdk-6-jdk 6b20-1.9.13-0ubuntu1~10.04.1 (using .../openjdk-6-jdk_6b24-1.11.4-1ubuntu0.10.04.1_i386.deb) ...
+Unpacking replacement openjdk-6-jdk ...
+Preparing to replace openssl 0.9.8k-7ubuntu8.8 (using .../openssl_0.9.8k-7ubuntu8.13_i386.deb) ...
+Unpacking replacement openssl ...
+Preparing to replace python-software-properties 0.75.10.2 (using .../python-software-properties_0.75.10.3_all.deb) ...
+Unpacking replacement python-software-properties ...
+Preparing to replace sudo 1.7.2p1-1ubuntu5.3 (using .../sudo_1.7.2p1-1ubuntu5.4_i386.deb) ...
+Unpacking replacement sudo ...
+Preparing to replace bbb-apps 0.80ubuntu32 (using .../bbb-apps_0.80ubuntu35_i386.deb) ...
+ * Stopping Red5 Server red5       [80G [74G[ OK ]
+Unpacking replacement bbb-apps ...
+Preparing to replace bbb-apps-deskshare 0.80ubuntu19 (using .../bbb-apps-deskshare_0.80ubuntu37_i386.deb) ...
+Unpacking replacement bbb-apps-deskshare ...
+Preparing to replace bbb-apps-sip 0.80ubuntu13 (using .../bbb-apps-sip_0.80ubuntu17_i386.deb) ...
+Unpacking replacement bbb-apps-sip ...
+Preparing to replace bbb-apps-video 0.80ubuntu15 (using .../bbb-apps-video_0.80ubuntu16_i386.deb) ...
+Unpacking replacement bbb-apps-video ...
+Preparing to replace bbb-client 0.80ubuntu252 (using .../bbb-client_0.80ubuntu286_i386.deb) ...
+Unpacking replacement bbb-client ...
+Preparing to replace bbb-common 0.80ubuntu74 (using .../bbb-common_0.80ubuntu99_i386.deb) ...
+Unpacking replacement bbb-common ...
+Preparing to replace bbb-openoffice-headless 0.71ubuntu5 (using .../bbb-openoffice-headless_0.80ubuntu2_i386.deb) ...
+Stopping OpenOffice headless server.
+Unpacking replacement bbb-openoffice-headless ...
+Preparing to replace bbb-web 0.80ubuntu98 (using .../bbb-web_0.80ubuntu107_all.deb) ...
+ * Stopping Tomcat servlet engine tomcat6       [80G [74G[ OK ]
+Unpacking replacement bbb-web ...
+Preparing to replace bbb-record-core 0.80ubuntu101 (using .../bbb-record-core_0.80ubuntu104_i386.deb) ...
+Record and Playback monitoring stopped
+Unpacking replacement bbb-record-core ...
+Preparing to replace bbb-playback-slides 0.80ubuntu78 (using .../bbb-playback-slides_0.80ubuntu84_i386.deb) ...
+Unpacking replacement bbb-playback-slides ...
+Preparing to replace bbb-config 0.80ubuntu75 (using .../bbb-config_0.80ubuntu94_i386.deb) ...
+Unpacking replacement bbb-config ...
+Preparing to replace bbb-demo 0.80ubuntu57 (using .../bbb-demo_0.80ubuntu63_i386.deb) ...
+Unpacking replacement bbb-demo ...
+Selecting previously deselected package icedtea-netx.
+Unpacking icedtea-netx (from .../icedtea-netx_1.2-2ubuntu0.10.04.2_i386.deb) ...
+Preparing to replace red5 1.0RC1-ubuntu31 (using .../red5_1.0RC1-ubuntu32_i386.deb) ...
+ * Stopping Red5 Server red5       [80G [74G[ OK ]
+Unpacking replacement red5 ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+ureadahead will be reprofiled on next reboot
+Processing triggers for hicolor-icon-theme ...
+Setting up linux-image-2.6.32-43-virtual (2.6.32-43.97) ...
+Running depmod.
+update-initramfs: Generating /boot/initrd.img-2.6.32-43-generic-pae
+Running postinst hook script /usr/sbin/update-grub.
+Searching for GRUB installation directory ... found: /boot/grub
+Searching for default file ... found: /boot/grub/default
+Testing for an existing GRUB menu.lst file ... found: /boot/grub/menu.lst
+Searching for splash image ... none found, skipping ...
+Found kernel: /boot/vmlinuz-2.6.32-43-generic-pae
+Found kernel: /boot/vmlinuz-2.6.32-39-generic-pae
+Replacing config file /var/run/grub/menu.lst with new version
+Updating /boot/grub/menu.lst ... done
+
+
+Setting up uno-libs3 (1.6.0+OOo3.2.0-7ubuntu4.4) ...
+
+Setting up libxml2 (2.7.6.dfsg-1ubuntu1.6) ...
+
+Setting up ure (1.6.0+OOo3.2.0-7ubuntu4.4) ...
+
+Setting up libxml2-dev (2.7.6.dfsg-1ubuntu1.6) ...
+Setting up ttf-opensymbol (1:3.2.0-7ubuntu4.4) ...
+Setting up libexpat1 (2.0.1-7ubuntu1.1) ...
+
+Setting up libfreetype6 (2.3.11-1ubuntu2.6) ...
+
+Setting up libnss3-1d (3.12.9+ckbi-1.82-0ubuntu0.10.04.4) ...
+
+Setting up ca-certificates-java (20100406ubuntu1.1) ...
+Installing new version of config file /etc/ca-certificates/update.d/jks-keystore ...
+removing untrusted certificates...
+  removed untrusted certificate diginotar_root_ca
+
+Setting up tzdata-java (2012e-0ubuntu0.10.04) ...
+Setting up libgcrypt11 (1.4.4-5ubuntu2.1) ...
+
+Setting up libtasn1-3 (2.4-1ubuntu0.1) ...
+
+Setting up libgnutls26 (2.8.5-2ubuntu0.2) ...
+
+Setting up libkrb5support0 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up libk5crypto3 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up libkrb5-3 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up libgssapi-krb5-2 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up libcups2 (1.4.3-1ubuntu1.6) ...
+
+Setting up libpcsclite1 (1.5.3-1ubuntu4.2) ...
+
+Setting up libpng12-0 (1.2.42-1ubuntu2.5) ...
+
+Setting up libgssrpc4 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up libkdb5-4 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up libkadm5srv-mit7 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up libkadm5clnt-mit7 (1.8.1+dfsg-2ubuntu0.11) ...
+
+Setting up krb5-multidev (1.8.1+dfsg-2ubuntu0.11) ...
+Setting up libkrb5-dev (1.8.1+dfsg-2ubuntu0.11) ...
+Setting up libfreetype6-dev (2.3.11-1ubuntu2.6) ...
+Setting up libexpat1-dev (2.0.1-7ubuntu1.1) ...
+Setting up libssl-dev (0.9.8k-7ubuntu8.13) ...
+Setting up apt-utils (0.7.25.3ubuntu9.14) ...
+
+Setting up cron (3.0pl1-106ubuntu7) ...
+Installing new version of config file /etc/default/cron ...
+cron start/running, process 16885
+
+Setting up dhcp3-common (3.1.3-2ubuntu3.4) ...
+Setting up dhcp3-client (3.1.3-2ubuntu3.4) ...
+
+Setting up gpgv (1.4.10-2ubuntu1.1) ...
+Setting up gnupg (1.4.10-2ubuntu1.1) ...
+
+Setting up gnupg-curl (1.4.10-2ubuntu1.1) ...
+Setting up insserv (1.12.0-14ubuntu0.2) ...
+
+Setting up procps (1:3.2.8-1ubuntu4.3) ...
+Installing new version of config file /etc/init/procps.conf ...
+
+Setting up libisc60 (1:9.7.0.dfsg.P1-1ubuntu0.7) ...
+
+Setting up libdns64 (1:9.7.0.dfsg.P1-1ubuntu0.7) ...
+
+Setting up libisccc60 (1:9.7.0.dfsg.P1-1ubuntu0.7) ...
+
+Setting up libisccfg60 (1:9.7.0.dfsg.P1-1ubuntu0.7) ...
+
+Setting up libbind9-60 (1:9.7.0.dfsg.P1-1ubuntu0.7) ...
+
+Setting up liblwres60 (1:9.7.0.dfsg.P1-1ubuntu0.7) ...
+
+Setting up bind9-host (1:9.7.0.dfsg.P1-1ubuntu0.7) ...
+Setting up dpkg-dev (1.15.5.6ubuntu4.6) ...
+Setting up libtiff4 (3.9.2-2ubuntu0.10) ...
+
+Setting up libcupsimage2 (1.4.3-1ubuntu1.6) ...
+
+Setting up libgs8 (8.71.dfsg.1-0ubuntu5.5) ...
+
+Setting up ghostscript (8.71.dfsg.1-0ubuntu5.5) ...
+update-alternatives: using /usr/bin/ps2pdf14 to provide /usr/bin/ps2pdf (ps2pdf) in auto mode.
+Updating font configuration of gs...
+Cleaning up category psprint..
+Cleaning up category cmap..
+Cleaning up category cid..
+Cleaning up category truetype..
+Cleaning up category gsfontderivative..
+Cleaning up category type3..
+Cleaning up category type1..
+Updating category type1..
+Updating category type3..
+Updating category gsfontderivative..
+Updating category truetype..
+Updating category cid..
+Updating category cmap..
+Updating category psprint..
+
+Setting up libmagickcore2 (7:6.5.7.8-1ubuntu1.3) ...
+
+Setting up libmagickwand2 (7:6.5.7.8-1ubuntu1.3) ...
+
+Setting up imagemagick (7:6.5.7.8-1ubuntu1.3) ...
+
+Setting up libavutil49 (4:0.5.9-0ubuntu0.10.04.1) ...
+
+Setting up libpostproc51 (4:0.5.9-0ubuntu0.10.04.1) ...
+
+Setting up libswscale0 (4:0.5.9-0ubuntu0.10.04.1) ...
+
+Setting up libavcodec52 (4:0.5.9-0ubuntu0.10.04.1) ...
+
+Setting up libavformat52 (4:0.5.9-0ubuntu0.10.04.1) ...
+
+Setting up libdbus-1-3 (1.2.16-2ubuntu4.5) ...
+
+Setting up libgl1-mesa-dri (7.7.1-1ubuntu3.1) ...
+
+Setting up libgl1-mesa-glx (7.7.1-1ubuntu3.1) ...
+
+Setting up libmagickcore2-extra (7:6.5.7.8-1ubuntu1.3) ...
+Setting up libraptor1 (1.4.21-1ubuntu1.1) ...
+
+Setting up samba-common (2:3.4.7~dfsg-1ubuntu3.10) ...
+[1;30r[4l[?25l[?1c[0;10m[37m[40m[1;30r[H[J[1;1H[1m[37m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[0;10m[37m[44mPackage configuration[7;3H[30m[47m┌────────────────────────────┤ [31mSamba Server[30m ├─────────────────────────────┐[8;3H│ A new version of configuration file /etc/samba/smb.conf is available,   │[1m[37m[40m [9;3H[0;10m[30m[47m│ but the version installed currently has been locally modified.          │[1m[37m[40m [10;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [11;3H[0;10m[30m[47m│ What do you want to do about modified configuration file smb.conf?      │[1m[37m[40m [12;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [13;3H[0;10m[30m[47m│       install the package maintainer's version                          │[1m[37m[40m [14;3H[0;10m[30m[47m│       [37m[41mkeep the local version currently installed                [30m[47m        │[1m[37m[40m [15;3H[0;10m[30m[47m│       show the differences between the versions                         │[1m[37m[40m [16;3H[0;10m[30m[47m│       show a side-by-side difference between the versions               │[1m[37m[40m [17;3H[0;10m[30m[47m│       show a 3-way difference between available versions                │[1m[37m[40m [18;3H[0;10m[30m[47m│       do a 3-way merge between available versions (experimental)        │[1m[37m[40m [19;3H[0;10m[30m[47m│       start a new shell to examine the situation                        │[1m[37m[40m [20;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [21;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [22;3H[0;10m[30m[47m│                                 <Ok>                                    │[1m[37m[40m [23;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [24;3H[0;10m[30m[47m└─────────────────────────────────────────────────────────────────────────┘[1m[37m[40m [25;4H                                                                           [14;11H[0;10m[30m[47mkeep the local version currently installed                [15;11H[37m[41mshow the differences between the versions                 [15;11H[?25h[?0c[30;1H[40m[0;10m[39;49m[K[1;30r[4l[?25l[?1c[0;10m[37m[40m[1;30r[H[J[1;1H[1m[37m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[0;10m[37m[44mPackage configuration[3;2H[30m[47m┌─────────────────────────────┤ [31mSamba Server[30m ├──────────────────────────────┐[4;2H│                                                                           │[1m[37m[40m [5;2H[0;10m[30m[47m│ Line by line differences between versions                                 [37m[41m↑[1m[37m[40m [6;2H[0;10m[30m[47m│                                                                           [37m[41m▮[1m[37m[40m [7;2H[0;10m[30m[47m│ --- /etc/samba/smb.conf 2012-10-01 19:43:05.314282806 +0000               [37m[41m▒[1m[37m[40m [8;2H[0;10m[30m[47m│ +++ /var/run/samba/upgrades/smb.conf 2012-10-01 19:43:05.350284179 +0000  [37m[41m▒[1m[37m[40m [9;2H[0;10m[30m[47m│ @@ -61,7 +61,7 @@                                                         [37m[41m▒[1m[37m[40m [10;2H[0;10m[30m[47m│  # This can be either the interface name or an IP address/netmask;        [37m[41m▒[1m[37m[40m [11;2H[0;10m[30m[47m│  # interface names are normally preferred                                 [37m[41m▒[1m[37m[40m [12;2H[0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▒[1m[37m[40m [13;2H[0;10m[30m[47m│ -#interfaces = 173.18.0.138 eth0                                          [37m[41m▒[1m[37m[40m [14;2H[0;10m[30m[47m│ +                                                                         [37m[41m▒[1m[37m[40m [15;2H[0;10m[30m[47m│  # Only bind to the named interfaces and/or networks; you must use the    [37m[41m▒[1m[37m[40m [16;2H[0;10m[30m[47m│  # 'interfaces' option above to use this.                                 [37m[41m▒[1m[37m[40m [17;2H[0;10m[30m[47m│  # It is recommended that you enable this feature if your Samba machine   [37m[41m▒[1m[37m[40m [18;2H[0;10m[30m[47m│ is                                                                        [37m[41m▒[1m[37m[40m [19;2H[0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▒[1m[37m[40m [20;2H[0;10m[30m[47m│  ; preexec = /bin/mount /cdrom                                            [37m[41m▒[1m[37m[40m [21;2H[0;10m[30m[47m│  ; postexec = /bin/umount /cdrom                                          [37m[41m▒[1m[37m[40m [22;2H[0;10m[30m[47m│                                                                           [37m[41m▒[1m[37m[40m [23;2H[0;10m[30m[47m│ -;                                                                        [37m[41m▒[1m[37m[40m [24;2H[0;10m[30m[47m│ -; BigBlueButton: Share the development directory                         [37m[41m↓[1m[37m[40m [25;2H[0;10m[30m[47m│                                                                            [1m[37m[40m [26;2H[0;10m[30m[47m│                                  <Ok>                                      [1m[37m[40m [27;2H[0;10m[30m[47m│                                                                           │[1m[37m[40m [28;2H[0;10m[30m[47m└───────────────────────────────────────────────────────────────────────────┘[1m[37m[40m [29;3H                                                                             [5;4H[0;10m[37m[40m[6;11r[6;1H[1M[1;30r[12;23r[12;1H[1M[1;30r[5;4H[30m[47m                                         [11;1H[1m[37m[44m [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▮[40m [1m[37m[44m[K[23;1H [0;10m[30m[47m│ -; BigBlueButton: Share the development directory                         [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m [bbbv8]                                         [5;4H[37m[40m[6;10r[6;1H[1M[1;30r[11;17r[11;1H[1M[1;30r[18;23r[18;1H[1M[1;30r[5;4H[30m[47m--- /etc/samba/smb.conf 2012-10-01 19:43:05.314282806 +0000[10;1H[1m[37m[44m [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▒[40m [1m[37m[44m[K[17;1H [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▮[40m [1m[37m[44m[K[23;1H [0;10m[30m[47m│  [bbbv8]                                                                  [37m[41m▒[40m [1m[37m[44m[K[24;5H[0;10m[30m[47mcomment = BigBlueButton Development share[5;4H[37m[40m[6;16r[6;1H[1M[1;30r[17;23r[17;1H[1M[1;30r[5;4H[30m[47m+++ /var/run/samba/upgrades/smb.conf 2012-10-01 19:43:05.350284179 +0000[16;1H[1m[37m[44m [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▒[40m [1m[37m[44m[K[23;1H [0;10m[30m[47m│  comment = BigBlueButton Development share                                [37m[41m▮[40m [1m[37m[44m[K[24;5H[0;10m[30m[47mpath = /                                 [5;4H[37m[40m[17;23r[17;1H[1L[1;30r[6;16r[6;1H[1L[1;30r[5;4H[30m[47m--- /etc/samba/smb.conf 2012-10-01 19:43:05.314282806 +0000             
+[1m[37m[44m [0;10m[30m[47m│ +++ /var/run/samba/upgrades/smb.conf 2012-10-01 19:43:05.350284179 +0000  [37m[41m▒[40m [1m[37m[44m[K[17;1H [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▮[40m [1m[37m[44m[K[24;5H[0;10m[30m[47mcomment = BigBlueButton Development share[5;4H[37m[40m[18;23r[18;1H[1L[1;30r[11;17r[11;1H[1L[1;30r[6;10r[6;1H[1L[1;30r[5;4H[30m[47m                                                           
+[1m[37m[44m [0;10m[30m[47m│ --- /etc/samba/smb.conf 2012-10-01 19:43:05.314282806 +0000               [37m[41m▒[40m [1m[37m[44m[K[11;1H [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▮[40m [1m[37m[44m[K[18;1H [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▒[40m [1m[37m[44m[K[24;5H[0;10m[30m[47m[bbbv8]                                  [5;4H[37m[40m[12;23r[12;1H[1L[1;30r[6;11r[6;1H[1L[1;30r[5;4H[30m[47mLine by line differences between versions
+[1m[37m[44m [0;10m[30m[47m│                                                                           [37m[41m▮[40m [1m[37m[44m[K[12;1H [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m-; BigBlueButton: Share the development directory[5;4H[37m[40m[6;11r[6;1H[1M[1;30r[12;23r[12;1H[1M[1;30r[5;4H[30m[47m                                         [11;1H[1m[37m[44m [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▮[40m [1m[37m[44m[K[23;1H [0;10m[30m[47m│ -; BigBlueButton: Share the development directory                         [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m [bbbv8]                                         [5;4H[37m[40m[6;10r[6;1H[1M[1;30r[11;17r[11;1H[1M[1;30r[18;23r[18;1H[1M[1;30r[5;4H[30m[47m--- /etc/samba/smb.conf 2012-10-01 19:43:05.314282806 +0000[10;1H[1m[37m[44m [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▒[40m [1m[37m[44m[K[17;1H [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▮[40m [1m[37m[44m[K[23;1H [0;10m[30m[47m│  [bbbv8]                                                                  [37m[41m▒[40m [1m[37m[44m[K[24;5H[0;10m[30m[47mcomment = BigBlueButton Development share[5;4H[37m[40m[6;16r[6;1H[1M[1;30r[17;23r[17;1H[1M[1;30r[5;4H[30m[47m+++ /var/run/samba/upgrades/smb.conf 2012-10-01 19:43:05.350284179 +0000[16;1H[1m[37m[44m [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▒[40m [1m[37m[44m[K[23;1H [0;10m[30m[47m│  comment = BigBlueButton Development share                                [37m[41m▮[40m [1m[37m[44m[K[24;5H[0;10m[30m[47mpath = /                                 [5;4H[37m[40m[17;23r[17;1H[1L[1;30r[6;16r[6;1H[1L[1;30r[5;4H[30m[47m--- /etc/samba/smb.conf 2012-10-01 19:43:05.314282806 +0000             
+[1m[37m[44m [0;10m[30m[47m│ +++ /var/run/samba/upgrades/smb.conf 2012-10-01 19:43:05.350284179 +0000  [37m[41m▒[40m [1m[37m[44m[K[17;1H [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▮[40m [1m[37m[44m[K[24;5H[0;10m[30m[47mcomment = BigBlueButton Development share[5;4H[37m[40m[18;23r[18;1H[1L[1;30r[11;17r[11;1H[1L[1;30r[6;10r[6;1H[1L[1;30r[5;4H[30m[47m                                                           
+[1m[37m[44m [0;10m[30m[47m│ --- /etc/samba/smb.conf 2012-10-01 19:43:05.314282806 +0000               [37m[41m▒[40m [1m[37m[44m[K[11;1H [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▮[40m [1m[37m[44m[K[18;1H [0;10m[30m[47m│ @@ -334,8 +334,6 @@                                                       [37m[41m▒[40m [1m[37m[44m[K[24;5H[0;10m[30m[47m[bbbv8]                                  [5;4H[37m[40m[12;23r[12;1H[1L[1;30r[6;11r[6;1H[1L[1;30r[5;4H[30m[47mLine by line differences between versions
+[1m[37m[44m [0;10m[30m[47m│                                                                           [37m[41m▮[40m [1m[37m[44m[K[12;1H [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m-; BigBlueButton: Share the development directory[5;4H[37m[40m[6;11r[6;1H[1M[1;30r[12;23r[12;1H[1M[1;30r[5;4H[30m[47m                                         [11;1H[1m[37m[44m [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▮[40m [1m[37m[44m[K[23;1H [0;10m[30m[47m│ -; BigBlueButton: Share the development directory                         [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m [bbbv8]                                         [5;4H[5;78H↑[37m[40m [6;78H[30m[47m▒[37m[40m [7;78H[30m[47m▒[37m[40m [8;78H[30m[47m▒[37m[40m [9;78H[30m[47m▒[37m[40m [10;78H[30m[47m▒[37m[40m [11;78H[30m[47m▮[37m[40m [12;78H[30m[47m▒[37m[40m [13;78H[30m[47m▒[37m[40m [14;78H[30m[47m▒[37m[40m [15;78H[30m[47m▒[37m[40m [16;78H[30m[47m▒[37m[40m [17;78H[30m[47m▒[37m[40m [18;78H[30m[47m▒[37m[40m [19;78H[30m[47m▒[37m[40m [20;78H[30m[47m▒[37m[40m [21;78H[30m[47m▒[37m[40m [22;78H[30m[47m▒[37m[40m [23;78H[30m[47m▒[37m[40m [24;78H[30m[47m↓[37m[40m [26;37H[41m<Ok>[26;38H[5;78H↑[40m [6;78H[41m▒[40m [7;78H[41m▒[40m [8;78H[41m▒[40m [9;78H[41m▒[40m [10;78H[41m▒[40m [11;78H[41m▮[40m [12;78H[41m▒[40m [13;78H[41m▒[40m [14;78H[41m▒[40m [15;78H[41m▒[40m [16;78H[41m▒[40m [17;78H[41m▒[40m [18;78H[41m▒[40m [19;78H[41m▒[40m [20;78H[41m▒[40m [21;78H[41m▒[40m [22;78H[41m▒[40m [23;78H[41m▒[40m [24;78H[41m↓[40m [26;37H[30m[47m<Ok>[5;4H[37m[40m[12;23r[12;1H[1L[1;30r[6;11r[6;1H[1L[1;30r[5;4H[30m[47mLine by line differences between versions
+[1m[37m[44m [0;10m[30m[47m│                                                                           [37m[41m▮[40m [1m[37m[44m[K[12;1H [0;10m[30m[47m│  ; interfaces = 127.0.0.0/8 eth0                                          [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m-; BigBlueButton: Share the development directory[5;4H[5;78H↑[37m[40m [6;78H[30m[47m▮[37m[40m [7;78H[30m[47m▒[37m[40m [8;78H[30m[47m▒[37m[40m [9;78H[30m[47m▒[37m[40m [10;78H[30m[47m▒[37m[40m [11;78H[30m[47m▒[37m[40m [12;78H[30m[47m▒[37m[40m [13;78H[30m[47m▒[37m[40m [14;78H[30m[47m▒[37m[40m [15;78H[30m[47m▒[37m[40m [16;78H[30m[47m▒[37m[40m [17;78H[30m[47m▒[37m[40m [18;78H[30m[47m▒[37m[40m [19;78H[30m[47m▒[37m[40m [20;78H[30m[47m▒[37m[40m [21;78H[30m[47m▒[37m[40m [22;78H[30m[47m▒[37m[40m [23;78H[30m[47m▒[37m[40m [24;78H[30m[47m↓[37m[40m [26;37H[41m<Ok>[26;38H[?25h[?0c
+
+
+
+[40m[0;10m[39;49m[K[1;30r[4l[?25l[?1c[0;10m[37m[40m[1;30r[H[J[1;1H[1m[37m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[0;10m[37m[44mPackage configuration[7;3H[30m[47m┌────────────────────────────┤ [31mSamba Server[30m ├─────────────────────────────┐[8;3H│ A new version of configuration file /etc/samba/smb.conf is available,   │[1m[37m[40m [9;3H[0;10m[30m[47m│ but the version installed currently has been locally modified.          │[1m[37m[40m [10;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [11;3H[0;10m[30m[47m│ What do you want to do about modified configuration file smb.conf?      │[1m[37m[40m [12;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [13;3H[0;10m[30m[47m│       install the package maintainer's version                          │[1m[37m[40m [14;3H[0;10m[30m[47m│       [37m[41mkeep the local version currently installed                [30m[47m        │[1m[37m[40m [15;3H[0;10m[30m[47m│       show the differences between the versions                         │[1m[37m[40m [16;3H[0;10m[30m[47m│       show a side-by-side difference between the versions               │[1m[37m[40m [17;3H[0;10m[30m[47m│       show a 3-way difference between available versions                │[1m[37m[40m [18;3H[0;10m[30m[47m│       do a 3-way merge between available versions (experimental)        │[1m[37m[40m [19;3H[0;10m[30m[47m│       start a new shell to examine the situation                        │[1m[37m[40m [20;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [21;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [22;3H[0;10m[30m[47m│                                 <Ok>                                    │[1m[37m[40m [23;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [24;3H[0;10m[30m[47m└─────────────────────────────────────────────────────────────────────────┘[1m[37m[40m [25;4H                                                                           [14;11H[0;10m[30m[47mkeep the local version currently installed                [15;11H[37m[41mshow the differences between the versions                 [15;11H[30m[47mshow the differences between the versions                 [16;11H[37m[41mshow a side-by-side difference between the versions       [16;11H[?25h[?0c[30;1H[40m[0;10m[39;49m[K[1;30r[4l[?25l[?1c[0;10m[37m[40m[1;30r[H[J[1;1H[1m[37m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[0;10m[37m[44mPackage configuration[3;2H[30m[47m┌─────────────────────────────┤ [31mSamba Server[30m ├──────────────────────────────┐[4;2H│                                                                           │[1m[37m[40m [5;2H[0;10m[30m[47m│ Line by line differences between versions                                 [37m[41m↑[1m[37m[40m [6;2H[0;10m[30m[47m│                                                                           [37m[41m▮[1m[37m[40m [7;2H[0;10m[30m[47m│ # #                                                                       [37m[41m▒[1m[37m[40m [8;2H[0;10m[30m[47m│ # Sample configuration file for the Samba suite for Debian GN # Sample    [37m[41m▒[1m[37m[40m [9;2H[0;10m[30m[47m│ configuration file for the Samba suite for Debian GN                      [37m[41m▒[1m[37m[40m [10;2H[0;10m[30m[47m│ # #                                                                       [37m[41m▒[1m[37m[40m [11;2H[0;10m[30m[47m│ # #                                                                       [37m[41m▒[1m[37m[40m [12;2H[0;10m[30m[47m│ # This is the main Samba configuration file. You should read # This is    [37m[41m▒[1m[37m[40m [13;2H[0;10m[30m[47m│ the main Samba configuration file. You should read                        [37m[41m▒[1m[37m[40m [14;2H[0;10m[30m[47m│ # smb.conf(5) manual page in order to understand the options #            [37m[41m▒[1m[37m[40m [15;2H[0;10m[30m[47m│ smb.conf(5) manual page in order to understand the options                [37m[41m▒[1m[37m[40m [16;2H[0;10m[30m[47m│ # here. Samba has a huge number of configurable options most # here.      [37m[41m▒[1m[37m[40m [17;2H[0;10m[30m[47m│ Samba has a huge number of configurable options most                      [37m[41m▒[1m[37m[40m [18;2H[0;10m[30m[47m│ # are not shown in this example # are not shown in this example           [37m[41m▒[1m[37m[40m [19;2H[0;10m[30m[47m│ # #                                                                       [37m[41m▒[1m[37m[40m [20;2H[0;10m[30m[47m│ # Some options that are often worth tuning have been included # Some      [37m[41m▒[1m[37m[40m [21;2H[0;10m[30m[47m│ options that are often worth tuning have been included                    [37m[41m▒[1m[37m[40m [22;2H[0;10m[30m[47m│ # commented-out examples in this file. # commented-out examples in this   [37m[41m▒[1m[37m[40m [23;2H[0;10m[30m[47m│ file.                                                                     [37m[41m▒[1m[37m[40m [24;2H[0;10m[30m[47m│ # - When such options are commented with ";", the proposed s # - When     [37m[41m↓[1m[37m[40m [25;2H[0;10m[30m[47m│                                                                            [1m[37m[40m [26;2H[0;10m[30m[47m│                                  <Ok>                                      [1m[37m[40m [27;2H[0;10m[30m[47m│                                                                           │[1m[37m[40m [28;2H[0;10m[30m[47m└───────────────────────────────────────────────────────────────────────────┘[1m[37m[40m [29;3H                                                                             [5;4H[0;10m[37m[40m[7;23r[7;1H[1M[1;30r[5;4H[30m[47m                                         [6;4H# #[23;1H[1m[37m[44m [0;10m[30m[47m│ # - When such options are commented with ";", the proposed s # - When     [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47msuch options are commented with ";", the proposed s                  [5;4H[37m[40m[7;23r[7;1H[1M[1;30r[5;4H[30m[47m# #[6;6HSample configuration file for the Samba suite for Debian GN # Sample[23;1H[1m[37m[44m [0;10m[30m[47m│ such options are commented with ";", the proposed s                       [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m# differs from the default Samba behaviour # differs from the default[5;4H[37m[40m[7;23r[7;1H[1M[1;30r[5;6H[30m[47mSample configuration file for the Samba suite for Debian GN # Sample[6;4Hconfiguration file for the Samba suite for Debian GN                  [23;1H[1m[37m[44m [0;10m[30m[47m│ # differs from the default Samba behaviour # differs from the default     [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47mSamba behaviour                                                      [5;4H[37m[40m[8;23r[8;1H[1M[1;30r[5;4H[30m[47mconfiguration file for the Samba suite for Debian GN                  [6;4H# #                                                 [23;1H[1m[37m[44m [0;10m[30m[47m│ Samba behaviour                                                           [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m# - When commented with "#", the proposed setting is the def # - When[5;4H[37m[40m[7;23r[7;1H[1M[1;30r[5;4H[30m[47m# #                                                 [23;1H[1m[37m[44m [0;10m[30m[47m│ # - When commented with "#", the proposed setting is the def # - When     [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47mcommented with "#", the proposed setting is the def                  [5;4H[37m[40m[7;23r[7;1H[1M[1;30r[6;6H[30m[47mThis is the main Samba configuration file. You should read # This is[23;1H[1m[37m[44m [0;10m[30m[47m│ commented with "#", the proposed setting is the def                       [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47m# behaviour of Samba but the option is considered importan # behaviour[5;4H[37m[40m[7;23r[7;1H[1M[1;30r[5;6H[30m[47mThis is the main Samba configuration file. You should read # This is[6;4Hthe main Samba configuration file. You should read                    [23;1H[1m[37m[44m [0;10m[30m[47m│ # behaviour of Samba but the option is considered importan # behaviour    [37m[41m▒[40m [1m[37m[44m[K[24;4H[0;10m[30m[47mof Samba but the option is considered importan                        [5;4H[5;78H↑[37m[40m [6;78H[30m[47m▮[37m[40m [7;78H[30m[47m▒[37m[40m [8;78H[30m[47m▒[37m[40m [9;78H[30m[47m▒[37m[40m [10;78H[30m[47m▒[37m[40m [11;78H[30m[47m▒[37m[40m [12;78H[30m[47m▒[37m[40m [13;78H[30m[47m▒[37m[40m [14;78H[30m[47m▒[37m[40m [15;78H[30m[47m▒[37m[40m [16;78H[30m[47m▒[37m[40m [17;78H[30m[47m▒[37m[40m [18;78H[30m[47m▒[37m[40m [19;78H[30m[47m▒[37m[40m [20;78H[30m[47m▒[37m[40m [21;78H[30m[47m▒[37m[40m [22;78H[30m[47m▒[37m[40m [23;78H[30m[47m▒[37m[40m [24;78H[30m[47m↓[37m[40m [26;37H[41m<Ok>[26;38H[?25h[?0c
+
+
+
+[40m[0;10m[39;49m[K[1;30r[4l[?25l[?1c[0;10m[37m[40m[1;30r[H[J[1;1H[1m[37m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[0;10m[37m[44mPackage configuration[7;3H[30m[47m┌────────────────────────────┤ [31mSamba Server[30m ├─────────────────────────────┐[8;3H│ A new version of configuration file /etc/samba/smb.conf is available,   │[1m[37m[40m [9;3H[0;10m[30m[47m│ but the version installed currently has been locally modified.          │[1m[37m[40m [10;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [11;3H[0;10m[30m[47m│ What do you want to do about modified configuration file smb.conf?      │[1m[37m[40m [12;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [13;3H[0;10m[30m[47m│       install the package maintainer's version                          │[1m[37m[40m [14;3H[0;10m[30m[47m│       [37m[41mkeep the local version currently installed                [30m[47m        │[1m[37m[40m [15;3H[0;10m[30m[47m│       show the differences between the versions                         │[1m[37m[40m [16;3H[0;10m[30m[47m│       show a side-by-side difference between the versions               │[1m[37m[40m [17;3H[0;10m[30m[47m│       show a 3-way difference between available versions                │[1m[37m[40m [18;3H[0;10m[30m[47m│       do a 3-way merge between available versions (experimental)        │[1m[37m[40m [19;3H[0;10m[30m[47m│       start a new shell to examine the situation                        │[1m[37m[40m [20;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [21;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [22;3H[0;10m[30m[47m│                                 <Ok>                                    │[1m[37m[40m [23;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [24;3H[0;10m[30m[47m└─────────────────────────────────────────────────────────────────────────┘[1m[37m[40m [25;4H                                                                           [14;11H[0;10m[30m[47mkeep the local version currently installed                [15;11H[37m[41mshow the differences between the versions                 [15;11H[30m[47mshow the differences between the versions                 [16;11H[37m[41mshow a side-by-side difference between the versions       [16;11H[30m[47mshow a side-by-side difference between the versions       [17;11H[37m[41mshow a 3-way difference between available versions        [17;11H[Ashow a side-by-side difference between the versions       [17;11H[30m[47mshow a 3-way difference between available versions        [16;11Hshow a side-by-side difference between the versions       [17;11H[37m[41mshow a 3-way difference between available versions        [17;11H[?25h[?0c[30;1H[40m[0;10m[39;49m[K[1;30r[4l[?25l[?1c[0;10m[37m[40m[1;30r[H[J[1;1H[1m[37m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[0;10m[37m[44mPackage configuration[3;17H[30m[47m┌──────────────┤ [31mSamba Server[30m ├───────────────┐[4;17H│                                             │[1m[37m[40m [5;17H[0;10m[30m[47m│ Line by line differences between versions   │[1m[37m[40m [6;17H[0;10m[30m[47m│                                             │[1m[37m[40m [7;17H[0;10m[30m[47m│ 348a                                        │[1m[37m[40m [8;17H[0;10m[30m[47m│ ||||||| Older                               │[1m[37m[40m [9;17H[0;10m[30m[47m│ =======                                     │[1m[37m[40m [10;17H[0;10m[30m[47m│ [bbbv8]                                     │[1m[37m[40m [11;17H[0;10m[30m[47m│  comment = BigBlueButton Development share  │[1m[37m[40m [12;17H[0;10m[30m[47m│  path = /                                   │[1m[37m[40m [13;17H[0;10m[30m[47m│  browseable = yes                           │[1m[37m[40m [14;17H[0;10m[30m[47m│  read only = no                             │[1m[37m[40m [15;17H[0;10m[30m[47m│  create mask = 7777                         │[1m[37m[40m [16;17H[0;10m[30m[47m│  directory mask = 7777                      │[1m[37m[40m [17;17H[0;10m[30m[47m│  guest ok = yes                             │[1m[37m[40m [18;17H[0;10m[30m[47m│  force user = root                          │[1m[37m[40m [19;17H[0;10m[30m[47m│                                             │[1m[37m[40m [20;17H[0;10m[30m[47m│ >>>>>>> New                                 │[1m[37m[40m [21;17H[0;10m[30m[47m│ .                                           │[1m[37m[40m [22;17H[0;10m[30m[47m│ 336a                                        │[1m[37m[40m [23;17H[0;10m[30m[47m│ <<<<<<< Current                             │[1m[37m[40m [24;17H[0;10m[30m[47m│ .                                           │[1m[37m[40m [25;17H[0;10m[30m[47m│                                             │[1m[37m[40m [26;17H[0;10m[30m[47m│                   [37m[41m<Ok>[30m[47m                      │[1m[37m[40m [27;17H[0;10m[30m[47m│                                             │[1m[37m[40m [28;17H[0;10m[30m[47m└─────────────────────────────────────────────┘[1m[37m[40m [29;18H                                               [26;38H[?25h[?0c
+
+
+
+[0;10m[37m[40m[0;10m[39;49m[K[1;30r[4l[?25l[?1c[0;10m[37m[40m[1;30r[H[J[1;1H[1m[37m[44m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1;1H[0;10m[37m[44mPackage configuration[7;3H[30m[47m┌────────────────────────────┤ [31mSamba Server[30m ├─────────────────────────────┐[8;3H│ A new version of configuration file /etc/samba/smb.conf is available,   │[1m[37m[40m [9;3H[0;10m[30m[47m│ but the version installed currently has been locally modified.          │[1m[37m[40m [10;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [11;3H[0;10m[30m[47m│ What do you want to do about modified configuration file smb.conf?      │[1m[37m[40m [12;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [13;3H[0;10m[30m[47m│       install the package maintainer's version                          │[1m[37m[40m [14;3H[0;10m[30m[47m│       [37m[41mkeep the local version currently installed                [30m[47m        │[1m[37m[40m [15;3H[0;10m[30m[47m│       show the differences between the versions                         │[1m[37m[40m [16;3H[0;10m[30m[47m│       show a side-by-side difference between the versions               │[1m[37m[40m [17;3H[0;10m[30m[47m│       show a 3-way difference between available versions                │[1m[37m[40m [18;3H[0;10m[30m[47m│       do a 3-way merge between available versions (experimental)        │[1m[37m[40m [19;3H[0;10m[30m[47m│       start a new shell to examine the situation                        │[1m[37m[40m [20;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [21;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [22;3H[0;10m[30m[47m│                                 <Ok>                                    │[1m[37m[40m [23;3H[0;10m[30m[47m│                                                                         │[1m[37m[40m [24;3H[0;10m[30m[47m└─────────────────────────────────────────────────────────────────────────┘[1m[37m[40m [25;4H                                                                           [14;11H[?25h[?0c[30;1H[0;10m[37m[40m[0;10m[39;49m[K
+Setting up libwbclient0 (2:3.4.7~dfsg-1ubuntu3.10) ...
+
+Setting up samba-common-bin (2:3.4.7~dfsg-1ubuntu3.10) ...
+
+Setting up samba (2:3.4.7~dfsg-1ubuntu3.10) ...
+smbd start/running, process 17225
+nmbd start/running, process 17234
+
+Setting up libsmbclient (2:3.4.7~dfsg-1ubuntu3.10) ...
+
+Setting up linux-firmware (1.34.14) ...
+Setting up linux-image-virtual (2.6.32.43.50) ...
+Setting up linux-libc-dev (2.6.32-43.97) ...
+Setting up nginx (0.7.65-1ubuntu2.3) ...
+Trying a soft restart
+PID IS RIGHT
+WAITING
+QUIT
+
+Setting up openssl (0.9.8k-7ubuntu8.13) ...
+
+Setting up python-software-properties (0.75.10.3) ...
+
+Setting up sudo (1.7.2p1-1ubuntu5.4) ...
+
+Setting up bbb-apps (0.80ubuntu35) ...
+ * Starting Red5 Server red5       [80G  
+[74G[ OK ]
+
+Setting up bbb-apps-deskshare (0.80ubuntu37) ...
+
+Setting up bbb-apps-sip (0.80ubuntu17) ...
+
+Setting up bbb-apps-video (0.80ubuntu16) ...
+
+Setting up bbb-client (0.80ubuntu286) ...
+
+Setting up bbb-common (0.80ubuntu99) ...
+
+Setting up bbb-record-core (0.80ubuntu104) ...
+Record and Playback monitoring started
+Using builder (2.1.2) 
+Using diff-lcs (1.1.2) 
+Using json (1.4.6) 
+Using term-ansicolor (1.0.5) 
+Using gherkin (2.2.9) 
+Using cucumber (0.9.2) 
+Using curb (0.7.15) 
+Using mime-types (1.16) 
+Using nokogiri (1.4.4) 
+Using open4 (1.3.0) 
+Using rack (1.2.2) 
+Using redis (2.1.1) 
+Using redis-namespace (0.10.0) 
+Using tilt (1.2.2) 
+Using sinatra (1.2.1) 
+Using vegas (0.1.8) 
+Using resque (1.15.0) 
+Using rspec-core (2.0.0) 
+Using rspec-expectations (2.0.0) 
+Using rspec-mocks (2.0.0) 
+Using rspec (2.0.0) 
+Using rubyzip (0.9.4) 
+Using streamio-ffmpeg (0.7.8) 
+Using trollop (1.16.2) 
+Using bundler (1.0.22) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+
+Setting up bbb-playback-slides (0.80ubuntu84) ...
+
+Setting up red5 (1.0RC1-ubuntu32) ...
+ * Starting Red5 Server red5       [80G [74G[ OK ]
+
+Setting up openjdk-6-jre-lib (6b24-1.11.4-1ubuntu0.10.04.1) ...
+
+Setting up openjdk-6-jre-headless (6b24-1.11.4-1ubuntu0.10.04.1) ...
+Installing new version of config file /etc/java-6-openjdk/security/java.policy ...
+Installing new version of config file /etc/java-6-openjdk/security/nss.cfg ...
+Installing new version of config file /etc/java-6-openjdk/security/java.security ...
+Installing new version of config file /etc/java-6-openjdk/jvm.cfg ...
+Installing new version of config file /etc/java-6-openjdk/fontconfig.properties ...
+
+Setting up openjdk-6-jre (6b24-1.11.4-1ubuntu0.10.04.1) ...
+
+Setting up icedtea-6-jre-cacao (6b24-1.11.4-1ubuntu0.10.04.1) ...
+Setting up openjdk-6-jdk (6b24-1.11.4-1ubuntu0.10.04.1) ...
+/usr/lib/jvm/java-6-openjdk/bin/apt
+
+Setting up icedtea-netx (1.2-2ubuntu0.10.04.2) ...
+update-alternatives: using /usr/lib/jvm/java-6-openjdk/jre/bin/itweb-settings to provide /usr/bin/itweb-settings (itweb-settings) in auto mode.
+
+Setting up openoffice.org-style-galaxy (1:3.2.0-7ubuntu4.4) ...
+Setting up openoffice.org-common (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-core (1:3.2.0-7ubuntu4.4) ...
+file:///usr/lib/openoffice/basis3.2/program/libbf_migratefilterli.so
+register component 'file:///usr/lib/openoffice/basis3.2/program/libbf_migratefilterli.so' in registry '/var/lib/openoffice/basis3.2/program/services.rdb' succesful!
+
+Setting up openoffice.org-base-core (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-writer (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-calc (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-java-common (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-base (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-draw (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-impress (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-math (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-report-builder-bin (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-officebean (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-filter-mobiledev (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org (1:3.2.0-7ubuntu4.4) ...
+
+Setting up python-uno (1:3.2.0-7ubuntu4.4) ...
+
+Setting up openoffice.org-filter-binfilter (1:3.2.0-7ubuntu4.4) ...
+file:///usr/lib/openoffice/basis3.2/program/libbf_migratefilterli.so
+register component 'file:///usr/lib/openoffice/basis3.2/program/libbf_migratefilterli.so' in registry '/var/lib/openoffice/basis3.2/program/services.rdb' succesful!
+
+Setting up bbb-openoffice-headless (0.80ubuntu2) ...
+Starting OpenOffice headless server
+
+Setting up bbb-web (0.80ubuntu107) ...
+ * Stopping Tomcat servlet engine tomcat6       [80G [74G[ OK ]
+ * Starting Tomcat servlet engine tomcat6       [80G [74G[ OK ]
+
+Setting up bbb-config (0.80ubuntu94) ...
+
+Setting up bbb-demo (0.80ubuntu63) ...
+Restarting nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+configuration file /etc/nginx/nginx.conf test is successful
+nginx.
+
+Processing triggers for python-central ...
+Setting up openoffice.org-emailmerge (1:3.2.0-7ubuntu4.4) ...
+Copying: mailmerge.py
+Enabling: mailmerge.py
+
+unopkg done.
+
+Processing triggers for libc-
