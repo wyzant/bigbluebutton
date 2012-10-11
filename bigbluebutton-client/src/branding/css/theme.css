@@ -25,7 +25,7 @@ MDIWindow
   backgroundImage: Embed(source="assets/img/topToolbarBG.jpg");
   backgroundSize: "100%";
 }
-/*The image for your logo is 200x200 pixels. No other size is currently supported so resize your logo accordingly. The logo will always appear in the lower right corner. */
+
 BrandingLogo
 {
 	backgroundImage: Embed(source="assets/img/logo.png");
@@ -54,18 +54,17 @@ Button
 	roundedBottomCorners: false;
 	cornerRadius: 5;
 	dropShadowEnabled: false;  
-	headerHeight: 29;
+	headerHeight: 25;
 	backgroundAlpha: 1; 
 	backgroundColor: #FFFFFF;
-	backgroundImage: Embed(source="assets/img/windowBG.jpg");
-	titleBackgroundSkin: Embed(source="assets/img/toolbarBG.jpg");
+	/*backgroundImage: Embed(source="assets/img/innerWindowBG.png");
+	titleBackgroundSkin: Embed(source="assets/img/toolbarBG.jpg");*/
 	color: #255074;
-	/*titleBackgroundSkin: Embed(source="assets/swf/WindowsAssets.swf", symbol="headerBgDefault");*/
 }
 
 .mdiWindowNoFocus
 {
-	borderColor: #b0bbc0;
+	borderColor: #afbcc0;
 	borderAlpha: 1;
 	borderThicknessLeft: 2;
 	borderThicknessTop: 0;
@@ -74,13 +73,12 @@ Button
 	roundedBottomCorners: false;
 	cornerRadius: 5;
 	dropShadowEnabled: false;
-	headerHeight: 29;
+	headerHeight: 25;
 	backgroundAlpha: 1; 
 	backgroundColor: #FFFFFF;
-	backgroundImage: Embed(source="assets/img/windowBG.jpg");
-	titleBackgroundSkin: Embed(source="assets/img/toolbarBG_nofocus.jpg");
+	/*backgroundImage: Embed(source="assets/img/innerWindowBG.png");
+	/*titleBackgroundSkin: Embed(source="assets/img/toolbarBG_nofocus.jpg");*/
 	color: #255074;
-	/*titleBackgroundSkin: Embed(source="assets/swf/WindowsAssets.swf", symbol="headerBgDefaultNoFocus");*/
 	
 }
 

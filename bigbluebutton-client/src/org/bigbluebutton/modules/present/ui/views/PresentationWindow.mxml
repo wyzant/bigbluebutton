@@ -175,7 +175,7 @@
 				var dispatcher:Dispatcher = new Dispatcher();
 				var dispEvent:WindowResizedEvent = new WindowResizedEvent(WindowResizedEvent.PRESENTATION_WINDOW_RESIZED_EVENT);
 				dispEvent.width = parentWidth;
-				dispEvent.height = parentHeight;
+				dispEvent.height = parentHeight + 100;
 				dispEvent.fitToPage = fitToPage;
 				dispEvent.old_width = this.slideView.width;
 				dispEvent.old_height = this.slideView.height;
