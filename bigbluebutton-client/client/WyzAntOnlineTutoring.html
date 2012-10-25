@@ -3,18 +3,37 @@
         <head>
                 <title>WyzAnt Online Tutoring</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+                <link rel="shortcut icon" href="http://www.wyzant.com//images/wyzant.ico" />
                 <style type="text/css" media="screen">
-                        #header{height:60px;background:url('images/header.png') repeat-x;}
-                        #logo{margin:10px 0 0 5%;}
+                        #header{height:45px;background:url('images/header.png') repeat-x;}
+                        #logo{margin:1px 0 0 5%;}
                         html, body, #content    { height:100%;font-family: Tahoma;color:#4F4F4F;}
-                        #content{height:97%;}
+                        #content{height:98.5%;}
                         body                                    { margin:0; padding:0; overflow:hidden; }
                         #altContent                             { /* style alt content */ }
                         h1{border: medium none;color:#5F9C0C;font-size: 32px;font-weight: normal;margin: 5px 0;padding-bottom: 5px;text-align: left;}
                 </style>
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
                 <script type="text/javascript" src="swfobject/swfobject.js"></script>
                 <script type="text/javascript">
                 	swfobject.registerObject("BigBlueButton", "10.3.0", "expressInstall.swf");
+                	window.onload = maxWindow;
+
+                  function maxWindow() {
+                      window.moveTo(0, 0);
+
+                      if (document.all) {
+                          top.window.resizeTo(screen.availWidth, screen.availHeight);
+                      }
+
+                      else if (document.layers || document.getElementById) {
+                          if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
+                              top.window.outerHeight = screen.availHeight;
+                              top.window.outerWidth = screen.availWidth;
+                          }
+                      }
+                  }
+
                 </script>
                 <script src="lib/jquery-1.5.1.min.js" language="javascript"></script>
                 <script src="lib/bigbluebutton.js" language="javascript"></script>

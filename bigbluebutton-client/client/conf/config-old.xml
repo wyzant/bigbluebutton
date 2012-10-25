@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<config>
+    <localeversion suppressWarning="true">0.8-beta4</localeversion>
+    <version>3973-2012-03-06</version>
+    <help url="http://172.18.0.124/help.html"/>
+    <porttest host="172.18.0.124" application="video"/>    
+    <application uri="rtmp://172.18.0.124/bigbluebutton" host="http://172.18.0.124/bigbluebutton/api/enter" />
+    <language userSelectionEnabled="true" />
+    <skinning enabled="true" url="branding/css/theme.css.swf" />
+    <layout showLogButton="true" showVideoLayout="false" showResetLayout="true" showToolbar="true" showHelpButton="true" showLogoutWindow="true"/>
+    
+	<modules>
+		
+		<module name="ChatModule" url="ChatModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			dependsOn="ViewersModule"	
+			translationOn="false"
+			translationEnabled="false"	
+			privateEnabled="true"  
+			position="middle-left"
+		/>
+		
+		<module name="ViewersModule" url="ViewersModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			host="http://172.18.0.124/bigbluebutton/api/enter"
+			allowKickUser="false"
+			windowVisible="true"
+		/>
+			
+		<module name="ListenersModule" url="ListenersModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			recordingHost="http://172.18.0.124"
+			windowVisible="false"
+			position="bottom-left"
+		/>
+		
+		<module name="DeskShareModule" 
+			url="DeskShareModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/deskShare"
+			autoStart="false"
+		/>
+		
+		<module name="PhoneModule" url="PhoneModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/sip" 
+			autoJoin="true"
+			skipCheck="false"
+			showButton="true"
+			enabledEchoCancel="true"
+			dependsOn="ViewersModule"
+		/>
+
+		<module name="VideoconfModule" url="VideoconfModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/video"
+			dependson = "ViewersModule"
+			videoQuality = "100"
+			presenterShareOnly = "false"
+			resolutions = "320x240,640x480,1280x720"
+			autoStart = "false"
+			showButton = "true"
+			showCloseButton = "true"
+			publishWindowVisible = "true"
+			viewerWindowMaxed = "false"
+			viewerWindowLocation = "top"
+			camKeyFrameInterval = "30"
+			camModeFps = "10"
+			camQualityBandwidth = "0"
+			camQualityPicture = "90"
+			smoothVideo="false"
+			applyConvolutionFilter="false"
+			convolutionFilter="-1, 0, -1, 0, 6, 0, -1, 0, -1"
+			filterBias="0"
+			filterDivisor="4"
+			enableH264 = "true"
+			h264Level = "2.1"
+			h264Profile = "main"
+		/>
+		
+		<module name="WhiteboardModule" url="WhiteboardModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			dependsOn="PresentModule"
+		/>
+		
+		<module name="PresentModule" url="PresentModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			host="http://172.18.0.124" 
+			showPresentWindow="true"
+			showWindowControls="true"
+			dependsOn="ViewersModule"
+			position="bottom-left"
+		/>
+
+		<module name="VideodockModule" url="VideodockModule.swf?v=3973"
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			dependsOn="VideoconfModule, ViewersModule"
+			autoDock="true"
+			maximizeWindow="false"
+			position="bottom-left"
+			width="172"
+			height="109"
+			layout="smart"
+			oneAlwaysBigger="false"
+		/>
+		
+		<!-- new module in development: 
+		<module name="DynamicInfoModule" url="DynamicInfoModule.swf?v=3973" 
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			host="http://172.18.0.124" 
+			infoURL="http://172.18.0.124/client/conf/example-info-data.xml?user={userID}&role={role}&meetingID={meetingID}"
+		/>
+		-->
+		
+		<!--<module name="ExampleChatModule" url="ExampleChatModule.swf?v=56" 
+			uri="rtmp://172.18.0.124/bigbluebutton" 
+			host="http://172.18.0.124"
+		/>-->
+		
+		<!--<module name="SharedNotesModule" url="SharedNotesModule.swf?v=3973" 
+			uri="http://172.18.0.124/bigbluebutton" 
+			dependsOn="ViewersModule"
+		/>-->
+		
+	</modules>
+</config>
