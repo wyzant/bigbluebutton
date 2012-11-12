@@ -1283,7 +1283,8 @@ class ApiController {
 	  withFormat {
 		  xml {
 			  render(contentType:"text/xml") {
-				  response() {
+				  mkp.pi("xml-stylesheet": "type='text/xsl' href='/client/errorPage.xsl'" )
+				  response() {            
 					  returncode(RESP_CODE_FAILED)
 					  messageKey(key)
 					  message(msg)
