@@ -86,15 +86,15 @@
       private function showControlButtons(presenter:Boolean):void {
           var vidOptions:VideoConfOptions = new VideoConfOptions();
           if (UsersUtil.amIModerator()) {
-            muteUnmuteBtn.visible = switchPresenter.visible = ejectUserBtn.visible = true;
+            switchPresenter.visible = true; //muteUnmuteBtn.visible = ejectUserBtn.visible = true;
           } else if (vidOptions.controlsForPresenter) {
-            muteUnmuteBtn.visible = switchPresenter.visible = ejectUserBtn.visible = presenter;
+            switchPresenter.visible = presenter; //muteUnmuteBtn.visible = ejectUserBtn.visible = presenter;
           } else {
-            muteUnmuteBtn.visible = switchPresenter.visible = ejectUserBtn.visible = false;
+            switchPresenter.visible = false; //muteUnmuteBtn.visible = ejectUserBtn.visible = false;
           }
-          muteUnmuteBtn.toolTip = ResourceUtil.getInstance().getString('bbb.video.controls.muteButton.toolTip', [UsersUtil.getUserName(sharerUserID)]);
+          //muteUnmuteBtn.toolTip = ResourceUtil.getInstance().getString('bbb.video.controls.muteButton.toolTip', [UsersUtil.getUserName(sharerUserID)]);
           switchPresenter.toolTip = ResourceUtil.getInstance().getString('bbb.video.controls.switchPresenter.toolTip', [UsersUtil.getUserName(sharerUserID)]);
-          ejectUserBtn.toolTip = ResourceUtil.getInstance().getString('bbb.video.controls.ejectUserBtn.toolTip', [UsersUtil.getUserName(sharerUserID)]);
+          //ejectUserBtn.toolTip = ResourceUtil.getInstance().getString('bbb.video.controls.ejectUserBtn.toolTip', [UsersUtil.getUserName(sharerUserID)]);
       }
       
       private function showPrivateChatButton():void {
@@ -108,8 +108,8 @@
       }
     ]]>
   </mx:Script>
-  <mx:Button id="muteUnmuteBtn" visible="false" click="onMuteUnmuteClicked()" icon="{img_mute_icon}" width="{BUTTONS_SIZE}" height="{BUTTONS_SIZE}"/>
+  <!--<mx:Button id="muteUnmuteBtn" visible="false" click="onMuteUnmuteClicked()" icon="{img_mute_icon}" width="{BUTTONS_SIZE}" height="{BUTTONS_SIZE}"/>-->
   <mx:Button id="switchPresenter" visible="false" click="onSwitchPresenterClicked()" icon="{adminIcon}" width="{BUTTONS_SIZE}" height="{BUTTONS_SIZE}"/>
-  <mx:Button id="ejectUserBtn" visible="false" click="onKickUserClicked()" icon="{signOutIcon}" width="{BUTTONS_SIZE}" height="{BUTTONS_SIZE}"/>
+  <!--<mx:Button id="ejectUserBtn" visible="false" click="onKickUserClicked()" icon="{signOutIcon}" width="{BUTTONS_SIZE}" height="{BUTTONS_SIZE}"/>-->
   <mx:Button id="privateChatBtn" click="onPrivateChatClicked()" icon="{chatIcon}" width="{BUTTONS_SIZE}" height="{BUTTONS_SIZE}"/>
 </mx:HBox>

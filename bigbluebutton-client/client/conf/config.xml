@@ -7,7 +7,7 @@
     <application uri="rtmp://172.18.0.124/bigbluebutton" host="http://172.18.0.124/bigbluebutton/api/enter" />
     <language userSelectionEnabled="true" />
     <skinning enabled="true" url="branding/css/theme.css.swf" />
-    <layout showLogButton="true" showVideoLayout="false" showResetLayout="false" showToolbar="true" showHelpButton="true" showLogoutWindow="true"/>
+    <layout showLogButton="false" showVideoLayout="false" showResetLayout="false" showToolbar="true" showHelpButton="true" showLogoutWindow="true"/>
     
 	<modules>
 		

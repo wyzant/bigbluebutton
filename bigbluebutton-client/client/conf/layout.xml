@@ -12,8 +12,8 @@
     
     <window name="PresentationWindow" width="0.770" height="0.98" x=".21" y="0" />
     
-    <window name="ViewersWindow" width="0.205" height="0.18" x="0" y="0" />
-    <window name="ChatWindow" width="0.205" height="0.575" x="0" y="0.185" />
+    <window name="ViewersWindow" width="0.205" height="0.20" x="0" y="0" />
+    <window name="ChatWindow" width="0.205" height="0.555" x="0" y="0.205" />
     <window name="VideoDock" width="0.205" height="0.22" x="0" y="0.765" />
   
   </layout>
