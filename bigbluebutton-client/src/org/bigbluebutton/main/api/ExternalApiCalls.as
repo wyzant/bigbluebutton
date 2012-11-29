@@ -7,6 +7,7 @@ package org.bigbluebutton.main.api
   import org.bigbluebutton.core.UsersUtil;
   import org.bigbluebutton.core.events.CoreEvent;
   import org.bigbluebutton.core.managers.UserManager;
+  import org.bigbluebutton.main.events.BBBEvent;
   import org.bigbluebutton.main.events.ParticipantJoinEvent;
   import org.bigbluebutton.main.model.users.BBBUser;
 
@@ -32,10 +33,44 @@ package org.bigbluebutton.main.api
       payload.myRole = event.message.myRole;
       broadcastEvent(payload);        
     }
-    
-    public function handleUserJoinedVoiceEvent():void {
+
+    public function handleUserJoinedVoiceEvent(event:BBBEvent):void {
       var payload:Object = new Object();
       payload.eventName = EventConstants.USER_JOINED_VOICE;
+      payload.userID = UsersUtil.internalUserIDToExternalUserID(event.payload.userID);
+      
+      LogUtil.debug("Notifying external API that [" + UsersUtil.getUserName(event.payload.userID) + "] has joined the voice conference.");
+      
+      broadcastEvent(payload);
+    }
+    
+    public function handleUserVoiceMutedEvent(event:BBBEvent):void {
+      var payload:Object = new Object();
+      payload.eventName = EventConstants.USER_MUTED_VOICE;
+      payload.userID = UsersUtil.internalUserIDToExternalUserID(event.payload.userID);
+      payload.muted = event.payload.muted;
+      
+      LogUtil.debug("Notifying external API that [" + UsersUtil.getUserName(event.payload.userID) + "] is now muted=[" + payload.muted + "]");
+      broadcastEvent(payload);
+    }
+    
+    public function handleUserVoiceLockedEvent(event:BBBEvent):void {
+      var payload:Object = new Object();
+      payload.eventName = EventConstants.USER_LOCKED_VOICE;
+      payload.userID = UsersUtil.internalUserIDToExternalUserID(event.payload.userID);
+      payload.locked = event.payload.locked;
+      
+      LogUtil.debug("Notifying external API that [" + UsersUtil.getUserName(event.payload.userID) + "] is now locked=[" + payload.locked + "]");
+      broadcastEvent(payload);
+    }
+    
+    public function handleUserVoiceLeftEvent(event:BBBEvent):void {
+      var payload:Object = new Object();
+      payload.eventName = EventConstants.USER_LEFT_VOICE;
+      payload.userID = UsersUtil.internalUserIDToExternalUserID(event.payload.userID);
+      
+      LogUtil.debug("Notifying external API that [" + UsersUtil.getUserName(event.payload.userID) + "] has left the voice conference.");
+      
       broadcastEvent(payload);
     }
     
