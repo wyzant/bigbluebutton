@@ -72,7 +72,7 @@
 			
 		]]>
 	</mx:Script>
-
+<!--
 	<views:LayoutsCombo id="comboBox" />
 	<views:AddButton id="addButton" 
 		includeInLayout="{_enableEdit}" visible="{_enableEdit}" />
@@ -80,5 +80,5 @@
 		includeInLayout="{_enableEdit}" visible="{_enableEdit}" />
 	<views:LoadButton id="loadButton" 
 		includeInLayout="{_enableEdit}" visible="{_enableEdit}" />
-	<views:LockButton id="lockButton" />
+	<views:LockButton id="lockButton" />-->
 </mx:HBox>

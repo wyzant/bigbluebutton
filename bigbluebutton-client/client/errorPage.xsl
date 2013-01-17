@@ -40,8 +40,13 @@
 							<h2>An Error Has Occurred</h2>
 							<div>
 								<xsl:choose>
-									<xsl:when test="//messageKey='notFound'">
+									<xsl:when test="//messageKey='invalidMeetingIdentifier'">
 										We could not find the meeting your were looking for. <span class="errorCode">(error code: 1001)</span>
+									</xsl:when>
+								</xsl:choose>
+								<xsl:choose>
+									<xsl:when test="//messageKey='notFound'">
+										We could not find the meeting your were looking for. <span class="errorCode">(error code: 1002)</span>
 									</xsl:when>
 								</xsl:choose>
 								<xsl:choose>
