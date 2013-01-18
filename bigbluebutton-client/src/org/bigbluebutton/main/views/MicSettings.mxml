@@ -103,7 +103,7 @@
 				if (playingAudio) soundChannel.stop();				
 			}
 			
-			private var DEFAULT_HELP_URL:String = "http://www.bigbluebutton.org/content/videos";
+			private var DEFAULT_HELP_URL:String = "http://www.wyzant.com/OnlineTutoring/QuickHelp.aspx";
 			private function onHelpButtonClicked():void {
 				navigateToURL(new URLRequest(DEFAULT_HELP_URL));
 			}

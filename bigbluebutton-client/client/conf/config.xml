@@ -2,7 +2,7 @@
 <config>
     <localeversion suppressWarning="false">0.8</localeversion>
     <version>VERSION</version>
-    <help url="http://www..wyzant.com/OnlineTutoring/HelpRedirect.aspx"/>
+    <help url="http://www.wyzant.com/OnlineTutoring/QuickHelp.aspx"/>
     <porttest host="172.18.0.136" application="video" timeout="10000"/>    
     <application uri="rtmp://172.18.0.136/bigbluebutton" host="http://172.18.0.136/bigbluebutton/api/enter" />
     <language userSelectionEnabled="true" />
