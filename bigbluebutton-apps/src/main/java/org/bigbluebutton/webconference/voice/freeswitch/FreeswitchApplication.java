@@ -1,29 +1,24 @@
-/** 
-* ===License Header===
-*
+/**
 * BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
-*
-* Copyright (c) 2010 BigBlueButton Inc. and by respective authors (see below).
+* 
+* Copyright (c) 2012 BigBlueButton Inc. and by respective authors (see below).
 *
 * This program is free software; you can redistribute it and/or modify it under the
 * terms of the GNU Lesser General Public License as published by the Free Software
-* Foundation; either version 2.1 of the License, or (at your option) any later
+* Foundation; either version 3.0 of the License, or (at your option) any later
 * version.
-*
+* 
 * BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
 * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 * PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
 *
 * You should have received a copy of the GNU Lesser General Public License along
 * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
-* 
-* ===License Header===
+*
 */
 package org.bigbluebutton.webconference.voice.freeswitch;
 
 import java.io.File;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Observable;
@@ -36,6 +31,7 @@ import org.bigbluebutton.webconference.voice.events.ParticipantMutedEvent;
 import org.bigbluebutton.webconference.voice.events.ParticipantTalkingEvent;
 import org.bigbluebutton.webconference.voice.events.StartRecordingEvent;
 import org.bigbluebutton.webconference.voice.freeswitch.actions.BroadcastConferenceCommand;
+import org.bigbluebutton.webconference.voice.freeswitch.actions.EjectAllUsersCommand;
 import org.bigbluebutton.webconference.voice.freeswitch.actions.EjectParticipantCommand;
 import org.bigbluebutton.webconference.voice.freeswitch.actions.PopulateRoomCommand;
 import org.bigbluebutton.webconference.voice.freeswitch.actions.MuteParticipantCommand;
@@ -146,6 +142,20 @@ public class FreeswitchApplication extends Observable implements ConferenceServi
         	EjectParticipantCommand mpc = new EjectParticipantCommand(room, participant, USER);
             String jobId = c.sendAsyncApiCommand( mpc.getCommand(), mpc.getCommandArgs());
             log.debug("eject/kick called for room [{}] jobid [{}]", room, jobId);        	
+        }else {
+        	log.warn("Can't send eject request to FreeSWITCH as we are not connected.");
+        	// Let's see if we can recover the connection.
+        	startHeartbeatMonitor();
+        }
+    }
+
+    @Override
+    public void ejectAll(String room) {
+        Client c = manager.getESLClient();
+        if (c.canSend()) {
+        	EjectAllUsersCommand mpc = new EjectAllUsersCommand(room, USER);
+            String jobId = c.sendAsyncApiCommand( mpc.getCommand(), mpc.getCommandArgs());
+            log.debug("eject all user from room [{}], jobid [{}]", room, jobId);        	
         }else {
         	log.warn("Can't send eject request to FreeSWITCH as we are not connected.");
         	// Let's see if we can recover the connection.

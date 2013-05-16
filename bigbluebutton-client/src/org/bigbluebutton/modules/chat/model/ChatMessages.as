@@ -1,3 +1,21 @@
+/**
+ * BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
+ * 
+ * Copyright (c) 2012 BigBlueButton Inc. and by respective authors (see below).
+ *
+ * This program is free software; you can redistribute it and/or modify it under the
+ * terms of the GNU Lesser General Public License as published by the Free Software
+ * Foundation; either version 3.0 of the License, or (at your option) any later
+ * version.
+ * 
+ * BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License along
+ * with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+ *
+ */
 package org.bigbluebutton.modules.chat.model
 {
   import mx.collections.ArrayCollection;
@@ -16,13 +34,10 @@ package org.bigbluebutton.modules.chat.model
     public function numMessages():int {
       return messages.length;
     }
-    
+	
     public function newChatMessage(msg:ChatMessageVO):void {
       var cm:ChatMessage = new ChatMessage();
-      
-      var time:Date = new Date();
-      cm.time = ChatUtil.getHours(time) + ":" + ChatUtil.getMinutes(time);
-      
+	  
       if (messages.length == 0) {
         cm.lastSenderId = "";
         cm.lastTime = cm.time;
@@ -30,7 +45,6 @@ package org.bigbluebutton.modules.chat.model
         cm.lastSenderId = getLastSender();
         cm.lastTime = getLastTime();
       }
-      
       cm.senderId = msg.fromUserID;
       
       cm.senderLanguage = msg.fromLang;
@@ -49,7 +63,7 @@ package org.bigbluebutton.modules.chat.model
       
       var sentTime:Date = new Date();
       sentTime.setTime(cm.fromTime);
-      cm.senderTime = ChatUtil.getHours(sentTime) + ":" + ChatUtil.getMinutes(sentTime);
+      cm.time = ChatUtil.getHours(sentTime) + ":" + ChatUtil.getMinutes(sentTime);
       
       messages.addItem(cm); 
     }
@@ -70,7 +84,7 @@ package org.bigbluebutton.modules.chat.model
     
     private function getLastTime():String {
       var msg:ChatMessage = messages.getItemAt(messages.length - 1) as ChatMessage;
-      return msg.lastTime;
+      return msg.time;
     }
             
   }

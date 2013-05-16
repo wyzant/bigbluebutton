@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
 
-  Copyright (c) 2012 BigBlueButton Inc. and by respective authors (see below).
+BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
 
-  This program is free software; you can redistribute it and/or modify it under the
-  terms of the GNU Lesser General Public License as published by the Free Software
-  Foundation; either version 2.1 of the License, or (at your option) any later
-  version.
+Copyright (c) 2012 BigBlueButton Inc. and by respective authors (see below).
 
-  BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
-  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-  PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+This program is free software; you can redistribute it and/or modify it under the
+terms of the GNU Lesser General Public License as published by the Free Software
+Foundation; either version 3.0 of the License, or (at your option) any later
+version.
 
-  You should have received a copy of the GNU Lesser General Public License along
-  with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
 
-  Author: Felipe Cecagno <felipe@mconf.org>
+You should have received a copy of the GNU Lesser General Public License along
+with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 
-  $Id: $
 -->
 <mx:ComboBox xmlns:mx="http://www.adobe.com/2006/mxml" 
 			creationComplete="init()" 
@@ -27,14 +25,15 @@
 			prompt="{ResourceUtil.getInstance().getString('bbb.layout.combo.prompt')}"
 			height="{LayoutButton.BUTTON_SIZE}"
 			change="onSelectedItemChanged(event)"
-			disabledColor="{getStyle('color')}">
+			disabledColor="{getStyle('color')}"
+            rowCount="10" >
 	
 	<mate:Listener type="{LayoutEvent.APPLY_DEFAULT_LAYOUT_EVENT}" method="onApplyDefaultLayout" />
 	<mate:Listener type="{LayoutEvent.REMOTE_LOCK_LAYOUT_EVENT}" receive="{enabled=false || UserManager.getInstance().getConference().amIModerator()}" />
 	<mate:Listener type="{LayoutEvent.REMOTE_UNLOCK_LAYOUT_EVENT}" receive="{enabled=true}" />
 	<mate:Listener type="{LayoutEvent.INVALIDATE_LAYOUT_EVENT}" method="invalidadeLayout" />
-	<mate:Listener type="{LayoutsLoadedEvent.LAYOUTS_LOADED_EVENT}" method="populateLayoutsList" />
 	<mate:Listener type="{RedefineLayoutEvent.REDEFINE_LAYOUT_EVENT}" method="onRedefineLayout" />
+	<mate:Listener type="{LayoutsLoadedEvent.LAYOUTS_LOADED_EVENT}" method="populateLayoutsList"/>
 	
 	<mx:Script>
 		<![CDATA[
@@ -62,6 +61,7 @@
 			import org.bigbluebutton.main.views.MainToolbar;
 			import org.bigbluebutton.util.i18n.ResourceUtil;
 			import org.bigbluebutton.modules.layout.events.LayoutEvent;
+			import org.bigbluebutton.modules.layout.events.ComboBoxCreatedEvent;
 			import org.bigbluebutton.modules.layout.events.LayoutsLoadedEvent;
 			import org.bigbluebutton.modules.layout.events.RedefineLayoutEvent;
 			import org.bigbluebutton.modules.layout.events.ViewInitializedEvent;
@@ -76,6 +76,8 @@
 			
 			private function init():void {
 				LogUtil.debug("LayoutsCombo: view initialized");
+				var comboBoxCreated:ComboBoxCreatedEvent = new ComboBoxCreatedEvent();
+				_dispatcher.dispatchEvent(comboBoxCreated);
 			}
 			
 			private function populateLayoutsList(e:LayoutsLoadedEvent):void {
@@ -93,7 +95,7 @@
 				invalidateDisplayList();
 			}
 			
-			private function onApplyDefaultLayout(e:Event):void {
+			private function onApplyDefaultLayout(e:Event = null):void {
 				if (_defaultLayout != null)
 					selectedItem = _defaultLayout; 
 			}
@@ -103,7 +105,10 @@
 				 *	remote means that the this event wasn't dispatched by this class
 				 *	it will come tipically from LayoutService or LayoutManager
 				 */
+				LogUtil.debug("LayoutCombo::onRedefineLayout");
 				if (e.remote) {
+					LogUtil.debug("LayoutCombo::onRedefineLayout remote event");
+	
 					var idx:int = -1;
 					prompt = e.layout.name;
 					
@@ -113,6 +118,8 @@
 					}
 					selectedIndex = idx;
 				}
+				invalidateDisplayList();
+				LogUtil.debug("LayoutCombo::onRedefineLayout done");
 			}
 			
 			private function onSelectedItemChanged(e:Event):void {
