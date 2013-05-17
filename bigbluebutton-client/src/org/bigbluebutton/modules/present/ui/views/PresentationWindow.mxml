@@ -691,14 +691,14 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
     		useHandCursor="true" snapInterval="5" allowTrackClick="true" liveDragging="true" 
     		dataTipFormatFunction="removeDecimalFromDataTip" change="onSliderZoom()" width="100"
     		tabIndex="{baseIndex+9}" accessibilityName="{ResourceUtil.getInstance().getString('bbb.presentation.slider')}"/>
-		<mx:Spacer width="50%" id="spacer3"/>
+		<mx:Spacer width="50%" id="spacer4"/>
     	<mx:Button id="btnFitToWidth" visible="false" width="30" height="30" styleName="presentationFitToWidthButtonStyle"
 			toolTip="{ResourceUtil.getInstance().getString('bbb.presentation.fitToWidth.toolTip')}" 
 			click="onFitToPage(false)"
 			tabIndex="{baseIndex+10}"/>
 		<mx:Button id="btnFitToPage" visible="false" width="30" height="30" styleName="presentationFitToPageButtonStyle"
 			toolTip="{ResourceUtil.getInstance().getString('bbb.presentation.fitToPage.toolTip')}" 
-			click="onFitToPage(true)"
-    	<mx:Spacer width="5" id="spacer4"/>
+			click="onFitToPage(true)"/>
+    	<mx:Spacer width="5" id="spacer6"/>
     </mx:ControlBar>
 </pres:MDIWindow>

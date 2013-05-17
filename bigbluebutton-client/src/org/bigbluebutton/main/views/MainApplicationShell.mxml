@@ -224,7 +224,7 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 				scWindow.width = 300;
 				scWindow.height = 300;
 				scWindow.focusCategories();
-			}
+			
 				
 				scWindow.focusCategories();
 			}
