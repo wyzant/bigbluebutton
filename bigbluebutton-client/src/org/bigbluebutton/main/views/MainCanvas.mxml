@@ -37,6 +37,7 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 			public static const TOP_LEFT:String = "top-left";
 			public static const BOTTOM_LEFT:String = "bottom-left";
 			public static const MIDDLE:String = "middle";
+			public static const MIDDLE_LEFT:String = "middle-left";
 			public static const BOTTOM:String = "bottom";
 			public static const TOP_RIGHT:String = "top-right";
 			public static const BOTTOM_RIGHT:String = "bottom-right";
